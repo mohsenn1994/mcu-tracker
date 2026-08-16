@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Road to Doomsday — Marvel Watch Checklist</title>
-<meta name="description" content="Track your Marvel watch progress in release order — every MCU film and show plus the wider Marvel movie universe — on the road to Avengers: Doomsday." />
+<title>Marvel Tracker — MCU & Beyond</title>
+<meta name="description" content="Track every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes. Tabs by universe and phase, watchlist, ratings, and progress tracking." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="The Road to Doomsday" />
-<meta property="og:description" content="A first-timer's Marvel watch checklist. Tick off films and shows and watch the finale light up." />
+<meta property="og:title" content="Marvel Tracker — MCU & Beyond" />
+<meta property="og:description" content="Every Marvel film and series across the MCU and other studios — track what you've watched, build a watchlist, and rate titles." />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="The Road to Doomsday" />
-<meta name="twitter:description" content="A first-timer's Marvel watch checklist on the road to Avengers: Doomsday." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='88'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='88'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,115 +18,162 @@
     --bg:#0A0D18;--surface:#141A2C;--surface-2:#1B2238;--line:#28314E;
     --text:#EAE8F2;--muted:#8B92AC;--faint:#5C637E;
     --gold:#E7B75F;--gold-soft:rgba(231,183,95,.14);--gold-line:rgba(231,183,95,.4);
-    --emerald:#2FB98A;--emerald-soft:rgba(47,185,138,.14);--emerald-glow:rgba(47,185,138,.45);
-    --violet:#9B8CE0;--violet-line:rgba(155,140,224,.35);
+    --emerald:#2FB98A;--violet:#9B8CE0;--violet-line:rgba(155,140,224,.35);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
-  body{
-    background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.5;padding:0 0 80px;
-    background-image:radial-gradient(circle at 20% -10%, rgba(231,183,95,.08), transparent 40%),
-                     radial-gradient(circle at 90% 110%, rgba(47,185,138,.09), transparent 45%);
-    background-attachment:fixed;
-  }
-  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
-  header{padding:44px 0 20px;text-align:center}
-  .eyebrow{font-family:'Oswald',sans-serif;letter-spacing:.42em;text-transform:uppercase;font-size:.68rem;font-weight:500;color:var(--gold);margin-bottom:14px}
-  h1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(2.1rem,8vw,3.4rem);line-height:.98;
-    background:linear-gradient(100deg,var(--gold) 0%,#F3D89A 45%,var(--emerald) 130%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .lede{color:var(--muted);font-size:.95rem;max-width:54ch;margin:16px auto 0}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.5;padding:0 0 90px;
+    background-image:radial-gradient(circle at 15% -10%,rgba(231,183,95,.08),transparent 42%),radial-gradient(circle at 95% 8%,rgba(155,140,224,.07),transparent 45%);
+    background-attachment:fixed;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 16px}
 
-  .panel{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;padding:20px 20px 22px;margin:26px 0 8px}
+  header{padding:38px 0 8px;text-align:center}
+  .eyebrow{font-family:'Oswald';letter-spacing:.36em;text-transform:uppercase;font-size:.64rem;font-weight:500;color:var(--gold);margin-bottom:11px}
+  h1{font-family:'Oswald';font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.9rem,7vw,3rem);line-height:1;
+    background:linear-gradient(100deg,var(--gold),#F3D89A 45%,var(--violet) 135%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lede{color:var(--muted);font-size:.9rem;max-width:58ch;margin:12px auto 0}
+
+  .panel{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;padding:16px 18px 18px;margin:22px 0 12px}
   .panel-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
-  .panel-count{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.5rem;letter-spacing:.01em}
+  .panel-count{font-family:'Oswald';font-weight:600;font-size:1.4rem}
   .panel-count b{color:var(--gold)}
-  .panel-pct{font-family:'Oswald',sans-serif;color:var(--muted);font-size:1.1rem;letter-spacing:.05em}
-  .bar{height:9px;border-radius:99px;background:#0d1120;border:1px solid var(--line);margin-top:14px;overflow:hidden}
+  .panel-pct{font-family:'Oswald';color:var(--muted);font-size:1.02rem;letter-spacing:.04em}
+  .bar{height:9px;border-radius:99px;background:#0d1120;border:1px solid var(--line);margin-top:12px;overflow:hidden}
   .bar-fill{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald));transition:width .5s cubic-bezier(.2,.8,.2,1)}
-  .ess-line{margin-top:12px;font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:7px}
-  .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;flex:none}
+  .sub-line{margin-top:10px;font-size:.78rem;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+  .sub-line b{color:var(--text);font-weight:600}
+  .uni-stats{margin-top:6px;font-size:.76rem;color:var(--faint);display:flex;gap:12px;flex-wrap:wrap}
+  .uni-stats b{color:var(--muted)}
 
-  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0 30px}
-  .toggle{display:inline-flex;align-items:center;gap:10px;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:9px 14px;font-size:.85rem;color:var(--text);user-select:none;transition:border-color .2s,background .2s}
-  .toggle:hover{border-color:var(--gold-line)}
-  .switch{width:34px;height:19px;border-radius:99px;background:#0d1120;border:1px solid var(--line);position:relative;flex:none;transition:background .2s}
-  .switch::after{content:"";position:absolute;top:2px;left:2px;width:13px;height:13px;border-radius:50%;background:var(--faint);transition:transform .22s,background .22s}
-  .toggle.on .switch{background:var(--gold-soft);border-color:var(--gold-line)}
-  .toggle.on .switch::after{transform:translateX(15px);background:var(--gold)}
-  .share{background:var(--gold-soft);border:1px solid var(--gold-line);color:var(--gold);border-radius:11px;padding:9px 15px;font-family:'Inter';font-weight:600;font-size:.82rem;cursor:pointer;transition:background .2s,transform .15s;margin-left:auto}
-  .share:hover{background:rgba(231,183,95,.22)}
-  .share:active{transform:scale(.97)}
-  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--surface-2);border:1px solid var(--gold-line);color:var(--text);padding:11px 20px;border-radius:12px;font-size:.86rem;font-weight:500;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50;box-shadow:0 10px 30px -8px rgba(0,0,0,.6)}
-  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-  .reset{background:none;border:1px solid var(--line);color:var(--muted);border-radius:11px;padding:9px 14px;font-family:'Inter';font-size:.82rem;cursor:pointer;transition:color .2s,border-color .2s}
-  .reset:hover{color:#ff9a9a;border-color:rgba(255,120,120,.4)}
+  .search{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:11px;color:var(--text);font-family:'Inter';font-size:.92rem;padding:11px 14px;margin:6px 0 12px}
+  .search::placeholder{color:var(--faint)} .search:focus{outline:none;border-color:var(--gold-line)}
 
-  .saga{margin-bottom:14px}
-  .saga-head{display:flex;align-items:center;gap:14px;margin:30px 0 4px}
-  .saga-head h2{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:1.02rem;white-space:nowrap}
-  .saga-head .rule{height:1px;background:var(--line);flex:1}
-  .saga-head .sc{font-family:'Oswald';font-size:.8rem;color:var(--faint);letter-spacing:.1em;white-space:nowrap}
-  .saga-head .chip{font-family:'Oswald';font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);border:1px solid var(--violet-line);border-radius:6px;padding:3px 8px;white-space:nowrap}
-  .saga-note{color:var(--muted);font-size:.82rem;margin:2px 0 6px 2px}
+  /* tabs */
+  .tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+  .tab{font-family:'Oswald';text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer;user-select:none;transition:all .18s;display:flex;align-items:center;gap:8px}
+  .tab:hover{border-color:var(--gold-line);color:var(--text)}
+  .tab.on{background:var(--gold-soft);border-color:var(--gold-line);color:var(--gold)}
+  .tab .badge{font-size:.68rem;color:var(--faint);font-family:'Inter';font-weight:600}
+  .tab.on .badge{color:var(--gold)}
+  .subtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
+  .subtab{font-size:.76rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:99px;padding:6px 12px;cursor:pointer;user-select:none;transition:all .16s}
+  .subtab:hover{border-color:var(--gold-line);color:var(--text)}
+  .subtab.on{background:var(--surface);border-color:var(--gold-line);color:var(--text);font-weight:600}
+  .subtab .b{color:var(--faint);font-weight:600;margin-left:4px}
 
-  .section-break{margin:52px 0 6px;padding:22px 20px;border-radius:16px;border:1px dashed var(--violet-line);background:rgba(155,140,224,.06);text-align:center}
-  .section-break .sb-eyebrow{font-family:'Oswald';letter-spacing:.32em;text-transform:uppercase;font-size:.64rem;color:var(--violet);margin-bottom:8px}
-  .section-break h2{font-family:'Oswald';font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:1.5rem}
-  .section-break p{color:var(--muted);font-size:.86rem;max-width:56ch;margin:9px auto 0}
+  /* toolbar */
+  .chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  .chip{font-size:.75rem;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:5px 12px;cursor:pointer;user-select:none;transition:all .16s}
+  .chip:hover{border-color:var(--gold-line);color:var(--text)}
+  .chip.on{background:var(--gold-soft);border-color:var(--gold-line);color:var(--gold);font-weight:600}
+  .chip.sep{background:none;border:none;color:var(--faint);cursor:default;padding:5px 2px}
+  .spacer{flex:1}
+  .mini{font-size:.74rem;color:var(--muted);background:none;border:1px solid var(--line);border-radius:99px;padding:5px 11px;cursor:pointer;transition:all .16s}
+  .mini:hover{border-color:var(--gold-line);color:var(--text)}
+  .mini.warn:hover{color:#ff9a9a;border-color:rgba(255,120,120,.4)}
+  .mini.acc{color:var(--gold);border-color:var(--gold-line);background:var(--gold-soft);font-weight:600}
 
-  .phase{margin:22px 0}
-  .phase-label{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);font-weight:500;margin:0 0 12px 2px}
-  .phase-label.nm{color:var(--violet)}
+  .group{margin-bottom:22px}
+  .group-head{display:flex;align-items:center;gap:10px;margin:0 2px 11px}
+  .group-label{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--gold);font-weight:500;white-space:nowrap}
+  .group-mini{flex:1;height:5px;border-radius:99px;background:#0d1120;border:1px solid var(--line);overflow:hidden;max-width:220px}
+  .group-mini>i{display:block;height:100%;background:var(--gold);width:0;transition:width .4s}
+  .group-count{font-family:'Oswald';font-size:.74rem;color:var(--faint);white-space:nowrap}
+  .markall{font-size:.68rem;color:var(--muted);border:1px solid var(--line);background:none;border-radius:99px;padding:3px 9px;cursor:pointer;transition:all .16s;white-space:nowrap}
+  .markall:hover{border-color:var(--gold-line);color:var(--gold)}
 
-  .item{display:flex;align-items:flex-start;gap:13px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:13px 14px;margin-bottom:9px;position:relative;transition:border-color .2s,background .2s,opacity .3s}
-  .item.essential{border-left:3px solid var(--gold-line)}
+  .item{display:flex;align-items:flex-start;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 13px;margin-bottom:8px;transition:border-color .2s,opacity .3s}
   .item:hover{border-color:#374267}
-  .item.done{opacity:.5}
+  .item.done{opacity:.55}
   .item.done .title{text-decoration:line-through;text-decoration-color:var(--faint)}
-  .item.upcoming{opacity:.7}
-  .item.upcoming .check{pointer-events:none;opacity:.4}
+  .item.upcoming{opacity:.72;border-style:dashed}
+  .item.upcoming .check{pointer-events:none;opacity:.35}
 
-  .check{flex:none;width:26px;height:26px;border-radius:8px;margin-top:1px;border:1.5px solid var(--faint);background:#0d1120;cursor:pointer;position:relative;transition:border-color .2s,background .2s}
+  .check{flex:none;width:25px;height:25px;border-radius:8px;margin-top:1px;border:1.5px solid var(--faint);background:#0d1120;cursor:pointer;position:relative;transition:border-color .2s,background .2s}
   .check:hover{border-color:var(--gold)}
-  .check svg{position:absolute;inset:0;margin:auto;width:15px;height:15px;stroke:var(--bg);stroke-width:3.2;fill:none;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .25s ease .05s}
+  .check svg{position:absolute;inset:0;margin:auto;width:14px;height:14px;stroke:var(--bg);stroke-width:3.4;fill:none;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .25s ease .05s}
   .item.done .check{background:var(--gold);border-color:var(--gold)}
   .item.done .check svg{stroke-dashoffset:0}
 
   .body{flex:1;min-width:0}
   .row1{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
-  .ord{font-family:'Oswald';font-size:.82rem;color:var(--faint);font-weight:500;flex:none;min-width:20px}
-  .title{font-weight:600;font-size:.98rem;letter-spacing:-.01em}
+  .title{font-weight:600;font-size:.96rem;letter-spacing:-.01em}
   .yr{color:var(--faint);font-size:.82rem;font-weight:500}
-  .why{color:var(--muted);font-size:.82rem;margin-top:3px}
-  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-  .tag{font-family:'Oswald';font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:6px;font-weight:500;border:1px solid transparent}
-  .tag.movie,.tag.series{color:#a9b4d6;background:#0d1120;border-color:var(--line)}
-  .tag.ess{color:var(--gold);background:var(--gold-soft);border-color:var(--gold-line)}
-  .tag.opt{color:var(--muted);background:transparent;border-color:var(--line)}
-  .tag.up{color:var(--violet);background:transparent;border-color:var(--violet-line)}
+  .why{color:var(--muted);font-size:.81rem;margin-top:2px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px;align-items:center}
+  .tag{font-family:'Oswald';font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:6px;font-weight:500;border:1px solid var(--line);color:#a9b4d6;background:#0d1120}
+  .tag.up{color:var(--violet);border-color:var(--violet-line);background:transparent}
 
-  .dest{margin-top:40px;border-radius:18px;padding:26px 22px;text-align:center;position:relative;overflow:hidden;
-    background:radial-gradient(circle at 50% 0%,rgba(47,185,138,.13),transparent 70%),linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);transition:border-color .5s,box-shadow .5s}
-  .dest.ready{border-color:var(--emerald-glow);box-shadow:0 0 44px -8px var(--emerald-glow)}
-  .dest .badge{font-family:'Oswald';letter-spacing:.3em;text-transform:uppercase;font-size:.66rem;color:var(--emerald);margin-bottom:10px}
-  .dest h3{font-family:'Oswald';font-weight:700;text-transform:uppercase;font-size:clamp(1.5rem,6vw,2.1rem);letter-spacing:.02em}
-  .dest .date{color:var(--muted);font-size:.86rem;margin-top:4px}
-  .dest .status{margin-top:16px;font-size:.9rem;color:var(--text);font-weight:500}
-  .dest .status .n{color:var(--emerald);font-weight:700}
-  .dest.ready .status{color:var(--emerald)}
+  .rowctl{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:7px;margin-top:1px}
+  .bm{width:26px;height:26px;border-radius:8px;border:1px solid var(--line);background:#0d1120;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .18s;color:var(--faint)}
+  .bm:hover{border-color:var(--gold-line);color:var(--gold)}
+  .bm.on{color:var(--gold);border-color:var(--gold-line);background:var(--gold-soft)}
+  .bm svg{width:14px;height:14px;fill:currentColor}
+  .stars{display:flex;gap:1px}
+  .star{width:15px;height:15px;cursor:pointer;color:var(--faint);transition:color .12s}
+  .star svg{width:15px;height:15px;fill:currentColor;display:block}
+  .star.fill{color:var(--gold)}
+  .star:hover{color:var(--gold)}
 
-  footer{text-align:center;color:var(--faint);font-size:.76rem;margin-top:34px;line-height:1.7}
+  .poster{flex:none;width:44px;height:66px;border-radius:7px;background:#0d1120 center/cover no-repeat;border:1px solid var(--line)}
+  .poster.ph{background:linear-gradient(160deg,#1b2238,#0d1120)}
+  .why{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .links{display:flex;gap:7px;flex-wrap:wrap;margin-top:8px}
+  .lnk{font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:4px 10px;text-decoration:none;transition:all .16s;white-space:nowrap}
+  .lnk:hover{border-color:var(--gold-line);color:var(--text)}
+  .lnk.watch{color:var(--emerald);border-color:rgba(47,185,138,.35)}
+  .lnk.watch:hover{background:rgba(47,185,138,.12)}
+  .tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:-6px 0 16px}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden}
+  .segb{font-size:.75rem;color:var(--muted);background:none;border:none;padding:6px 13px;cursor:pointer;transition:all .16s}
+  .segb.on{background:var(--gold-soft);color:var(--gold);font-weight:600}
+  .sortlbl{font-size:.75rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+  .sortlbl select{background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:99px;padding:6px 10px;font-family:'Inter';font-size:.75rem;cursor:pointer}
+  .sortlbl select:focus{outline:none;border-color:var(--gold-line)}
+  .statspanel{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 20px}
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+  .statbox{background:#0d1120;border:1px solid var(--line);border-radius:11px;padding:12px;text-align:center}
+  .statbox b{display:block;font-family:'Oswald';font-size:1.4rem;color:var(--gold)}
+  .statbox span{font-size:.72rem;color:var(--muted)}
+  .statlist{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+  .statrow{display:flex;align-items:center;gap:10px;font-size:.8rem}
+  .statrow>span:first-child{flex:none;width:150px;color:var(--muted)}
+  .statbar{flex:1;height:7px;border-radius:99px;background:#0d1120;border:1px solid var(--line);overflow:hidden}
+  .statbar>i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--emerald))}
+  .statrow b{font-family:'Oswald';color:var(--text);font-size:.78rem}
+  .statnote{margin-top:11px;font-size:.72rem;color:var(--faint)}
+  /* grid view */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:11px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:11px;overflow:hidden;transition:border-color .2s,opacity .3s}
+  .card:hover{border-color:#374267}
+  .card.done{opacity:.55}
+  .card.upcoming{opacity:.75}
+  .cardposter{position:relative;aspect-ratio:2/3;background:#0d1120 center/cover no-repeat}
+  .cardposter.ph{background:linear-gradient(160deg,#1b2238,#0d1120)}
+  .check.ov{position:absolute;top:6px;left:6px;width:24px;height:24px}
+  .bm.ov{position:absolute;top:6px;right:6px;width:24px;height:24px}
+  .card.upcoming .check.ov{pointer-events:none;opacity:.4}
+  .cardrate{position:absolute;bottom:6px;left:6px;font-family:'Oswald';font-size:.66rem;color:var(--gold);background:rgba(10,13,24,.82);border:1px solid var(--gold-line);border-radius:6px;padding:2px 6px}
+  .cardup{position:absolute;bottom:6px;right:6px;font-family:'Oswald';font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);background:rgba(10,13,24,.82);border:1px solid var(--violet-line);border-radius:6px;padding:2px 6px}
+  .cardmeta{padding:8px 9px}
+  .cardtitle{font-size:.8rem;font-weight:600;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .card.done .cardtitle{text-decoration:line-through;text-decoration-color:var(--faint)}
+  .cardyr{font-size:.72rem;color:var(--faint);margin-top:2px}
+  .empty{text-align:center;color:var(--muted);padding:38px 20px;font-size:.9rem;border:1px dashed var(--line);border-radius:12px}
+  footer{text-align:center;color:var(--faint);font-size:.74rem;margin-top:32px;line-height:1.7}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--surface-2);border:1px solid var(--gold-line);color:var(--text);padding:11px 20px;border-radius:12px;font-size:.85rem;font-weight:500;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50;box-shadow:0 10px 30px -8px rgba(0,0,0,.6)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
   .hidden{display:none !important}
-  @media (max-width:520px){.why{font-size:.8rem}.item{padding:12px}.saga-head .sc{display:none}}
+  @media (max-width:520px){.item{padding:11px 12px}.rowctl{gap:6px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <div class="eyebrow">A First-Timer's Roadmap</div>
-    <h1>The Road to<br>Doomsday</h1>
-    <p class="lede">Every Marvel movie and show, in order. The MCU comes first — that's the path to Doomsday, with essentials marked in gold. Then the wider Marvel film universe from other studios. Flip "essentials only" any time to snap back to just what you need.</p>
+    <div class="eyebrow" id="eyebrow">Marvel</div>
+    <h1>Watch Tracker</h1>
+    <p class="lede" id="lede"></p>
   </header>
 
   <div class="panel">
@@ -137,332 +182,332 @@
       <div class="panel-pct" id="pct">0%</div>
     </div>
     <div class="bar"><div class="bar-fill" id="barfill"></div></div>
-    <div class="ess-line"><span class="dot"></span><span id="essline">0 of 0 essentials complete</span></div>
+    <div class="sub-line">
+      <span><b id="released">0</b> released</span>
+      <span><b id="upcoming">0</b> upcoming</span>
+      <span><b id="wl">0</b> on watchlist</span>
+    </div>
+    <div class="uni-stats" id="uniStats"></div>
   </div>
 
-  <div class="controls">
-    <div class="toggle" id="essToggle" role="button" tabindex="0" aria-pressed="false">
-      <span class="switch"></span><span>Show essentials only</span>
-    </div>
-    <button class="share" id="shareBtn">Share with friends</button>
-    <button class="reset" id="resetBtn">Reset</button>
-  </div>
-  <div class="toast" id="toast"></div>
+  <input class="search" id="search" type="search" placeholder="Search all titles…" autocomplete="off" />
+  <div class="tabs" id="uniTabs"></div>
+  <div class="subtabs" id="subTabs"></div>
+  <div class="chips" id="chips"></div>
+  <div class="tools" id="tools"></div>
+  <div class="statspanel hidden" id="statsPanel"></div>
 
-  <noscript>
-    <div style="padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--muted);font-size:.9rem">
-      This checklist needs JavaScript to run. Please open the page in a web browser (Safari or Chrome), not a file preview.
-    </div>
-  </noscript>
+  <noscript><div class="empty">This tracker needs JavaScript. Please open it in a web browser (not a file preview).</div></noscript>
   <div id="list"></div>
+  <input type="file" id="importFile" accept="application/json" class="hidden" />
 
-  <div class="dest" id="dest">
-    <div class="badge">The Finale · Phase 6</div>
-    <h3>Avengers: Doomsday</h3>
-    <div class="date">In theaters · December 18, 2026</div>
-    <div class="status" id="destStatus">Watch the essentials to prepare.</div>
-  </div>
-
-  <footer>
-    Gold = essential context for Doomsday. Everything else is optional.<br>
-    The Extended Universe films are separate continuities — fun, but not required.<br>
-    Your progress saves automatically on this device.
-  </footer>
+  <footer id="foot"></footer>
 </div>
+<div class="toast" id="toast"></div>
 
+<script src="data.js"></script>
 <script>
-const DATA = [
-  {saga:"The Infinity Saga", sc:"Phases 1–3", phases:[
-    {name:"Phase 1", items:[
-      {t:"Iron Man", y:2008, type:"movie", ess:true, why:"Where it all begins — Tony Stark's origin."},
-      {t:"The Incredible Hulk", y:2008, type:"movie", ess:false},
-      {t:"Iron Man 2", y:2010, type:"movie", ess:false},
-      {t:"Thor", y:2011, type:"movie", ess:false, why:"Introduces Thor and Loki."},
-      {t:"Captain America: The First Avenger", y:2011, type:"movie", ess:true, why:"Introduces Steve Rogers, who returns in Doomsday."},
-      {t:"The Avengers", y:2012, type:"movie", ess:true, why:"The team assembles for the first time."},
-    ]},
-    {name:"Phase 2", items:[
-      {t:"Iron Man 3", y:2013, type:"movie", ess:false},
-      {t:"Thor: The Dark World", y:2013, type:"movie", ess:false},
-      {t:"Captain America: The Winter Soldier", y:2014, type:"movie", ess:true, why:"Introduces Bucky/Winter Soldier; a major turning point."},
-      {t:"Guardians of the Galaxy", y:2014, type:"movie", ess:false, why:"Recommended — opens up the cosmic side."},
-      {t:"Avengers: Age of Ultron", y:2015, type:"movie", ess:true, why:"Introduces Scarlet Witch and Vision."},
-      {t:"Ant-Man", y:2015, type:"movie", ess:false},
-    ]},
-    {name:"Phase 3", items:[
-      {t:"Captain America: Civil War", y:2016, type:"movie", ess:true, why:"The Avengers split apart; introduces Spider-Man and Black Panther."},
-      {t:"Doctor Strange", y:2016, type:"movie", ess:true, why:"Magic and the multiverse enter the MCU."},
-      {t:"Guardians of the Galaxy Vol. 2", y:2017, type:"movie", ess:false},
-      {t:"Spider-Man: Homecoming", y:2017, type:"movie", ess:false, why:"Recommended."},
-      {t:"Thor: Ragnarok", y:2017, type:"movie", ess:true, why:"Reinvents Thor and leads straight into Infinity War."},
-      {t:"Black Panther", y:2018, type:"movie", ess:false, why:"Recommended."},
-      {t:"Avengers: Infinity War", y:2018, type:"movie", ess:true, why:"Thanos arrives — the biggest turning point in the saga."},
-      {t:"Ant-Man and the Wasp", y:2018, type:"movie", ess:false},
-      {t:"Captain Marvel", y:2019, type:"movie", ess:false},
-      {t:"Avengers: Endgame", y:2019, type:"movie", ess:true, why:"The climax of the entire Infinity Saga."},
-      {t:"Spider-Man: Far From Home", y:2019, type:"movie", ess:true, why:"Immediate aftermath of Endgame; first teases the multiverse."},
-    ]},
-  ]},
-  {saga:"The Multiverse Saga", sc:"Phases 4–6", phases:[
-    {name:"Phase 4", items:[
-      {t:"WandaVision", y:2021, type:"series", ess:true, why:"Wanda's grief and power; sets up Multiverse of Madness."},
-      {t:"The Falcon and the Winter Soldier", y:2021, type:"series", ess:false, why:"Recommended — Sam Wilson becomes Captain America."},
-      {t:"Loki — Season 1", y:2021, type:"series", ess:true, why:"Introduces the TVA and cracks open the multiverse. The backbone of everything since."},
-      {t:"Black Widow", y:2021, type:"movie", ess:false, why:"Recommended — introduces Yelena of the Thunderbolts."},
-      {t:"What If…? — Season 1", y:2021, type:"series", ess:false},
-      {t:"Shang-Chi and the Legend of the Ten Rings", y:2021, type:"movie", ess:false},
-      {t:"Eternals", y:2021, type:"movie", ess:false},
-      {t:"Hawkeye", y:2021, type:"series", ess:false},
-      {t:"Spider-Man: No Way Home", y:2021, type:"movie", ess:true, why:"The multiverse breaks open across the Spider-Man films."},
-      {t:"Moon Knight", y:2022, type:"series", ess:false},
-      {t:"Doctor Strange in the Multiverse of Madness", y:2022, type:"movie", ess:true, why:"Introduces incursions and universe-hopping — core to Doomsday."},
-      {t:"Ms. Marvel", y:2022, type:"series", ess:false, why:"Recommended — leads into The Marvels."},
-      {t:"Thor: Love and Thunder", y:2022, type:"movie", ess:false},
-      {t:"What If…? — Season 2", y:2022, type:"series", ess:false},
-      {t:"She-Hulk: Attorney at Law", y:2022, type:"series", ess:false},
-      {t:"Black Panther: Wakanda Forever", y:2022, type:"movie", ess:false, why:"Recommended."},
-    ]},
-    {name:"Phase 5", items:[
-      {t:"Ant-Man and the Wasp: Quantumania", y:2023, type:"movie", ess:false, why:"Recommended — introduces Kang."},
-      {t:"Guardians of the Galaxy Vol. 3", y:2023, type:"movie", ess:false, why:"Recommended — a strong send-off."},
-      {t:"Secret Invasion", y:2023, type:"series", ess:false},
-      {t:"Loki — Season 2", y:2023, type:"series", ess:true, why:"Resolves the multiverse and TVA threads from Season 1."},
-      {t:"The Marvels", y:2023, type:"movie", ess:false},
-      {t:"Echo", y:2024, type:"series", ess:false},
-      {t:"Deadpool & Wolverine", y:2024, type:"movie", ess:true, why:"Brings the Fox X-Men universe into the multiverse."},
-      {t:"Agatha All Along", y:2024, type:"series", ess:false},
-      {t:"What If…? — Season 3", y:2024, type:"series", ess:false},
-      {t:"Captain America: Brave New World", y:2025, type:"movie", ess:false, why:"Recommended — where Sam's Captain America stands now."},
-      {t:"Daredevil: Born Again", y:2025, type:"series", ess:false},
-      {t:"Thunderbolts*", y:2025, type:"movie", ess:true, why:"Assembles the antihero team central to the current roster."},
-      {t:"Ironheart", y:2025, type:"series", ess:false},
-    ]},
-    {name:"Phase 6", items:[
-      {t:"The Fantastic Four: First Steps", y:2025, type:"movie", ess:true, why:"Introduces the Fantastic Four, who appear in Doomsday."},
-      {t:"Eyes of Wakanda", y:2025, type:"series", ess:false, why:"Animated, tangential."},
-      {t:"Marvel Zombies", y:2025, type:"series", ess:false, why:"Animated, alternate-universe."},
-      {t:"Spider-Man: Brand New Day", y:2026, type:"movie", ess:true, why:"The most recent theatrical release right before Doomsday."},
-      {t:"Wonder Man", y:2026, type:"series", ess:false},
-      {t:"Daredevil: Born Again — Season 2", y:2026, type:"series", ess:false},
-      {t:"The Punisher: One Last Kill", y:2026, type:"series", ess:false, why:"Special presentation."},
-    ]},
-  ]},
+(function(){
+  const CHECK=`<svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>`;
+  const BM=`<svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>`;
+  const STAR=`<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>`;
+  const STORE='mcu_tracker_v2';
+  let state={done:{},watchlist:{},ratings:{},uni:null,sub:'all',typeFilter:'all',statusFilter:'all',q:'',view:'list',sort:'release'};
+  let toastT;
 
-  {saga:"Sony's Spider-Man", sc:"Non-MCU", nonMCU:true, catalogue:true, introBreak:true,
-   note:"A separate live-action Spider-Man continuity that predates the MCU deal.", phases:[
-    {name:"", items:[
-      {t:"Spider-Man", y:2002, type:"movie", ess:false, why:"The Tobey Maguire trilogy begins."},
-      {t:"Spider-Man 2", y:2004, type:"movie", ess:false, why:"Widely considered one of the best superhero films."},
-      {t:"Spider-Man 3", y:2007, type:"movie", ess:false},
-      {t:"The Amazing Spider-Man", y:2012, type:"movie", ess:false, why:"The Andrew Garfield reboot."},
-      {t:"The Amazing Spider-Man 2", y:2014, type:"movie", ess:false},
-    ]},
-  ]},
-  {saga:"The Spider-Verse", sc:"Animated · Non-MCU", nonMCU:true, catalogue:true,
-   note:"An acclaimed animated multiverse trilogy — its own thing, separate from everything above.", phases:[
-    {name:"", items:[
-      {t:"Spider-Man: Into the Spider-Verse", y:2018, type:"movie", ess:false, why:"Oscar-winning; introduces Miles Morales."},
-      {t:"Spider-Man: Across the Spider-Verse", y:2023, type:"movie", ess:false},
-      {t:"Spider-Man: Beyond the Spider-Verse", y:2027, type:"movie", ess:false, upcoming:true, why:"Trilogy finale — releases June 2027, after Doomsday."},
-    ]},
-  ]},
-  {saga:"Sony's Spider-Man Universe", sc:"Non-MCU", nonMCU:true, catalogue:true,
-   note:"Sony's spin-offs built around Spider-Man villains and side characters.", phases:[
-    {name:"", items:[
-      {t:"Venom", y:2018, type:"movie", ess:false},
-      {t:"Venom: Let There Be Carnage", y:2021, type:"movie", ess:false},
-      {t:"Morbius", y:2022, type:"movie", ess:false},
-      {t:"Madame Web", y:2024, type:"movie", ess:false},
-      {t:"Kraven the Hunter", y:2024, type:"movie", ess:false},
-      {t:"Venom: The Last Dance", y:2024, type:"movie", ess:false},
-    ]},
-  ]},
-  {saga:"Fox's X-Men Universe", sc:"Non-MCU", nonMCU:true, catalogue:true,
-   note:"The long-running X-Men saga. Some of this cast returns in Doomsday, but the films aren't required.", phases:[
-    {name:"", items:[
-      {t:"X-Men", y:2000, type:"movie", ess:false},
-      {t:"X2: X-Men United", y:2003, type:"movie", ess:false},
-      {t:"X-Men: The Last Stand", y:2006, type:"movie", ess:false},
-      {t:"X-Men Origins: Wolverine", y:2009, type:"movie", ess:false},
-      {t:"X-Men: First Class", y:2011, type:"movie", ess:false, why:"Prequel reboot with the younger cast."},
-      {t:"The Wolverine", y:2013, type:"movie", ess:false},
-      {t:"X-Men: Days of Future Past", y:2014, type:"movie", ess:false},
-      {t:"Deadpool", y:2016, type:"movie", ess:false},
-      {t:"X-Men: Apocalypse", y:2016, type:"movie", ess:false},
-      {t:"Logan", y:2017, type:"movie", ess:false, why:"A standout — Hugh Jackman's Wolverine send-off."},
-      {t:"Deadpool 2", y:2018, type:"movie", ess:false},
-      {t:"Dark Phoenix", y:2019, type:"movie", ess:false},
-      {t:"The New Mutants", y:2020, type:"movie", ess:false},
-    ]},
-  ]},
-  {saga:"Fox's Fantastic Four", sc:"Non-MCU", nonMCU:true, catalogue:true,
-   note:"Earlier attempts at the team, unrelated to the MCU's 2025 version.", phases:[
-    {name:"", items:[
-      {t:"Fantastic Four", y:2005, type:"movie", ess:false},
-      {t:"Fantastic Four: Rise of the Silver Surfer", y:2007, type:"movie", ess:false},
-      {t:"Fantastic Four", y:2015, type:"movie", ess:false},
-    ]},
-  ]},
-  {saga:"Other Studios & Early Films", sc:"Non-MCU", nonMCU:true, catalogue:true,
-   note:"Older and one-off Marvel adaptations from before the shared-universe era.", phases:[
-    {name:"", items:[
-      {t:"Howard the Duck", y:1986, type:"movie", ess:false},
-      {t:"The Punisher", y:1989, type:"movie", ess:false},
-      {t:"Captain America", y:1990, type:"movie", ess:false},
-      {t:"Blade", y:1998, type:"movie", ess:false, why:"Kicked off the modern Marvel movie era."},
-      {t:"Blade II", y:2002, type:"movie", ess:false},
-      {t:"Daredevil", y:2003, type:"movie", ess:false},
-      {t:"Hulk", y:2003, type:"movie", ess:false, why:"Ang Lee's version, separate from the MCU Hulk."},
-      {t:"The Punisher", y:2004, type:"movie", ess:false},
-      {t:"Blade: Trinity", y:2004, type:"movie", ess:false},
-      {t:"Elektra", y:2005, type:"movie", ess:false},
-      {t:"Man-Thing", y:2005, type:"movie", ess:false},
-      {t:"Ghost Rider", y:2007, type:"movie", ess:false},
-      {t:"Punisher: War Zone", y:2008, type:"movie", ess:false},
-      {t:"Ghost Rider: Spirit of Vengeance", y:2011, type:"movie", ess:false},
-    ]},
-  ]},
-];
+  function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
+  function load(){
+    try{const r=localStorage.getItem(STORE);
+      if(r){const s=JSON.parse(r);Object.assign(state,{done:s.done||{},watchlist:s.watchlist||{},ratings:s.ratings||{},uni:s.uni||null,sub:s.sub||'all',typeFilter:s.typeFilter||'all',statusFilter:s.statusFilter||'all',view:s.view||'list',sort:s.sort||'release'});return;}
+      const old=localStorage.getItem('mcu_tracker_v1'); // migrate old progress
+      if(old){const s=JSON.parse(old);state.done=s.done||{};}
+    }catch(e){}
+  }
+  function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
 
-const CHECK_SVG = '<svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>';
-const STORE_KEY = "mcu_doomsday_progress_v2";
-let state = {watched:{}, essOnly:false};
+  const DATA=(window.MCU_DATA||[]).slice();
+  const CFG=window.MCU_CONFIG||{};
+  const UNI=CFG.universes||[{id:'MCU',short:'MCU',label:'MCU'}];
+  const uniById={}; UNI.forEach(u=>uniById[u.id]=u);
+  const TODAY=new Date();
+  function relDate(it){return it.release?new Date(it.release+'T00:00:00'):new Date(it.year,11,31);}
+  DATA.forEach(it=>{it.universe=it.universe||'MCU';it._up=relDate(it)>TODAY;it._rt=relDate(it).getTime();});
+  function ord(list,name){const i=(list||[]).indexOf(name);return i===-1?900+String(name).length:i;}
 
-let order = 0;
-const flat = [];
-DATA.forEach(s=>s.phases.forEach(p=>p.items.forEach(it=>{
-  it.id = (it.t+"_"+it.y).replace(/[^a-z0-9]+/gi,"_").toLowerCase();
-  if(!s.catalogue) it.order = ++order;
-  flat.push(it);
-})));
-const TOTAL = flat.length;
-const ESS_TOTAL = flat.filter(i=>i.ess).length;
+  // ---- build universe -> subgroups ----
+  const U={};
+  UNI.forEach(u=>U[u.id]={def:u,items:[],subs:{},subOrder:[]});
+  DATA.forEach(it=>{ if(!U[it.universe])U[it.universe]={def:{id:it.universe,short:it.universe,label:it.universe},items:[],subs:{},subOrder:[]}; U[it.universe].items.push(it); });
+  Object.keys(U).forEach(uid=>{
+    const isMCU=uid==='MCU';
+    U[uid].items.forEach(it=>{ const k=isMCU?(it.phase||'—'):(it.saga||'—'); (U[uid].subs[k]=U[uid].subs[k]||[]).push(it); });
+    U[uid].subOrder=Object.keys(U[uid].subs).sort((a,b)=> isMCU ? ord(CFG.phaseOrder,a)-ord(CFG.phaseOrder,b) : ord(CFG.sagaOrder,a)-ord(CFG.sagaOrder,b));
+    Object.keys(U[uid].subs).forEach(k=>U[uid].subs[k].sort((a,b)=>a._rt-b._rt));
+  });
+  const uniOrder=UNI.map(u=>u.id).filter(id=>U[id]).concat(Object.keys(U).filter(id=>!uniById[id]));
+  if(!state.uni||!U[state.uni]) state.uni=uniOrder[0];
 
-function load(){
-  try{ const raw = localStorage.getItem(STORE_KEY);
-    if(raw){ const s = JSON.parse(raw); state.watched = s.watched||{}; state.essOnly = !!s.essOnly; }
-  }catch(e){ /* private mode or preview sandbox — runs session-only */ }
-}
-function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }catch(e){} }
+  // ---- counts ----
+  function relOf(items){return items.filter(i=>!i._up);}
+  function doneOf(items){return items.filter(i=>!i._up&&state.done[i.id]).length;}
+  function uniCounts(uid){const rel=relOf(U[uid].items);return {done:rel.filter(i=>state.done[i.id]).length,total:rel.length};}
+  function subCounts(uid,key){const rel=relOf(U[uid].subs[key]||[]);return {done:rel.filter(i=>state.done[i.id]).length,total:rel.length};}
 
-function render(){
-  const list = document.getElementById("list");
-  list.innerHTML = "";
-  DATA.forEach(saga=>{
-    // In essentials-only mode, hide entire non-MCU catalogue
-    if(state.essOnly && saga.catalogue) return;
+  function matches(it){
+    if(state.typeFilter==='movie'&&it.type!=='movie')return false;
+    if(state.typeFilter==='series'&&it.type==='movie')return false;
+    if(state.statusFilter==='watched'&&!state.done[it.id])return false;
+    if(state.statusFilter==='towatch'&&(state.done[it.id]||it._up))return false;
+    if(state.statusFilter==='watchlist'&&!state.watchlist[it.id])return false;
+    if(state.statusFilter==='upcoming'&&!it._up)return false;
+    if(state.q&&it.title.toLowerCase().indexOf(state.q)===-1)return false;
+    return true;
+  }
 
-    if(saga.introBreak && !state.essOnly){
-      const br = document.createElement("div");
-      br.className="section-break";
-      br.innerHTML = `<div class="sb-eyebrow">Beyond the MCU</div><h2>The Extended Universe</h2>
-        <p>Marvel movies made by other studios, in their own separate continuities. None are needed for Doomsday — they're here so you have the complete picture.</p>`;
-      list.appendChild(br);
+  function starWidget(it){
+    const r=state.ratings[it.id]||0;let s='<span class="stars" data-id="'+it.id+'">';
+    for(let n=1;n<=5;n++) s+='<span class="star'+(n<=r?' fill':'')+'" data-id="'+it.id+'" data-n="'+n+'" role="button" tabindex="0" aria-label="Rate '+n+'">'+STAR+'</span>';
+    return s+'</span>';
+  }
+  function itemHTML(it){
+    const done=!!state.done[it.id], bm=!!state.watchlist[it.id];
+    let tags='<span class="tag">'+(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+'</span>';
+    if(it._up)tags+='<span class="tag up">Upcoming</span>';
+    if(it.rating)tags+='<span class="tag">\u2605 '+it.rating+'</span>';
+    if(it.runtime)tags+='<span class="tag">'+it.runtime+'m</span>';
+    const poster = it.poster
+      ? '<div class="poster" style="background-image:url('+it.poster+')"></div>'
+      : '<div class="poster ph"></div>';
+    const desc = it.overview || it.notes || '';
+    let links='';
+    if(it.imdb) links+='<a class="lnk" href="'+it.imdb+'" target="_blank" rel="noopener">IMDb \u2197</a>';
+    if(it.watch&&it.watch.link){
+      const n=(it.watch.flatrate&&it.watch.flatrate.length)?it.watch.flatrate.slice(0,3).join(', '):null;
+      links+='<a class="lnk watch" href="'+it.watch.link+'" target="_blank" rel="noopener">'+(n?('\u25B6 '+n):'Where to watch \u2197')+'</a>';
     }
+    return '<div class="item'+(done?' done':'')+(it._up?' upcoming':'')+'" data-row="'+it.id+'">'+
+      '<div class="check" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'" aria-label="Mark '+it.title.replace(/"/g,'')+' watched">'+CHECK+'</div>'+
+      poster+
+      '<div class="body"><div class="row1"><span class="title">'+it.title+'</span><span class="yr">'+it.year+'</span></div>'+
+      (desc?'<div class="why">'+desc+'</div>':'')+
+      '<div class="tags">'+tags+'</div>'+
+      (links?'<div class="links">'+links+'</div>':'')+
+      '</div>'+
+      '<div class="rowctl">'+
+        '<div class="bm'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'" title="Watchlist" aria-label="Toggle watchlist">'+BM+'</div>'+
+        (it._up?'':starWidget(it))+
+      '</div></div>';
+  }
 
-    const sEl = document.createElement("div");
-    sEl.className = "saga";
-    const chip = saga.nonMCU ? `<span class="chip">Non-MCU</span>` : "";
-    sEl.innerHTML = `<div class="saga-head"><h2>${saga.saga}</h2>${chip}<span class="rule"></span><span class="sc">${saga.sc}</span></div>`;
-    if(saga.note && !state.essOnly) sEl.innerHTML += `<div class="saga-note">${saga.note}</div>`;
-
-    saga.phases.forEach(phase=>{
-      const pEl = document.createElement("div");
-      pEl.className = "phase";
-      if(phase.name) pEl.innerHTML = `<div class="phase-label${saga.nonMCU?' nm':''}">${phase.name}</div>`;
-      phase.items.forEach(it=>{
-        const done = !!state.watched[it.id];
-        const hide = state.essOnly && !it.ess;
-        const row = document.createElement("div");
-        row.className = "item"+(it.ess?" essential":"")+(done?" done":"")+(it.upcoming?" upcoming":"")+(hide?" hidden":"");
-        const ord = it.order ? `<span class="ord">${it.order}</span>` : `<span class="ord"></span>`;
-        let tags = `<span class="tag ${it.type}">${it.type==="movie"?"Movie":"Series"}</span>`;
-        if(it.upcoming) tags += `<span class="tag up">Upcoming</span>`;
-        else if(!saga.catalogue) tags += `<span class="tag ${it.ess?"ess":"opt"}">${it.ess?"Essential":"Optional"}</span>`;
-        else tags += `<span class="tag opt">Optional</span>`;
-        row.innerHTML = `
-          <div class="check" data-id="${it.id}" role="checkbox" aria-checked="${done}" tabindex="0" aria-label="Mark ${it.t} watched">${CHECK_SVG}</div>
-          <div class="body">
-            <div class="row1">${ord}<span class="title">${it.t}</span><span class="yr">${it.y}</span></div>
-            ${it.why?`<div class="why">${it.why}</div>`:""}
-            <div class="tags">${tags}</div>
-          </div>`;
-        pEl.appendChild(row);
-      });
-      sEl.appendChild(pEl);
+  function cardHTML(it){
+    const done=!!state.done[it.id], bm=!!state.watchlist[it.id];
+    const pos=it.poster?('style="background-image:url('+it.poster+')"'):'';
+    return '<div class="card'+(done?' done':'')+(it._up?' upcoming':'')+'">'+
+      '<div class="cardposter'+(it.poster?'':' ph')+'" '+pos+'>'+
+        '<div class="check ov" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'" aria-label="Mark '+it.title.replace(/"/g,'')+' watched">'+CHECK+'</div>'+
+        '<div class="bm ov'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'" title="Watchlist">'+BM+'</div>'+
+        (it.rating?'<span class="cardrate">\u2605 '+it.rating+'</span>':'')+
+        (it._up?'<span class="cardup">Soon</span>':'')+
+      '</div>'+
+      '<div class="cardmeta"><div class="cardtitle">'+it.title+'</div><div class="cardyr">'+it.year+'</div></div>'+
+    '</div>';
+  }
+  function sortItems(items){
+    const a=items.slice(), r=state.sort;
+    if(r==='az') a.sort((x,y)=>x.title.localeCompare(y.title));
+    else if(r==='rating') a.sort((x,y)=>((y.rating||0)-(x.rating||0))||(x._rt-y._rt));
+    else if(r==='runtime') a.sort((x,y)=>((y.runtime||0)-(x.runtime||0))||(x._rt-y._rt));
+    else if(r==='unwatched') a.sort((x,y)=>{const dx=(state.done[x.id]||x._up)?1:0,dy=(state.done[y.id]||y._up)?1:0;return (dx-dy)||(x._rt-y._rt);});
+    else a.sort((x,y)=>x._rt-y._rt);
+    return a;
+  }
+  function render(){
+    const list=document.getElementById('list');
+    const uid=state.uni, u=U[uid];
+    const subs = state.sub==='all' ? u.subOrder : [state.sub];
+    let html='';
+    let anything=false;
+    subs.forEach(key=>{
+      if(!u.subs[key])return;
+      const all=u.subs[key];
+      const vis=all.filter(matches);
+      if(!vis.length)return;
+      anything=true;
+      const rel=relOf(all), done=rel.filter(i=>state.done[i.id]).length;
+      const pct=rel.length?Math.round(done/rel.length*100):0;
+      html+='<div class="group"><div class="group-head">'+
+        '<span class="group-label">'+key+'</span>'+
+        '<span class="group-mini"><i style="width:'+pct+'%"></i></span>'+
+        '<span class="group-count">'+done+'/'+rel.length+'</span>'+
+        '<button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button>'+
+        '</div>'+ (state.view==='grid' ? '<div class="grid">'+sortItems(vis).map(cardHTML).join('')+'</div>' : sortItems(vis).map(itemHTML).join('')) +'</div>';
     });
-    list.appendChild(sEl);
-  });
-  bindChecks();
-  updateProgress();
-}
+    list.innerHTML = anything ? html : '<div class="empty">No titles match your filters here. Try another tab or clear filters.</div>';
+    bind();
+    updateStats();
+  }
 
-function bindChecks(){
-  document.querySelectorAll(".check").forEach(c=>{
-    const toggle=()=>{
-      const id=c.dataset.id;
-      state.watched[id]=!state.watched[id];
-      if(!state.watched[id]) delete state.watched[id];
-      const row=c.closest(".item");
-      row.classList.toggle("done");
-      c.setAttribute("aria-checked", row.classList.contains("done"));
-      updateProgress(); save();
+  function bind(){
+    document.querySelectorAll('.check').forEach(c=>{
+      const t=()=>{ if(c.parentNode.classList.contains('upcoming'))return;
+        const id=c.dataset.id; if(state.done[id])delete state.done[id];else state.done[id]=true;
+        const row=c.closest('.item'); row.classList.toggle('done'); c.setAttribute('aria-checked',row.classList.contains('done'));
+        save();refreshCounts();celebrate();};
+      c.onclick=t; c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t();}};
+    });
+    document.querySelectorAll('.bm').forEach(b=>{
+      const t=()=>{const id=b.dataset.bm; if(state.watchlist[id])delete state.watchlist[id];else state.watchlist[id]=true; b.classList.toggle('on'); save();refreshCounts();};
+      b.onclick=t; b.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t();}};
+    });
+    document.querySelectorAll('.star').forEach(s=>{
+      const set=()=>{const id=s.dataset.id, n=+s.dataset.n;
+        if((state.ratings[id]||0)===n)delete state.ratings[id];else state.ratings[id]=n;
+        const wrap=s.parentNode, cur=state.ratings[id]||0;
+        wrap.querySelectorAll('.star').forEach(x=>x.classList.toggle('fill',(+x.dataset.n)<=cur)); save();};
+      s.onclick=set; s.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();set();}};
+    });
+    document.querySelectorAll('.markall').forEach(m=>{
+      m.onclick=()=>{const key=decodeURIComponent(m.dataset.group); const rel=relOf(U[state.uni].subs[key]||[]);
+        const allDone=rel.every(i=>state.done[i.id]);
+        rel.forEach(i=>{ if(allDone)delete state.done[i.id]; else state.done[i.id]=true; });
+        save();render();};
+    });
+  }
+
+  function refreshCounts(){ updateStats(); updateTabs(); }
+
+  function updateStats(){
+    const rel=DATA.filter(i=>!i._up), watched=rel.filter(i=>state.done[i.id]).length;
+    const pct=rel.length?Math.round(watched/rel.length*100):0;
+    document.getElementById('watched').textContent=watched;
+    document.getElementById('total').textContent=rel.length;
+    document.getElementById('pct').textContent=pct+'%';
+    document.getElementById('barfill').style.width=pct+'%';
+    document.getElementById('released').textContent=rel.length;
+    document.getElementById('upcoming').textContent=DATA.length-rel.length;
+    document.getElementById('wl').textContent=Object.keys(state.watchlist).length;
+    document.getElementById('uniStats').innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid);return '<span><b>'+(uniById[uid]?uniById[uid].short:uid)+'</b> '+c.done+'/'+c.total+'</span>';}).join('');
+  }
+
+  function updateTabs(){
+    const tabs=document.getElementById('uniTabs');
+    tabs.innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid);const u=uniById[uid]||{short:uid,label:uid};
+      return '<div class="tab'+(uid===state.uni?' on':'')+'" data-uni="'+uid+'">'+(u.short||u.label)+'<span class="badge">'+c.done+'/'+c.total+'</span></div>';}).join('');
+    tabs.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{state.uni=t.dataset.uni;state.sub='all';save();renderTabsAndList();});
+    const st=document.getElementById('subTabs'); const u=U[state.uni];
+    let s='<div class="subtab'+(state.sub==='all'?' on':'')+'" data-sub="all">All</div>';
+    s+=u.subOrder.map(k=>{const c=subCounts(state.uni,k);return '<div class="subtab'+(state.sub===k?' on':'')+'" data-sub="'+encodeURIComponent(k)+'">'+k+'<span class="b">'+c.done+'/'+c.total+'</span></div>';}).join('');
+    st.innerHTML=s;
+    st.querySelectorAll('.subtab').forEach(t=>t.onclick=()=>{const v=t.dataset.sub;state.sub=v==='all'?'all':decodeURIComponent(v);save();renderTabsAndList();});
+  }
+  function renderTabsAndList(){updateTabs();render();}
+
+  function buildChips(){
+    const c=document.getElementById('chips');
+    const types=[['All','all'],['Films','movie'],['Series','series']];
+    const stat=[['All','all'],['To watch','towatch'],['Watched','watched'],['Watchlist','watchlist'],['Upcoming','upcoming']];
+    let h='';
+    types.forEach(o=>h+='<div class="chip type'+(state.typeFilter===o[1]?' on':'')+'" data-t="'+o[1]+'">'+o[0]+'</div>');
+    h+='<span class="chip sep">|</span>';
+    stat.forEach(o=>h+='<div class="chip stat'+(state.statusFilter===o[1]?' on':'')+'" data-s="'+o[1]+'">'+o[0]+'</div>');
+    h+='<span class="spacer"></span>';
+    h+='<button class="mini acc" id="shareBtn">Share</button><button class="mini" id="exportBtn">Export</button><button class="mini" id="importBtn">Import</button><button class="mini warn" id="resetBtn">Reset</button>';
+    c.innerHTML=h;
+    c.querySelectorAll('.chip.type').forEach(x=>x.onclick=()=>{state.typeFilter=x.dataset.t;save();buildChips();render();});
+    c.querySelectorAll('.chip.stat').forEach(x=>x.onclick=()=>{state.statusFilter=x.dataset.s;save();buildChips();render();});
+    document.getElementById('shareBtn').onclick=shareApp;
+    document.getElementById('exportBtn').onclick=exportData;
+    document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();
+    document.getElementById('resetBtn').onclick=()=>{if(confirm('Clear ALL your progress (watched, watchlist, ratings)?')){state={...state,done:{},watchlist:{},ratings:{}};save();buildChips();renderTabsAndList();}};
+  }
+
+  let celebrated=false;
+  function celebrate(){const rel=DATA.filter(i=>!i._up);const w=rel.filter(i=>state.done[i.id]).length;
+    if(rel.length&&w===rel.length&&!celebrated){celebrated=true;toast('🎉 100% — every released title watched!');}
+    if(w<rel.length)celebrated=false;}
+
+  function shareApp(){const url=window.location.href;const d={title:'Marvel Watch Tracker',text:'Track every Marvel film and series across the MCU and beyond.',url:url};
+    if(navigator.share){navigator.share(d).catch(()=>{});return;}
+    if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('Link copied — share it!'),()=>toast('Copy this page URL to share.'));
+    else toast('Copy this page URL to share.');}
+
+  function exportData(){
+    const payload={app:'marvel-tracker',version:2,exported:new Date().toISOString(),done:state.done,watchlist:state.watchlist,ratings:state.ratings};
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='marvel-tracker-progress.json';a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),1000); toast('Progress exported.');
+  }
+  function importData(file){
+    const rd=new FileReader();
+    rd.onload=()=>{ try{const d=JSON.parse(rd.result);
+        if(!d||typeof d!=='object')throw 0;
+        if(!confirm('Import progress from this file? This replaces your current watched, watchlist, and ratings.'))return;
+        state.done=d.done||{};state.watchlist=d.watchlist||{};state.ratings=d.ratings||{};
+        save();buildChips();renderTabsAndList();toast('Progress imported.');
+      }catch(e){toast('That file could not be read.');}
     };
-    c.onclick=toggle;
-    c.onkeydown=e=>{ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggle();} };
-  });
-}
-
-function updateProgress(){
-  const w = flat.filter(i=>state.watched[i.id]).length;
-  const essW = flat.filter(i=>i.ess && state.watched[i.id]).length;
-  const pct = Math.round(w/TOTAL*100);
-  document.getElementById("watched").textContent = w;
-  document.getElementById("total").textContent = TOTAL;
-  document.getElementById("pct").textContent = pct+"%";
-  document.getElementById("barfill").style.width = pct+"%";
-  document.getElementById("essline").textContent = `${essW} of ${ESS_TOTAL} Doomsday essentials complete`;
-  const dest = document.getElementById("dest"), ds = document.getElementById("destStatus");
-  const remaining = ESS_TOTAL - essW;
-  if(remaining===0){ dest.classList.add("ready"); ds.innerHTML = "You're fully caught up. Enjoy the finale."; }
-  else{ dest.classList.remove("ready"); ds.innerHTML = `<span class="n">${remaining}</span> essential ${remaining===1?"title":"titles"} left before you're ready.`; }
-}
-
-function initControls(){
-  const t = document.getElementById("essToggle");
-  const sync=()=>{ t.classList.toggle("on", state.essOnly); t.setAttribute("aria-pressed", state.essOnly); };
-  const flip=()=>{ state.essOnly=!state.essOnly; sync(); render(); save(); };
-  t.onclick=flip;
-  t.onkeydown=e=>{ if(e.key===" "||e.key==="Enter"){e.preventDefault();flip();} };
-  sync();
-  document.getElementById("resetBtn").onclick=()=>{ if(confirm("Clear all your watched progress?")){ state.watched={}; render(); save(); } };
-  document.getElementById("shareBtn").onclick=shareApp;
-}
-
-let toastT;
-function toast(msg){
-  const el=document.getElementById("toast");
-  el.textContent=msg; el.classList.add("show");
-  clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove("show"),2200);
-}
-async function shareApp(){
-  const url=window.location.href;
-  const data={title:"The Road to Doomsday",text:"A Marvel watch checklist on the road to Avengers: Doomsday \u2014 track your progress!",url};
-  if(navigator.share){
-    try{ await navigator.share(data); return; }catch(e){ if(e && e.name==="AbortError") return; }
+    rd.readAsText(file);
   }
-  try{ await navigator.clipboard.writeText(url); toast("Link copied \u2014 send it to your friends!"); }
-  catch(e){ toast("Copy this page's URL to share it."); }
-}
 
-function init(){
-  try{ load(); initControls(); render(); }
-  catch(err){
-    var l=document.getElementById("list");
-    if(l){ l.innerHTML='<div style="padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.9rem">Couldn\'t load the checklist ('+(err&&err.message?err.message:err)+'). Try opening this file in Safari or Chrome rather than a file preview.</div>'; }
+  function buildTools(){
+    const t=document.getElementById('tools');
+    const views=[['List','list'],['Grid','grid']];
+    const sorts=[['Release','release'],['Rating','rating'],['Runtime','runtime'],['A\u2013Z','az'],['Unwatched first','unwatched']];
+    let h='<div class="seg">'+views.map(v=>'<button class="segb'+(state.view===v[1]?' on':'')+'" data-view="'+v[1]+'">'+v[0]+'</button>').join('')+'</div>';
+    h+='<label class="sortlbl">Sort <select id="sortSel">'+sorts.map(o=>'<option value="'+o[1]+'"'+(state.sort===o[1]?' selected':'')+'>'+o[0]+'</option>').join('')+'</select></label>';
+    h+='<span class="spacer"></span>';
+    h+='<button class="mini" id="statsBtn">Stats</button><button class="mini" id="linkBtn">Copy progress link</button>';
+    t.innerHTML=h;
+    t.querySelectorAll('.segb').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;save();buildTools();render();});
+    document.getElementById('sortSel').onchange=function(){state.sort=this.value;save();render();};
+    document.getElementById('statsBtn').onclick=toggleStats;
+    document.getElementById('linkBtn').onclick=copyProgressLink;
   }
-}
-if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", init); } else { init(); }
+  function toggleStats(){const p=document.getElementById('statsPanel');if(p.classList.contains('hidden')){buildStats();p.classList.remove('hidden');}else p.classList.add('hidden');}
+  function buildStats(){
+    const rel=DATA.filter(i=>!i._up), watched=rel.filter(i=>state.done[i.id]);
+    const pct=rel.length?Math.round(watched.length/rel.length*100):0;
+    const mins=watched.filter(i=>i.type!=='series'&&i.runtime).reduce((a,i)=>a+i.runtime,0);
+    const hrs=(mins/60).toFixed(1);
+    const rk=Object.keys(state.ratings), avg=rk.length?(rk.reduce((a,k)=>a+state.ratings[k],0)/rk.length).toFixed(1):null;
+    const uni=uniOrder.map(uid=>{const c=uniCounts(uid), p=c.total?Math.round(c.done/c.total*100):0;
+      return '<div class="statrow"><span>'+(uniById[uid]?uniById[uid].label:uid)+'</span><span class="statbar"><i style="width:'+p+'%"></i></span><b>'+c.done+'/'+c.total+'</b></div>';}).join('');
+    document.getElementById('statsPanel').innerHTML=
+      '<div class="statgrid">'+
+        '<div class="statbox"><b>'+watched.length+'/'+rel.length+'</b><span>watched ('+pct+'%)</span></div>'+
+        '<div class="statbox"><b>'+hrs+'h</b><span>film hours watched</span></div>'+
+        '<div class="statbox"><b>'+(avg||'\u2014')+'</b><span>your avg rating</span></div>'+
+        '<div class="statbox"><b>'+Object.keys(state.watchlist).length+'</b><span>on watchlist</span></div>'+
+      '</div><div class="statlist">'+uni+'</div>'+
+      '<div class="statnote">Film hours count movies &amp; specials with known runtimes. Run build.js to fill in runtimes.</div>';
+  }
+  var ID_ORDER=DATA.map(function(d){return d.id;}).slice().sort();
+  function b64url(bytes){var bin='';for(var i=0;i<bytes.length;i++)bin+=String.fromCharCode(bytes[i]);return btoa(bin).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+  function unb64url(str){str=str.replace(/-/g,'+').replace(/_/g,'/');while(str.length%4)str+='=';var bin=atob(str),o=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)o[i]=bin.charCodeAt(i);return o;}
+  function genCode(){var n=ID_ORDER.length,b=new Uint8Array(Math.ceil(n/8));ID_ORDER.forEach(function(id,i){if(state.done[id])b[i>>3]|=(1<<(i&7));});return b64url(b);}
+  function applyCode(code){try{var b=unb64url(code);ID_ORDER.forEach(function(id,i){if(b[i>>3]&(1<<(i&7)))state.done[id]=true;else delete state.done[id];});return true;}catch(e){return false;}}
+  function copyProgressLink(){var url=location.origin+location.pathname+'#p='+genCode();
+    if(navigator.clipboard)navigator.clipboard.writeText(url).then(function(){toast('Progress link copied \u2014 share it!');},function(){toast('Copy failed \u2014 long-press the address bar.');});
+    else toast('Share this URL: '+url);}
+
+  function init(){
+    if(!window.MCU_DATA){document.getElementById('list').innerHTML='<div class="empty">Could not load data.js — make sure it sits next to index.html.</div>';return;}
+    load();
+    if(!state.uni||!U[state.uni]) state.uni=uniOrder[0];
+    if(state.sub!=='all' && !(U[state.uni].subs[state.sub])) state.sub='all';
+    document.getElementById('eyebrow').textContent=CFG.title||'Marvel';
+    document.getElementById('lede').textContent=CFG.subtitle||'';
+    const s=document.getElementById('search'); s.oninput=()=>{state.q=s.value.trim().toLowerCase();render();};
+    document.getElementById('importFile').onchange=function(){if(this.files&&this.files[0])importData(this.files[0]);this.value='';};
+    const up=CFG.updated?(' · data '+CFG.updated):'';
+    document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Use Export to back up or move devices.<br>Add titles by editing data.js.';
+    if(location.hash&&location.hash.indexOf('#p=')===0){var code=location.hash.slice(3);
+      if(code&&confirm('Load watched progress from this link? It will replace your current watched list (watchlist and ratings are kept).')){applyCode(code);save();}
+      if(history.replaceState)history.replaceState(null,'',location.pathname+location.search);}
+    buildChips(); buildTools(); renderTabsAndList();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
 </script>
 </body>
 </html>

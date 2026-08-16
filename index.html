@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Road to Doomsday — Marvel Watch Checklist</title>
+<meta name="description" content="Track your Marvel watch progress in release order — every MCU film and show plus the wider Marvel movie universe — on the road to Avengers: Doomsday." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Road to Doomsday" />
+<meta property="og:description" content="A first-timer's Marvel watch checklist. Tick off films and shows and watch the finale light up." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="The Road to Doomsday" />
+<meta name="twitter:description" content="A first-timer's Marvel watch checklist on the road to Avengers: Doomsday." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='88'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0D18;--surface:#141A2C;--surface-2:#1B2238;--line:#28314E;
+    --text:#EAE8F2;--muted:#8B92AC;--faint:#5C637E;
+    --gold:#E7B75F;--gold-soft:rgba(231,183,95,.14);--gold-line:rgba(231,183,95,.4);
+    --emerald:#2FB98A;--emerald-soft:rgba(47,185,138,.14);--emerald-glow:rgba(47,185,138,.45);
+    --violet:#9B8CE0;--violet-line:rgba(155,140,224,.35);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.5;padding:0 0 80px;
+    background-image:radial-gradient(circle at 20% -10%, rgba(231,183,95,.08), transparent 40%),
+                     radial-gradient(circle at 90% 110%, rgba(47,185,138,.09), transparent 45%);
+    background-attachment:fixed;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 18px}
+  header{padding:44px 0 20px;text-align:center}
+  .eyebrow{font-family:'Oswald',sans-serif;letter-spacing:.42em;text-transform:uppercase;font-size:.68rem;font-weight:500;color:var(--gold);margin-bottom:14px}
+  h1{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(2.1rem,8vw,3.4rem);line-height:.98;
+    background:linear-gradient(100deg,var(--gold) 0%,#F3D89A 45%,var(--emerald) 130%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lede{color:var(--muted);font-size:.95rem;max-width:54ch;margin:16px auto 0}
+
+  .panel{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);border-radius:16px;padding:20px 20px 22px;margin:26px 0 8px}
+  .panel-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px}
+  .panel-count{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.5rem;letter-spacing:.01em}
+  .panel-count b{color:var(--gold)}
+  .panel-pct{font-family:'Oswald',sans-serif;color:var(--muted);font-size:1.1rem;letter-spacing:.05em}
+  .bar{height:9px;border-radius:99px;background:#0d1120;border:1px solid var(--line);margin-top:14px;overflow:hidden}
+  .bar-fill{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--emerald));transition:width .5s cubic-bezier(.2,.8,.2,1)}
+  .ess-line{margin-top:12px;font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:7px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;flex:none}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0 30px}
+  .toggle{display:inline-flex;align-items:center;gap:10px;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:9px 14px;font-size:.85rem;color:var(--text);user-select:none;transition:border-color .2s,background .2s}
+  .toggle:hover{border-color:var(--gold-line)}
+  .switch{width:34px;height:19px;border-radius:99px;background:#0d1120;border:1px solid var(--line);position:relative;flex:none;transition:background .2s}
+  .switch::after{content:"";position:absolute;top:2px;left:2px;width:13px;height:13px;border-radius:50%;background:var(--faint);transition:transform .22s,background .22s}
+  .toggle.on .switch{background:var(--gold-soft);border-color:var(--gold-line)}
+  .toggle.on .switch::after{transform:translateX(15px);background:var(--gold)}
+  .share{background:var(--gold-soft);border:1px solid var(--gold-line);color:var(--gold);border-radius:11px;padding:9px 15px;font-family:'Inter';font-weight:600;font-size:.82rem;cursor:pointer;transition:background .2s,transform .15s;margin-left:auto}
+  .share:hover{background:rgba(231,183,95,.22)}
+  .share:active{transform:scale(.97)}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);background:var(--surface-2);border:1px solid var(--gold-line);color:var(--text);padding:11px 20px;border-radius:12px;font-size:.86rem;font-weight:500;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:50;box-shadow:0 10px 30px -8px rgba(0,0,0,.6)}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .reset{background:none;border:1px solid var(--line);color:var(--muted);border-radius:11px;padding:9px 14px;font-family:'Inter';font-size:.82rem;cursor:pointer;transition:color .2s,border-color .2s}
+  .reset:hover{color:#ff9a9a;border-color:rgba(255,120,120,.4)}
+
+  .saga{margin-bottom:14px}
+  .saga-head{display:flex;align-items:center;gap:14px;margin:30px 0 4px}
+  .saga-head h2{font-family:'Oswald',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:1.02rem;white-space:nowrap}
+  .saga-head .rule{height:1px;background:var(--line);flex:1}
+  .saga-head .sc{font-family:'Oswald';font-size:.8rem;color:var(--faint);letter-spacing:.1em;white-space:nowrap}
+  .saga-head .chip{font-family:'Oswald';font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--violet);border:1px solid var(--violet-line);border-radius:6px;padding:3px 8px;white-space:nowrap}
+  .saga-note{color:var(--muted);font-size:.82rem;margin:2px 0 6px 2px}
+
+  .section-break{margin:52px 0 6px;padding:22px 20px;border-radius:16px;border:1px dashed var(--violet-line);background:rgba(155,140,224,.06);text-align:center}
+  .section-break .sb-eyebrow{font-family:'Oswald';letter-spacing:.32em;text-transform:uppercase;font-size:.64rem;color:var(--violet);margin-bottom:8px}
+  .section-break h2{font-family:'Oswald';font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:1.5rem}
+  .section-break p{color:var(--muted);font-size:.86rem;max-width:56ch;margin:9px auto 0}
+
+  .phase{margin:22px 0}
+  .phase-label{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--gold);font-weight:500;margin:0 0 12px 2px}
+  .phase-label.nm{color:var(--violet)}
+
+  .item{display:flex;align-items:flex-start;gap:13px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:13px 14px;margin-bottom:9px;position:relative;transition:border-color .2s,background .2s,opacity .3s}
+  .item.essential{border-left:3px solid var(--gold-line)}
+  .item:hover{border-color:#374267}
+  .item.done{opacity:.5}
+  .item.done .title{text-decoration:line-through;text-decoration-color:var(--faint)}
+  .item.upcoming{opacity:.7}
+  .item.upcoming .check{pointer-events:none;opacity:.4}
+
+  .check{flex:none;width:26px;height:26px;border-radius:8px;margin-top:1px;border:1.5px solid var(--faint);background:#0d1120;cursor:pointer;position:relative;transition:border-color .2s,background .2s}
+  .check:hover{border-color:var(--gold)}
+  .check svg{position:absolute;inset:0;margin:auto;width:15px;height:15px;stroke:var(--bg);stroke-width:3.2;fill:none;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .25s ease .05s}
+  .item.done .check{background:var(--gold);border-color:var(--gold)}
+  .item.done .check svg{stroke-dashoffset:0}
+
+  .body{flex:1;min-width:0}
+  .row1{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .ord{font-family:'Oswald';font-size:.82rem;color:var(--faint);font-weight:500;flex:none;min-width:20px}
+  .title{font-weight:600;font-size:.98rem;letter-spacing:-.01em}
+  .yr{color:var(--faint);font-size:.82rem;font-weight:500}
+  .why{color:var(--muted);font-size:.82rem;margin-top:3px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .tag{font-family:'Oswald';font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:6px;font-weight:500;border:1px solid transparent}
+  .tag.movie,.tag.series{color:#a9b4d6;background:#0d1120;border-color:var(--line)}
+  .tag.ess{color:var(--gold);background:var(--gold-soft);border-color:var(--gold-line)}
+  .tag.opt{color:var(--muted);background:transparent;border-color:var(--line)}
+  .tag.up{color:var(--violet);background:transparent;border-color:var(--violet-line)}
+
+  .dest{margin-top:40px;border-radius:18px;padding:26px 22px;text-align:center;position:relative;overflow:hidden;
+    background:radial-gradient(circle at 50% 0%,rgba(47,185,138,.13),transparent 70%),linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--line);transition:border-color .5s,box-shadow .5s}
+  .dest.ready{border-color:var(--emerald-glow);box-shadow:0 0 44px -8px var(--emerald-glow)}
+  .dest .badge{font-family:'Oswald';letter-spacing:.3em;text-transform:uppercase;font-size:.66rem;color:var(--emerald);margin-bottom:10px}
+  .dest h3{font-family:'Oswald';font-weight:700;text-transform:uppercase;font-size:clamp(1.5rem,6vw,2.1rem);letter-spacing:.02em}
+  .dest .date{color:var(--muted);font-size:.86rem;margin-top:4px}
+  .dest .status{margin-top:16px;font-size:.9rem;color:var(--text);font-weight:500}
+  .dest .status .n{color:var(--emerald);font-weight:700}
+  .dest.ready .status{color:var(--emerald)}
+
+  footer{text-align:center;color:var(--faint);font-size:.76rem;margin-top:34px;line-height:1.7}
+  .hidden{display:none !important}
+  @media (max-width:520px){.why{font-size:.8rem}.item{padding:12px}.saga-head .sc{display:none}}
+  @media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">A First-Timer's Roadmap</div>
+    <h1>The Road to<br>Doomsday</h1>
+    <p class="lede">Every Marvel movie and show, in order. The MCU comes first — that's the path to Doomsday, with essentials marked in gold. Then the wider Marvel film universe from other studios. Flip "essentials only" any time to snap back to just what you need.</p>
+  </header>
+
+  <div class="panel">
+    <div class="panel-top">
+      <div class="panel-count"><b id="watched">0</b> of <span id="total">0</span> watched</div>
+      <div class="panel-pct" id="pct">0%</div>
+    </div>
+    <div class="bar"><div class="bar-fill" id="barfill"></div></div>
+    <div class="ess-line"><span class="dot"></span><span id="essline">0 of 0 essentials complete</span></div>
+  </div>
+
+  <div class="controls">
+    <div class="toggle" id="essToggle" role="button" tabindex="0" aria-pressed="false">
+      <span class="switch"></span><span>Show essentials only</span>
+    </div>
+    <button class="share" id="shareBtn">Share with friends</button>
+    <button class="reset" id="resetBtn">Reset</button>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <noscript>
+    <div style="padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--muted);font-size:.9rem">
+      This checklist needs JavaScript to run. Please open the page in a web browser (Safari or Chrome), not a file preview.
+    </div>
+  </noscript>
+  <div id="list"></div>
+
+  <div class="dest" id="dest">
+    <div class="badge">The Finale · Phase 6</div>
+    <h3>Avengers: Doomsday</h3>
+    <div class="date">In theaters · December 18, 2026</div>
+    <div class="status" id="destStatus">Watch the essentials to prepare.</div>
+  </div>
+
+  <footer>
+    Gold = essential context for Doomsday. Everything else is optional.<br>
+    The Extended Universe films are separate continuities — fun, but not required.<br>
+    Your progress saves automatically on this device.
+  </footer>
+</div>
+
+<script>
+const DATA = [
+  {saga:"The Infinity Saga", sc:"Phases 1–3", phases:[
+    {name:"Phase 1", items:[
+      {t:"Iron Man", y:2008, type:"movie", ess:true, why:"Where it all begins — Tony Stark's origin."},
+      {t:"The Incredible Hulk", y:2008, type:"movie", ess:false},
+      {t:"Iron Man 2", y:2010, type:"movie", ess:false},
+      {t:"Thor", y:2011, type:"movie", ess:false, why:"Introduces Thor and Loki."},
+      {t:"Captain America: The First Avenger", y:2011, type:"movie", ess:true, why:"Introduces Steve Rogers, who returns in Doomsday."},
+      {t:"The Avengers", y:2012, type:"movie", ess:true, why:"The team assembles for the first time."},
+    ]},
+    {name:"Phase 2", items:[
+      {t:"Iron Man 3", y:2013, type:"movie", ess:false},
+      {t:"Thor: The Dark World", y:2013, type:"movie", ess:false},
+      {t:"Captain America: The Winter Soldier", y:2014, type:"movie", ess:true, why:"Introduces Bucky/Winter Soldier; a major turning point."},
+      {t:"Guardians of the Galaxy", y:2014, type:"movie", ess:false, why:"Recommended — opens up the cosmic side."},
+      {t:"Avengers: Age of Ultron", y:2015, type:"movie", ess:true, why:"Introduces Scarlet Witch and Vision."},
+      {t:"Ant-Man", y:2015, type:"movie", ess:false},
+    ]},
+    {name:"Phase 3", items:[
+      {t:"Captain America: Civil War", y:2016, type:"movie", ess:true, why:"The Avengers split apart; introduces Spider-Man and Black Panther."},
+      {t:"Doctor Strange", y:2016, type:"movie", ess:true, why:"Magic and the multiverse enter the MCU."},
+      {t:"Guardians of the Galaxy Vol. 2", y:2017, type:"movie", ess:false},
+      {t:"Spider-Man: Homecoming", y:2017, type:"movie", ess:false, why:"Recommended."},
+      {t:"Thor: Ragnarok", y:2017, type:"movie", ess:true, why:"Reinvents Thor and leads straight into Infinity War."},
+      {t:"Black Panther", y:2018, type:"movie", ess:false, why:"Recommended."},
+      {t:"Avengers: Infinity War", y:2018, type:"movie", ess:true, why:"Thanos arrives — the biggest turning point in the saga."},
+      {t:"Ant-Man and the Wasp", y:2018, type:"movie", ess:false},
+      {t:"Captain Marvel", y:2019, type:"movie", ess:false},
+      {t:"Avengers: Endgame", y:2019, type:"movie", ess:true, why:"The climax of the entire Infinity Saga."},
+      {t:"Spider-Man: Far From Home", y:2019, type:"movie", ess:true, why:"Immediate aftermath of Endgame; first teases the multiverse."},
+    ]},
+  ]},
+  {saga:"The Multiverse Saga", sc:"Phases 4–6", phases:[
+    {name:"Phase 4", items:[
+      {t:"WandaVision", y:2021, type:"series", ess:true, why:"Wanda's grief and power; sets up Multiverse of Madness."},
+      {t:"The Falcon and the Winter Soldier", y:2021, type:"series", ess:false, why:"Recommended — Sam Wilson becomes Captain America."},
+      {t:"Loki — Season 1", y:2021, type:"series", ess:true, why:"Introduces the TVA and cracks open the multiverse. The backbone of everything since."},
+      {t:"Black Widow", y:2021, type:"movie", ess:false, why:"Recommended — introduces Yelena of the Thunderbolts."},
+      {t:"What If…? — Season 1", y:2021, type:"series", ess:false},
+      {t:"Shang-Chi and the Legend of the Ten Rings", y:2021, type:"movie", ess:false},
+      {t:"Eternals", y:2021, type:"movie", ess:false},
+      {t:"Hawkeye", y:2021, type:"series", ess:false},
+      {t:"Spider-Man: No Way Home", y:2021, type:"movie", ess:true, why:"The multiverse breaks open across the Spider-Man films."},
+      {t:"Moon Knight", y:2022, type:"series", ess:false},
+      {t:"Doctor Strange in the Multiverse of Madness", y:2022, type:"movie", ess:true, why:"Introduces incursions and universe-hopping — core to Doomsday."},
+      {t:"Ms. Marvel", y:2022, type:"series", ess:false, why:"Recommended — leads into The Marvels."},
+      {t:"Thor: Love and Thunder", y:2022, type:"movie", ess:false},
+      {t:"What If…? — Season 2", y:2022, type:"series", ess:false},
+      {t:"She-Hulk: Attorney at Law", y:2022, type:"series", ess:false},
+      {t:"Black Panther: Wakanda Forever", y:2022, type:"movie", ess:false, why:"Recommended."},
+    ]},
+    {name:"Phase 5", items:[
+      {t:"Ant-Man and the Wasp: Quantumania", y:2023, type:"movie", ess:false, why:"Recommended — introduces Kang."},
+      {t:"Guardians of the Galaxy Vol. 3", y:2023, type:"movie", ess:false, why:"Recommended — a strong send-off."},
+      {t:"Secret Invasion", y:2023, type:"series", ess:false},
+      {t:"Loki — Season 2", y:2023, type:"series", ess:true, why:"Resolves the multiverse and TVA threads from Season 1."},
+      {t:"The Marvels", y:2023, type:"movie", ess:false},
+      {t:"Echo", y:2024, type:"series", ess:false},
+      {t:"Deadpool & Wolverine", y:2024, type:"movie", ess:true, why:"Brings the Fox X-Men universe into the multiverse."},
+      {t:"Agatha All Along", y:2024, type:"series", ess:false},
+      {t:"What If…? — Season 3", y:2024, type:"series", ess:false},
+      {t:"Captain America: Brave New World", y:2025, type:"movie", ess:false, why:"Recommended — where Sam's Captain America stands now."},
+      {t:"Daredevil: Born Again", y:2025, type:"series", ess:false},
+      {t:"Thunderbolts*", y:2025, type:"movie", ess:true, why:"Assembles the antihero team central to the current roster."},
+      {t:"Ironheart", y:2025, type:"series", ess:false},
+    ]},
+    {name:"Phase 6", items:[
+      {t:"The Fantastic Four: First Steps", y:2025, type:"movie", ess:true, why:"Introduces the Fantastic Four, who appear in Doomsday."},
+      {t:"Eyes of Wakanda", y:2025, type:"series", ess:false, why:"Animated, tangential."},
+      {t:"Marvel Zombies", y:2025, type:"series", ess:false, why:"Animated, alternate-universe."},
+      {t:"Spider-Man: Brand New Day", y:2026, type:"movie", ess:true, why:"The most recent theatrical release right before Doomsday."},
+      {t:"Wonder Man", y:2026, type:"series", ess:false},
+      {t:"Daredevil: Born Again — Season 2", y:2026, type:"series", ess:false},
+      {t:"The Punisher: One Last Kill", y:2026, type:"series", ess:false, why:"Special presentation."},
+    ]},
+  ]},
+
+  {saga:"Sony's Spider-Man", sc:"Non-MCU", nonMCU:true, catalogue:true, introBreak:true,
+   note:"A separate live-action Spider-Man continuity that predates the MCU deal.", phases:[
+    {name:"", items:[
+      {t:"Spider-Man", y:2002, type:"movie", ess:false, why:"The Tobey Maguire trilogy begins."},
+      {t:"Spider-Man 2", y:2004, type:"movie", ess:false, why:"Widely considered one of the best superhero films."},
+      {t:"Spider-Man 3", y:2007, type:"movie", ess:false},
+      {t:"The Amazing Spider-Man", y:2012, type:"movie", ess:false, why:"The Andrew Garfield reboot."},
+      {t:"The Amazing Spider-Man 2", y:2014, type:"movie", ess:false},
+    ]},
+  ]},
+  {saga:"The Spider-Verse", sc:"Animated · Non-MCU", nonMCU:true, catalogue:true,
+   note:"An acclaimed animated multiverse trilogy — its own thing, separate from everything above.", phases:[
+    {name:"", items:[
+      {t:"Spider-Man: Into the Spider-Verse", y:2018, type:"movie", ess:false, why:"Oscar-winning; introduces Miles Morales."},
+      {t:"Spider-Man: Across the Spider-Verse", y:2023, type:"movie", ess:false},
+      {t:"Spider-Man: Beyond the Spider-Verse", y:2027, type:"movie", ess:false, upcoming:true, why:"Trilogy finale — releases June 2027, after Doomsday."},
+    ]},
+  ]},
+  {saga:"Sony's Spider-Man Universe", sc:"Non-MCU", nonMCU:true, catalogue:true,
+   note:"Sony's spin-offs built around Spider-Man villains and side characters.", phases:[
+    {name:"", items:[
+      {t:"Venom", y:2018, type:"movie", ess:false},
+      {t:"Venom: Let There Be Carnage", y:2021, type:"movie", ess:false},
+      {t:"Morbius", y:2022, type:"movie", ess:false},
+      {t:"Madame Web", y:2024, type:"movie", ess:false},
+      {t:"Kraven the Hunter", y:2024, type:"movie", ess:false},
+      {t:"Venom: The Last Dance", y:2024, type:"movie", ess:false},
+    ]},
+  ]},
+  {saga:"Fox's X-Men Universe", sc:"Non-MCU", nonMCU:true, catalogue:true,
+   note:"The long-running X-Men saga. Some of this cast returns in Doomsday, but the films aren't required.", phases:[
+    {name:"", items:[
+      {t:"X-Men", y:2000, type:"movie", ess:false},
+      {t:"X2: X-Men United", y:2003, type:"movie", ess:false},
+      {t:"X-Men: The Last Stand", y:2006, type:"movie", ess:false},
+      {t:"X-Men Origins: Wolverine", y:2009, type:"movie", ess:false},
+      {t:"X-Men: First Class", y:2011, type:"movie", ess:false, why:"Prequel reboot with the younger cast."},
+      {t:"The Wolverine", y:2013, type:"movie", ess:false},
+      {t:"X-Men: Days of Future Past", y:2014, type:"movie", ess:false},
+      {t:"Deadpool", y:2016, type:"movie", ess:false},
+      {t:"X-Men: Apocalypse", y:2016, type:"movie", ess:false},
+      {t:"Logan", y:2017, type:"movie", ess:false, why:"A standout — Hugh Jackman's Wolverine send-off."},
+      {t:"Deadpool 2", y:2018, type:"movie", ess:false},
+      {t:"Dark Phoenix", y:2019, type:"movie", ess:false},
+      {t:"The New Mutants", y:2020, type:"movie", ess:false},
+    ]},
+  ]},
+  {saga:"Fox's Fantastic Four", sc:"Non-MCU", nonMCU:true, catalogue:true,
+   note:"Earlier attempts at the team, unrelated to the MCU's 2025 version.", phases:[
+    {name:"", items:[
+      {t:"Fantastic Four", y:2005, type:"movie", ess:false},
+      {t:"Fantastic Four: Rise of the Silver Surfer", y:2007, type:"movie", ess:false},
+      {t:"Fantastic Four", y:2015, type:"movie", ess:false},
+    ]},
+  ]},
+  {saga:"Other Studios & Early Films", sc:"Non-MCU", nonMCU:true, catalogue:true,
+   note:"Older and one-off Marvel adaptations from before the shared-universe era.", phases:[
+    {name:"", items:[
+      {t:"Howard the Duck", y:1986, type:"movie", ess:false},
+      {t:"The Punisher", y:1989, type:"movie", ess:false},
+      {t:"Captain America", y:1990, type:"movie", ess:false},
+      {t:"Blade", y:1998, type:"movie", ess:false, why:"Kicked off the modern Marvel movie era."},
+      {t:"Blade II", y:2002, type:"movie", ess:false},
+      {t:"Daredevil", y:2003, type:"movie", ess:false},
+      {t:"Hulk", y:2003, type:"movie", ess:false, why:"Ang Lee's version, separate from the MCU Hulk."},
+      {t:"The Punisher", y:2004, type:"movie", ess:false},
+      {t:"Blade: Trinity", y:2004, type:"movie", ess:false},
+      {t:"Elektra", y:2005, type:"movie", ess:false},
+      {t:"Man-Thing", y:2005, type:"movie", ess:false},
+      {t:"Ghost Rider", y:2007, type:"movie", ess:false},
+      {t:"Punisher: War Zone", y:2008, type:"movie", ess:false},
+      {t:"Ghost Rider: Spirit of Vengeance", y:2011, type:"movie", ess:false},
+    ]},
+  ]},
+];
+
+const CHECK_SVG = '<svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg>';
+const STORE_KEY = "mcu_doomsday_progress_v2";
+let state = {watched:{}, essOnly:false};
+
+let order = 0;
+const flat = [];
+DATA.forEach(s=>s.phases.forEach(p=>p.items.forEach(it=>{
+  it.id = (it.t+"_"+it.y).replace(/[^a-z0-9]+/gi,"_").toLowerCase();
+  if(!s.catalogue) it.order = ++order;
+  flat.push(it);
+})));
+const TOTAL = flat.length;
+const ESS_TOTAL = flat.filter(i=>i.ess).length;
+
+function load(){
+  try{ const raw = localStorage.getItem(STORE_KEY);
+    if(raw){ const s = JSON.parse(raw); state.watched = s.watched||{}; state.essOnly = !!s.essOnly; }
+  }catch(e){ /* private mode or preview sandbox — runs session-only */ }
+}
+function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(state)); }catch(e){} }
+
+function render(){
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  DATA.forEach(saga=>{
+    // In essentials-only mode, hide entire non-MCU catalogue
+    if(state.essOnly && saga.catalogue) return;
+
+    if(saga.introBreak && !state.essOnly){
+      const br = document.createElement("div");
+      br.className="section-break";
+      br.innerHTML = `<div class="sb-eyebrow">Beyond the MCU</div><h2>The Extended Universe</h2>
+        <p>Marvel movies made by other studios, in their own separate continuities. None are needed for Doomsday — they're here so you have the complete picture.</p>`;
+      list.appendChild(br);
+    }
+
+    const sEl = document.createElement("div");
+    sEl.className = "saga";
+    const chip = saga.nonMCU ? `<span class="chip">Non-MCU</span>` : "";
+    sEl.innerHTML = `<div class="saga-head"><h2>${saga.saga}</h2>${chip}<span class="rule"></span><span class="sc">${saga.sc}</span></div>`;
+    if(saga.note && !state.essOnly) sEl.innerHTML += `<div class="saga-note">${saga.note}</div>`;
+
+    saga.phases.forEach(phase=>{
+      const pEl = document.createElement("div");
+      pEl.className = "phase";
+      if(phase.name) pEl.innerHTML = `<div class="phase-label${saga.nonMCU?' nm':''}">${phase.name}</div>`;
+      phase.items.forEach(it=>{
+        const done = !!state.watched[it.id];
+        const hide = state.essOnly && !it.ess;
+        const row = document.createElement("div");
+        row.className = "item"+(it.ess?" essential":"")+(done?" done":"")+(it.upcoming?" upcoming":"")+(hide?" hidden":"");
+        const ord = it.order ? `<span class="ord">${it.order}</span>` : `<span class="ord"></span>`;
+        let tags = `<span class="tag ${it.type}">${it.type==="movie"?"Movie":"Series"}</span>`;
+        if(it.upcoming) tags += `<span class="tag up">Upcoming</span>`;
+        else if(!saga.catalogue) tags += `<span class="tag ${it.ess?"ess":"opt"}">${it.ess?"Essential":"Optional"}</span>`;
+        else tags += `<span class="tag opt">Optional</span>`;
+        row.innerHTML = `
+          <div class="check" data-id="${it.id}" role="checkbox" aria-checked="${done}" tabindex="0" aria-label="Mark ${it.t} watched">${CHECK_SVG}</div>
+          <div class="body">
+            <div class="row1">${ord}<span class="title">${it.t}</span><span class="yr">${it.y}</span></div>
+            ${it.why?`<div class="why">${it.why}</div>`:""}
+            <div class="tags">${tags}</div>
+          </div>`;
+        pEl.appendChild(row);
+      });
+      sEl.appendChild(pEl);
+    });
+    list.appendChild(sEl);
+  });
+  bindChecks();
+  updateProgress();
+}
+
+function bindChecks(){
+  document.querySelectorAll(".check").forEach(c=>{
+    const toggle=()=>{
+      const id=c.dataset.id;
+      state.watched[id]=!state.watched[id];
+      if(!state.watched[id]) delete state.watched[id];
+      const row=c.closest(".item");
+      row.classList.toggle("done");
+      c.setAttribute("aria-checked", row.classList.contains("done"));
+      updateProgress(); save();
+    };
+    c.onclick=toggle;
+    c.onkeydown=e=>{ if(e.key===" "||e.key==="Enter"){e.preventDefault();toggle();} };
+  });
+}
+
+function updateProgress(){
+  const w = flat.filter(i=>state.watched[i.id]).length;
+  const essW = flat.filter(i=>i.ess && state.watched[i.id]).length;
+  const pct = Math.round(w/TOTAL*100);
+  document.getElementById("watched").textContent = w;
+  document.getElementById("total").textContent = TOTAL;
+  document.getElementById("pct").textContent = pct+"%";
+  document.getElementById("barfill").style.width = pct+"%";
+  document.getElementById("essline").textContent = `${essW} of ${ESS_TOTAL} Doomsday essentials complete`;
+  const dest = document.getElementById("dest"), ds = document.getElementById("destStatus");
+  const remaining = ESS_TOTAL - essW;
+  if(remaining===0){ dest.classList.add("ready"); ds.innerHTML = "You're fully caught up. Enjoy the finale."; }
+  else{ dest.classList.remove("ready"); ds.innerHTML = `<span class="n">${remaining}</span> essential ${remaining===1?"title":"titles"} left before you're ready.`; }
+}
+
+function initControls(){
+  const t = document.getElementById("essToggle");
+  const sync=()=>{ t.classList.toggle("on", state.essOnly); t.setAttribute("aria-pressed", state.essOnly); };
+  const flip=()=>{ state.essOnly=!state.essOnly; sync(); render(); save(); };
+  t.onclick=flip;
+  t.onkeydown=e=>{ if(e.key===" "||e.key==="Enter"){e.preventDefault();flip();} };
+  sync();
+  document.getElementById("resetBtn").onclick=()=>{ if(confirm("Clear all your watched progress?")){ state.watched={}; render(); save(); } };
+  document.getElementById("shareBtn").onclick=shareApp;
+}
+
+let toastT;
+function toast(msg){
+  const el=document.getElementById("toast");
+  el.textContent=msg; el.classList.add("show");
+  clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove("show"),2200);
+}
+async function shareApp(){
+  const url=window.location.href;
+  const data={title:"The Road to Doomsday",text:"A Marvel watch checklist on the road to Avengers: Doomsday \u2014 track your progress!",url};
+  if(navigator.share){
+    try{ await navigator.share(data); return; }catch(e){ if(e && e.name==="AbortError") return; }
+  }
+  try{ await navigator.clipboard.writeText(url); toast("Link copied \u2014 send it to your friends!"); }
+  catch(e){ toast("Copy this page's URL to share it."); }
+}
+
+function init(){
+  try{ load(); initControls(); render(); }
+  catch(err){
+    var l=document.getElementById("list");
+    if(l){ l.innerHTML='<div style="padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:.9rem">Couldn\'t load the checklist ('+(err&&err.message?err.message:err)+'). Try opening this file in Safari or Chrome rather than a file preview.</div>'; }
+  }
+}
+if(document.readyState==="loading"){ document.addEventListener("DOMContentLoaded", init); } else { init(); }
+</script>
+</body>
+</html>

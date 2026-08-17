@@ -5,6 +5,7 @@ module.exports = {
     "title": "Marvel Cinematic Universe & Beyond",
     "subtitle": "Every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes.",
     "updated": "2026-08",
+    "ignore": [],
     "universes": [
       {
         "id": "MCU",

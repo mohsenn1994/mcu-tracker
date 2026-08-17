@@ -1,10 +1,18 @@
-name: Refresh Movie data
+name: Refresh Marvel data
+
+# Enriches data.js from TMDB and opens an issue listing any new Marvel titles
+# not yet in seed.js. Requires repo secret TMDB_API_KEY.
+# Settings → Actions → General → Workflow permissions → Read and write.
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * 1'
+    - cron: '0 6 1 * *'     # monthly, 1st of the month, 06:00 UTC
+
 permissions:
   contents: write
+  issues: write
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -13,15 +21,37 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build data.js
+
+      - name: Build data.js (+ discover new titles)
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           WATCH_REGION: EG
         run: node build.js
-      - name: Commit changes
+
+      - name: Commit data.js
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data.js
           git diff --staged --quiet || git commit -m "chore: refresh data.js from TMDB"
           git push
+
+      - name: File 'new titles' issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="🆕 New Marvel titles to review"
+          if [ -s new-titles.md ]; then
+            NUM=$(gh issue list --state open --json number,title \
+                  --jq ".[] | select(.title==\"$TITLE\") | .number" | head -n1)
+            if [ -n "$NUM" ]; then
+              gh issue edit "$NUM" --body-file new-titles.md
+              echo "Updated issue #$NUM"
+            else
+              gh issue create --title "$TITLE" --body-file new-titles.md
+              echo "Opened new issue"
+            fi
+          else
+            echo "No new titles this run."
+          fi

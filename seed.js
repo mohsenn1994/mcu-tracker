@@ -1,10 +1,5 @@
-/* =============================================================
-   SEED — the editable source of truth for the Marvel tracker.
-   Edit THIS file to add or change titles, then run:  node build.js
-   (build.js enriches every entry from TMDB and regenerates data.js).
-
-   To pin an exact TMDB match, add:  tmdb_id: 1234, tmdb_type: "movie"|"tv"
-   ============================================================= */
+/* SEED — editable source of truth. Edit here, then run: node build.js
+   essential:true and chrono:<n> (story order) are preserved on rebuild. */
 module.exports = {
   config: {
     "title": "Marvel Cinematic Universe & Beyond",
@@ -58,9 +53,10 @@ module.exports = {
       "year": 2008,
       "release": "2008-05-02",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
       "phase": "Phase 1",
+      "essential": true,
+      "chrono": 3,
       "notes": "Where it all begins."
     },
     {
@@ -69,9 +65,9 @@ module.exports = {
       "year": 2008,
       "release": "2008-06-13",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "chrono": 4
     },
     {
       "id": "iron-man-2",
@@ -79,9 +75,9 @@ module.exports = {
       "year": 2010,
       "release": "2010-05-07",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "chrono": 5
     },
     {
       "id": "thor",
@@ -89,9 +85,10 @@ module.exports = {
       "year": 2011,
       "release": "2011-05-06",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "chrono": 6,
+      "notes": "Introduces Thor and Loki."
     },
     {
       "id": "captain-america-tfa",
@@ -99,9 +96,11 @@ module.exports = {
       "year": 2011,
       "release": "2011-07-22",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 1"
+      "phase": "Phase 1",
+      "essential": true,
+      "chrono": 1,
+      "notes": "Introduces Steve Rogers."
     },
     {
       "id": "the-avengers",
@@ -109,9 +108,10 @@ module.exports = {
       "year": 2012,
       "release": "2012-05-04",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
       "phase": "Phase 1",
+      "essential": true,
+      "chrono": 7,
       "notes": "The team assembles."
     },
     {
@@ -120,9 +120,9 @@ module.exports = {
       "year": 2013,
       "release": "2013-05-03",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "chrono": 8
     },
     {
       "id": "thor-dark-world",
@@ -130,9 +130,9 @@ module.exports = {
       "year": 2013,
       "release": "2013-11-08",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "chrono": 9
     },
     {
       "id": "cap-winter-soldier",
@@ -140,9 +140,11 @@ module.exports = {
       "year": 2014,
       "release": "2014-04-04",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "essential": true,
+      "chrono": 10,
+      "notes": "Introduces Bucky as the Winter Soldier."
     },
     {
       "id": "gotg",
@@ -150,9 +152,10 @@ module.exports = {
       "year": 2014,
       "release": "2014-08-01",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "chrono": 11,
+      "notes": "Opens up the cosmic side."
     },
     {
       "id": "avengers-age-of-ultron",
@@ -160,9 +163,11 @@ module.exports = {
       "year": 2015,
       "release": "2015-05-01",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "essential": true,
+      "chrono": 12,
+      "notes": "Introduces Scarlet Witch and Vision."
     },
     {
       "id": "ant-man",
@@ -170,9 +175,9 @@ module.exports = {
       "year": 2015,
       "release": "2015-07-17",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 2"
+      "phase": "Phase 2",
+      "chrono": 13
     },
     {
       "id": "cap-civil-war",
@@ -180,10 +185,11 @@ module.exports = {
       "year": 2016,
       "release": "2016-05-06",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
       "phase": "Phase 3",
-      "notes": "The Avengers split."
+      "essential": true,
+      "chrono": 14,
+      "notes": "The Avengers split; debut of Spider-Man and Black Panther."
     },
     {
       "id": "doctor-strange",
@@ -191,9 +197,11 @@ module.exports = {
       "year": 2016,
       "release": "2016-11-04",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "essential": true,
+      "chrono": 16,
+      "notes": "Magic enters the MCU."
     },
     {
       "id": "gotg-vol-2",
@@ -201,9 +209,9 @@ module.exports = {
       "year": 2017,
       "release": "2017-05-05",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "chrono": 17
     },
     {
       "id": "spider-man-homecoming",
@@ -211,9 +219,9 @@ module.exports = {
       "year": 2017,
       "release": "2017-07-07",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "chrono": 18
     },
     {
       "id": "thor-ragnarok",
@@ -221,9 +229,11 @@ module.exports = {
       "year": 2017,
       "release": "2017-11-03",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "essential": true,
+      "chrono": 19,
+      "notes": "Reinvents Thor; leads into Infinity War."
     },
     {
       "id": "black-panther",
@@ -231,9 +241,9 @@ module.exports = {
       "year": 2018,
       "release": "2018-02-16",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "chrono": 20
     },
     {
       "id": "avengers-infinity-war",
@@ -241,9 +251,10 @@ module.exports = {
       "year": 2018,
       "release": "2018-04-27",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
       "phase": "Phase 3",
+      "essential": true,
+      "chrono": 21,
       "notes": "Thanos arrives."
     },
     {
@@ -252,9 +263,9 @@ module.exports = {
       "year": 2018,
       "release": "2018-07-06",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "chrono": 22
     },
     {
       "id": "captain-marvel",
@@ -262,9 +273,9 @@ module.exports = {
       "year": 2019,
       "release": "2019-03-08",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "chrono": 2
     },
     {
       "id": "avengers-endgame",
@@ -272,9 +283,10 @@ module.exports = {
       "year": 2019,
       "release": "2019-04-26",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
       "phase": "Phase 3",
+      "essential": true,
+      "chrono": 23,
       "notes": "Climax of the Infinity Saga."
     },
     {
@@ -283,9 +295,10 @@ module.exports = {
       "year": 2019,
       "release": "2019-07-02",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Infinity Saga",
-      "phase": "Phase 3"
+      "phase": "Phase 3",
+      "essential": true,
+      "chrono": 24
     },
     {
       "id": "wandavision",
@@ -293,9 +306,10 @@ module.exports = {
       "year": 2021,
       "release": "2021-01-15",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "essential": true,
+      "chrono": 25
     },
     {
       "id": "falcon-winter-soldier",
@@ -303,9 +317,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-03-19",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 26
     },
     {
       "id": "loki-s1",
@@ -313,9 +327,10 @@ module.exports = {
       "year": 2021,
       "release": "2021-06-09",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "essential": true,
+      "chrono": 27,
       "notes": "Introduces the TVA and the multiverse."
     },
     {
@@ -324,9 +339,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-07-09",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 15
     },
     {
       "id": "what-if-s1",
@@ -334,9 +349,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-08-11",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "chrono": 28,
       "notes": "Animated."
     },
     {
@@ -345,9 +360,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-09-03",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 29
     },
     {
       "id": "eternals",
@@ -355,9 +370,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-11-05",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 30
     },
     {
       "id": "hawkeye",
@@ -365,9 +380,9 @@ module.exports = {
       "year": 2021,
       "release": "2021-11-24",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 31
     },
     {
       "id": "spider-man-no-way-home",
@@ -375,9 +390,10 @@ module.exports = {
       "year": 2021,
       "release": "2021-12-17",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "essential": true,
+      "chrono": 32,
       "notes": "The multiverse breaks open."
     },
     {
@@ -386,9 +402,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-03-30",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 33
     },
     {
       "id": "doctor-strange-mom",
@@ -396,9 +412,10 @@ module.exports = {
       "year": 2022,
       "release": "2022-05-06",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "essential": true,
+      "chrono": 34,
       "notes": "Introduces incursions."
     },
     {
@@ -407,9 +424,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-06-08",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 35
     },
     {
       "id": "thor-love-and-thunder",
@@ -417,9 +434,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-07-08",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 36
     },
     {
       "id": "i-am-groot-s1",
@@ -427,9 +444,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-08-10",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "chrono": 37,
       "notes": "Animated shorts."
     },
     {
@@ -438,9 +455,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-08-18",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 38
     },
     {
       "id": "werewolf-by-night",
@@ -448,9 +465,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-10-07",
       "type": "special",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "chrono": 39,
       "notes": "Special Presentation."
     },
     {
@@ -459,9 +476,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-11-11",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 4"
+      "phase": "Phase 4",
+      "chrono": 40
     },
     {
       "id": "gotg-holiday-special",
@@ -469,9 +486,9 @@ module.exports = {
       "year": 2022,
       "release": "2022-11-25",
       "type": "special",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 4",
+      "chrono": 41,
       "notes": "Special Presentation."
     },
     {
@@ -480,9 +497,9 @@ module.exports = {
       "year": 2023,
       "release": "2023-02-17",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 42
     },
     {
       "id": "gotg-vol-3",
@@ -490,9 +507,9 @@ module.exports = {
       "year": 2023,
       "release": "2023-05-05",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 43
     },
     {
       "id": "secret-invasion",
@@ -500,9 +517,9 @@ module.exports = {
       "year": 2023,
       "release": "2023-06-21",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 44
     },
     {
       "id": "loki-s2",
@@ -510,9 +527,11 @@ module.exports = {
       "year": 2023,
       "release": "2023-10-05",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "essential": true,
+      "chrono": 45,
+      "notes": "Resolves the TVA storyline."
     },
     {
       "id": "the-marvels",
@@ -520,9 +539,9 @@ module.exports = {
       "year": 2023,
       "release": "2023-11-10",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 46
     },
     {
       "id": "what-if-s2",
@@ -530,9 +549,9 @@ module.exports = {
       "year": 2023,
       "release": "2023-12-22",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 5",
+      "chrono": 47,
       "notes": "Animated."
     },
     {
@@ -541,9 +560,9 @@ module.exports = {
       "year": 2024,
       "release": "2024-01-09",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 48
     },
     {
       "id": "xmen-97-s1",
@@ -551,9 +570,9 @@ module.exports = {
       "year": 2024,
       "release": "2024-03-20",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 5",
+      "chrono": 49,
       "notes": "Marvel Animation."
     },
     {
@@ -562,9 +581,10 @@ module.exports = {
       "year": 2024,
       "release": "2024-07-26",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 5",
+      "essential": true,
+      "chrono": 50,
       "notes": "Brings the X-Men into the multiverse."
     },
     {
@@ -573,9 +593,9 @@ module.exports = {
       "year": 2024,
       "release": "2024-09-18",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 51
     },
     {
       "id": "what-if-s3",
@@ -583,9 +603,9 @@ module.exports = {
       "year": 2024,
       "release": "2024-12-22",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 5",
+      "chrono": 52,
       "notes": "Animated."
     },
     {
@@ -594,9 +614,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-01-29",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 5",
+      "chrono": 53,
       "notes": "Marvel Animation."
     },
     {
@@ -605,9 +625,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-02-14",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 54
     },
     {
       "id": "daredevil-born-again-s1",
@@ -615,9 +635,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-03-04",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 55
     },
     {
       "id": "thunderbolts",
@@ -625,9 +645,11 @@ module.exports = {
       "year": 2025,
       "release": "2025-05-02",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "essential": true,
+      "chrono": 56,
+      "notes": "Assembles the antihero team."
     },
     {
       "id": "ironheart",
@@ -635,9 +657,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-06-24",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 5"
+      "phase": "Phase 5",
+      "chrono": 57
     },
     {
       "id": "fantastic-four-first-steps",
@@ -645,9 +667,10 @@ module.exports = {
       "year": 2025,
       "release": "2025-07-25",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "essential": true,
+      "chrono": 58,
       "notes": "Introduces the Fantastic Four."
     },
     {
@@ -656,9 +679,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-08-06",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "chrono": 59,
       "notes": "Marvel Animation."
     },
     {
@@ -667,9 +690,9 @@ module.exports = {
       "year": 2025,
       "release": "2025-09-24",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "chrono": 60,
       "notes": "Marvel Animation."
     },
     {
@@ -678,9 +701,9 @@ module.exports = {
       "year": 2026,
       "release": "2026-01-27",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 6"
+      "phase": "Phase 6",
+      "chrono": 61
     },
     {
       "id": "daredevil-born-again-s2",
@@ -688,9 +711,9 @@ module.exports = {
       "year": 2026,
       "release": "2026-03-01",
       "type": "series",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 6"
+      "phase": "Phase 6",
+      "chrono": 62
     },
     {
       "id": "spider-man-brand-new-day",
@@ -698,18 +721,19 @@ module.exports = {
       "year": 2026,
       "release": "2026-07-31",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
-      "phase": "Phase 6"
+      "phase": "Phase 6",
+      "essential": true,
+      "chrono": 63
     },
     {
       "id": "punisher-one-last-kill",
       "title": "The Punisher: One Last Kill",
       "year": 2026,
       "type": "special",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "chrono": 64,
       "notes": "Special Presentation."
     },
     {
@@ -718,9 +742,10 @@ module.exports = {
       "year": 2026,
       "release": "2026-12-18",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "essential": true,
+      "chrono": 65,
       "notes": "Doctor Doom vs. the assembled heroes."
     },
     {
@@ -729,9 +754,10 @@ module.exports = {
       "year": 2027,
       "release": "2027-12-17",
       "type": "movie",
-      "universe": "MCU",
       "saga": "Multiverse Saga",
       "phase": "Phase 6",
+      "essential": true,
+      "chrono": 66,
       "notes": "Concludes the Multiverse Saga."
     },
     {

@@ -60,7 +60,14 @@ async function enrich(t){
   const flat=prov?names(prov.flatrate):[];
   const prev=prevFlat[t.id]||[];
   const newlyAvailable=flat.length>0 && flat.some(n=>prev.indexOf(n)===-1) && (prev.length>0 || true) && (prev.join('|')!==flat.join('|'));
+  var seasons=null;
+  if(r.mt==='tv' && Array.isArray(d.seasons)){
+    seasons=d.seasons.filter(function(se){return se.season_number>0 && (se.episode_count||0)>0;})
+      .map(function(se){return {n:se.season_number,name:se.name||('Season '+se.season_number),eps:se.episode_count||0,air:se.air_date||null};});
+    if(!seasons.length)seasons=null;
+  }
   return {...t,_matched:true,
+    seasons:seasons,
     tmdb_id:r.id,tmdb_type:r.mt,
     release: rel || t.release || (t.year?String(t.year)+'-12-31':null),
     poster:d.poster_path?IMG+d.poster_path:null,

@@ -123,6 +123,52 @@
   .mbtn{font-size:.8rem;border-radius:10px;padding:9px 14px;cursor:pointer;border:1px solid var(--line);background:var(--box);color:var(--text)}.mbtn.on{background:var(--gold);color:#0A0D18;border-color:var(--gold);font-weight:600}
   .cmp-in{width:100%;background:var(--box);border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:.82rem;padding:10px;margin:8px 0;font-family:monospace}
   .cmp-res{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:8px 0 20px}
+  .tab{padding:12px 20px;font-size:.86rem;border-radius:13px;transition:transform .15s,background .18s,border-color .18s,color .18s}
+  .tab:hover{transform:translateY(-2px)}.tab:active{transform:translateY(0) scale(.97)}
+  .tab.on{box-shadow:0 6px 18px -8px var(--gold-line)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes pop{0%{transform:scale(1)}40%{transform:scale(1.28)}100%{transform:scale(1)}}
+  @keyframes modalIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+  @keyframes ovIn{from{opacity:0}to{opacity:1}}
+  @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+  @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.15}}
+  .group{animation:fadeUp .3s ease both}
+  .item,.card,.newscard{animation:fadeUp .32s ease both}
+  .group-body>.item:nth-child(1),.grid>.card:nth-child(1),.news>*:nth-child(1){animation-delay:.02s}
+  .group-body>.item:nth-child(2),.grid>.card:nth-child(2),.news>*:nth-child(2){animation-delay:.05s}
+  .group-body>.item:nth-child(3),.grid>.card:nth-child(3),.news>*:nth-child(3){animation-delay:.08s}
+  .group-body>.item:nth-child(4),.grid>.card:nth-child(4),.news>*:nth-child(4){animation-delay:.11s}
+  .group-body>.item:nth-child(5),.grid>.card:nth-child(5),.news>*:nth-child(5){animation-delay:.14s}
+  .group-body>.item:nth-child(6),.grid>.card:nth-child(6),.news>*:nth-child(6){animation-delay:.17s}
+  .group-body>.item:nth-child(7),.grid>.card:nth-child(7){animation-delay:.2s}
+  .group-body>.item:nth-child(8),.grid>.card:nth-child(8){animation-delay:.23s}
+  .item{cursor:pointer}.item:hover{transform:translateY(-1px)}
+  .card{cursor:pointer;transition:transform .18s,border-color .2s,opacity .3s}.card:hover{transform:translateY(-3px)}
+  .check.pop{animation:pop .3s ease}
+  .bar-fill{position:relative;overflow:hidden}
+  .bar-fill::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);background-size:200% 100%;animation:shimmer 2.6s linear infinite}
+  .overlay{animation:ovIn .2s ease}.modal{animation:modalIn .26s cubic-bezier(.2,.8,.2,1) both}
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:120;overflow:hidden}
+  .confetti i{position:absolute;top:-14px;width:9px;height:14px;border-radius:2px;animation:fall linear forwards}
+  .newshead{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--violet);margin:6px 2px 10px}
+  .news{display:flex;flex-direction:column;gap:11px;margin-bottom:20px}
+  .newscard{display:flex;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:12px 13px;cursor:pointer;transition:transform .18s,border-color .2s}
+  .newscard:hover{transform:translateY(-2px);border-color:var(--violet-line)}
+  .newsposter{flex:none;width:60px;height:90px;border-radius:8px;background:var(--box) center/cover no-repeat;border:1px solid var(--line)}.newsposter.ph{background:linear-gradient(160deg,var(--surface-2),var(--box))}
+  .newsbody{flex:1;min-width:0}.newsdate{font-family:'Oswald';font-size:.72rem;letter-spacing:.05em;color:var(--violet)}
+  .newstitle{font-weight:600;font-size:1rem;margin:2px 0}.newssoon{font-size:.72rem;color:var(--emerald);font-weight:600}
+  .newsdesc{color:var(--muted);font-size:.82rem;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .seasons{margin-top:9px;border-top:1px dashed var(--line);padding-top:9px;display:none}
+  .item.expanded .seasons,.card.showseasons .seasons{display:block}
+  .seasonrow{display:flex;align-items:center;gap:9px;padding:4px 0;font-size:.82rem}
+  .seasonrow .sch{flex:none;width:20px;height:20px;border-radius:6px;border:1.5px solid var(--faint);background:var(--box);cursor:pointer;position:relative}
+  .seasonrow .sch svg{position:absolute;inset:0;margin:auto;width:11px;height:11px;stroke:var(--bg);stroke-width:3.6;fill:none;stroke-dasharray:24;stroke-dashoffset:24}
+  .seasonrow.on .sch{background:var(--gold);border-color:var(--gold)}.seasonrow.on .sch svg{stroke-dashoffset:0}
+  .seasonrow .sname{flex:1;min-width:0}.seasonrow .seps{color:var(--faint);font-size:.72rem}
+  .seasontoggle{font-size:.72rem;color:var(--violet);border:1px solid var(--violet-line);background:rgba(155,140,224,.08);border-radius:99px;padding:3px 10px;cursor:pointer;margin-top:8px}
+  .upbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
   @media (max-width:520px){.item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
@@ -142,7 +188,6 @@
   </div>
   <input class="search" id="search" type="search" placeholder="Search all titles…" autocomplete="off" />
   <div class="tabs" id="uniTabs"></div>
-  <div class="subtabs" id="subTabs"></div>
   <div class="filters" id="filters"></div>
   <div class="tools" id="tools"></div>
   <div class="statspanel hidden" id="statsPanel"></div>
@@ -159,10 +204,10 @@
   const BM=`<svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>`;
   const STAR=`<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>`;
   const STORE='mcu_tracker_v3';
-  let state={done:{},watchlist:{},ratings:{},collapsed:{},uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false,availEG:false,newEG:false},q:'',view:'list',sort:'release',story:false,theme:'dark'};
+  let state={done:{},watchlist:{},ratings:{},seasons:{},collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark'};
   let toastT,deferredPrompt=null;
   function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
-  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false,availEG:false,newEG:false},s.flags||{});return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
+  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.upFilter=s.upFilter||'all';return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
   function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
   const DATA=(window.MCU_DATA||[]).slice();
   const CFG=window.MCU_CONFIG||{};
@@ -177,9 +222,20 @@
   DATA.forEach(it=>{if(!U[it.universe])U[it.universe]={def:{id:it.universe,short:it.universe,label:it.universe},items:[],subs:{},subOrder:[]};U[it.universe].items.push(it);});
   Object.keys(U).forEach(uid=>{const isMCU=uid==='MCU';U[uid].items.forEach(it=>{const k=isMCU?(it.phase||'—'):(it.saga||'—');(U[uid].subs[k]=U[uid].subs[k]||[]).push(it);});U[uid].subOrder=Object.keys(U[uid].subs).sort((a,b)=>isMCU?ordv(CFG.phaseOrder,a)-ordv(CFG.phaseOrder,b):ordv(CFG.sagaOrder,a)-ordv(CFG.sagaOrder,b));Object.keys(U[uid].subs).forEach(k=>U[uid].subs[k].sort((a,b)=>a._rt-b._rt));});
   const uniOrder=UNI.map(u=>u.id).filter(id=>U[id]).concat(Object.keys(U).filter(id=>!uniById[id]));
+  uniById['NEWS']={id:'NEWS',short:'\uD83D\uDCF0 Upcoming',label:'Upcoming & Announcements'};
+  uniOrder.push('NEWS');
   const relOf=items=>items.filter(i=>!i._up);
-  function uniCounts(uid){const rel=relOf(U[uid].items);return{done:rel.filter(i=>state.done[i.id]).length,total:rel.length};}
-  function subCounts(uid,key){const rel=relOf(U[uid].subs[key]||[]);return{done:rel.filter(i=>state.done[i.id]).length,total:rel.length};}
+  function seasonState(it){var m=(state.seasons&&state.seasons[it.id])||{};return m;}
+  function seasonsWatched(it){if(!it.seasons)return 0;var m=seasonState(it);return it.seasons.filter(function(se){return m[se.n];}).length;}
+  function isFullyWatched(it){ if(it.seasons&&it.seasons.length){return seasonsWatched(it)>=it.seasons.length;} return !!state.done[it.id]; }
+  function setSeason(it,n,on){ if(!state.seasons)state.seasons={}; var m=state.seasons[it.id]||(state.seasons[it.id]={}); if(on)m[n]=true; else delete m[n];
+    // keep the show-level 'done' in sync: done iff all seasons watched
+    if(it.seasons&&it.seasons.length){ if(seasonsWatched(it)>=it.seasons.length)state.done[it.id]=true; else delete state.done[it.id]; }
+  }
+  // episodes watched for a show given its season map
+  function epsWatched(it){ if(!it.seasons)return 0; var m=seasonState(it); return it.seasons.reduce(function(a,se){return a+(m[se.n]?(se.eps||0):0);},0); }
+  function uniCounts(uid){if(uid==='NEWS'){return{done:DATA.filter(i=>i._up).length,total:null};}const rel=relOf(U[uid].items);return{done:rel.filter(i=>isFullyWatched(i)).length,total:rel.length};}
+  function subCounts(uid,key){const rel=relOf(U[uid].subs[key]||[]);return{done:rel.filter(i=>isFullyWatched(i)).length,total:rel.length};}
   function activeCount(){let n=0;if(state.type!=='all')n++;if(state.status!=='all')n++;Object.keys(state.flags).forEach(k=>{if(state.flags[k])n++;});if(state.q)n++;return n;}
   function matches(it){
     if(state.type==='movie'&&it.type!=='movie')return false;
@@ -188,8 +244,6 @@
     if(state.status==='towatch'&&(state.done[it.id]||it._up))return false;
     if(state.flags.watchlist&&!state.watchlist[it.id])return false;
     if(state.flags.essential&&!it.essential)return false;
-    if(state.flags.availEG&&!it._avail)return false;
-    if(state.flags.newEG&&!it.newlyAvailable)return false;
     if(state.q&&it.title.toLowerCase().indexOf(state.q)===-1)return false;
     return true;
   }
@@ -202,34 +256,44 @@
   const storySort=items=>items.slice().sort((x,y)=>((x.chrono||1e9)-(y.chrono||1e9))||(x._rt-y._rt));
   function starW(it){const r=state.ratings[it.id]||0;let s='<span class="stars" data-id="'+it.id+'">';for(let n=1;n<=5;n++)s+='<span class="star'+(n<=r?' fill':'')+'" data-id="'+it.id+'" data-n="'+n+'" role="button" tabindex="0">'+STAR+'</span>';return s+'</span>';}
   function tagFor(it){let t='<span class="tag">'+(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+'</span>';if(it.essential)t+='<span class="tag ess">Essential</span>';if(it._up)t+='<span class="tag up">Upcoming</span>';if(it.newlyAvailable&&!it._up)t+='<span class="tag neweg">New in EG</span>';if(it.rating)t+='<span class="tag">\u2605 '+it.rating+'</span>';if(it.runtime)t+='<span class="tag">'+it.runtime+'m</span>';return t;}
+  function seasonsBlock(it){
+    if(!(it.seasons&&it.seasons.length))return '';
+    var m=seasonState(it), n=seasonsWatched(it);
+    var rows=it.seasons.map(function(se){
+      var on=!!m[se.n];
+      return '<div class="seasonrow'+(on?' on':'')+'"><div class="sch" role="checkbox" aria-checked="'+on+'" tabindex="0" data-sid="'+it.id+'" data-sn="'+se.n+'">'+CHECK+'</div><span class="sname">'+se.name+'</span><span class="seps">'+se.eps+' ep'+(se.eps===1?'':'s')+'</span></div>';
+    }).join('');
+    return '<button class="seasontoggle" data-exp="'+it.id+'">'+(n>0?(n+'/'+it.seasons.length+' seasons \u25BE'):('Track seasons ('+it.seasons.length+') \u25BE')+'')+'</button>'+
+           '<div class="seasons">'+rows+'</div>';
+  }
   function itemHTML(it,idx){
-    const done=!!state.done[it.id],bm=!!state.watchlist[it.id];
-    const poster=it.poster?'<div class="poster" style="background-image:url('+it.poster+')" data-open="'+it.id+'"></div>':'<div class="poster ph" data-open="'+it.id+'"></div>';
+    const hasSeasons=!!(it.seasons&&it.seasons.length);
+    const done=isFullyWatched(it),bm=!!state.watchlist[it.id];
+    const poster=it.poster?'<div class="poster" style="background-image:url('+it.poster+')"></div>':'<div class="poster ph"></div>';
     const desc=it.overview||it.notes||'';
     let links='';
     if(it.imdb)links+='<a class="lnk" href="'+it.imdb+'" target="_blank" rel="noopener">IMDb \u2197</a>';
-    if(it.watch&&it.watch.link){const n=(it.watch.flatrate&&it.watch.flatrate.length)?it.watch.flatrate.slice(0,3).join(', '):null;links+='<a class="lnk watch" href="'+it.watch.link+'" target="_blank" rel="noopener">'+(n?('\u25B6 '+n):'Where to watch \u2197')+'</a>';}
-    links+='<button class="lnk" data-open="'+it.id+'">Details</button>';
-    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'">'+
+    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'" data-open="'+it.id+'">'+
       (idx?'<div class="idx">'+idx+'</div>':'')+
       '<div class="check" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'">'+CHECK+'</div>'+poster+
-      '<div class="body"><div class="row1" data-open="'+it.id+'"><span class="title">'+it.title+'</span><span class="yr">'+it.year+'</span></div>'+
-      (desc?'<div class="why">'+desc+'</div>':'')+'<div class="tags">'+tagFor(it)+'</div>'+(links?'<div class="links">'+links+'</div>':'')+'</div>'+
+      '<div class="body"><div class="row1"><span class="title">'+it.title+'</span><span class="yr">'+it.year+'</span></div>'+
+      (desc?'<div class="why">'+desc+'</div>':'')+'<div class="tags">'+tagFor(it)+'</div>'+(links?'<div class="links">'+links+'</div>':'')+seasonsBlock(it)+'</div>'+
       '<div class="rowctl"><div class="bm'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'" title="Watchlist">'+BM+'</div>'+(it._up?'':starW(it))+'</div></div>';
   }
   function cardHTML(it,idx){
-    const done=!!state.done[it.id],bm=!!state.watchlist[it.id];
+    const done=isFullyWatched(it),bm=!!state.watchlist[it.id];
     const pos=it.poster?('style="background-image:url('+it.poster+')"'):'';
-    return '<div class="card'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'">'+
-      '<div class="cardposter'+(it.poster?'':' ph')+'" '+pos+' data-open="'+it.id+'">'+
+    return '<div class="card'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'" data-open="'+it.id+'">'+
+      '<div class="cardposter'+(it.poster?'':' ph')+'" '+pos+'>'+
         '<div class="check ov" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'">'+CHECK+'</div>'+
         '<div class="bm ov'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'">'+BM+'</div>'+
         (idx?'<span class="cardidx">'+idx+'</span>':'')+(it.rating?'<span class="cardrate">\u2605 '+it.rating+'</span>':'')+
-      '</div><div class="cardmeta" data-open="'+it.id+'"><div class="cardtitle">'+it.title+'</div><div class="cardyr">'+it.year+'</div></div></div>';
+      '</div><div class="cardmeta"><div class="cardtitle">'+it.title+'</div><div class="cardyr">'+it.year+'</div></div></div>';
   }
   function render(){
-    const list=document.getElementById('list'),uid=state.uni,u=U[uid];
-    document.getElementById('subTabs').classList.toggle('disabled',state.story);
+    const list=document.getElementById('list'),uid=state.uni;
+    if(uid==='NEWS'){renderNews();return;}
+    const u=U[uid];
     if(state.story){
       const vis=storySort(u.items.filter(matches));
       if(!vis.length){list.innerHTML='<div class="empty">No titles match your filters.</div>';bind();updateStats();return;}
@@ -238,10 +302,10 @@
       list.innerHTML='<div class="group"><div class="group-head" style="cursor:default"><span class="group-label">'+label+'</span><span class="group-count">'+vis.length+' titles</span></div><div class="group-body">'+body+'</div></div>';
       bind();updateStats();return;
     }
-    const subs=state.sub==='all'?u.subOrder:[state.sub];let html='',anything=false;
+    const subs=u.subOrder;let html='',anything=false;
     subs.forEach(key=>{
       if(!u.subs[key])return;const all=u.subs[key],vis=all.filter(matches);if(!vis.length)return;anything=true;
-      const rel=relOf(all),done=rel.filter(i=>state.done[i.id]).length,pct=rel.length?Math.round(done/rel.length*100):0;
+      const rel=relOf(all),done=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(done/rel.length*100):0;
       const sorted=sortItems(vis),collapsed=!!state.collapsed[uid+'/'+key];
       const body=state.view==='grid'?'<div class="grid">'+sorted.map(it=>cardHTML(it)).join('')+'</div>':sorted.map(it=>itemHTML(it)).join('');
       html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
@@ -250,43 +314,41 @@
     bind();updateStats();
   }
   function bind(){
-    document.querySelectorAll('.check').forEach(c=>{const t=e=>{e&&e.stopPropagation();const row=c.closest('.item,.card');if(row.classList.contains('upcoming'))return;const id=c.dataset.id;if(state.done[id])delete state.done[id];else state.done[id]=true;row.classList.toggle('done');c.setAttribute('aria-checked',row.classList.contains('done'));save();refreshCounts();celebrate();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
+    document.querySelectorAll('.check').forEach(c=>{const t=e=>{e&&e.stopPropagation();const row=c.closest('.item,.card');if(row.classList.contains('upcoming'))return;const id=c.dataset.id;const it=byId[id];if(it&&it.seasons&&it.seasons.length){const full=isFullyWatched(it);it.seasons.forEach(se=>setSeason(it,se.n,!full));}else{if(state.done[id])delete state.done[id];else state.done[id]=true;}row.classList.toggle('done',isFullyWatched(it||{id:id}));c.setAttribute('aria-checked',row.classList.contains('done'));c.classList.add('pop');setTimeout(()=>c.classList.remove('pop'),300);save();refreshCounts();celebrate();if(it&&it.seasons&&it.seasons.length)render();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
     document.querySelectorAll('.bm').forEach(b=>{const t=e=>{e&&e.stopPropagation();const id=b.dataset.bm;if(state.watchlist[id])delete state.watchlist[id];else state.watchlist[id]=true;b.classList.toggle('on');save();refreshCounts();};b.onclick=t;b.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
     document.querySelectorAll('.star').forEach(s=>{s.onclick=e=>{e.stopPropagation();const id=s.dataset.id,n=+s.dataset.n;if((state.ratings[id]||0)===n)delete state.ratings[id];else state.ratings[id]=n;const cur=state.ratings[id]||0;s.parentNode.querySelectorAll('.star').forEach(x=>x.classList.toggle('fill',(+x.dataset.n)<=cur));save();};});
     document.querySelectorAll('.markall').forEach(m=>{m.onclick=e=>{e.stopPropagation();const key=decodeURIComponent(m.dataset.group);const rel=relOf(U[state.uni].subs[key]||[]);const allDone=rel.every(i=>state.done[i.id]);rel.forEach(i=>{if(allDone)delete state.done[i.id];else state.done[i.id]=true;});save();render();};});
     document.querySelectorAll('.group-head[data-toggle]').forEach(h=>{h.onclick=()=>{const key=decodeURIComponent(h.dataset.toggle),k=state.uni+'/'+key;state.collapsed[k]=!state.collapsed[k];save();h.closest('.group').classList.toggle('collapsed',state.collapsed[k]);};});
-    document.querySelectorAll('[data-open]').forEach(el=>{el.addEventListener('click',e=>{e.stopPropagation();openDetail(el.dataset.open);});});
+    document.querySelectorAll('.seasontoggle').forEach(b=>{b.onclick=e=>{e.stopPropagation();b.closest('.item,.card').classList.toggle('expanded');b.closest('.card')&&b.closest('.card').classList.toggle('showseasons');};});
+    document.querySelectorAll('.sch').forEach(c=>{const t=e=>{e&&e.stopPropagation();const it=byId[c.dataset.sid],n=+c.dataset.sn;const m=seasonState(it);setSeason(it,n,!m[n]);save();render();refreshCounts();celebrate();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
+    document.querySelectorAll('[data-open]').forEach(el=>{el.addEventListener('click',()=>openDetail(el.dataset.open));});
+    document.querySelectorAll('.links a,.newscard a').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
   }
   function refreshCounts(){updateStats();updateTabs();}
   function updateStats(){
-    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>state.done[i.id]).length,pct=rel.length?Math.round(watched/rel.length*100):0;
+    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(watched/rel.length*100):0;
     document.getElementById('watched').textContent=watched;document.getElementById('total').textContent=rel.length;document.getElementById('pct').textContent=pct+'%';document.getElementById('barfill').style.width=pct+'%';
     document.getElementById('released').textContent=rel.length;document.getElementById('upcoming').textContent=DATA.length-rel.length;document.getElementById('wl').textContent=Object.keys(state.watchlist).length;document.getElementById('avail').textContent=DATA.filter(i=>i._avail).length;
     document.getElementById('uniStats').innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid);return '<span><b>'+(uniById[uid]?uniById[uid].short:uid)+'</b> '+c.done+'/'+c.total+'</span>';}).join('');
   }
   function updateTabs(){
     const tabs=document.getElementById('uniTabs');
-    tabs.innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid),u=uniById[uid]||{short:uid};return '<div class="tab'+(uid===state.uni?' on':'')+'" data-uni="'+uid+'">'+(u.short||u.label)+'<span class="badge">'+c.done+'/'+c.total+'</span></div>';}).join('');
-    tabs.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{state.uni=t.dataset.uni;state.sub='all';save();renderTabsAndList();});
-    const st=document.getElementById('subTabs'),u=U[state.uni];
-    let s='<div class="subtab'+(state.sub==='all'?' on':'')+'" data-sub="all">All</div>';
-    s+=u.subOrder.map(k=>{const c=subCounts(state.uni,k);return '<div class="subtab'+(state.sub===k?' on':'')+'" data-sub="'+encodeURIComponent(k)+'">'+k+'<span class="b">'+c.done+'/'+c.total+'</span></div>';}).join('');
-    st.innerHTML=s;st.classList.toggle('disabled',state.story);
-    st.querySelectorAll('.subtab').forEach(t=>t.onclick=()=>{const v=t.dataset.sub;state.sub=v==='all'?'all':decodeURIComponent(v);save();renderTabsAndList();});
+    tabs.innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid),u=uniById[uid]||{short:uid};const badge=(c.total==null)?(''+c.done):(c.done+'/'+c.total);return '<div class="tab'+(uid===state.uni?' on':'')+'" data-uni="'+uid+'">'+(u.short||u.label)+'<span class="badge">'+badge+'</span></div>';}).join('');
+    tabs.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{state.uni=t.dataset.uni;save();renderTabsAndList();});
   }
   function renderTabsAndList(){updateTabs();render();}
   function buildFilters(){
     const c=document.getElementById('filters');
     const status=[['All','all'],['To watch','towatch'],['Watched','watched']];
     let h='<div class="seg">'+status.map(o=>'<button class="segb'+(state.status===o[1]?' on':'')+'" data-st="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';
-    const fl=[['Films','type','movie'],['Series','type','series'],['\u2605 Essential','essential'],['\uD83D\uDD16 Watchlist','watchlist'],['\u25B6 On EG streaming','availEG'],['\uD83C\uDD95 New in EG','newEG']];
+    const fl=[['Films','type','movie'],['Series','type','series'],['\u2605 Essential','essential'],['\uD83D\uDD16 Watchlist','watchlist']];
     fl.forEach(o=>{const on=o.length===3?(state.type===o[2]):state.flags[o[1]];h+='<div class="fchip'+(on?' on':'')+'" data-fl="'+o[1]+'"'+(o.length===3?(' data-val="'+o[2]+'"'):'')+'>'+o[0]+'</div>';});
     const n=activeCount();
     h+='<button class="clearbtn'+(n?' show':'')+'" id="clearBtn">Clear'+(n?(' ('+n+')'):'')+'</button>';
     c.innerHTML=h;
     c.querySelectorAll('.segb').forEach(b=>b.onclick=()=>{state.status=b.dataset.st;save();buildFilters();render();});
     c.querySelectorAll('.fchip').forEach(el=>el.onclick=()=>{const f=el.dataset.fl;if(f==='type'){const v=el.dataset.val;state.type=(state.type===v)?'all':v;}else{state.flags[f]=!state.flags[f];}save();buildFilters();render();});
-    document.getElementById('clearBtn').onclick=()=>{state.type='all';state.status='all';state.flags={watchlist:false,essential:false,availEG:false,newEG:false};state.q='';document.getElementById('search').value='';save();buildFilters();render();};
+    document.getElementById('clearBtn').onclick=()=>{state.type='all';state.status='all';state.flags={watchlist:false,essential:false};state.q='';document.getElementById('search').value='';save();buildFilters();render();};
   }
   function buildTools(){
     const t=document.getElementById('tools');
@@ -295,12 +357,11 @@
     let h='<button class="story'+(state.story?' on':'')+'" id="storyBtn">\uD83C\uDFAC Story order</button>';
     h+='<div class="seg">'+views.map(v=>'<button class="segb'+(state.view===v[1]?' on':'')+'" data-view="'+v[1]+'">'+v[0]+'</button>').join('')+'</div>';
     h+='<label class="sortlbl'+(state.story?' off':'')+'">Sort <select id="sortSel">'+sorts.map(o=>'<option value="'+o[1]+'"'+(state.sort===o[1]?' selected':'')+'>'+o[0]+'</option>').join('')+'</select></label>';
-    h+='<span class="spacer"></span><button class="mini" id="surpriseBtn">\uD83C\uDFB2 Surprise me</button><button class="mini" id="statsBtn">Stats</button><button class="mini" id="compareBtn">Compare</button><button class="mini acc" id="shareBtn">Share</button><button class="mini" id="linkBtn">Copy progress</button>';
+    h+='<span class="spacer"></span><button class="mini" id="statsBtn">Stats</button><button class="mini" id="compareBtn">Compare</button><button class="mini acc" id="shareBtn">Share</button><button class="mini" id="linkBtn">Copy progress</button>';
     t.innerHTML=h;
     document.getElementById('storyBtn').onclick=()=>{state.story=!state.story;save();buildTools();render();};
     t.querySelectorAll('.segb').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;save();buildTools();render();});
     document.getElementById('sortSel').onchange=function(){state.sort=this.value;save();render();};
-    document.getElementById('surpriseBtn').onclick=surprise;
     document.getElementById('statsBtn').onclick=toggleStats;
     document.getElementById('compareBtn').onclick=openCompare;
     document.getElementById('shareBtn').onclick=shareApp;
@@ -308,12 +369,14 @@
   }
   function toggleStats(){const p=document.getElementById('statsPanel');if(p.classList.contains('hidden')){buildStats();p.classList.remove('hidden');}else p.classList.add('hidden');}
   function buildStats(){
-    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>state.done[i.id]),pct=rel.length?Math.round(watched.length/rel.length*100):0;
-    const mins=watched.filter(i=>i.type!=='series'&&i.runtime).reduce((a,i)=>a+i.runtime,0),hrs=(mins/60).toFixed(1);
+    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)),pct=rel.length?Math.round(watched.length/rel.length*100):0;
+    const filmMins=watched.filter(i=>i.type!=='series'&&i.runtime).reduce((a,i)=>a+i.runtime,0);
+    const seriesMins=DATA.filter(i=>i.type==='series'&&i.seasons&&i.runtime).reduce((a,i)=>a+epsWatched(i)*i.runtime,0);
+    const hrs=((filmMins+seriesMins)/60).toFixed(1);
     const rk=Object.keys(state.ratings),avg=rk.length?(rk.reduce((a,k)=>a+state.ratings[k],0)/rk.length).toFixed(1):null;
     const essTot=DATA.filter(i=>i.essential&&!i._up).length,essDone=DATA.filter(i=>i.essential&&!i._up&&state.done[i.id]).length;
     const uni=uniOrder.map(uid=>{const c=uniCounts(uid),p=c.total?Math.round(c.done/c.total*100):0;return '<div class="statrow"><span>'+(uniById[uid]?uniById[uid].label:uid)+'</span><span class="statbar"><i style="width:'+p+'%"></i></span><b>'+c.done+'/'+c.total+'</b></div>';}).join('');
-    document.getElementById('statsPanel').innerHTML='<div class="statgrid"><div class="statbox"><b>'+watched.length+'/'+rel.length+'</b><span>watched ('+pct+'%)</span></div><div class="statbox"><b>'+essDone+'/'+essTot+'</b><span>essential watched</span></div><div class="statbox"><b>'+hrs+'h</b><span>film hours</span></div><div class="statbox"><b>'+(avg||'\u2014')+'</b><span>your avg rating</span></div></div><div class="statlist">'+uni+'</div><div class="statnote">Film hours count movies &amp; specials with known runtimes.</div>';
+    document.getElementById('statsPanel').innerHTML='<div class="statgrid"><div class="statbox"><b>'+watched.length+'/'+rel.length+'</b><span>watched ('+pct+'%)</span></div><div class="statbox"><b>'+essDone+'/'+essTot+'</b><span>essential watched</span></div><div class="statbox"><b>'+hrs+'h</b><span>hours watched</span></div><div class="statbox"><b>'+(avg||'\u2014')+'</b><span>your avg rating</span></div></div><div class="statlist">'+uni+'</div><div class="statnote">Hours count films plus watched seasons of series (approx, from episode counts).</div>';
   }
   // ---- detail modal ----
   function ytEmbed(url){const m=String(url||'').match(/[?&]v=([^&]+)/);return m?('https://www.youtube.com/embed/'+m[1]):null;}
@@ -324,12 +387,11 @@
     let tags=tagFor(it);if(it.genres&&it.genres.length)it.genres.forEach(g=>tags+='<span class="tag">'+g+'</span>');
     let watch='';
     if(it.watch){
-      const chip=(name,cls)=>'<a class="prov'+(cls||'')+'" href="'+(it.watch.link||'#')+'" target="_blank" rel="noopener">'+name+'</a>';
-      const f=(it.watch.flatrate||[]),r=(it.watch.rent||[]),b=(it.watch.buy||[]);
-      if(f.length)watch+='<div class="msec">Stream in Egypt</div><div class="provgrid">'+f.map(n=>chip(n)).join('')+'</div>';
-      if(r.length||b.length)watch+='<div class="msec">Rent / Buy</div><div class="provgrid">'+r.concat(b).map(n=>chip(n,' rb')).join('')+'</div>';
-      if(!f.length&&!r.length&&!b.length&&it.watch.link)watch+='<div class="msec">Where to watch</div><div class="provgrid">'+chip('Open watch page')+'</div>';
-    }else if(!it._up){watch='<div class="msec">Where to watch</div><div class="mmeta">No Egyptian streaming info found.</div>';}
+      const chip=(name)=>'<a class="prov" href="'+providerLink(name,it.title,it.watch.link)+'" target="_blank" rel="noopener">'+name+' \u2197</a>';
+      const f=(it.watch.flatrate||[]);
+      if(f.length)watch+='<div class="msec">Stream in Egypt</div><div class="provgrid">'+f.map(chip).join('')+'</div>';
+      else if(it.watch.link)watch+='<div class="msec">Where to watch</div><div class="provgrid"><a class="prov" href="'+it.watch.link+'" target="_blank" rel="noopener">Open watch page \u2197</a></div>';
+    }else if(!it._up){watch='<div class="msec">Where to watch</div><div class="mmeta">No Egyptian streaming info found yet.</div>';}
     const emb=ytEmbed(it.trailer);
     const trailer=emb?('<div class="msec">Trailer</div><div class="trailer"><iframe src="'+emb+'" title="Trailer" allow="encrypted-media" allowfullscreen loading="lazy"></iframe></div>'):'';
     const cast=(it.cast&&it.cast.length)?('<div class="mmeta" style="margin-top:8px">Starring: '+it.cast.join(', ')+'</div>'):'';
@@ -393,9 +455,54 @@
     };
   }
   let celebrated=false;
-  function celebrate(){const rel=DATA.filter(i=>!i._up),w=rel.filter(i=>state.done[i.id]).length;if(rel.length&&w===rel.length&&!celebrated){celebrated=true;toast('\uD83C\uDF89 100% \u2014 every released title watched!');}if(w<rel.length)celebrated=false;}
+  function celebrate(){const rel=DATA.filter(i=>!i._up),w=rel.filter(i=>state.done[i.id]).length;if(rel.length&&w===rel.length&&!celebrated){celebrated=true;confetti();toast('\uD83C\uDF89 100% \u2014 every released title watched!');}if(w<rel.length)celebrated=false;}
   function shareApp(){const url=location.href,d={title:'Marvel Watch Tracker',text:'Track every Marvel film and series across the MCU and beyond.',url:url};if(navigator.share){navigator.share(d).catch(()=>{});return;}if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('Link copied!'),()=>toast('Copy this URL.'));else toast('Copy this URL.');}
   function setTheme(t){state.theme=t;document.documentElement.setAttribute('data-theme',t);const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='light'?'#F4F5FA':'#0A0D18');}
+  var PROV={
+    'netflix':'https://www.netflix.com/search?q=',
+    'disney plus':'https://www.disneyplus.com/search?q=','disney+':'https://www.disneyplus.com/search?q=','disneyplus':'https://www.disneyplus.com/search?q='
+  };
+  function providerLink(name,title,fallback){var k=String(name).toLowerCase().replace(/[^a-z0-9+ ]/g,'').trim();var base=PROV[k];return base?(base+encodeURIComponent(title)):(fallback||'#');}
+  function confetti(){
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var wrap=document.createElement('div');wrap.className='confetti';
+    var cols=['#E7B75F','#2FB98A','#9B8CE0','#ff7a7a','#7FA8C9'];
+    for(var i=0;i<36;i++){var p=document.createElement('i');p.style.left=(Math.random()*100)+'%';p.style.background=cols[i%cols.length];p.style.animationDuration=(0.9+Math.random()*0.9)+'s';p.style.animationDelay=(Math.random()*0.2)+'s';p.style.transform='rotate('+(Math.random()*360)+'deg)';wrap.appendChild(p);}
+    document.body.appendChild(wrap);setTimeout(function(){wrap.remove();},2000);
+  }
+  function fmtDate(it){
+    if(!it.release)return String(it.year||'');
+    if(it.release.length===4)return it.release;
+    var d=new Date(it.release+'T00:00:00');if(isNaN(d))return it.release;
+    return d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});
+  }
+  function renderNews(){
+    var list=document.getElementById('list');
+    var unis=[['All','all']].concat(uniOrder.filter(function(u){return u!=='NEWS';}).map(function(u){return [(uniById[u]?(uniById[u].short||uniById[u].label):u),u];}));
+    var bar='<div class="upbar">'+unis.map(function(o){return '<div class="fchip'+(state.upFilter===o[1]?' on':'')+'" data-up="'+o[1]+'">'+o[0]+'</div>';}).join('')+'<span class="spacer"></span><button class="mini acc" id="wlAllBtn">\uD83D\uDD16 Watchlist all</button></div>';
+    var up=DATA.filter(function(i){return i._up && (state.upFilter==='all'||i.universe===state.upFilter) && (!state.q || i.title.toLowerCase().indexOf(state.q)!==-1);}).sort(function(a,b){return a._rt-b._rt;});
+    var now=Date.now(),html='',lastYear=null;
+    if(!up.length){html='<div class="empty">No upcoming titles here.</div>';}
+    else up.forEach(function(it){
+      var y=new Date(it._rt).getFullYear();
+      if(y!==lastYear){if(lastYear!==null)html+='</div>';html+='<div class="newshead">'+y+'</div><div class="news">';lastYear=y;}
+      var days=Math.ceil((it._rt-now)/86400000);
+      var soon=(days>=0&&days<=120)?('<span class="newssoon">in '+days+' day'+(days===1?'':'s')+'</span>'):'';
+      var poster=it.poster?'<div class="newsposter" style="background-image:url('+it.poster+')"></div>':'<div class="newsposter ph"></div>';
+      var bm=!!state.watchlist[it.id];
+      html+='<div class="newscard" data-open="'+it.id+'">'+poster+
+        '<div class="newsbody"><div class="newsdate">'+fmtDate(it)+'  '+soon+'</div>'+
+        '<div class="newstitle">'+it.title+'</div><div class="tags">'+tagFor(it)+'</div>'+
+        (it.overview?'<div class="newsdesc">'+it.overview+'</div>':(it.notes?'<div class="newsdesc">'+it.notes+'</div>':''))+'</div>'+
+        '<div class="rowctl"><div class="bm'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'" title="Watchlist">'+BM+'</div></div></div>';
+    });
+    if(lastYear!==null)html+='</div>';
+    list.innerHTML='<div class="newshead" style="color:var(--muted);margin-bottom:12px">Announcements & unreleased \u2014 soonest first. Tap for details and trailers.</div>'+bar+html;
+    document.querySelectorAll('[data-up]').forEach(function(el){el.onclick=function(){state.upFilter=el.dataset.up;save();renderNews();};});
+    var wl=document.getElementById('wlAllBtn');
+    if(wl)wl.onclick=function(){var added=0;up.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};
+    bind();updateStats();
+  }
   function init(){
     if(!window.MCU_DATA){document.getElementById('list').innerHTML='<div class="empty">Could not load data.js.</div>';return;}
     load();

@@ -182,6 +182,63 @@
   .tag.newbadge{color:var(--emerald);border-color:rgba(47,185,138,.4);background:rgba(47,185,138,.1)}
   .playbadge{position:absolute;left:6px;top:6px;width:22px;height:22px;border-radius:50%;background:rgba(10,13,24,.78);border:1px solid var(--gold-line);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:.6rem}
   .newsposter{position:relative}
+  .orderswitch{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:99px;padding:5px 12px 5px 6px;cursor:pointer;user-select:none;transition:all .18s;background:var(--surface)}
+  .orderswitch:hover{border-color:var(--violet-line)}
+  .orderswitch.on{border-color:var(--violet-line);background:rgba(155,140,224,.12)}
+  .orderswitch .knob{position:relative;width:38px;height:21px;border-radius:99px;background:var(--box);border:1px solid var(--line);flex:none;transition:background .2s}
+  .orderswitch.on .knob{background:var(--violet)}
+  .orderswitch .knob::after{content:"";position:absolute;top:2px;left:2px;width:15px;height:15px;border-radius:50%;background:#fff;transition:left .2s}
+  .orderswitch.on .knob::after{left:19px}
+  .orderswitch .olabel{font-size:.78rem;font-weight:600;color:var(--muted);white-space:nowrap}
+  .orderswitch.on .olabel{color:var(--violet)}
+  .orderswitch .osub{font-size:.66rem;color:var(--faint);display:block;font-weight:500}
+  .cmplist{max-height:280px;overflow-y:auto;margin-top:6px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--box)}
+  .cmpitem{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:.82rem;border-bottom:1px solid var(--line)}
+  .cmpitem:last-child{border-bottom:none}
+  .cmpitem .cp{flex:none;width:26px;height:39px;border-radius:5px;background:var(--surface-2) center/cover no-repeat;border:1px solid var(--line)}
+  .cmpitem .ct{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cmpitem .cy{color:var(--faint);font-size:.72rem}
+  .cmpitem .cw{flex:none;font-size:.7rem;color:var(--faint);border:1px solid var(--line);border-radius:99px;padding:2px 8px;cursor:pointer}
+  .cmpitem .cw:hover{border-color:var(--gold-line);color:var(--gold)}
+  .cmptabs{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0 4px}
+  .nextup .whereami{flex:none;font-size:.68rem;color:var(--gold);border:1px solid var(--gold-line);background:var(--gold-soft);border-radius:99px;padding:5px 11px;cursor:pointer;margin-left:auto;white-space:nowrap}
+  .nextup .whereami:hover{background:rgba(231,183,95,.22)}
+  .nextup .go{margin-left:6px}
+  @keyframes findpulse{0%{box-shadow:0 0 0 0 rgba(231,183,95,.0);border-color:var(--gold)}20%{box-shadow:0 0 0 4px rgba(231,183,95,.35);border-color:var(--gold)}100%{box-shadow:0 0 0 0 rgba(231,183,95,0)}}
+  .item.flash,.card.flash{animation:findpulse 1.6s ease}
+  .hub{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:6px}
+  .hubbtn{display:flex;align-items:center;gap:10px;background:var(--box);border:1px solid var(--line);border-radius:12px;padding:13px;cursor:pointer;transition:all .16s;text-align:left}
+  .hubbtn:hover{border-color:var(--gold-line);transform:translateY(-2px)}
+  .hubbtn .hi{font-size:1.3rem;flex:none}.hubbtn .ht{font-weight:600;font-size:.86rem}.hubbtn .hs{font-size:.72rem;color:var(--muted)}
+  .hubtoggle{display:flex;align-items:center;justify-content:space-between;gap:10px;grid-column:1/-1;background:var(--box);border:1px solid var(--line);border-radius:12px;padding:11px 13px}
+  .hubtoggle .knob{position:relative;width:38px;height:21px;border-radius:99px;background:var(--surface-2);border:1px solid var(--line);flex:none;cursor:pointer;transition:background .2s}
+  .hubtoggle.on .knob{background:var(--emerald)}.hubtoggle .knob::after{content:"";position:absolute;top:2px;left:2px;width:15px;height:15px;border-radius:50%;background:#fff;transition:left .2s}.hubtoggle.on .knob::after{left:19px}
+  .plannerin{width:100%;background:var(--box);border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:.85rem;padding:10px;margin:8px 0}
+  .timechips{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0}
+  .planline{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.84rem}
+  .planline:last-child{border-bottom:none}.planline .pp{flex:none;width:26px;height:39px;border-radius:5px;background:var(--surface-2) center/cover no-repeat;border:1px solid var(--line)}
+  .planline .pt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.planline .pd{color:var(--faint);font-size:.74rem;font-family:'Oswald'}
+  .plansum{font-family:'Oswald';color:var(--gold);margin:10px 0 4px;font-size:1rem}
+  .badges{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px;margin-top:8px}
+  .badge{text-align:center;background:var(--box);border:1px solid var(--line);border-radius:12px;padding:12px 8px;opacity:.45;filter:grayscale(1);transition:all .2s}
+  .badge.on{opacity:1;filter:none;border-color:var(--gold-line);background:var(--gold-soft)}
+  .badge .bi{font-size:1.6rem}.badge .bn{font-size:.7rem;font-weight:600;margin-top:5px}.badge .bd{font-size:.62rem;color:var(--muted);margin-top:2px}
+  .hero-result{text-align:center;padding:10px 0}.hero-result .hn{font-family:'Oswald';font-size:1.8rem;color:var(--gold)}.hero-result .hb{color:var(--muted);font-size:.86rem;margin-top:6px}
+  .timeline{display:flex;gap:10px;overflow-x:auto;padding:12px 2px 16px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+  .tlcard{flex:none;width:96px;scroll-snap-align:center;cursor:pointer;transition:transform .16s}.tlcard:hover{transform:translateY(-3px)}
+  .tlcard .tlp{width:96px;height:144px;border-radius:8px;background:var(--box) center/cover no-repeat;border:1px solid var(--line);position:relative}
+  .tlcard.done .tlp{outline:2px solid var(--gold)}.tlcard .tln{font-size:.68rem;margin-top:5px;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .tlcard .tlnum{position:absolute;top:5px;left:5px;font-family:'Oswald';font-size:.62rem;background:rgba(10,13,24,.8);border:1px solid var(--violet-line);color:var(--violet);border-radius:5px;padding:1px 5px}
+  .tlyear{flex:none;align-self:center;font-family:'Oswald';color:var(--faint);font-size:.72rem;writing-mode:vertical-rl;padding:0 2px}
+  /* spoiler-safe */
+  body.spoiler .item:not(.done) .poster,body.spoiler .card:not(.done) .cardposter,body.spoiler .newscard .newsposter{filter:blur(7px)}
+  body.spoiler .item:not(.done) .why{filter:blur(4px);transition:filter .2s}
+  body.spoiler .item:not(.done):hover .why{filter:none}
+  body.spoiler .item:not(.done):hover .poster,body.spoiler .card:not(.done):hover .cardposter{filter:none}
+  /* ambient glow */
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 50% -8%,var(--glow,transparent),transparent 46%);opacity:.5;transition:background .8s}
+  .msec.rec{color:var(--violet)}
+  .recitem{display:inline-block;font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:3px 9px;margin:3px 4px 0 0;cursor:pointer}.recitem:hover{border-color:var(--gold-line);color:var(--text)}
   @media (max-width:520px){.item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
@@ -218,10 +275,10 @@
   const BM=`<svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>`;
   const STAR=`<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>`;
   const STORE='mcu_tracker_v3';
-  let state={done:{},watchlist:{},ratings:{},seasons:{},eps:{},knownIds:[],collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark'};
+  let state={done:{},watchlist:{},ratings:{},seasons:{},eps:{},knownIds:[],collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark',spoiler:false,ambient:false,achieved:[]};
   let toastT,deferredPrompt=null;
   function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
-  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.eps=s.eps||{};state.knownIds=s.knownIds||[];state.upFilter=s.upFilter||'all';return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
+  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.eps=s.eps||{};state.knownIds=s.knownIds||[];state.upFilter=s.upFilter||'all';state.spoiler=!!s.spoiler;state.ambient=!!s.ambient;state.achieved=s.achieved||[];return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
   function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
   const DATA=(window.MCU_DATA||[]).slice();
   const CFG=window.MCU_CONFIG||{};
@@ -292,7 +349,7 @@
     const desc=it.overview||it.notes||'';
     let links='';
     if(it.imdb)links+='<a class="lnk" href="'+it.imdb+'" target="_blank" rel="noopener">IMDb \u2197</a>';
-    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+(EXPANDED[it.id]?' expanded':'')+'" data-open="'+it.id+'">'+
+    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+(EXPANDED[it.id]?' expanded':'')+'" data-open="'+it.id+'" data-anchor="'+it.id+'">'+
       (idx?'<div class="idx">'+idx+'</div>':'')+
       '<div class="check" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'">'+CHECK+'</div>'+poster+
       '<div class="body"><div class="row1"><span class="title">'+it.title+'</span><span class="yr">'+it.year+'</span></div>'+
@@ -302,7 +359,7 @@
   function cardHTML(it,idx){
     const done=isFullyWatched(it),bm=!!state.watchlist[it.id];
     const pos=it.poster?('style="background-image:url('+it.poster+')"'):'';
-    return '<div class="card'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'" data-open="'+it.id+'">'+
+    return '<div class="card'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'" data-open="'+it.id+'" data-anchor="'+it.id+'">'+
       '<div class="cardposter'+(it.poster?'':' ph')+'" '+pos+'>'+
         '<div class="check ov" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'">'+CHECK+'</div>'+
         '<div class="bm ov'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'">'+BM+'</div>'+
@@ -345,7 +402,7 @@
     document.querySelectorAll('[data-open]').forEach(el=>{el.addEventListener('click',()=>openDetail(el.dataset.open));});
     document.querySelectorAll('.links a,.newscard a').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
   }
-  function refreshCounts(){updateStats();updateTabs();buildNextUp();}
+  function refreshCounts(){updateStats();updateTabs();buildNextUp();checkAchievements();}
   function updateStats(){
     const rel=TRACK.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(watched/rel.length*100):0;
     document.getElementById('watched').textContent=watched;document.getElementById('total').textContent=rel.length;document.getElementById('pct').textContent=pct+'%';document.getElementById('barfill').style.width=pct+'%';
@@ -359,13 +416,38 @@
   }
   function buildNextUp(){
     var el=document.getElementById('nextUp');if(!el)return;
-    var pool=TRACK.filter(function(i){return !i._up && !isFullyWatched(i);}).sort(function(a,b){return ((a.chrono||1e9)-(b.chrono||1e9))||(a._rt-b._rt);});
+    var pool=TRACK.filter(function(i){return !i._up && !isFullyWatched(i);});
+    if(state.story){ pool.sort(function(a,b){return ((a.chrono||1e9)-(b.chrono||1e9))||(a._rt-b._rt);}); }
+    else { pool.sort(function(a,b){return a._rt-b._rt;}); }
     if(!pool.length){el.innerHTML='';return;}
     var it=pool[0];
+    var label=state.story?'Up next \u2014 story order':'Up next \u2014 release order';
     var poster=it.poster?'<div class="np" style="background-image:url('+it.poster+')"></div>':'<div class="np"></div>';
-    var meta=(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+(it.runtime?(' \u00B7 '+(it.seasons?Math.round(itemHours(it))+'h':it.runtime+'m')):'')+(it.rating?(' \u00B7 \u2605 '+it.rating):'');
-    el.innerHTML='<div class="nextup" data-open="'+it.id+'">'+poster+'<div><div class="nlabel">Up next \u2014 story order</div><div class="ntitle">'+it.title+'</div><div class="nmeta">'+meta+'</div></div><div class="go">\u2192</div></div>';
+    var where=(it.phase?it.phase:(it.saga||''));
+    var meta=(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+(where?(' \u00B7 '+where):'')+(it.runtime?(' \u00B7 '+(it.seasons?Math.round(itemHours(it))+'h':it.runtime+'m')):'');
+    el.innerHTML='<div class="nextup" data-open="'+it.id+'">'+poster+'<div style="flex:1;min-width:0"><div class="nlabel">'+label+'</div><div class="ntitle">'+it.title+'</div><div class="nmeta">'+meta+'</div></div><button class="whereami" data-find="'+it.id+'">Where am I?</button><div class="go">\u2192</div></div>';
     el.querySelector('.nextup').addEventListener('click',function(){openDetail(it.id);});
+    applyAmbient(it);
+    var wa=el.querySelector('.whereami');
+    if(wa)wa.addEventListener('click',function(e){e.stopPropagation();jumpTo(it.id);});
+  }
+  function jumpTo(id){
+    var it=byId[id];if(!it)return;
+    // make sure we're on the right universe tab (skip NEWS)
+    if(state.uni!==it.universe && U[it.universe]){state.uni=it.universe;}
+    // if a status/type/flag filter would hide it, clear filters so it shows
+    var hidden = (state.status==='watched') || (state.type==='movie'&&it.type!=='movie') || (state.type==='series'&&it.type==='movie') || (state.flags.watchlist&&!state.watchlist[id]) || (state.flags.essential&&!it.essential) || (state.q && it.title.toLowerCase().indexOf(state.q)===-1);
+    if(hidden){state.type='all';state.status='all';state.flags={watchlist:false,essential:false};state.q='';var sb=document.getElementById('search');if(sb)sb.value='';buildFilters();}
+    // un-collapse the group that holds it (phase for MCU, saga otherwise)
+    if(!state.story){var key=(it.universe==='MCU')?(it.phase||'\u2014'):(it.saga||'\u2014');delete state.collapsed[it.universe+'/'+key];}
+    save();renderTabsAndList();
+    setTimeout(function(){
+      var node=document.querySelector('[data-anchor="'+id+'"]');
+      if(!node){toast('Could not locate it in this view.');return;}
+      if(node.scrollIntoView)node.scrollIntoView({behavior:'smooth',block:'center'});
+      node.classList.remove('flash');void node.offsetWidth;node.classList.add('flash');
+      setTimeout(function(){node.classList.remove('flash');},1800);
+    },60);
   }
   function renderTabsAndList(){updateTabs();render();buildNextUp();}
   function buildFilters(){
@@ -385,16 +467,17 @@
     const t=document.getElementById('tools');
     const views=[['List','list'],['Grid','grid']];
     const sorts=[['Release','release'],['Rating','rating'],['Runtime','runtime'],['A\u2013Z','az'],['Unwatched first','unwatched']];
-    let h='<button class="story'+(state.story?' on':'')+'" id="storyBtn">\uD83C\uDFAC Story order</button>';
+    let h='<div class="orderswitch'+(state.story?' on':'')+'" id="storyBtn" role="switch" aria-checked="'+state.story+'" tabindex="0"><span class="knob"></span><span class="olabel">'+(state.story?'Story order':'Release order')+'<span class="osub">'+(state.story?'chronological timeline':'tap for chronological')+'</span></span></div>';
     h+='<div class="seg">'+views.map(v=>'<button class="segb'+(state.view===v[1]?' on':'')+'" data-view="'+v[1]+'">'+v[0]+'</button>').join('')+'</div>';
     h+='<label class="sortlbl'+(state.story?' off':'')+'">Sort <select id="sortSel">'+sorts.map(o=>'<option value="'+o[1]+'"'+(state.sort===o[1]?' selected':'')+'>'+o[0]+'</option>').join('')+'</select></label>';
-    h+='<span class="spacer"></span><button class="mini" id="statsBtn">Stats</button><button class="mini" id="compareBtn">Compare</button><button class="mini acc" id="shareBtn">Share</button><button class="mini" id="linkBtn">Copy progress</button>';
+    h+='<span class="spacer"></span><button class="mini" id="statsBtn">Stats</button><button class="mini" id="compareBtn">Compare</button><button class="mini" id="moreBtn">\u2726 More</button><button class="mini acc" id="shareBtn">Share</button><button class="mini" id="linkBtn">Copy progress</button>';
     t.innerHTML=h;
-    document.getElementById('storyBtn').onclick=()=>{state.story=!state.story;save();buildTools();render();};
+    const _sb=document.getElementById('storyBtn');_sb.onclick=()=>{state.story=!state.story;save();buildTools();render();buildNextUp();};_sb.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();state.story=!state.story;save();buildTools();render();buildNextUp();}};
     t.querySelectorAll('.segb').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;save();buildTools();render();});
     document.getElementById('sortSel').onchange=function(){state.sort=this.value;save();render();};
     document.getElementById('statsBtn').onclick=toggleStats;
     document.getElementById('compareBtn').onclick=openCompare;
+    document.getElementById('moreBtn').onclick=openHub;
     document.getElementById('shareBtn').onclick=shareApp;
     document.getElementById('linkBtn').onclick=copyProgressLink;
   }
@@ -433,7 +516,7 @@
         '<div><div class="mtitle">'+it.title+'</div><div class="mmeta">'+it.year+(it.runtime?(' \u00B7 '+it.runtime+' min'):'')+(it.rating?(' \u00B7 \u2605 '+it.rating):'')+'</div></div>'+
       '</div></div>'+
       '<div class="mbody"><div class="mtags">'+tags+'</div>'+
-        (it.overview?'<div class="mdesc">'+it.overview+'</div>':(it.notes?'<div class="mdesc">'+it.notes+'</div>':''))+cast+
+        (it.overview?'<div class="mdesc">'+it.overview+'</div>':(it.notes?'<div class="mdesc">'+it.notes+'</div>':''))+cast+recapHTML(it)+
         trailer+watch+
         '<div class="mactions"><button class="mbtn'+(done?' on':'')+'" id="mWatched">'+(done?'\u2713 Watched':'Mark watched')+'</button>'+
         '<button class="mbtn'+(bm?' on':'')+'" id="mBm">'+(bm?'\u2713 Watchlist':'+ Watchlist')+'</button>'+
@@ -474,18 +557,37 @@
     document.getElementById('cmpGo').onclick=()=>{
       let code=document.getElementById('cmpIn').value.trim();const m=code.match(/#p=(.+)$/);if(m)code=m[1];
       let friend;try{friend=decodeCode(code);}catch(e){document.getElementById('cmpOut').innerHTML='<div class="mmeta" style="color:#ff9a9a">Could not read that code.</div>';return;}
-      const rel=DATA.filter(i=>!i._up);
-      const both=rel.filter(i=>state.done[i.id]&&friend[i.id]);
-      const youOnly=rel.filter(i=>state.done[i.id]&&!friend[i.id]);
-      const friendOnly=rel.filter(i=>!state.done[i.id]&&friend[i.id]);
-      const list=arr=>arr.slice(0,8).map(i=>i.title).join(', ')+(arr.length>8?(' +'+(arr.length-8)+' more'):'');
-      document.getElementById('cmpOut').innerHTML=
-        '<div class="cmp-res"><div class="statbox"><b>'+both.length+'</b><span>both seen</span></div><div class="statbox"><b>'+youOnly.length+'</b><span>only you</span></div><div class="statbox"><b>'+friendOnly.length+'</b><span>only them</span></div></div>'+
-        (friendOnly.length?'<div class="msec">They\u2019ve seen, you haven\u2019t</div><div class="mmeta">'+list(friendOnly)+'</div>':'')+
-        (youOnly.length?'<div class="msec">You\u2019ve seen, they haven\u2019t</div><div class="mmeta">'+list(youOnly)+'</div>':'');
+      renderCompare(friend);
     };
   }
-  let celebrated=false;
+  var _cmpFriend=null,_cmpView='friendOnly';
+  function cmpRow(it,friendHas){
+    var mine=isFullyWatched(it);
+    var p=it.poster?'<div class="cp" style="background-image:url('+it.poster+')"></div>':'<div class="cp"></div>';
+    var btn=mine?'':'<span class="cw" data-cadd="'+it.id+'">+ watched</span>';
+    return '<div class="cmpitem">'+p+'<span class="ct" data-open="'+it.id+'">'+it.title+'</span><span class="cy">'+it.year+'</span>'+btn+'</div>';
+  }
+  function renderCompare(friend){
+    _cmpFriend=friend;
+    var rel=DATA.filter(function(i){return !i._up;});
+    var both=rel.filter(function(i){return isFullyWatched(i)&&friend[i.id];});
+    var youOnly=rel.filter(function(i){return isFullyWatched(i)&&!friend[i.id];});
+    var friendOnly=rel.filter(function(i){return !isFullyWatched(i)&&friend[i.id];});
+    var sets={friendOnly:friendOnly,youOnly:youOnly,both:both};
+    var labels={friendOnly:['They\u2019ve seen \u2014 you haven\u2019t',friendOnly.length],youOnly:['You\u2019ve seen \u2014 they haven\u2019t',youOnly.length],both:['Both seen',both.length]};
+    var order=['friendOnly','youOnly','both'];
+    var tabs='<div class="cmptabs">'+order.map(function(k){return '<div class="fchip'+(_cmpView===k?' on':'')+'" data-cv="'+k+'">'+labels[k][0].split(' \u2014 ')[0]+' ('+labels[k][1]+')</div>';}).join('')+'</div>';
+    var cur=sets[_cmpView]||[];
+    cur=cur.slice().sort(function(a,b){return a._rt-b._rt;});
+    var list=cur.length?('<div class="cmplist">'+cur.map(function(i){return cmpRow(i);}).join('')+'</div>'):'<div class="mmeta" style="padding:10px 2px">Nothing in this list.</div>';
+    var suggest=(_cmpView==='friendOnly'&&friendOnly.length)?'<div class="mmeta" style="margin-top:8px">Tip: these are great candidates for your watchlist / next watch party.</div>':'';
+    document.getElementById('cmpOut').innerHTML=
+      '<div class="cmp-res"><div class="statbox"><b>'+both.length+'</b><span>both seen</span></div><div class="statbox"><b>'+youOnly.length+'</b><span>only you</span></div><div class="statbox"><b>'+friendOnly.length+'</b><span>only them</span></div></div>'+
+      tabs+list+suggest;
+    document.querySelectorAll('[data-cv]').forEach(function(el){el.onclick=function(){_cmpView=el.dataset.cv;renderCompare(_cmpFriend);};});
+    document.querySelectorAll('[data-cadd]').forEach(function(el){el.onclick=function(e){e.stopPropagation();var id=el.dataset.cadd;var it=byId[id];if(it&&it.seasons&&it.seasons.length){it.seasons.forEach(function(se){setSeasonCount(it,se.n,se.eps);});}else{state.done[id]=true;}save();refreshCounts();renderCompare(_cmpFriend);};});
+    document.querySelectorAll('#cmpOut [data-open]').forEach(function(el){el.onclick=function(){openDetail(el.dataset.open);};});
+  }  let celebrated=false;
   function celebrate(){const rel=DATA.filter(i=>!i._up),w=rel.filter(i=>state.done[i.id]).length;if(rel.length&&w===rel.length&&!celebrated){celebrated=true;confetti();toast('\uD83C\uDF89 100% \u2014 every released title watched!');}if(w<rel.length)celebrated=false;}
   function shareApp(){const url=location.href,d={title:'Marvel Watch Tracker',text:'Track every Marvel film and series across the MCU and beyond.',url:url};if(navigator.share){navigator.share(d).catch(()=>{});return;}if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('Link copied!'),()=>toast('Copy this URL.'));else toast('Copy this URL.');}
   function setTheme(t){state.theme=t;document.documentElement.setAttribute('data-theme',t);const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute('content',t==='light'?'#F4F5FA':'#0A0D18');}
@@ -540,6 +642,161 @@
     if(wl)wl.onclick=function(){var added=0;pool.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};
     bind();updateStats();
   }
+  function openModalHTML(html){document.getElementById('modal').innerHTML='<button class="close" id="mClose">\u2715</button><div class="mbody" style="padding-top:18px">'+html+'</div>';document.getElementById('overlay').classList.remove('hidden');document.getElementById('mClose').onclick=closeModal;}
+  // ------- ambient theming -------
+  function hashHue(str){var h=0;for(var i=0;i<str.length;i++){h=(h*31+str.charCodeAt(i))>>>0;}return h%360;}
+  function dominantColor(url,cb){try{var img=new Image();img.crossOrigin='anonymous';img.onload=function(){try{var c=document.createElement('canvas');c.width=c.height=10;var g=c.getContext('2d');g.drawImage(img,0,0,10,10);var d=g.getImageData(0,0,10,10).data,r=0,gg=0,b=0,n=0;for(var i=0;i<d.length;i+=4){r+=d[i];gg+=d[i+1];b+=d[i+2];n++;}cb('rgb('+Math.round(r/n)+','+Math.round(gg/n)+','+Math.round(b/n)+')');}catch(e){cb(null);}};img.onerror=function(){cb(null);};img.src=url;}catch(e){cb(null);}}
+  function applyAmbient(it){
+    if(!state.ambient||!it){document.body.style.setProperty('--glow','transparent');return;}
+    var fallback='hsl('+hashHue(it.id)+',55%,45%)';
+    if(it.poster)dominantColor(it.poster,function(col){document.body.style.setProperty('--glow',col||fallback);});
+    else document.body.style.setProperty('--glow',fallback);
+  }
+  // ------- recap path (unseen essentials before a title) -------
+  function recapPath(it){
+    if(it._up||isFullyWatched(it))return [];
+    var pool;
+    if((it.universe||'MCU')==='MCU'&&it.chrono){pool=TRACK.filter(function(x){return (x.universe||'MCU')==='MCU'&&x.essential&&x.chrono&&x.chrono<it.chrono&&!isFullyWatched(x)&&!x._up;});pool.sort(function(a,b){return a.chrono-b.chrono;});}
+    else{pool=TRACK.filter(function(x){return x.universe===it.universe&&x.saga===it.saga&&x._rt<it._rt&&!isFullyWatched(x)&&!x._up;});pool.sort(function(a,b){return a._rt-b._rt;});}
+    return pool.slice(0,8);
+  }
+  function recapHTML(it){
+    var r=recapPath(it);if(!r.length)return '';
+    return '<div class="msec rec">Catch up first ('+r.length+')</div><div>'+r.map(function(x){return '<span class="recitem" data-open="'+x.id+'">'+x.title+'</span>';}).join('')+'</div>';
+  }
+  // ------- hub -------
+  function openHub(){
+    var items=[
+      ['\uD83D\uDCFA','Marathon planner','Fit a watch session to your free time','openMarathon'],
+      ['\u23F3','Catch me up','Pace yourself to a release date','openCatchup'],
+      ['\uD83D\uDCCA','Share card','A shareable image of your progress','shareCard'],
+      ['\uD83C\uDFAD','Which hero are you?','From your ratings','whichHero'],
+      ['\uD83C\uDFC6','Achievements','Badges you\u2019ve unlocked','openAchievements'],
+      ['\uD83D\uDD70','Timeline','Scrub the chronological order','openTimeline']
+    ];
+    var grid=items.map(function(o){return '<div class="hubbtn" data-hub="'+o[3]+'"><span class="hi">'+o[0]+'</span><span><div class="ht">'+o[1]+'</div><div class="hs">'+o[2]+'</div></span></div>';}).join('');
+    grid+='<div class="hubtoggle'+(state.spoiler?' on':'')+'" id="tgSpoiler"><span><b style="font-size:.86rem">Spoiler-safe mode</b><div class="hs">Blur posters & synopses for unwatched titles</div></span><span class="knob"></span></div>';
+    grid+='<div class="hubtoggle'+(state.ambient?' on':'')+'" id="tgAmbient"><span><b style="font-size:.86rem">Ambient glow</b><div class="hs">Tint the page to your next watch</div></span><span class="knob"></span></div>';
+    openModalHTML('<div class="mtitle" style="font-size:1.2rem">\u2726 More</div><div class="hub">'+grid+'</div>');
+    document.querySelectorAll('[data-hub]').forEach(function(el){el.onclick=function(){var fn=el.dataset.hub;({openMarathon:openMarathon,openCatchup:openCatchup,shareCard:shareCard,whichHero:whichHero,openAchievements:openAchievements,openTimeline:openTimeline})[fn]();};});
+    document.getElementById('tgSpoiler').onclick=function(){state.spoiler=!state.spoiler;save();applySpoiler();openHub();};
+    document.getElementById('tgAmbient').onclick=function(){state.ambient=!state.ambient;save();buildNextUp();openHub();};
+  }
+  function applySpoiler(){document.body.classList.toggle('spoiler',!!state.spoiler);}
+  // ------- marathon planner -------
+  function planDuration(it){ if(it.seasons&&it.seasons.length&&it.runtime){var nxt=it.seasons.find(function(se){return seasonCount(it,se.n)<se.eps;});if(nxt)return {mins:(nxt.eps-seasonCount(it,nxt.n))*it.runtime, label:nxt.name}; } return {mins:it.runtime||0,label:null}; }
+  function openMarathon(){
+    var budgets=[[2,'2h'],[4,'4h'],[6,'6h'],[8,'All-dayer (8h)']];
+    var chips=budgets.map(function(b){return '<button class="mini" data-mar="'+b[0]+'">'+b[1]+'</button>';}).join('');
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83D\uDCFA Marathon planner</div><div class="mmeta">Pick how long you\u2019ve got. I\u2019ll build a lineup from your unwatched titles in '+(state.story?'story':'release')+' order.</div><div class="timechips">'+chips+'</div><div id="marOut"></div>');
+    document.querySelectorAll('[data-mar]').forEach(function(el){el.onclick=function(){buildMarathon(+el.dataset.mar*60);};});
+  }
+  function buildMarathon(budgetMins){
+    var pool=TRACK.filter(function(i){return !i._up&&!isFullyWatched(i)&&(planDuration(i).mins>0);});
+    pool.sort(function(a,b){return state.story?(((a.chrono||1e9)-(b.chrono||1e9))||(a._rt-b._rt)):(a._rt-b._rt);});
+    var used=0,pick=[];
+    for(var i=0;i<pool.length;i++){var d=planDuration(pool[i]).mins;if(used+d<=budgetMins+10){pick.push(pool[i]);used+=d;}if(used>=budgetMins-10)break;}
+    if(!pick.length){document.getElementById('marOut').innerHTML='<div class="mmeta" style="margin-top:8px">Nothing unwatched fits that window \u2014 nice, you\u2019re caught up!</div>';return;}
+    var clock=0;
+    var rows=pick.map(function(it){var pd=planDuration(it);var start=clock;clock+=pd.mins;var p=it.poster?'<div class="pp" style="background-image:url('+it.poster+')"></div>':'<div class="pp"></div>';var hh=Math.floor(start/60),mm=start%60;return '<div class="planline" data-open="'+it.id+'">'+p+'<span class="pt">'+it.title+(pd.label?(' \u2014 '+pd.label):'')+'</span><span class="pd">+'+hh+'h'+(mm<10?'0':'')+mm+'</span></div>';}).join('');
+    var h=Math.floor(used/60),m=used%60;
+    document.getElementById('marOut').innerHTML='<div class="plansum">'+pick.length+' titles \u00B7 ~'+h+'h'+(m?(' '+m+'m'):'')+'</div>'+rows+'<button class="mini acc" id="marWL" style="margin-top:10px">\uD83D\uDD16 Add all to watchlist</button>';
+    document.querySelectorAll('#marOut [data-open]').forEach(function(el){el.onclick=function(){openDetail(el.dataset.open);};});
+    document.getElementById('marWL').onclick=function(){pick.forEach(function(it){state.watchlist[it.id]=true;});save();refreshCounts();toast('Added '+pick.length+' to watchlist');};
+  }
+  // ------- catch-up pacing -------
+  function openCatchup(){
+    var ups=DATA.filter(function(i){return i._up&&i.release;}).sort(function(a,b){return a._rt-b._rt;});
+    var opts=ups.map(function(i){return '<option value="'+i.release+'">'+i.title+' ('+fmtDate(i)+')</option>';}).join('');
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\u23F3 Catch me up</div><div class="mmeta">Get through everything you haven\u2019t seen before a target date.</div><select class="plannerin" id="cuTarget"><option value="">\u2014 pick an upcoming release \u2014</option>'+opts+'</select><input class="plannerin" id="cuDate" type="date" /><div id="cuOut"></div>');
+    var run=function(){var v=document.getElementById('cuTarget').value||document.getElementById('cuDate').value;if(!v){document.getElementById('cuOut').innerHTML='';return;}
+      var target=new Date(v+'T00:00:00'),now=new Date();var weeks=Math.max(1,Math.ceil((target-now)/(7*86400000)));
+      var left=TRACK.filter(function(i){return !i._up&&!isFullyWatched(i);});
+      var mins=left.reduce(function(a,i){return a+planDuration(i).mins;},0);var hrs=mins/60;
+      if((target-now)<0){document.getElementById('cuOut').innerHTML='<div class="mmeta" style="margin-top:8px">That date\u2019s already passed.</div>';return;}
+      document.getElementById('cuOut').innerHTML='<div class="plansum">'+left.length+' titles \u00B7 ~'+Math.round(hrs)+'h left</div>'+
+        '<div class="mmeta">To finish in <b>'+weeks+' week'+(weeks===1?'':'s')+'</b>, watch about <b>'+(left.length/weeks).toFixed(1)+' titles/week</b> (\u2248 '+(hrs/weeks).toFixed(1)+'h/week, ~'+(hrs/weeks/7).toFixed(1)+'h/day).</div>'+
+        (left.length===0?'<div class="mmeta">You\u2019re already caught up \uD83C\uDF89</div>':'');
+    };
+    document.getElementById('cuTarget').onchange=function(){document.getElementById('cuDate').value='';run();};
+    document.getElementById('cuDate').onchange=function(){document.getElementById('cuTarget').value='';run();};
+  }
+  // ------- which hero -------
+  var HERO=[['iron','Iron Man','Genius, ego, heart \u2014 you carry the team and the one-liners.'],['cap','Captain America','Principled and steady; the moral center.'],['captain-america','Captain America','Principled and steady; the moral center.'],['thor','Thor','Big energy, bigger heart, occasional god-tier chaos.'],['spider','Spider-Man','Earnest, scrappy, always doing the right thing.'],['strange','Doctor Strange','Cerebral and a little arrogant; you see the angles.'],['panther','Black Panther','Regal, disciplined, protective of your people.'],['loki','Loki','Mischief and depth \u2014 nobody predicts your next move.'],['deadpool','Deadpool','Chaotic, hilarious, fourth-wall optional.'],['gotg','Star-Lord','Found-family vibes and a killer playlist.'],['guardians','Star-Lord','Found-family vibes and a killer playlist.'],['ant-man','Ant-Man','Underestimated, big-hearted, surprisingly clutch.'],['hulk','Hulk','Calm exterior, unstoppable when it counts.'],['wanda','Scarlet Witch','Powerful and emotional; reality bends around you.'],['marvel','Captain Marvel','Cosmic, confident, higher-further-faster.'],['x-men','The X-Men','You root for the outsiders and the found family.']];
+  function whichHero(){
+    var scores={};Object.keys(state.ratings).forEach(function(id){var r=state.ratings[id];HERO.forEach(function(h){if(id.indexOf(h[0])!==-1){scores[h[1]]=(scores[h[1]]||0)+r;}});});
+    var best=null,bestv=0,blurb='';for(var i=0;i<HERO.length;i++){var name=HERO[i][1];if(scores[name]>bestv){bestv=scores[name];best=name;blurb=HERO[i][2];}}
+    if(!best){openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83C\uDFAD Which hero are you?</div><div class="mmeta" style="margin-top:8px">Rate a few titles first (tap the stars) and come back \u2014 I\u2019ll read your taste and match you to a hero.</div>');return;}
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83C\uDFAD Which hero are you?</div><div class="hero-result"><div class="hn">'+best+'</div><div class="hb">'+blurb+'</div></div>');
+  }
+  // ------- achievements -------
+  function relBySaga(name){return TRACK.filter(function(i){return i.saga===name&&!i._up;});}
+  function achievementsList(){
+    var infy=relBySaga('Infinity Saga'),multi=relBySaga('Multiverse Saga');
+    var essAll=TRACK.filter(function(i){return i.essential&&!i._up;});
+    var films=TRACK.filter(function(i){return i.type!=='series'&&!i._up;});
+    var loki1=byId['loki-s1'],loki2=byId['loki-s2'];
+    var mcu=uniCounts('MCU');
+    var done=function(pred){return pred;};
+    var A=[
+      ['\uD83D\uDC63','First Step','Watch your first title', TRACK.some(function(i){return isFullyWatched(i);})],
+      ['\u267E\uFE0F','Infinity Complete','Finish the Infinity Saga', infy.length>0&&infy.every(function(i){return isFullyWatched(i);})],
+      ['\uD83C\uDF00','Multiverse Master','Finish the Multiverse Saga', multi.length>0&&multi.every(function(i){return isFullyWatched(i);})],
+      ['\u2B50','Essentialist','Watch every Essential title', essAll.length>0&&essAll.every(function(i){return isFullyWatched(i);})],
+      ['\uD83C\uDFAC','Ten Films','Watch 10 films', films.filter(function(i){return isFullyWatched(i);}).length>=10],
+      ['\uD83D\uDC9A','Loki Loyal','Finish both Loki seasons', loki1&&loki2&&isFullyWatched(loki1)&&isFullyWatched(loki2)],
+      ['\uD83C\uDFDB\uFE0F','MCU 100%','Complete the entire MCU', mcu.total>0&&mcu.done>=mcu.total],
+      ['\uD83C\uDFC5','Completionist','Watch everything released', TRACK.filter(function(i){return !i._up;}).every(function(i){return isFullyWatched(i);})],
+      ['\uD83D\uDCDD','Critic','Rate 20 titles', Object.keys(state.ratings).length>=20],
+      ['\uD83D\uDD16','Curator','Add 10 to your watchlist', Object.keys(state.watchlist).length>=10],
+      ['\uD83D\uDD79\uFE0F','Series Buff','Finish 5 series', TRACK.filter(function(i){return i.type==='series'&&isFullyWatched(i);}).length>=5],
+      ['\uD83D\uDD78\uFE0F','Spider-Verse','Watch 5 Spider-Man titles', TRACK.filter(function(i){return i.title.toLowerCase().indexOf('spider')!==-1&&isFullyWatched(i);}).length>=5]
+    ];
+    return A.map(function(a){return {icon:a[0],name:a[1],desc:a[2],on:!!a[3]};});
+  }
+  function openAchievements(){
+    var list=achievementsList();var unlocked=list.filter(function(a){return a.on;}).length;
+    var grid=list.map(function(a){return '<div class="badge'+(a.on?' on':'')+'"><div class="bi">'+a.icon+'</div><div class="bn">'+a.name+'</div><div class="bd">'+a.desc+'</div></div>';}).join('');
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83C\uDFC6 Achievements</div><div class="mmeta">'+unlocked+' of '+list.length+' unlocked</div><div class="badges">'+grid+'</div>');
+  }
+  function checkAchievements(){
+    var now=achievementsList().filter(function(a){return a.on;}).map(function(a){return a.name;});
+    var prev=state.achieved||[];var fresh=now.filter(function(n){return prev.indexOf(n)===-1;});
+    state.achieved=now;save();
+    if(prev.length&&fresh.length){confetti();toast('\uD83C\uDFC6 Unlocked: '+fresh[0]);}
+  }
+  // ------- timeline scrubber -------
+  function openTimeline(){
+    var items=TRACK.filter(function(i){return (i.universe||'MCU')==='MCU'&&i.chrono;}).sort(function(a,b){return a.chrono-b.chrono;});
+    var lastY=null,html='';
+    items.forEach(function(it){var y=it.release?(''+new Date((it.release.length===4?it.release+'-12-31':it.release)+'T00:00:00').getFullYear()):(''+it.year);var done=isFullyWatched(it);var p=it.poster?'<div class="tlp" style="background-image:url('+it.poster+')"><span class="tlnum">'+it.chrono+'</span></div>':'<div class="tlp"><span class="tlnum">'+it.chrono+'</span></div>';html+='<div class="tlcard'+(done?' done':'')+'" data-open="'+it.id+'">'+p+'<div class="tln">'+it.title+'</div></div>';});
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83D\uDD70 Story timeline</div><div class="mmeta">MCU in chronological order \u2014 scroll sideways. Gold outline = watched.</div><div class="timeline">'+html+'</div>');
+    document.querySelectorAll('.timeline [data-open]').forEach(function(el){el.onclick=function(){openDetail(el.dataset.open);};});
+  }
+  // ------- share card (canvas) -------
+  function shareCard(){
+    var rel=TRACK.filter(function(i){return !i._up;});var watched=rel.filter(function(i){return isFullyWatched(i);}).length;var pct=rel.length?Math.round(watched/rel.length*100):0;
+    var mins=rel.filter(function(i){return isFullyWatched(i);}).reduce(function(a,i){return a+(i.seasons?itemHours(i)*60:(i.runtime||0));},0);var hrs=Math.round(mins/60);
+    var essAll=TRACK.filter(function(i){return i.essential&&!i._up;});var essDone=essAll.filter(function(i){return isFullyWatched(i);}).length;
+    var bestPhase='\u2014',bestPct=-1;(CFG.phaseOrder||[]).forEach(function(ph){var g=TRACK.filter(function(i){return i.phase===ph&&!i._up;});if(g.length){var d=g.filter(function(i){return isFullyWatched(i);}).length,p=Math.round(d/g.length*100);if(p>bestPct){bestPct=p;bestPhase=ph+' ('+p+'%)';}}});
+    var C=document.createElement('canvas');C.width=1080;C.height=1080;var g=C.getContext('2d');
+    var grd=g.createLinearGradient(0,0,1080,1080);grd.addColorStop(0,'#0A0D18');grd.addColorStop(1,'#1B2238');g.fillStyle=grd;g.fillRect(0,0,1080,1080);
+    g.fillStyle='#E7B75F';g.font='700 40px Oswald, sans-serif';g.textAlign='center';g.fillText('MY MARVEL WATCH PROGRESS',540,130);
+    // ring
+    var cx=540,cy=430,rr=150;g.lineWidth=34;g.strokeStyle='#28314E';g.beginPath();g.arc(cx,cy,rr,0,Math.PI*2);g.stroke();
+    g.strokeStyle='#E7B75F';g.lineCap='round';g.beginPath();g.arc(cx,cy,rr,-Math.PI/2,-Math.PI/2+Math.PI*2*(pct/100));g.stroke();
+    g.fillStyle='#EAE8F2';g.font='700 84px Oswald, sans-serif';g.fillText(pct+'%',cx,cy+30);
+    g.fillStyle='#8B92AC';g.font='500 30px Inter, sans-serif';g.fillText(watched+' / '+rel.length+' watched',cx,cy+180);
+    // stat boxes
+    function box(x,label,val){g.fillStyle='#141A2C';g.strokeStyle='#28314E';g.lineWidth=2;g.beginPath();g.roundRect(x,720,300,150,20);g.fill();g.stroke();g.fillStyle='#E7B75F';g.font='700 54px Oswald, sans-serif';g.fillText(val,x+150,795);g.fillStyle='#8B92AC';g.font='500 24px Inter, sans-serif';g.fillText(label,x+150,840);}
+    box(90,'HOURS WATCHED',hrs+'h');box(390,'ESSENTIALS',essDone+'/'+essAll.length);box(690,'TOP PHASE',(bestPct>=0?bestPct+'%':'\u2014'));
+    g.fillStyle='#9B8CE0';g.font='600 26px Inter, sans-serif';g.fillText(bestPhase,540,930);
+    g.fillStyle='#5C637E';g.font='500 24px Inter, sans-serif';g.fillText('Marvel Watch Tracker',540,1010);
+    var url;try{url=C.toDataURL('image/png');}catch(e){toast('Could not render image.');return;}
+    var preview='<img src="'+url+'" style="width:100%;border-radius:12px;border:1px solid var(--line)"/>';
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83D\uDCCA Your progress card</div>'+preview+'<div class="mactions"><a class="mbtn on" href="'+url+'" download="marvel-progress.png">\u2B07 Download</a><button class="mbtn" id="cardShare">Share</button></div>');
+    var sh=document.getElementById('cardShare');if(sh)sh.onclick=function(){try{C.toBlob(function(b){var f=new File([b],'marvel-progress.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]}))navigator.share({files:[f],title:'My Marvel progress'});else toast('Long-press the image to save it.');});}catch(e){toast('Long-press the image to save it.');}};
+  }
   function init(){
     if(!window.MCU_DATA){document.getElementById('list').innerHTML='<div class="empty">Could not load data.js.</div>';return;}
     load();
@@ -554,7 +811,7 @@
     document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Tap a title for details, trailer, and where to watch.';
     if(location.hash&&location.hash.indexOf('#p=')===0){var code=location.hash.slice(3);if(code&&confirm('Load watched progress from this link? Replaces your current watched list.')){applyCode(code);save();}if(history.replaceState)history.replaceState(null,'',location.pathname+location.search);}
     (function(){var known={};(state.knownIds||[]).forEach(function(id){known[id]=1;});var cur=DATA.map(function(d){return d.id;});window.__NEW={};if(state.knownIds&&state.knownIds.length){cur.forEach(function(id){if(!known[id])window.__NEW[id]=1;});}state.knownIds=cur;save();})();
-    buildFilters();buildTools();renderTabsAndList();
+    applySpoiler();buildFilters();buildTools();renderTabsAndList();checkAchievements();
     // PWA
     if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
     window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('installBtn').classList.remove('hidden');});

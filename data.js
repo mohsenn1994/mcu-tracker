@@ -59,6 +59,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 3,
     "notes": "Where it all begins.",
+    "seasons": null,
     "tmdb_id": 1726,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
@@ -100,6 +101,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 1",
     "chrono": 4,
+    "seasons": null,
     "tmdb_id": 1724,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
@@ -132,6 +134,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 1",
     "chrono": 5,
+    "seasons": null,
     "tmdb_id": 10138,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/6WBeq4fCfn7AN0o21W9qNcRF2l9.jpg",
@@ -174,6 +177,7 @@ window.MCU_DATA = [
     "phase": "Phase 1",
     "chrono": 6,
     "notes": "Introduces Thor and Loki.",
+    "seasons": null,
     "tmdb_id": 10195,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
@@ -217,6 +221,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 1,
     "notes": "Introduces Steve Rogers.",
+    "seasons": null,
     "tmdb_id": 1771,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
@@ -260,6 +265,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 7,
     "notes": "The team assembles.",
+    "seasons": null,
     "tmdb_id": 24428,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
@@ -301,6 +307,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 2",
     "chrono": 8,
+    "seasons": null,
     "tmdb_id": 68721,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
@@ -342,6 +349,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 2",
     "chrono": 9,
+    "seasons": null,
     "tmdb_id": 76338,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
@@ -385,6 +393,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 10,
     "notes": "Introduces Bucky as the Winter Soldier.",
+    "seasons": null,
     "tmdb_id": 100402,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
@@ -427,6 +436,7 @@ window.MCU_DATA = [
     "phase": "Phase 2",
     "chrono": 11,
     "notes": "Opens up the cosmic side.",
+    "seasons": null,
     "tmdb_id": 118340,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
@@ -470,6 +480,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 12,
     "notes": "Introduces Scarlet Witch and Vision.",
+    "seasons": null,
     "tmdb_id": 99861,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
@@ -511,6 +522,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 2",
     "chrono": 13,
+    "seasons": null,
     "tmdb_id": 102899,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
@@ -554,6 +566,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 14,
     "notes": "The Avengers split; debut of Spider-Man and Black Panther.",
+    "seasons": null,
     "tmdb_id": 271110,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
@@ -597,6 +610,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 16,
     "notes": "Magic enters the MCU.",
+    "seasons": null,
     "tmdb_id": 284052,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg",
@@ -638,6 +652,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 3",
     "chrono": 17,
+    "seasons": null,
     "tmdb_id": 283995,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
@@ -679,6 +694,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 3",
     "chrono": 18,
+    "seasons": null,
     "tmdb_id": 315635,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
@@ -728,6 +744,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 19,
     "notes": "Reinvents Thor; leads into Infinity War.",
+    "seasons": null,
     "tmdb_id": 284053,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
@@ -769,6 +786,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 3",
     "chrono": 20,
+    "seasons": null,
     "tmdb_id": 284054,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
@@ -812,6 +830,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 21,
     "notes": "Thanos arrives.",
+    "seasons": null,
     "tmdb_id": 299536,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
@@ -853,6 +872,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 3",
     "chrono": 22,
+    "seasons": null,
     "tmdb_id": 363088,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/cFQEO687n1K6umXbInzocxcnAQz.jpg",
@@ -894,6 +914,7 @@ window.MCU_DATA = [
     "saga": "Infinity Saga",
     "phase": "Phase 3",
     "chrono": 2,
+    "seasons": null,
     "tmdb_id": 299537,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg",
@@ -937,6 +958,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 23,
     "notes": "Climax of the Infinity Saga.",
+    "seasons": null,
     "tmdb_id": 299534,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
@@ -979,6 +1001,7 @@ window.MCU_DATA = [
     "phase": "Phase 3",
     "essential": true,
     "chrono": 24,
+    "seasons": null,
     "tmdb_id": 429617,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
@@ -1003,8 +1026,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -1027,6 +1049,14 @@ window.MCU_DATA = [
     "phase": "Phase 4",
     "essential": true,
     "chrono": 25,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 9,
+        "air": "2021-01-15"
+      }
+    ],
     "tmdb_id": 85271,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
@@ -1059,6 +1089,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 26,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2021-03-19"
+      }
+    ],
     "tmdb_id": 88396,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
@@ -1092,6 +1130,20 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 27,
     "notes": "Introduces the TVA and the multiverse.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 6,
+        "air": "2021-06-09"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 6,
+        "air": "2023-10-05"
+      }
+    ],
     "tmdb_id": 84958,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
@@ -1123,6 +1175,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 15,
+    "seasons": null,
     "tmdb_id": 497698,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
@@ -1163,6 +1216,26 @@ window.MCU_DATA = [
     "phase": "Phase 4",
     "chrono": 28,
     "notes": "Animated.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 9,
+        "air": "2021-08-11"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 9,
+        "air": "2023-12-22"
+      },
+      {
+        "n": 3,
+        "name": "Season 3",
+        "eps": 8,
+        "air": "2024-12-22"
+      }
+    ],
     "tmdb_id": 91363,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/zaqfFDUrSfIljdD0OBxSjcutX8n.jpg",
@@ -1192,6 +1265,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 29,
+    "seasons": null,
     "tmdb_id": 566525,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
@@ -1231,6 +1305,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 30,
+    "seasons": null,
     "tmdb_id": 524434,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/lFByFSLV5WDJEv3KabbdAF959F2.jpg",
@@ -1263,6 +1338,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 31,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2021-11-24"
+      }
+    ],
     "tmdb_id": 88329,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
@@ -1297,6 +1380,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 32,
     "notes": "The multiverse breaks open.",
+    "seasons": null,
     "tmdb_id": 634649,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
@@ -1343,6 +1427,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 33,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2022-03-30"
+      }
+    ],
     "tmdb_id": 92749,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/x6FsYvt33846IQnDSFxla9j0RX8.jpg",
@@ -1377,6 +1469,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 34,
     "notes": "Introduces incursions.",
+    "seasons": null,
     "tmdb_id": 453395,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
@@ -1409,6 +1502,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 35,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2022-06-08"
+      }
+    ],
     "tmdb_id": 92782,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/3HWWh92kZbD7odwJX7nKmXNZsYo.jpg",
@@ -1441,6 +1542,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 36,
+    "seasons": null,
     "tmdb_id": 616037,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
@@ -1474,6 +1576,20 @@ window.MCU_DATA = [
     "phase": "Phase 4",
     "chrono": 37,
     "notes": "Animated shorts.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 5,
+        "air": "2022-08-10"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 5,
+        "air": "2023-09-06"
+      }
+    ],
     "tmdb_id": 232125,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/3QfQYECgu6DX5UUWCBvv1Fl0BAJ.jpg",
@@ -1503,6 +1619,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 38,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 9,
+        "air": "2022-08-18"
+      }
+    ],
     "tmdb_id": 92783,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/5xz2orV8f0usyrfGNshcoXHmiaV.jpg",
@@ -1535,6 +1659,7 @@ window.MCU_DATA = [
     "phase": "Phase 4",
     "chrono": 39,
     "notes": "Special Presentation.",
+    "seasons": null,
     "tmdb_id": 894205,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
@@ -1567,6 +1692,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 4",
     "chrono": 40,
+    "seasons": null,
     "tmdb_id": 505642,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
@@ -1609,6 +1735,7 @@ window.MCU_DATA = [
     "phase": "Phase 4",
     "chrono": 41,
     "notes": "Special Presentation.",
+    "seasons": null,
     "tmdb_id": 774752,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
@@ -1641,6 +1768,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 42,
+    "seasons": null,
     "tmdb_id": 640146,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
@@ -1682,6 +1810,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 43,
+    "seasons": null,
     "tmdb_id": 447365,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
@@ -1723,6 +1852,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 44,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2023-06-21"
+      }
+    ],
     "tmdb_id": 114472,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/3rINdUPSy9AklJg74jWHOyUXuZd.jpg",
@@ -1757,6 +1894,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 45,
     "notes": "Resolves the TVA storyline.",
+    "seasons": null,
     "tmdb_id": 1192825,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/fa4HvgQO1sLQTobjJR10kDOJzWB.jpg",
@@ -1787,6 +1925,7 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 46,
+    "seasons": null,
     "tmdb_id": 609681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
@@ -1829,6 +1968,14 @@ window.MCU_DATA = [
     "phase": "Phase 5",
     "chrono": 47,
     "notes": "Animated.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1 (Narrative Story)",
+        "eps": 8,
+        "air": "2023-10-13"
+      }
+    ],
     "tmdb_id": 299676,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/a87nXpE9vz8AE7qOxy0oaulEIpW.jpg",
@@ -1859,6 +2006,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 48,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 5,
+        "air": "2024-01-09"
+      }
+    ],
     "tmdb_id": 122226,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/vFyJH630cF68LohVYjQW49074Sy.jpg",
@@ -1892,6 +2047,20 @@ window.MCU_DATA = [
     "phase": "Phase 5",
     "chrono": 49,
     "notes": "Marvel Animation.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 10,
+        "air": "2024-03-20"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 9,
+        "air": "2026-07-01"
+      }
+    ],
     "tmdb_id": 138502,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
@@ -1921,6 +2090,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 50,
     "notes": "Brings the X-Men into the multiverse.",
+    "seasons": null,
     "tmdb_id": 533535,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
@@ -1962,6 +2132,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 51,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 9,
+        "air": "2024-09-18"
+      }
+    ],
     "tmdb_id": 138501,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/mGsxKwXUjojitRv2E9qMTbxbBRd.jpg",
@@ -1994,6 +2172,14 @@ window.MCU_DATA = [
     "phase": "Phase 5",
     "chrono": 52,
     "notes": "Animated.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 20,
+        "air": "2024-05-06"
+      }
+    ],
     "tmdb_id": 235614,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/qGM0WutoTPNmac0IL3Bx7hAeyrk.jpg",
@@ -2032,6 +2218,14 @@ window.MCU_DATA = [
     "phase": "Phase 5",
     "chrono": 53,
     "notes": "Marvel Animation.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 10,
+        "air": "2025-01-27"
+      }
+    ],
     "tmdb_id": 138503,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg",
@@ -2061,13 +2255,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 54,
+    "seasons": null,
     "tmdb_id": 822119,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/ce3prrjh9ZehEl5JinNqr4jIeaB.jpg",
     "overview": "After meeting with newly elected U.S. President Thaddeus Ross, Sam finds himself in the middle of an international incident. He must discover the reason behind a nefarious global plot before the true mastermind has the entire world seeing red.",
     "imdb": "https://www.imdb.com/title/tt14513804/",
-    "rating": 6,
+    "rating": 5.9,
     "runtime": 119,
     "genres": [
       "Action",
@@ -2102,6 +2297,20 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 55,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 9,
+        "air": "2025-03-04"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 8,
+        "air": "2026-03-24"
+      }
+    ],
     "tmdb_id": 202555,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
@@ -2136,6 +2345,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 56,
     "notes": "Assembles the antihero team.",
+    "seasons": null,
     "tmdb_id": 986056,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
@@ -2177,6 +2387,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "chrono": 57,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 6,
+        "air": "2025-06-24"
+      }
+    ],
     "tmdb_id": 114471,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/dOh6MJpdlQhYpLBhzhNQeYGKTZ5.jpg",
@@ -2211,6 +2429,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 58,
     "notes": "Introduces the Fantastic Four.",
+    "seasons": null,
     "tmdb_id": 617126,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
@@ -2253,6 +2472,14 @@ window.MCU_DATA = [
     "phase": "Phase 6",
     "chrono": 59,
     "notes": "Marvel Animation.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 4,
+        "air": "2025-08-01"
+      }
+    ],
     "tmdb_id": 241388,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/yuOfb1MgnaGPa4guzV0n1IFYVGN.jpg",
@@ -2281,6 +2508,14 @@ window.MCU_DATA = [
     "phase": "Phase 6",
     "chrono": 60,
     "notes": "Marvel Animation.",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 4,
+        "air": "2025-09-24"
+      }
+    ],
     "tmdb_id": 138505,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/mwKj9ERGFXsWot0nXgQ5yMQf9I7.jpg",
@@ -2313,6 +2548,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 6",
     "chrono": 61,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 8,
+        "air": "2026-01-26"
+      }
+    ],
     "tmdb_id": 198178,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
@@ -2344,6 +2587,14 @@ window.MCU_DATA = [
     "saga": "Multiverse Saga",
     "phase": "Phase 6",
     "chrono": 62,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 2",
+        "eps": 9,
+        "air": "2026-03-17"
+      }
+    ],
     "tmdb_id": 318417,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/pXr32DqmkiEJTQbpf9u6JRgPPzB.jpg",
@@ -2370,10 +2621,11 @@ window.MCU_DATA = [
     "phase": "Phase 6",
     "essential": true,
     "chrono": 63,
+    "seasons": null,
     "tmdb_id": 969681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "imdb": "https://www.imdb.com/title/tt22084616/",
     "rating": 7.9,
@@ -2402,6 +2654,7 @@ window.MCU_DATA = [
     "phase": "Phase 6",
     "chrono": 64,
     "notes": "Special Presentation.",
+    "seasons": null,
     "tmdb_id": 1439930,
     "tmdb_type": "movie",
     "release": "2026-05-12",
@@ -2437,6 +2690,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 65,
     "notes": "Doctor Doom vs. the assembled heroes.",
+    "seasons": null,
     "tmdb_id": 1003596,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
@@ -2471,6 +2725,7 @@ window.MCU_DATA = [
     "essential": true,
     "chrono": 66,
     "notes": "Concludes the Multiverse Saga.",
+    "seasons": null,
     "tmdb_id": 1003598,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/f0YBuh4hyiAheXhh4JnJWoKi9g5.jpg",
@@ -2503,6 +2758,50 @@ window.MCU_DATA = [
     "saga": "ABC & Network",
     "phase": "",
     "notes": "7 seasons, 2013–2020 (ABC).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 22,
+        "air": "2013-09-24"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 22,
+        "air": "2014-09-23"
+      },
+      {
+        "n": 3,
+        "name": "Season 3",
+        "eps": 22,
+        "air": "2015-09-29"
+      },
+      {
+        "n": 4,
+        "name": "Season 4",
+        "eps": 22,
+        "air": "2016-09-20"
+      },
+      {
+        "n": 5,
+        "name": "Season 5",
+        "eps": 22,
+        "air": "2017-12-01"
+      },
+      {
+        "n": 6,
+        "name": "Season 6",
+        "eps": 13,
+        "air": "2019-05-10"
+      },
+      {
+        "n": 7,
+        "name": "Season 7",
+        "eps": 13,
+        "air": "2020-05-27"
+      }
+    ],
     "tmdb_id": 1403,
     "tmdb_type": "tv",
     "release": "2013-09-24",
@@ -2536,6 +2835,20 @@ window.MCU_DATA = [
     "saga": "ABC & Network",
     "phase": "",
     "notes": "2 seasons (ABC).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 8,
+        "air": "2015-01-06"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 10,
+        "air": "2016-01-19"
+      }
+    ],
     "tmdb_id": 61550,
     "tmdb_type": "tv",
     "release": "2015-01-06",
@@ -2568,6 +2881,14 @@ window.MCU_DATA = [
     "saga": "ABC & Network",
     "phase": "",
     "notes": "(ABC).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 8,
+        "air": "2017-09-29"
+      }
+    ],
     "tmdb_id": 68716,
     "tmdb_type": "tv",
     "release": "2017-09-29",
@@ -2601,6 +2922,26 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "3 seasons, 2015–2018 (Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 13,
+        "air": "2015-04-10"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 13,
+        "air": "2016-03-18"
+      },
+      {
+        "n": 3,
+        "name": "Season 3",
+        "eps": 13,
+        "air": "2018-10-19"
+      }
+    ],
     "tmdb_id": 61889,
     "tmdb_type": "tv",
     "release": "2015-04-10",
@@ -2634,6 +2975,26 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "(Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 13,
+        "air": "2015-11-20"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 13,
+        "air": "2018-03-08"
+      },
+      {
+        "n": 3,
+        "name": "Season 3",
+        "eps": 13,
+        "air": "2019-06-14"
+      }
+    ],
     "tmdb_id": 38472,
     "tmdb_type": "tv",
     "release": "2015-11-20",
@@ -2666,6 +3027,20 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "(Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 13,
+        "air": "2016-09-30"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 13,
+        "air": "2018-06-22"
+      }
+    ],
     "tmdb_id": 62126,
     "tmdb_type": "tv",
     "release": "2016-09-30",
@@ -2699,6 +3074,20 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "(Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 13,
+        "air": "2017-03-17"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 10,
+        "air": "2018-09-07"
+      }
+    ],
     "tmdb_id": 62127,
     "tmdb_type": "tv",
     "release": "2017-03-17",
@@ -2732,6 +3121,14 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "Crossover miniseries (Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 8,
+        "air": "2017-08-18"
+      }
+    ],
     "tmdb_id": 62285,
     "tmdb_type": "tv",
     "release": "2017-08-18",
@@ -2765,6 +3162,20 @@ window.MCU_DATA = [
     "saga": "Netflix — The Defenders Saga",
     "phase": "",
     "notes": "2 seasons (Netflix).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 13,
+        "air": "2017-11-17"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 13,
+        "air": "2019-01-18"
+      }
+    ],
     "tmdb_id": 67178,
     "tmdb_type": "tv",
     "release": "2017-11-17",
@@ -2798,6 +3209,26 @@ window.MCU_DATA = [
     "saga": "Hulu & Freeform",
     "phase": "",
     "notes": "(Hulu).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 10,
+        "air": "2017-11-21"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 13,
+        "air": "2018-12-21"
+      },
+      {
+        "n": 3,
+        "name": "Season 3",
+        "eps": 10,
+        "air": "2019-12-13"
+      }
+    ],
     "tmdb_id": 67466,
     "tmdb_type": "tv",
     "release": "2017-11-21",
@@ -2831,6 +3262,20 @@ window.MCU_DATA = [
     "saga": "Hulu & Freeform",
     "phase": "",
     "notes": "(Freeform).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 10,
+        "air": "2018-06-07"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 10,
+        "air": "2019-04-04"
+      }
+    ],
     "tmdb_id": 66190,
     "tmdb_type": "tv",
     "release": "2018-06-07",
@@ -2864,6 +3309,14 @@ window.MCU_DATA = [
     "saga": "Hulu & Freeform",
     "phase": "",
     "notes": "(Hulu).",
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 10,
+        "air": "2020-10-16"
+      }
+    ],
     "tmdb_id": 88987,
     "tmdb_type": "tv",
     "release": "2020-10-16",
@@ -2897,10 +3350,11 @@ window.MCU_DATA = [
     "saga": "Sony — Spider-Man",
     "phase": "",
     "notes": "The Tobey Maguire trilogy begins.",
+    "seasons": null,
     "tmdb_id": 557,
     "tmdb_type": "movie",
     "release": "2002-05-01",
-    "poster": "https://image.tmdb.org/t/p/w185/or6XJBVpcEbIkma0V9zshnbEtx4.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     "overview": "After being bitten by a genetically altered spider at Oscorp, nerdy but endearing high school student Peter Parker is endowed with amazing powers to become the superhero known as Spider-Man.",
     "imdb": "https://www.imdb.com/title/tt0145487/",
@@ -2943,6 +3397,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony — Spider-Man",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 558,
     "tmdb_type": "movie",
     "release": "2004-06-25",
@@ -2988,6 +3443,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony — Spider-Man",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 559,
     "tmdb_type": "movie",
     "release": "2007-05-01",
@@ -3036,6 +3492,7 @@ window.MCU_DATA = [
     "saga": "Sony — Spider-Man",
     "phase": "",
     "notes": "The Andrew Garfield reboot.",
+    "seasons": null,
     "tmdb_id": 1930,
     "tmdb_type": "movie",
     "release": "2012-06-23",
@@ -3083,6 +3540,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony — Spider-Man",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 102382,
     "tmdb_type": "movie",
     "release": "2014-04-16",
@@ -3131,6 +3589,7 @@ window.MCU_DATA = [
     "saga": "Sony — Spider-Verse",
     "phase": "",
     "notes": "Oscar winner; introduces Miles Morales.",
+    "seasons": null,
     "tmdb_id": 324857,
     "tmdb_type": "movie",
     "release": "2018-12-06",
@@ -3176,6 +3635,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony — Spider-Verse",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 569094,
     "tmdb_type": "movie",
     "release": "2023-05-31",
@@ -3221,6 +3681,7 @@ window.MCU_DATA = [
     "saga": "Sony — Spider-Verse",
     "phase": "",
     "notes": "Trilogy finale.",
+    "seasons": null,
     "tmdb_id": 911916,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/9KAe39xqyZnv9J4W3DRGdQqX82h.jpg",
@@ -3252,6 +3713,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 335983,
     "tmdb_type": "movie",
     "release": "2018-09-28",
@@ -3294,6 +3756,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 580489,
     "tmdb_type": "movie",
     "release": "2021-09-30",
@@ -3337,6 +3800,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 526896,
     "tmdb_type": "movie",
     "release": "2022-03-30",
@@ -3360,9 +3824,7 @@ window.MCU_DATA = [
     "trailer": "https://www.youtube.com/watch?v=wG2TjtueeSU",
     "watch": {
       "link": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=EG",
-      "flatrate": [
-        "TOD"
-      ],
+      "flatrate": [],
       "rent": [
         "Apple TV Store",
         "Google Play Movies"
@@ -3382,6 +3844,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 634492,
     "tmdb_type": "movie",
     "release": "2024-02-14",
@@ -3427,6 +3890,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 539972,
     "tmdb_type": "movie",
     "release": "2024-12-11",
@@ -3471,6 +3935,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Sony's Spider-Man Universe",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 912649,
     "tmdb_type": "movie",
     "release": "2024-10-22",
@@ -3515,6 +3980,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 447399,
     "tmdb_type": "movie",
     "release": "2000-07-02",
@@ -3545,6 +4011,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 36658,
     "tmdb_type": "movie",
     "release": "2003-04-27",
@@ -3590,6 +4057,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 36668,
     "tmdb_type": "movie",
     "release": "2006-05-24",
@@ -3633,6 +4101,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 2080,
     "tmdb_type": "movie",
     "release": "2009-04-28",
@@ -3677,6 +4146,7 @@ window.MCU_DATA = [
     "saga": "Fox — X-Men",
     "phase": "",
     "notes": "Prequel reboot.",
+    "seasons": null,
     "tmdb_id": 49538,
     "tmdb_type": "movie",
     "release": "2011-06-01",
@@ -3720,6 +4190,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 76170,
     "tmdb_type": "movie",
     "release": "2013-07-21",
@@ -3761,6 +4232,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 127585,
     "tmdb_type": "movie",
     "release": "2014-05-15",
@@ -3803,6 +4275,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 293660,
     "tmdb_type": "movie",
     "release": "2016-02-09",
@@ -3835,6 +4308,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 246655,
     "tmdb_type": "movie",
     "release": "2016-05-18",
@@ -3878,11 +4352,12 @@ window.MCU_DATA = [
     "saga": "Fox — X-Men",
     "phase": "",
     "notes": "Jackman's Wolverine send-off.",
+    "seasons": null,
     "tmdb_id": 263115,
     "tmdb_type": "movie",
     "release": "2017-02-28",
     "poster": "https://image.tmdb.org/t/p/w185/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4DZxWNSAyksN6N3JkvpJ53Yq6zU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w780/qTdCfGyDisY9e8BLycszlyTsPWx.jpg",
     "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
     "imdb": "https://www.imdb.com/title/tt3315342/",
     "rating": 7.8,
@@ -3919,6 +4394,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 383498,
     "tmdb_type": "movie",
     "release": "2018-05-15",
@@ -3962,6 +4438,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 320288,
     "tmdb_type": "movie",
     "release": "2019-06-05",
@@ -4005,6 +4482,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — X-Men",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 340102,
     "tmdb_type": "movie",
     "release": "2020-04-02",
@@ -4044,6 +4522,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — Fantastic Four",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 9738,
     "tmdb_type": "movie",
     "release": "2005-06-29",
@@ -4076,6 +4555,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — Fantastic Four",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 1979,
     "tmdb_type": "movie",
     "release": "2007-06-13",
@@ -4115,6 +4595,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Fox — Fantastic Four",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 166424,
     "tmdb_type": "movie",
     "release": "2015-08-05",
@@ -4158,6 +4639,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 10658,
     "tmdb_type": "movie",
     "release": "1986-08-01",
@@ -4190,6 +4672,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 8867,
     "tmdb_type": "movie",
     "release": "1989-10-05",
@@ -4222,6 +4705,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 13995,
     "tmdb_type": "movie",
     "release": "1990-12-14",
@@ -4255,6 +4739,7 @@ window.MCU_DATA = [
     "saga": "Other & Early Films",
     "phase": "",
     "notes": "Kicked off the modern Marvel movie era.",
+    "seasons": null,
     "tmdb_id": 36647,
     "tmdb_type": "movie",
     "release": "1998-08-21",
@@ -4297,6 +4782,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 36586,
     "tmdb_type": "movie",
     "release": "2002-03-22",
@@ -4336,6 +4822,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 9480,
     "tmdb_type": "movie",
     "release": "2003-02-14",
@@ -4381,6 +4868,7 @@ window.MCU_DATA = [
     "saga": "Other & Early Films",
     "phase": "",
     "notes": "Ang Lee's version.",
+    "seasons": null,
     "tmdb_id": 1927,
     "tmdb_type": "movie",
     "release": "2003-06-19",
@@ -4422,6 +4910,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 7220,
     "tmdb_type": "movie",
     "release": "2004-04-15",
@@ -4454,6 +4943,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 36648,
     "tmdb_type": "movie",
     "release": "2004-12-08",
@@ -4493,6 +4983,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 9947,
     "tmdb_type": "movie",
     "release": "2005-01-13",
@@ -4500,7 +4991,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w780/2JMOTj6DFjNcg9KToctmfTV55EW.jpg",
     "overview": "Elektra the warrior survives a near-death experience, becomes an assassin-for-hire, and tries to protect her two latest targets, a single father and his young daughter, from a group of supernatural assassins.",
     "imdb": "https://www.imdb.com/title/tt0357277/",
-    "rating": 5.1,
+    "rating": 5,
     "runtime": 97,
     "genres": [
       "Action",
@@ -4536,6 +5027,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 18882,
     "tmdb_type": "movie",
     "release": "2005-04-21",
@@ -4568,6 +5060,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 1250,
     "tmdb_type": "movie",
     "release": "2007-01-15",
@@ -4607,6 +5100,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 13056,
     "tmdb_type": "movie",
     "release": "2008-12-05",
@@ -4647,6 +5141,7 @@ window.MCU_DATA = [
     "universe": "EXT",
     "saga": "Other & Early Films",
     "phase": "",
+    "seasons": null,
     "tmdb_id": 71676,
     "tmdb_type": "movie",
     "release": "2011-12-10",
@@ -4675,7 +5170,7 @@ window.MCU_DATA = [
     "id": "black-panther-3-2028",
     "title": "Black Panther 3",
     "year": 2028,
-    "release": "2028-12-14",
+    "release": "2028-12-13",
     "type": "movie",
     "universe": "MCU",
     "saga": "Newly Discovered",
@@ -4683,6 +5178,7 @@ window.MCU_DATA = [
     "tmdb_id": 1386618,
     "tmdb_type": "movie",
     "discovered": true,
+    "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/zJc9fYZxgq4yzI0Oru2e1Cf3a3V.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/5b8t06v1cTd9H5IgWs6gj6987JM.jpg",
     "overview": "T'Challa's son, T'Challa, comes of age with eyes on the crown of Wakanda.",
@@ -4716,6 +5212,7 @@ window.MCU_DATA = [
     "tmdb_id": 1293690,
     "tmdb_type": "movie",
     "discovered": true,
+    "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/jSn3jOzI91dOx4aVdfMrirWXH6R.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/30avL0vOOqlbN5kODDZZHDwbkr8.jpg",
     "overview": "A film set in the Marvel Cinematic Universe (MCU) based on the Marvel Comics team. Plot TBA.",
@@ -4749,10 +5246,11 @@ window.MCU_DATA = [
     "tmdb_id": 1750432,
     "tmdb_type": "movie",
     "discovered": true,
-    "poster": null,
+    "seasons": null,
+    "poster": "https://image.tmdb.org/t/p/w185/hPucpn2pmszkcqRVHmrlUYK0PtG.jpg",
     "backdrop": null,
     "overview": "Upcoming TV special.",
-    "imdb": null,
+    "imdb": "https://www.imdb.com/title/tt44171293/",
     "rating": null,
     "runtime": null,
     "genres": [
@@ -4771,1470 +5269,6 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "spidey-and-iron-man-avengers-team-up-2025",
-    "title": "Spidey and Iron Man: Avengers Team Up!",
-    "year": 2025,
-    "release": "2025-10-16",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1564058,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/aV8K3EevkFNwj41C2MwpjHfrCAi.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5MBqVVijMPVfimKacXRkCaX90w.jpg",
-    "overview": "Spidey and Iron Man team up with the Avengers to stop Ultron and Green Goblin from controlling all of the city's devices.",
-    "imdb": "https://www.imdb.com/title/tt37850663/",
-    "rating": 3.8,
-    "runtime": 24,
-    "genres": [
-      "Adventure",
-      "Family",
-      "Animation"
-    ],
-    "cast": [
-      "Mason Blomberg",
-      "Alkaio Thiele",
-      "Armen Taylor",
-      "Sandra Saad"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-agatha-all-along-2024",
-    "title": "Marvel Studios Assembled: The Making of Agatha All Along",
-    "year": 2024,
-    "release": "2024-11-13",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1387507,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/8gJ4SkWVzFDcUfYVJDTWl85HnNU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ef53usvUPf5VNWXpdCdSj3Bqw3Q.jpg",
-    "overview": "Join Kathryn Hahn, Aubrey Plaza, Joe Locke, and more as they invite viewers behind-the-scenes of Agatha All Along.",
-    "imdb": "https://www.imdb.com/title/tt34601931/",
-    "rating": 8.1,
-    "runtime": 61,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Mary Livanos",
-      "Kathryn Hahn",
-      "Jac Schaeffer",
-      "Daniel Selon"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-deadpool-wolverine-2024",
-    "title": "Marvel Studios Assembled: The Making of Deadpool & Wolverine",
-    "year": 2024,
-    "release": "2024-11-11",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1386628,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/3dQyDFxTY6o3v67ncYCExog6aPH.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/j47pXLSYWFY1CJAZrBD7vhwGo0q.jpg",
-    "overview": "Hugh Jackman, Ryan Reynolds, and director Shawn Levy sit down and spill the proverbial beans about how \"Deadpool & Wolverine\" was conceived, carried to term, and then birthed.",
-    "imdb": "https://www.imdb.com/title/tt34570789/",
-    "rating": 6.7,
-    "runtime": 59,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Shawn Levy",
-      "Ryan Reynolds",
-      "Kevin Feige",
-      "Hugh Jackman"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "lego-marvel-avengers-mission-demolition-2024",
-    "title": "LEGO Marvel Avengers: Mission Demolition",
-    "year": 2024,
-    "release": "2024-10-17",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1359227,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/s3qM33JHOntz2D7o6FGRf5yuI1v.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/Al127H6f1RXpESdg0MGNL2g8mzO.jpg",
-    "overview": "A young, aspiring hero and superhero fan inadvertently unleashes a powerful new villain looking to rid the world of the Avengers.",
-    "imdb": "https://www.imdb.com/title/tt33653255/",
-    "rating": 6.5,
-    "runtime": 45,
-    "genres": [
-      "Animation",
-      "Comedy",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Will Friedle",
-      "Kevin Smith",
-      "John Stamos",
-      "Roger Craig Smith"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=hqfL89ktaoY",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-x-men-97-2024",
-    "title": "Marvel Studios Assembled: The Making of X-Men '97",
-    "year": 2024,
-    "release": "2024-05-21",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1275606,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/6YIhiAzNB9PPgIPA04tD1xaSBMw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/f1GVBMTNeLUBjt8Eiio9ZOv5rOP.jpg",
-    "overview": "Spend time with the original cast, along with new voices, as this behind-the-scenes special recalls the birth of \"X-Men: The Animated Series,\" and its revival thirty years later as \"X-Men '97.\"",
-    "imdb": "https://www.imdb.com/title/tt32142103/",
-    "rating": 5.8,
-    "runtime": 56,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Brad Winderbaum",
-      "Dana Vasquez-Eberhardt",
-      "Jake Castorena",
-      "Jeremy Polgar"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-the-marvels-2024",
-    "title": "Marvel Studios Assembled: The Making of The Marvels",
-    "year": 2024,
-    "release": "2024-02-06",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1235525,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/mTLNy3pATFxHLxftiHAzMNgjenX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/A38W3yyJQtKpL229vbZfsJoLX3X.jpg",
-    "overview": "Take an intergalactic trip with the cast and crew of \"The Marvels\" as they tell their experiences making this weird and wonderful film. Step into all the departments of production and discover how they created complex fight scenes, countless alien life forms, and some of the most elaborate sets ever. From dance parties to kitten days, the cast and crew had an unforgettable time making the movie.",
-    "imdb": "https://www.imdb.com/title/tt31031917/",
-    "rating": 5.2,
-    "runtime": 59,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Brie Larson",
-      "Teyonah Parris",
-      "Iman Vellani",
-      "Zawe Ashton"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-echo-2024",
-    "title": "Marvel Studios Assembled: The Making of Echo",
-    "year": 2024,
-    "release": "2024-01-31",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1220337,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/q19Po6BjP93r4gaPyWO0lGdErAT.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/cU8P1DeAlbAr8g9NlJony6FGIhi.jpg",
-    "overview": "Join us on a revealing journey behind-the-scenes of Maya Lopez’s own groundbreaking series. Witness how the production took unprecedented steps to portray the deaf experience, and Native American culture truthfully. Spend time with powerhouse actor Vincent D’Onofrio as he brings the Kingpin to monstrous life once again. All this and more waits to be discovered in \"Assembled: The Making of Echo.\"",
-    "imdb": "https://www.imdb.com/title/tt30492278/",
-    "rating": 5.8,
-    "runtime": 47,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Alaqua Cox",
-      "Richie Palmer",
-      "Stephen Broussard",
-      "Sydney Freeland"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "lego-marvel-avengers-code-red-2023",
-    "title": "LEGO Marvel Avengers: Code Red",
-    "year": 2023,
-    "release": "2023-10-26",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1154598,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/rDzig50dj7VpLwJ7SThbamETK1G.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/oFSQEG1lJTTISj3QKB7cJ9ANkFw.jpg",
-    "overview": "The Avengers gather to celebrate their latest victory, but their celebration is quickly interrupted by the mysterious disappearance of Black Widow's father, Red Guardian. As the Avengers investigate, they discover that Red Guardian isn't the only one missing when they meet a dangerous new foe quite unlike anything they've ever encountered before.",
-    "imdb": "https://www.imdb.com/title/tt28477867/",
-    "rating": 6.5,
-    "runtime": 48,
-    "genres": [
-      "Animation",
-      "Action",
-      "Family"
-    ],
-    "cast": [
-      "Laura Bailey",
-      "Trevor Devall",
-      "Haley Joel Osment",
-      "Steve Blum"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=nsTMauyViHI",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-secret-invasion-2023",
-    "title": "Marvel Studios Assembled: The Making of Secret Invasion",
-    "year": 2023,
-    "release": "2023-09-19",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1165500,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/8YDNwj9gsAQlcHQALPtjJipoGx8.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/h1YkKxMB1DyOgmIxTGBEQwvTogx.jpg",
-    "overview": "Through in-depth interviews with cast and crew, and exclusive behind-the-scenes footage, Assembled uncovers how Marvel Studios’ “Secret Invasion” was born. Witness what it took to conjure the world of the show, and spend time with Samuel L. Jackson as he dons the patch once again to engage in the most baffling battle of Nick Fury’s career.",
-    "imdb": "https://www.imdb.com/title/tt28663209/",
-    "rating": 5.2,
-    "runtime": 48,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Samuel L. Jackson",
-      "Jonathan Schwartz",
-      "Brian Tucker",
-      "Ali Selim"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-the-guardians-of-the-galaxy-vol-3-2023",
-    "title": "Marvel Studios Assembled: The Making of the Guardians of the Galaxy Vol. 3",
-    "year": 2023,
-    "release": "2023-09-12",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1165487,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/w9rY9CT7pI3pl6ATcAS7bXrIDc5.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7SgsIAwZRx2CW5uAgIQDwrw3KpA.jpg",
-    "overview": "Join visionary director James Gunn and superstars such as Chris Pratt and Zoe Saldaña as they recount how “Guardians of the Galaxy Vol. 3” was conceived, shaped, and delivered to the world. And stand alongside the cast and crew in the emotional final moments of the shoot as they bid farewell to each other, and close this chapter in the saga of Peter Quill and his loveable band of misfit-warriors.",
-    "imdb": "https://www.imdb.com/title/tt28663201/",
-    "rating": 6.4,
-    "runtime": 58,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Chris Pratt",
-      "Kevin Feige",
-      "Zoe Saldaña",
-      "Karen Gillan"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-ant-man-and-the-wasp-quantumania-2023",
-    "title": "Marvel Studios Assembled: The Making of Ant-Man and the Wasp: Quantumania",
-    "year": 2023,
-    "release": "2023-07-19",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1127361,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/xgfnWe9NFXT5o3QndRnU5ylkxyp.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/4vWjc8cYbPf7I80c1iNXlYcVwBk.jpg",
-    "overview": "Join cast and crew as they delve deep into the creation of \"Ant-Man and The Wasp: Quantumania.\" Combining immersive behind-the-scenes footage with candid interviews, Assembled reveals how an incredible new world was brought to the screen.",
-    "imdb": "https://www.imdb.com/title/tt27798047/",
-    "rating": 6.2,
-    "runtime": 50,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Stephen Broussard",
-      "Peyton Reed",
-      "Evangeline Lilly",
-      "Paul Rudd"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=3cUDHhSpjYg",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "stan-lee-2023",
-    "title": "Stan Lee",
-    "year": 2023,
-    "release": "2023-06-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 717082,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/iWBOKF0yl7pHK9y8fqRIBqf9fOJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/u0HBu7x5cwFe7BN7ANgYK98rgXc.jpg",
-    "overview": "Celebrate the legacy of Stan Lee as the co-creator of such legendary characters as Fantastic Four, Iron Man, the X-Men, The Avengers, and hundreds more.",
-    "imdb": "https://www.imdb.com/title/tt25363184/",
-    "rating": 7.1,
-    "runtime": 86,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Stan Lee",
-      "Joan Lee",
-      "Flo Steinberg",
-      "Warren Storob"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=rN45yyu_rCw",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-black-panther-wakanda-forever-2023",
-    "title": "Marvel Studios Assembled: The Making of Black Panther: Wakanda Forever",
-    "year": 2023,
-    "release": "2023-02-07",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1076032,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/mYTPKWO7a4mHKLyksJgB8CMq9Qx.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jpZNOChdKmOzf4bqkpKjOKEeT1Q.jpg",
-    "overview": "Follow the production of “Black Panther: Wakanda Forever” as the cast and crew take on the incredible challenge of remembering T’Challa with a chapter befitting the late king. Through intimate behind-the-scenes footage and interviews, watch Shuri take on the mantel of Wakanda’s hero and face a new foe from the ocean’s depths in Namor.",
-    "imdb": "https://www.imdb.com/title/tt26315895/",
-    "rating": 6.3,
-    "runtime": 58,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Ryan Coogler",
-      "Letitia Wright",
-      "Lupita Nyong'o",
-      "Danai Gurira"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=aFgtBbSwxxw",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "director-by-night-2022",
-    "title": "Director by Night",
-    "year": 2022,
-    "release": "2022-11-04",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1036996,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/hmaM75vvcYPd9HdiSvF683UedZS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rhuqRlqEZhTqKdiRCFrJlncZ7vN.jpg",
-    "overview": "Acclaimed composer Michael Giacchino made his directorial debut with Marvel Studios' Special Presentation \"Werewolf by Night.\" This behind-the-scenes special explores Giacchino's vision, style and approach to bringing the chilling story to life, as well as offering an insider's look at the between-the-scenes making of \"Werewolf by Night.\"",
-    "imdb": "https://www.imdb.com/title/tt23326936/",
-    "rating": 6.4,
-    "runtime": 54,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Michael Giacchino",
-      "Anthony Giacchino",
-      "Josephine Giacchino",
-      "Mike Giacchino"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=QbX7Qlg6cqc",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-she-hulk-attorney-at-law-2022",
-    "title": "Marvel Studios Assembled: The Making of She-Hulk: Attorney at Law",
-    "year": 2022,
-    "release": "2022-11-03",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1026208,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/yhFN7yvskzm1Tsknkg46eQbQr9w.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/kjkKMfpF87C8qcRL3c6sNJ8J83y.jpg",
-    "overview": "Join the likes of Tatiana Maslany, Mark Ruffalo, Tim Roth, and Benedict Wong as they reveal how Marvel Studios’ She-Hulk: Attorney at Law was conceived and shaped. Discover what it took for She-Hulk’s creators to pull off the show’s tricky tone and deliver Marvel Studios’ first truly comedic series – one that boldly breaks the fourth wall to acknowledge its own audience, no less!",
-    "imdb": "https://www.imdb.com/title/tt22852968/",
-    "rating": 6.6,
-    "runtime": 54,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Tatiana Maslany",
-      "Mark Ruffalo",
-      "Tim Roth",
-      "Benedict Wong"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=BUo--zPPSyw",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-thor-love-and-thunder-2022",
-    "title": "Marvel Studios Assembled: The Making of Thor: Love and Thunder",
-    "year": 2022,
-    "release": "2022-09-08",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1015595,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/eb7GP3cttApzilOOM52L129Eaaj.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3UBlm2N094EFPWuBn3v2EGtHr95.jpg",
-    "overview": "Settle in with the likes of Taika Waititi, Chris Hemsworth, Natalie Portman, Christian Bale, and Tessa Thompson, and as they divulge the secrets behind the creation of Thor: Love and Thunder. Through in-depth interviews with cast and crew, along with raw, unseen footage from the set and beyond, this documentary special pulls back the curtain on the God of Thunder’s fourth feature film.",
-    "imdb": "https://www.imdb.com/title/tt21862424/",
-    "rating": 7,
-    "runtime": 55,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Chris Hemsworth",
-      "Kevin Feige",
-      "Taika Waititi",
-      "Brad Winderbaum"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=sKfdoUpioA8",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "groot-takes-a-bath-2022",
-    "title": "Groot Takes a Bath",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010821,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/kMOm3MTsOwTROOeChQqA4QBvSTG.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hlAPsSBPnwGVeBuhCd8llKYBsNT.jpg",
-    "overview": "Everybody needs some alone time to relax and wash up, but things go quite differently when you’re a Flora Colossi toddler.",
-    "imdb": "https://www.imdb.com/title/tt21316848/",
-    "rating": 7.1,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Fred Tatasciore",
-      "Kaitlyn Robrock"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "groot-s-pursuit-2022",
-    "title": "Groot's Pursuit",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010820,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/z5AQHYTTx7DzG9CRd01ny9DtqNE.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/u76zP5GRRPSXBXqY98dZI39THPu.jpg",
-    "overview": "Groot investigates a spooky noise that’s been haunting the Quadrant, which leads to an intense dance off.",
-    "imdb": "https://www.imdb.com/title/tt21316834/",
-    "rating": 7.1,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "James Gunn",
-      "Trevor Devall",
-      "Terri Douglas"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=sVqg6I11r7M",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "the-little-guy-2022",
-    "title": "The Little Guy",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010819,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/8L6MWRrXHTyz9GcHY0cannRCtnk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tTrZap8lEJsdpnab5yIR3d9bedg.jpg",
-    "overview": "Groot discovers a miniature civilization that believes the seemingly enormous tree toddler is the hero they’ve been waiting for.",
-    "imdb": "https://www.imdb.com/title/tt14513152/",
-    "rating": 7.3,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Bob Bergen",
-      "Terri Douglas",
-      "Scott Menville"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "groot-s-first-steps-2022",
-    "title": "Groot's First Steps",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010818,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/1ifiV9ZJD4tC3tRYcnLIzH0meaB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/9bColKVEAaWfmOLiLZoUhdYfevy.jpg",
-    "overview": "Following the events of “Guardians of the Galaxy Vol. 1,” Baby Groot is finally ready to try taking his first steps out of his pot—only to learn you have to walk before you can run.",
-    "imdb": "https://www.imdb.com/title/tt13820496/",
-    "rating": 7,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Fred Tatasciore"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-ms-marvel-2022",
-    "title": "Marvel Studios Assembled: The Making of Ms. Marvel",
-    "year": 2022,
-    "release": "2022-08-03",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1001912,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/6m0rG2bS90FOlUaxEq8ZPCTQMei.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5LBajgZwqS9plL5MDtIfmlFatSz.jpg",
-    "overview": "Go behind-the-scenes every step of the way with immersive footage from the making of the series, along with insightful interviews on set from the cast and crew of Ms. Marvel as we watch Iman Vellani and her character, Kamala Khan, become the fan-favorite superhero right before our eyes.",
-    "imdb": "https://www.imdb.com/title/tt21351612/",
-    "rating": 6.8,
-    "runtime": 62,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Bisha K. Ali",
-      "Iman Vellani",
-      "Kevin Feige",
-      "Mohan Kapur"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=2miVrtuG1eM",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "magnum-opus-2022",
-    "title": "Magnum Opus",
-    "year": 2022,
-    "release": "2022-07-18",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010823,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/8p8JsKokKbuNCn9yBirAg1oEwGd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/5H2uTD2iWz8OrBRL7ZTg3bPOgml.jpg",
-    "overview": "Groot sets out to paint a family portrait of himself and the Guardians, only to discover just how messy the artistic process can be.",
-    "imdb": "https://www.imdb.com/title/tt21316870/",
-    "rating": 7.2,
-    "runtime": 5,
-    "genres": [
-      "Animation",
-      "Family",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Bradley Cooper",
-      "Fred Tatasciore"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-doctor-strange-in-the-multiverse-of-madness-2022",
-    "title": "Marvel Studios Assembled: The Making of Doctor Strange in the Multiverse of Madness",
-    "year": 2022,
-    "release": "2022-07-07",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 980017,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/eIzPe62s12uHsIPhGWY1yp68DY9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2YKuCnkqOPvHV1mrxwU3RzX0QY0.jpg",
-    "overview": "Join visionary director Sam Raimi and the cast of the film as they recount their experiences bringing Marvel’s darkest story to life.  From world-building to universe-building, hear first hand accounts from the cast and crew on what it took to design, create and make each universe unique and believable.",
-    "imdb": "https://www.imdb.com/title/tt21098288/",
-    "rating": 7.1,
-    "runtime": 59,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Bruce Campbell",
-      "Kevin Feige",
-      "Sam Raimi",
-      "Richie Palmer"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=RjYmr_QuU2Q",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "a-fan-s-guide-to-ms-marvel-2022",
-    "title": "A Fan's Guide to Ms. Marvel",
-    "year": 2022,
-    "release": "2022-06-01",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 979160,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/aolMYjs6QWonQFlnRGvU3o5zeQH.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/709oX5ro1SON6OkaVnA8MOx1WSK.jpg",
-    "overview": "A documentary short that gives you an exclusive look behind the groundbreaking original series, \"Ms. Marvel\", from its comic book origins to its development and production as Marvel Studios’ next hit series on Disney+. It features interviews with its award winning filmmaking team and the show’s captivating star, newcomer Iman Vellani.",
-    "imdb": "https://www.imdb.com/title/tt20782916/",
-    "rating": 7.1,
-    "runtime": 5,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Iman Vellani",
-      "Sana Amanat",
-      "Kevin Feige",
-      "Adil El Arbi"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-moon-knight-2022",
-    "title": "Marvel Studios Assembled: The Making of Moon Knight",
-    "year": 2022,
-    "release": "2022-05-24",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 964943,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/dM6Y4uLzeF4rqbmKBzR0wAsTxby.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/na17QbhoGqwM1X5an2uRA8k94eG.jpg",
-    "overview": "Join the likes of Oscar Isaac and Ethan Hawke as they reveal how Marvel Studios' Moon Knight was painstakingly brought to life. Through insightful interviews with cast and crew, along with immersive footage from the set, and a  candid \"roundtable discussion\" with the series' directors, this \"making-of\" pulls back the curtain on the groundbreaking series of Marvel Studios' newest hero.",
-    "imdb": "https://www.imdb.com/title/tt19766896/",
-    "rating": 6.8,
-    "runtime": 67,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Kevin Feige",
-      "Brad Winderbaum",
-      "Grant Curtis",
-      "Mohamed Diab"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=5m8IA63GyPY",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-eternals-2022",
-    "title": "Marvel Studios Assembled: The Making of Eternals",
-    "year": 2022,
-    "release": "2022-02-16",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 939356,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/fBJ5ZjFJ6IHQWz90SsW80PizVlF.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/imkqp2S4ZXEGczb59ciF6IYVwnW.jpg",
-    "overview": "Join director Chloe Zhao and the Cast of Eternals as they recount their experiences during the making of Marvel Studios’ most ambitious film to date. Discover how the ensemble cast felt stepping into their roles, filming in remote locations, and creating bonds that would help to create the on-screen relationships that span over 7,000 years.",
-    "imdb": "https://www.imdb.com/title/tt15477324/",
-    "rating": 7.1,
-    "runtime": 58,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Gemma Chan",
-      "Nate Moore",
-      "Kit Harington",
-      "Kumail Nanjiani"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=pLK-L_bzOjE",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-the-making-of-hawkeye-2022",
-    "title": "Marvel Studios Assembled: The Making of Hawkeye",
-    "year": 2022,
-    "release": "2022-02-09",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 936643,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/pQOLNPHe4rwXl3RpKNa0VWjYNLR.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/cOyxcD7YUZPriEhyCEbkJlY9kQg.jpg",
-    "overview": "Join the likes of Jeremy Renner, Hailee Steinfeld, Florence Pugh, and Vincent D’Onofrio as they reveal how Marvel Studios’ “Hawkeye” was conceived and created. Witness firsthand what it took to pull off the show’s pulse-pounding action set pieces, and discover how iconic characters from the pages of Marvel Comics such as Kate Bishop were adapted and brought to life for the six-episode series.",
-    "imdb": "https://www.imdb.com/title/tt14235904/",
-    "rating": 7.2,
-    "runtime": 60,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Trinh Tran",
-      "Hiroyuki Sanada",
-      "Bert",
-      "Bertie"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=-qHzefNzj-Y",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-2021-disney-day-special-2021",
-    "title": "Marvel Studios' 2021 Disney+ Day Special",
-    "year": 2021,
-    "release": "2021-11-12",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 877188,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/zh0B5DDP93e3zokktb5aHHfIh01.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rLnv5QXUE3ITZTfrobsfXuAUtG.jpg",
-    "overview": "Explore the Disney+ series of the MCU—past, present and future!",
-    "imdb": "https://www.imdb.com/title/tt16045628/",
-    "rating": 6.9,
-    "runtime": 14,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Chris Hemsworth",
-      "Tom Hiddleston",
-      "Mark Ruffalo",
-      "Elizabeth Olsen"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=WoaaDDYy7yA",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-expanding-the-universe-2019",
-    "title": "Marvel Studios: Expanding the Universe",
-    "year": 2019,
-    "release": "2019-11-12",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 647375,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/dU7qXzttvOUvSlwwpEFQDsLnThK.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/43NgWUj0Sr9AoM8Prv0QOWsL92k.jpg",
-    "overview": "An exciting look into the future of Marvel Studios' films and upcoming Disney+ series.",
-    "imdb": "https://www.imdb.com/title/tt11295300/",
-    "rating": 5.7,
-    "runtime": 12,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Zoie Nagelhout",
-      "Mary Livanos",
-      "Stephen Broussard",
-      "Kevin R. Wright"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "peter-s-to-do-list-2019",
-    "title": "Peter's To-Do List",
-    "year": 2019,
-    "release": "2019-09-17",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 758025,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/9OOhqOVo37DQnQ6OUPz0Qlek5Uv.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/qG5A6fWoP5inQa16VadLDiB1mlb.jpg",
-    "overview": "On the eve of his departure to Europe, Peter Parker tells Ned Leeds that he has several things to do before they leave.",
-    "imdb": "https://www.imdb.com/title/tt11107678/",
-    "rating": 7,
-    "runtime": 4,
-    "genres": [
-      "Science Fiction",
-      "Action",
-      "Adventure"
-    ],
-    "cast": [
-      "Tom Holland",
-      "Jacob Batalon",
-      "Hemky Madera",
-      "Tony Revolori"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "team-darryl-2018",
-    "title": "Team Darryl",
-    "year": 2018,
-    "release": "2018-02-20",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 505945,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/edroTAeTEM9ILyAnumA0ALxRSne.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/wL56346BF1eMElIGtqWLiILcfbU.jpg",
-    "overview": "Fresh off being unseated as the ruler of Sakaar, the Grandmaster makes his way to Earth to start a new life. It's been over a year since Thor left Australia and Darryl has been struggling to pay his rent. Now Darryl needs a new roommate to help make the monthly payments. Unfortunately for Darryl, the Grandmaster was the only one who answered Darryl's \"Roommate Needed\" ad and with no viable options, the Grandmaster moves in.",
-    "imdb": "https://www.imdb.com/title/tt8023090/",
-    "rating": 6.2,
-    "runtime": 6,
-    "genres": [
-      "Comedy",
-      "Fantasy",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Jeff Goldblum",
-      "Daley Pearson",
-      "Zach Campa",
-      "Chris Hemsworth"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=Nl3VkYkMa6Q",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "team-thor-part-2-2017",
-    "title": "Team Thor: Part 2",
-    "year": 2017,
-    "release": "2017-02-14",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 441829,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/2jmP71A5Un0jDNqBesDPQSN8hjJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/cz8m8AS8MOD1x4RAjYgYMHf13xB.jpg",
-    "overview": "A continuation of the documentary spoof of what Thor and his roommate Darryl were up to during the events of \"Captain America: Civil War\". While Cap and Iron Man duke it out, Thor tries to pay Darryl his rent in Asgardian coins.",
-    "imdb": "https://www.imdb.com/title/tt6599818/",
-    "rating": 6.9,
-    "runtime": 5,
-    "genres": [
-      "Science Fiction",
-      "Comedy",
-      "Fantasy"
-    ],
-    "cast": [
-      "Chris Hemsworth",
-      "Daley Pearson"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=n3TOw6r7ghc",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "team-thor-2016",
-    "title": "Team Thor",
-    "year": 2016,
-    "release": "2016-08-28",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 413279,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/hpHvGuMc46pppwpcW0Xk7eys3L4.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/rmsj3O1e1fFmIKIuFjkN572s7xQ.jpg",
-    "overview": "Discover what Thor was up to during the events of Captain America: Civil War.",
-    "imdb": "https://www.imdb.com/title/tt6016776/",
-    "rating": 7.2,
-    "runtime": 3,
-    "genres": [
-      "Comedy",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Chris Hemsworth",
-      "Mark Ruffalo",
-      "Daley Pearson"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=bPNBKT6JLSU",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-s-captain-america-75-heroic-years-2016",
-    "title": "Marvel's Captain America: 75 Heroic Years",
-    "year": 2016,
-    "release": "2016-01-19",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 379040,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/lr8ZujMvC36pHXRiamsrEex5Nip.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/hGg4e8ZuLOYT46ERS5LY2Qnb4q5.jpg",
-    "overview": "A full-length documentary that follows the history of Captain America from 1941 to present, and explores how \"Cap\" has been a reflection of the changing times and the world he has existed in throughout the years. Fans will hear from various Marvel luminaries including Stan Lee, Joe Quesada, Clark Gregg, Ming-Na Wen, Chloe Bennet, Jeph Loeb, Louis D'Esposito, Chris Evans and Hayley Attwell, as well as family members of Cap's creators.",
-    "imdb": "https://www.imdb.com/title/tt5281414/",
-    "rating": 6.7,
-    "runtime": 42,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Stan Lee",
-      "Joe Quesada",
-      "Chris Evans",
-      "Hayley Atwell"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=o-_Rbu7S6GQ",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembling-a-universe-2014",
-    "title": "Marvel Studios: Assembling a Universe",
-    "year": 2014,
-    "release": "2014-03-18",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 259910,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/41Ke02UzYoPsiTc3YbomPGiQKMl.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2l9yXhNtLC5SHa81m3MtLfpoXTr.jpg",
-    "overview": "A look at the story behind Marvel Studios and the Marvel Cinematic Universe, featuring interviews and behind-the-scenes footage from all of the Marvel films, the Marvel One-Shots and \"Marvel's Agents of S.H.I.E.L.D.\"!",
-    "imdb": "https://www.imdb.com/title/tt3591568/",
-    "rating": 6.9,
-    "runtime": 43,
-    "genres": [
-      "Documentary",
-      "TV Movie",
-      "Fantasy"
-    ],
-    "cast": [
-      "Robert Downey Jr.",
-      "Clark Gregg",
-      "Scarlett Johansson",
-      "Kenneth Branagh"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=o7MtfYoRvxo",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-one-shot-all-hail-the-king-2014",
-    "title": "Marvel One-Shot: All Hail the King",
-    "year": 2014,
-    "release": "2014-02-04",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 253980,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/y0QYZPWgeGKOvyrzi6Oz3aJPxJa.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/yoigAFjhEhJM6O6hQT9TiKH6EL7.jpg",
-    "overview": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
-    "imdb": "https://www.imdb.com/title/tt3438640/",
-    "rating": 6.7,
-    "runtime": 14,
-    "genres": [
-      "Action",
-      "Comedy",
-      "Fantasy"
-    ],
-    "cast": [
-      "Ben Kingsley",
-      "Scoot McNairy",
-      "Lester Speight",
-      "Sam Rockwell"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=XlJuWdLpdNw",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-one-shot-agent-carter-2013",
-    "title": "Marvel One-Shot: Agent Carter",
-    "year": 2013,
-    "release": "2013-10-04",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 211387,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/4vFKKWPvCVDJTOWiwReBfpAMScP.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/kv8KDbi2I4F4MNBbBMCR4LDqP6H.jpg",
-    "overview": "Agent Peggy Carter is relegated to a desk job and frustrated at her male boss and comrades' sexist dismissal of her place in the SSR. Ordered to work late one night, Carter gets an alert that the villain Zodiac has been spotted and decides to take care of it herself.",
-    "imdb": "https://www.imdb.com/title/tt3067038/",
-    "rating": 7.3,
-    "runtime": 15,
-    "genres": [
-      "Adventure",
-      "Action",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Hayley Atwell",
-      "Bradley Whitford",
-      "Dominic Cooper",
-      "Neal McDonough"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=hsmexv78GMg",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-one-shot-item-47-2012",
-    "title": "Marvel One-Shot: Item 47",
-    "year": 2012,
-    "release": "2012-08-29",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 119569,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/hnSxG8clwLuAXEkp9emc8HCUcHD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/pC36ONAaKMXStlvutYFcAbMemCM.jpg",
-    "overview": "Benny and Claire, a down-on-their-luck couple, find a discarded Chitauri weapon referred to as 'Item 47'.",
-    "imdb": "https://www.imdb.com/title/tt2247732/",
-    "rating": 6.4,
-    "runtime": 12,
-    "genres": [
-      "Science Fiction",
-      "Action",
-      "Fantasy"
-    ],
-    "cast": [
-      "Lizzy Caplan",
-      "Jesse Bradford",
-      "Maximiliano Hernández",
-      "Titus Welliver"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=Gog0_GKYpIg",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-one-shot-a-funny-thing-happened-on-the-way-to-thor-s-hammer-2011",
-    "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
-    "year": 2011,
-    "release": "2011-10-25",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 76535,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/njrOqsmFH4pxBrhcoslqLfw2OGk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/yuIsNfHZTn3nkSsatzM0298wA67.jpg",
-    "overview": "Agent Coulson stops at a convenience store and deals with a coincidental robbery during his visit.",
-    "imdb": "https://www.imdb.com/title/tt2011109/",
-    "rating": 6.9,
-    "runtime": 4,
-    "genres": [
-      "Science Fiction",
-      "Fantasy",
-      "Adventure"
-    ],
-    "cast": [
-      "Clark Gregg",
-      "Jessica Manuel",
-      "Jeff Prewett",
-      "Zach Hudson"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=AqcnUD468no",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-one-shot-the-consultant-2011",
-    "title": "Marvel One-Shot: The Consultant",
-    "year": 2011,
-    "release": "2011-09-13",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 76122,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/xqNLXUUvBnfVk6m3QFGGU0Grgs7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/r1Q3jyOpfbF3VDU52w8RzkTPbfe.jpg",
-    "overview": "Agent Coulson informs Agent Sitwell that the World Security Council wishes Emil Blonsky to be released from prison to join the Avengers Initiative. As Nick Fury doesn't want to release Blonsky, the two agents decide to send a patsy to sabotage the meeting...",
-    "imdb": "https://www.imdb.com/title/tt2011118/",
-    "rating": 6.3,
-    "runtime": 4,
-    "genres": [
-      "Adventure",
-      "Fantasy",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Maximiliano Hernández",
-      "Clark Gregg",
-      "Robert Downey Jr.",
-      "William Hurt"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=5fqkhw1jiZI",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "hulk-vs-thor-2009",
-    "title": "Hulk vs. Thor",
-    "year": 2009,
-    "release": "2009-01-27",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 101907,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/4NS7L9xtGEOsZA0gnqdQBI7QiXu.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/p0cYNkCjGYOJxUsk3hoPmYFFlSO.jpg",
-    "overview": "For ages, Odin has protected his kingdom of Asgard. But every winter, the All-Father must rest and regain his strength for one week. During this time, all of Asgard's foes (including trolls, giants, dark elves, and demons) try to claim the realm for their own, but they are always stopped by Odin's son, the mighty Thor, albeit with the loss of many brave Asgardian warriors. Loki, god of mischief, has kidnapped Dr. Bruce Banner and brought him to Asgard with the help of Amora, once Thor's lover, now the supervillain known as the Enchantress. Loki makes Banner angry and he changes into the Hulk. The Enchantress then casts a spell over the Hulk which separates Banner from his monstrous alter-ego and grants Loki control over the Hulk's body.",
-    "imdb": null,
-    "rating": 6.8,
-    "runtime": 45,
-    "genres": [
-      "Action",
-      "Animation",
-      "Fantasy"
-    ],
-    "cast": [
-      "Fred Tatasciore",
-      "Graham McTavish",
-      "Matthew Wolf",
-      "Grey DeLisle"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "hulk-vs-wolverine-2009",
-    "title": "Hulk vs. Wolverine",
-    "year": 2009,
-    "release": "2009-01-27",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 15257,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/p8PZfkrCuXanfYr3k6xAS6WzN8Y.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/Aack4R47Po0qtyvID374rRacuWB.jpg",
-    "overview": "Department H sends in Wolverine to track down a mysterious beast known by the US Military as the Hulk, who is rampaging across the Canadian wilderness. Surveying the extent of the damage to a destroyed town, Wolverine notices a toxic scent as well as the smell of gunpowder. He is then deployed to the wilderness to resume tracking the creature.",
-    "imdb": null,
-    "rating": 7.1,
-    "runtime": 38,
-    "genres": [
-      "Animation",
-      "Action",
-      "Science Fiction"
-    ],
-    "cast": [
-      "Fred Tatasciore",
-      "Bryce Johnson",
-      "Steve Blum",
-      "Nolan North"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=BG-yJRb7vZQ",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "next-avengers-heroes-of-tomorrow-2008",
-    "title": "Next Avengers: Heroes of Tomorrow",
-    "year": 2008,
-    "release": "2008-09-02",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 14613,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/1y4J9HZJoTIMdt77wCq80uXaQJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/6V6rhHkqYvJGlxIQ9mvZuIoY6c9.jpg",
-    "overview": "The children of the Avengers hone their powers and go head to head with the very enemy responsible for their parents' demise.",
-    "imdb": "https://www.imdb.com/title/tt1259998/",
-    "rating": 7,
-    "runtime": 78,
-    "genres": [
-      "Animation",
-      "Family",
-      "Action"
-    ],
-    "cast": [
-      "Noah Crawford",
-      "Brenna O'Brien",
-      "Aidan Drummond",
-      "Dempsey Pappion"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=swn4H4sqm1A",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "jack-kirby-story-teller-2007",
-    "title": "Jack Kirby: Story Teller",
-    "year": 2007,
-    "release": "2007-06-05",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 244888,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/qXUODQ99NkBzTgxFVHIGYqZP6yW.jpg",
-    "backdrop": null,
-    "overview": "A documentary on the life of Jack Kirby, co-creator of Captain America, The Fantastic Four, Iron Man, Thor, The Avengers, The Hulk, The X-Men and the New Gods, among other classic comic book superheroes.",
-    "imdb": "https://www.imdb.com/title/tt3001088/",
-    "rating": 6.5,
-    "runtime": 64,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Jack Kirby",
-      "Neal Adams",
-      "Mark Evanier",
-      "Stan Lee"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "the-invincible-iron-man-2007",
-    "title": "The Invincible Iron Man",
-    "year": 2007,
-    "release": "2007-01-23",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 13647,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/eebNTSRa5Hh5skPKGdGJIJpo9Ls.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/x6gi2yn51sjRBMt6xeVTPVGFeSB.jpg",
-    "overview": "When a cocky industrialist's efforts to raise an ancient Chinese temple leads him to be seriously wounded and captured by enemy forces, he must use his ideas for a revolutionary power armor in order to fight back as a superhero.",
-    "imdb": "https://www.imdb.com/title/tt0903135/",
-    "rating": 6.1,
-    "runtime": 83,
-    "genres": [
-      "Adventure",
-      "Animation",
-      "Action"
-    ],
-    "cast": [
-      "Marc Worden",
-      "Gwendoline Yeo",
-      "John McCook",
-      "Fred Tatasciore"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=-8cMfBIQF88",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "ultimate-avengers-2-2006",
-    "title": "Ultimate Avengers 2",
-    "year": 2006,
-    "release": "2006-08-08",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 14611,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/sMFyYZR9krqcQC99G6jnb10Zv4P.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/xv77AFzMUiTuUsC5qn31jBB21An.jpg",
-    "overview": "Mysterious Wakanda lies in the darkest heart of Africa, unknown to most of the world. An isolated land hidden behind closed borders, fiercely protected by its young king: Black Panther. But when brutal alien invaders attack, the threat leaves Black Panther with no option but to go against the sacred decrees of his people and ask for help from outsiders.",
-    "imdb": "https://www.imdb.com/title/tt0803093/",
-    "rating": 6.8,
-    "runtime": 73,
-    "genres": [
-      "Adventure",
-      "Animation",
-      "Action"
-    ],
-    "cast": [
-      "Justin Gross",
-      "Jeffrey D. Sams",
-      "Grey DeLisle",
-      "Nolan North"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=gl4jsZcYt9k",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
     "id": "untitled-shang-chi-and-the-legend-of-the-ten-rings-sequel",
     "title": "Untitled Shang-Chi and the Legend of the Ten Rings Sequel",
     "year": null,
@@ -6246,6 +5280,7 @@ window.MCU_DATA = [
     "tmdb_id": 1737233,
     "tmdb_type": "movie",
     "discovered": true,
+    "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/eg37SyXwgF7xlo89C97SWJ3ue9f.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/i0P1P5p2Xpxq5HrpO2zOnA8ifFR.jpg",
     "overview": "The sequel to the 2021 film set in the Marvel Cinematic Universe (MCU) based on the Marvel comics. Plot TBA.",
@@ -6275,6 +5310,14 @@ window.MCU_DATA = [
     "tmdb_id": 213375,
     "tmdb_type": "tv",
     "discovered": true,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Miniseries",
+        "eps": 8,
+        "air": "2026-10-14"
+      }
+    ],
     "poster": "https://image.tmdb.org/t/p/w185/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w780/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
     "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
@@ -6295,411 +5338,6 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "lego-marvel-avengers-strange-tails-2025",
-    "title": "LEGO Marvel Avengers: Strange Tails",
-    "year": 2025,
-    "release": "2025-11-14",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 305165,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/6MhzH93izyEvVO15qgM8UJNvY4z.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/3FaimokK7FaufDYGIGnOG6uyp3f.jpg",
-    "overview": "Hawkeye and The Avengers have made saving the world look easy. But now they face their wildest threat yet: SOCIAL MEDIA. To save the world, a new team must be recruited to help our heroes contend with an influencer bent on cataclysmic destruction.",
-    "imdb": "https://www.imdb.com/title/tt38692893/",
-    "rating": 6.4,
-    "runtime": 26,
-    "genres": [
-      "Family",
-      "Animation",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [],
-    "trailer": "https://www.youtube.com/watch?v=NU44gS07Agw",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "iron-man-and-his-awesome-friends-2025",
-    "title": "Iron Man and His Awesome Friends",
-    "year": 2025,
-    "release": "2025-08-11",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 274388,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/3NlFaIdOkBg2VC3Imi1kbeeGynw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/tHWW3xDD49UZuoirqzUQT046dWi.jpg",
-    "overview": "Follow the adventures (and misadventures) of best friends and super geniuses, Tony Stark, Riri Williams and Amadeus Cho as they work together to solve problems both big and small and protect their city.",
-    "imdb": "https://www.imdb.com/title/tt33997565/",
-    "rating": 4.3,
-    "runtime": null,
-    "genres": [
-      "Animation",
-      "Kids",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [
-      "Mason Blomberg",
-      "Kapri Ladd",
-      "Aidyn James Ahn",
-      "Tony Hale"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=JYLQcnHxBBs",
-    "watch": {
-      "link": "https://www.themoviedb.org/tv/274388-iron-man-and-his-awesome-friends/watch?locale=EG",
-      "flatrate": [
-        "TOD"
-      ],
-      "rent": [],
-      "buy": []
-    },
-    "newlyAvailable": false
-  },
-  {
-    "id": "meet-iron-man-and-his-awesome-friends-2025",
-    "title": "Meet Iron Man and His Awesome Friends",
-    "year": 2025,
-    "release": "2025-07-14",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 294895,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/gg1Jo5iwoiuVwxGV7FgWxBlZSh5.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/iE0hoRpswifSpguQLVNhTe76JpL.jpg",
-    "overview": "Join young genius inventor Tony Stark (Iron Man) and his team of heroic friends as they embark on thrilling adventures, using their tech, teamwork, and quick thinking to save the day!",
-    "imdb": "https://www.imdb.com/title/tt37452743/",
-    "rating": 3.8,
-    "runtime": null,
-    "genres": [
-      "Kids",
-      "Animation"
-    ],
-    "cast": [
-      "Mason Blomberg",
-      "Kapri Ladd",
-      "Aidyn James Ahn",
-      "David Kaye"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "voices-rising-the-music-of-wakanda-forever-2023",
-    "title": "Voices Rising: The Music of Wakanda Forever",
-    "year": 2023,
-    "release": "2023-02-28",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 218437,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/tD0z0ONzplsO7JLkDk1cMTWR1Rd.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/kiEVP28wnShAA3Gu6SkCSkOpnFt.jpg",
-    "overview": "A documentary series focusing on the music from Marvel Studios’ Black Panther: Wakanda Forever. The show centers on the songs and score from the movie and features interview with director Ryan Coogler, composer Ludwig Göransson, among others.",
-    "imdb": "https://www.imdb.com/title/tt26345409/",
-    "rating": 4.8,
-    "runtime": null,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [],
-    "trailer": "https://www.youtube.com/watch?v=T0VDr4WiJZQ",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spidey-and-his-amazing-friends-2021",
-    "title": "Spidey and His Amazing Friends",
-    "year": 2021,
-    "release": "2021-08-06",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 127635,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/etO5jDS5WgR4Y1lTyXhQcilJ6u2.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/7CvmnHAVxhDbYE7jPp0PbKunqqs.jpg",
-    "overview": "Follow Peter Parker, Gwen Stacy and Miles Morales and their adventures as the young heroes team up with Hulk, Ms. Marvel and Black Panther to defeat foes like Rhino, Doc Ock and Green Goblin and learn that teamwork is the best way to save the day.",
-    "imdb": "https://www.imdb.com/title/tt10862280/",
-    "rating": 7.1,
-    "runtime": 12,
-    "genres": [
-      "Animation",
-      "Kids",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [
-      "Audrey Bennett",
-      "Carter Young",
-      "Nick Fisher"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=mzuAyY8WzWA",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-assembled-2021",
-    "title": "Marvel Studios Assembled",
-    "year": 2021,
-    "release": "2021-03-12",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 118924,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/v2BHRwtQVkt5fssLdo5MpFgHJPY.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jQ0cQGugJABsFYvBhtWQQ8ftTGK.jpg",
-    "overview": "Go behind the scenes of the shows and movies of the Marvel Cinematic Universe, following the filmmakers, cast and crew, and Marvel heroes every step of the way.",
-    "imdb": "https://www.imdb.com/title/tt14094206/",
-    "rating": 7.2,
-    "runtime": null,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "marvel-studios-legends-2021",
-    "title": "Marvel Studios Legends",
-    "year": 2021,
-    "release": "2021-01-08",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 114695,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/EpDuYIK81YtCUT3gH2JDpyj8Qk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/2jPv3B0ikeGjEYZKDX8vJGXJrvh.jpg",
-    "overview": "Revisit the epic heroes, villains and moments from across the MCU in preparation for the stories still to come. Each dynamic segment feeds directly into the upcoming series — setting the stage for future events. This series weaves together the many threads that constitute the unparalleled Marvel Cinematic Universe.",
-    "imdb": "https://www.imdb.com/title/tt13650480/",
-    "rating": 7.4,
-    "runtime": 8,
-    "genres": [
-      "Documentary",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [],
-    "trailer": "https://www.youtube.com/watch?v=pydnre8h9wA",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "whih-newsfront-2015",
-    "title": "WHIH Newsfront",
-    "year": 2015,
-    "release": "2015-07-02",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 69069,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/2RAbC1bwYvE3kYr6PdYFUo6vmO6.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/v4SPk4N5JXxy6EMyJazdCRKf1AE.jpg",
-    "overview": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
-    "imdb": "https://www.imdb.com/title/tt5296048/",
-    "rating": 6.2,
-    "runtime": null,
-    "genres": [
-      "Sci-Fi & Fantasy",
-      "Drama",
-      "News"
-    ],
-    "cast": [
-      "Leslie Bibb",
-      "Al Madrigal"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "wolverine-and-the-x-men-2009",
-    "title": "Wolverine and the X-Men",
-    "year": 2009,
-    "release": "2009-01-23",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 6549,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/oSeJ2nESB77iC6SLo4qcqoadjdt.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/uPbpYFYXlUdTDEmfoubKNfdEZZx.jpg",
-    "overview": "Wolverine and the X-Men must join together again to not only battle the increasingly powerful Mutant Response Division, but also to prevent a catastrophic future that Xavier has warned Wolverine must never come to pass.",
-    "imdb": "https://www.imdb.com/title/tt0772145/",
-    "rating": 7.6,
-    "runtime": 22,
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Drama"
-    ],
-    "cast": [
-      "Steve Blum",
-      "Jim Ward",
-      "Nolan North",
-      "Fred Tatasciore"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=g6YZF1usS4M",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "mutant-x-2001",
-    "title": "Mutant X",
-    "year": 2001,
-    "release": "2001-10-06",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1449,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/yiKg027jdpkSsguVBI9WqliNWez.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/A2BqbbSs9E4emekdxdvWzLK6lpx.jpg",
-    "overview": "Follow the adventures of a group of human mutants - led by the mysterious Adam Kane - possessing extraordinary powers as a result of genetic experimentation gone awry.",
-    "imdb": "https://www.imdb.com/title/tt0283203/",
-    "rating": 6.7,
-    "runtime": 44,
-    "genres": [
-      "Sci-Fi & Fantasy",
-      "Action & Adventure",
-      "Mystery"
-    ],
-    "cast": [
-      "Victoria Pratt",
-      "Karen Cliche",
-      "Victor Webster",
-      "Forbes March"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "x-men-evolution-2000",
-    "title": "X-Men: Evolution",
-    "year": 2000,
-    "release": "2000-11-04",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 668,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/At5aZIKkN8zHTAXOnQR9D3b7usW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/ypjekzMRMvdrx4PRA7v1DNyCmTR.jpg",
-    "overview": "Teenagers Cyclops, Jean Grey, Rogue, Nightcrawler, Shadowcat, and Spike fight for a world that fears and hates them.",
-    "imdb": "https://www.imdb.com/title/tt0247827/",
-    "rating": 8,
-    "runtime": null,
-    "genres": [
-      "Kids",
-      "Animation",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [
-      "Kirby Morrow",
-      "Venus Terzo",
-      "David Kaye",
-      "Brad Swaile"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=7Z7chBBJx1o",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spider-man-unlimited-1999",
-    "title": "Spider-Man Unlimited",
-    "year": 1999,
-    "release": "1999-10-02",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 10079,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/hNdf1WmFil9IV7rabBe6PnAmYnI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/z0szinMWegbR2cH9zIxaBKy2C5b.jpg",
-    "overview": "Spider-Man travels to Counter-Earth to rescue a Terran shuttle crew trapped there and discovers a tyrannical & warped version of his world.",
-    "imdb": "https://www.imdb.com/title/tt0207120/",
-    "rating": 7.6,
-    "runtime": null,
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [
-      "Rino Romano",
-      "John Payne",
-      "Brian Drummond",
-      "Michael Donovan"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=s_85l8sBlPk",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "silver-surfer-1998",
-    "title": "Silver Surfer",
-    "year": 1998,
-    "release": "1998-02-07",
-    "type": "series",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1130,
-    "tmdb_type": "tv",
-    "discovered": true,
-    "poster": "https://image.tmdb.org/t/p/w185/18rhdRDXAAHUTsbWtIQn2ZkjRL9.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w780/jTupUx9wdoIKe8BFoP5Z1xzEtno.jpg",
-    "overview": "The adventures of the cosmic wanderer as he seeks his lost home after rebelling from his master.",
-    "imdb": "https://www.imdb.com/title/tt0203268/",
-    "rating": 7.4,
-    "runtime": null,
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "cast": [
-      "Paul Essiembre"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=hHLI7VPFXro",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
     "id": "marvel-s-avengers-mightiest-friends",
     "title": "Marvel's Avengers: Mightiest Friends",
     "year": null,
@@ -6711,6 +5349,7 @@ window.MCU_DATA = [
     "tmdb_id": 297767,
     "tmdb_type": "tv",
     "discovered": true,
+    "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/zAfQdTslcc6eAK98wYR2w9Ziukx.jpg",
     "backdrop": null,
     "overview": "The series introduces kid versions of Earth's Mightiest Heroes: Iron Man, Captain America, Hulk, Black Panther, Black Widow and Thor. Together, the young Avengers strive to be their best selves while facing off against classic Super Baddies.",

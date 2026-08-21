@@ -87,7 +87,7 @@ async function discoverNew(seedKeys,seedNames){
   const found=[],seen=new Set();
   for(const mt of['movie','tv']){let pages=1;
     for(let page=1;page<=pages&&page<=5;page++){let res;try{res=await api('/discover/'+mt,{with_companies:COMPANY,sort_by:(mt==='movie'?'primary_release_date.desc':'first_air_date.desc'),page});}catch(e){break;}pages=res.total_pages||1;
-      (res.results||[]).forEach(x=>{const title=x.title||x.name,date=x.release_date||x.first_air_date||'';if(!title)return;const key=mt+':'+x.id;if(seedKeys.has(key)||seen.has(key)||IGNORE.has(key))return;if(seedNames.has(normTitle(title)))return;seen.add(key);found.push({id:x.id,mt,title,year:date?+date.slice(0,4):null,release:date||null});});
+      (res.results||[]).forEach(x=>{const title=x.title||x.name,date=x.release_date||x.first_air_date||'';if(!title)return;const key=mt+':'+x.id;if(seedKeys.has(key)||seen.has(key)||IGNORE.has(key))return;if(seedNames.has(normTitle(title)))return;if(date && new Date(date)<=new Date())return;seen.add(key);found.push({id:x.id,mt,title,year:date?+date.slice(0,4):null,release:date||null});});
       await sleep(180);}}
   return found;
 }

@@ -169,6 +169,19 @@
   .seasonrow .sname{flex:1;min-width:0}.seasonrow .seps{color:var(--faint);font-size:.72rem}
   .seasontoggle{font-size:.72rem;color:var(--violet);border:1px solid var(--violet-line);background:rgba(155,140,224,.08);border-radius:99px;padding:3px 10px;cursor:pointer;margin-top:8px}
   .upbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+  .eps{display:flex;flex-wrap:wrap;gap:4px;margin:2px 0 6px 29px}
+  .ep{min-width:17px;height:17px;padding:0 2px;border-radius:4px;border:1px solid var(--faint);background:var(--box);cursor:pointer;font-size:.55rem;color:var(--faint);display:flex;align-items:center;justify-content:center;transition:all .12s}
+  .ep.on{background:var(--gold);border-color:var(--gold);color:var(--bg);font-weight:700}.ep:hover{border-color:var(--gold)}
+  .nextup{display:flex;align-items:center;gap:13px;background:linear-gradient(100deg,var(--surface-2),var(--surface));border:1px solid var(--gold-line);border-radius:14px;padding:11px 14px;margin:0 0 14px;cursor:pointer;transition:transform .18s}
+  .nextup:hover{transform:translateY(-2px)}
+  .nextup .np{flex:none;width:42px;height:63px;border-radius:7px;background:var(--box) center/cover no-repeat;border:1px solid var(--line)}
+  .nextup .nlabel{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.62rem;color:var(--gold)}
+  .nextup .ntitle{font-weight:600;font-size:.95rem;margin-top:1px}.nextup .nmeta{font-size:.76rem;color:var(--muted);margin-top:2px}
+  .nextup .go{margin-left:auto;flex:none;color:var(--gold);font-size:1.2rem}
+  .newdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--emerald);margin-left:6px;vertical-align:middle}
+  .tag.newbadge{color:var(--emerald);border-color:rgba(47,185,138,.4);background:rgba(47,185,138,.1)}
+  .playbadge{position:absolute;left:6px;top:6px;width:22px;height:22px;border-radius:50%;background:rgba(10,13,24,.78);border:1px solid var(--gold-line);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:.6rem}
+  .newsposter{position:relative}
   @media (max-width:520px){.item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
@@ -187,6 +200,7 @@
     <div class="uni-stats" id="uniStats"></div>
   </div>
   <input class="search" id="search" type="search" placeholder="Search all titles…" autocomplete="off" />
+  <div id="nextUp"></div>
   <div class="tabs" id="uniTabs"></div>
   <div class="filters" id="filters"></div>
   <div class="tools" id="tools"></div>
@@ -204,10 +218,10 @@
   const BM=`<svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>`;
   const STAR=`<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>`;
   const STORE='mcu_tracker_v3';
-  let state={done:{},watchlist:{},ratings:{},seasons:{},collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark'};
+  let state={done:{},watchlist:{},ratings:{},seasons:{},eps:{},knownIds:[],collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark'};
   let toastT,deferredPrompt=null;
   function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
-  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.upFilter=s.upFilter||'all';return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
+  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.eps=s.eps||{};state.knownIds=s.knownIds||[];state.upFilter=s.upFilter||'all';return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
   function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
   const DATA=(window.MCU_DATA||[]).slice();
   const CFG=window.MCU_CONFIG||{};
@@ -217,24 +231,27 @@
   const TODAY=new Date();
   function relDate(it){return it.release?new Date((it.release.length===4?it.release+'-12-31':it.release)+'T00:00:00'):new Date(it.year,11,31);}
   DATA.forEach(it=>{it.universe=it.universe||'MCU';it._up=relDate(it)>TODAY;it._rt=relDate(it).getTime();it._avail=!!(it.watch&&it.watch.flatrate&&it.watch.flatrate.length);});
+  function newsOnly(it){return !!it.discovered || (it.universe==='MCU' && !it.phase);}
+  function inNews(it){return it._up || (newsOnly(it) && !it.release);}
+  const TRACK=DATA.filter(i=>!newsOnly(i));
   function ordv(list,name){const i=(list||[]).indexOf(name);return i===-1?900+String(name).length:i;}
   const U={};UNI.forEach(u=>U[u.id]={def:u,items:[],subs:{},subOrder:[]});
-  DATA.forEach(it=>{if(!U[it.universe])U[it.universe]={def:{id:it.universe,short:it.universe,label:it.universe},items:[],subs:{},subOrder:[]};U[it.universe].items.push(it);});
+  DATA.forEach(it=>{if(newsOnly(it))return;if(!U[it.universe])U[it.universe]={def:{id:it.universe,short:it.universe,label:it.universe},items:[],subs:{},subOrder:[]};U[it.universe].items.push(it);});
   Object.keys(U).forEach(uid=>{const isMCU=uid==='MCU';U[uid].items.forEach(it=>{const k=isMCU?(it.phase||'—'):(it.saga||'—');(U[uid].subs[k]=U[uid].subs[k]||[]).push(it);});U[uid].subOrder=Object.keys(U[uid].subs).sort((a,b)=>isMCU?ordv(CFG.phaseOrder,a)-ordv(CFG.phaseOrder,b):ordv(CFG.sagaOrder,a)-ordv(CFG.sagaOrder,b));Object.keys(U[uid].subs).forEach(k=>U[uid].subs[k].sort((a,b)=>a._rt-b._rt));});
   const uniOrder=UNI.map(u=>u.id).filter(id=>U[id]).concat(Object.keys(U).filter(id=>!uniById[id]));
-  uniById['NEWS']={id:'NEWS',short:'\uD83D\uDCF0 Upcoming',label:'Upcoming & Announcements'};
+  uniById['NEWS']={id:'NEWS',short:'Upcoming',label:'Upcoming & Announcements'};
   uniOrder.push('NEWS');
   const relOf=items=>items.filter(i=>!i._up);
-  function seasonState(it){var m=(state.seasons&&state.seasons[it.id])||{};return m;}
-  function seasonsWatched(it){if(!it.seasons)return 0;var m=seasonState(it);return it.seasons.filter(function(se){return m[se.n];}).length;}
-  function isFullyWatched(it){ if(it.seasons&&it.seasons.length){return seasonsWatched(it)>=it.seasons.length;} return !!state.done[it.id]; }
-  function setSeason(it,n,on){ if(!state.seasons)state.seasons={}; var m=state.seasons[it.id]||(state.seasons[it.id]={}); if(on)m[n]=true; else delete m[n];
-    // keep the show-level 'done' in sync: done iff all seasons watched
-    if(it.seasons&&it.seasons.length){ if(seasonsWatched(it)>=it.seasons.length)state.done[it.id]=true; else delete state.done[it.id]; }
-  }
-  // episodes watched for a show given its season map
-  function epsWatched(it){ if(!it.seasons)return 0; var m=seasonState(it); return it.seasons.reduce(function(a,se){return a+(m[se.n]?(se.eps||0):0);},0); }
-  function uniCounts(uid){if(uid==='NEWS'){return{done:DATA.filter(i=>i._up).length,total:null};}const rel=relOf(U[uid].items);return{done:rel.filter(i=>isFullyWatched(i)).length,total:rel.length};}
+  function epsInSeason(it,n){var se=(it.seasons||[]).find(function(s){return s.n===n;});return se?(se.eps||0):0;}
+  function seasonCount(it,n){return (state.eps[it.id]&&state.eps[it.id][n])||0;}
+  function setSeasonCount(it,n,c){if(!state.eps[it.id])state.eps[it.id]={};var mx=epsInSeason(it,n);c=Math.max(0,Math.min(c,mx));if(c<=0)delete state.eps[it.id][n];else state.eps[it.id][n]=c;if(state.eps[it.id]&&!Object.keys(state.eps[it.id]).length)delete state.eps[it.id];syncDone(it);}
+  function setSeason(it,n,on){setSeasonCount(it,n,on?epsInSeason(it,n):0);}
+  function seasonsWatched(it){if(!it.seasons)return 0;return it.seasons.filter(function(se){return seasonCount(it,se.n)>=se.eps&&se.eps>0;}).length;}
+  function isFullyWatched(it){ if(it.seasons&&it.seasons.length){return it.seasons.every(function(se){return seasonCount(it,se.n)>=se.eps;});} return !!state.done[it.id]; }
+  function syncDone(it){ if(it.seasons&&it.seasons.length){ if(isFullyWatched(it))state.done[it.id]=true; else delete state.done[it.id]; } }
+  function epsWatched(it){ if(!it.seasons)return 0; return it.seasons.reduce(function(a,se){return a+Math.min(seasonCount(it,se.n),se.eps);},0); }
+  function itemHours(it){ if(it.seasons&&it.seasons.length&&it.runtime){var tot=it.seasons.reduce(function(a,se){return a+(se.eps||0);},0);return tot*it.runtime/60;} return (it.runtime||0)/60; }
+  function uniCounts(uid){if(uid==='NEWS'){return{done:DATA.filter(inNews).length,total:null};}const rel=relOf(U[uid].items);return{done:rel.filter(i=>isFullyWatched(i)).length,total:rel.length};}
   function subCounts(uid,key){const rel=relOf(U[uid].subs[key]||[]);return{done:rel.filter(i=>isFullyWatched(i)).length,total:rel.length};}
   function activeCount(){let n=0;if(state.type!=='all')n++;if(state.status!=='all')n++;Object.keys(state.flags).forEach(k=>{if(state.flags[k])n++;});if(state.q)n++;return n;}
   function matches(it){
@@ -255,15 +272,17 @@
     else a.sort((x,y)=>x._rt-y._rt);return a;}
   const storySort=items=>items.slice().sort((x,y)=>((x.chrono||1e9)-(y.chrono||1e9))||(x._rt-y._rt));
   function starW(it){const r=state.ratings[it.id]||0;let s='<span class="stars" data-id="'+it.id+'">';for(let n=1;n<=5;n++)s+='<span class="star'+(n<=r?' fill':'')+'" data-id="'+it.id+'" data-n="'+n+'" role="button" tabindex="0">'+STAR+'</span>';return s+'</span>';}
-  function tagFor(it){let t='<span class="tag">'+(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+'</span>';if(it.essential)t+='<span class="tag ess">Essential</span>';if(it._up)t+='<span class="tag up">Upcoming</span>';if(it.newlyAvailable&&!it._up)t+='<span class="tag neweg">New in EG</span>';if(it.rating)t+='<span class="tag">\u2605 '+it.rating+'</span>';if(it.runtime)t+='<span class="tag">'+it.runtime+'m</span>';return t;}
+  function tagFor(it){let t='<span class="tag">'+(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+'</span>';if(it.essential)t+='<span class="tag ess">Essential</span>';if(it._up)t+='<span class="tag up">Upcoming</span>';if(it.newlyAvailable&&!it._up)t+='<span class="tag neweg">New in EG</span>';if(window.__NEW&&window.__NEW[it.id])t+='<span class="tag newbadge">New</span>';if(it.rating)t+='<span class="tag">\u2605 '+it.rating+'</span>';if(it.runtime)t+='<span class="tag">'+it.runtime+'m</span>';return t;}
+  var EXPANDED={};
   function seasonsBlock(it){
     if(!(it.seasons&&it.seasons.length))return '';
-    var m=seasonState(it), n=seasonsWatched(it);
+    var n=seasonsWatched(it);
     var rows=it.seasons.map(function(se){
-      var on=!!m[se.n];
-      return '<div class="seasonrow'+(on?' on':'')+'"><div class="sch" role="checkbox" aria-checked="'+on+'" tabindex="0" data-sid="'+it.id+'" data-sn="'+se.n+'">'+CHECK+'</div><span class="sname">'+se.name+'</span><span class="seps">'+se.eps+' ep'+(se.eps===1?'':'s')+'</span></div>';
+      var cnt=seasonCount(it,se.n), full=cnt>=se.eps&&se.eps>0;
+      var dots='';for(var k=1;k<=se.eps;k++){dots+='<span class="ep'+(k<=cnt?' on':'')+'" data-eid="'+it.id+'" data-esn="'+se.n+'" data-ek="'+k+'">'+k+'</span>';}
+      return '<div class="seasonrow'+(full?' on':'')+'"><div class="sch" role="checkbox" aria-checked="'+full+'" tabindex="0" data-sid="'+it.id+'" data-sn="'+se.n+'">'+CHECK+'</div><span class="sname">'+se.name+'</span><span class="seps">'+cnt+'/'+se.eps+' ep'+(se.eps===1?'':'s')+'</span></div><div class="eps">'+dots+'</div>';
     }).join('');
-    return '<button class="seasontoggle" data-exp="'+it.id+'">'+(n>0?(n+'/'+it.seasons.length+' seasons \u25BE'):('Track seasons ('+it.seasons.length+') \u25BE')+'')+'</button>'+
+    return '<button class="seasontoggle" data-exp="'+it.id+'">'+(n>0?(n+'/'+it.seasons.length+' seasons \u25BE'):('Track seasons & episodes ('+it.seasons.length+') \u25BE'))+'</button>'+
            '<div class="seasons">'+rows+'</div>';
   }
   function itemHTML(it,idx){
@@ -273,7 +292,7 @@
     const desc=it.overview||it.notes||'';
     let links='';
     if(it.imdb)links+='<a class="lnk" href="'+it.imdb+'" target="_blank" rel="noopener">IMDb \u2197</a>';
-    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+'" data-open="'+it.id+'">'+
+    return '<div class="item'+(done?' done':'')+(it.essential?' essential':'')+(it._up?' upcoming':'')+(EXPANDED[it.id]?' expanded':'')+'" data-open="'+it.id+'">'+
       (idx?'<div class="idx">'+idx+'</div>':'')+
       '<div class="check" role="checkbox" aria-checked="'+done+'" tabindex="0" data-id="'+it.id+'">'+CHECK+'</div>'+poster+
       '<div class="body"><div class="row1"><span class="title">'+it.title+'</span><span class="yr">'+it.year+'</span></div>'+
@@ -307,8 +326,9 @@
       if(!u.subs[key])return;const all=u.subs[key],vis=all.filter(matches);if(!vis.length)return;anything=true;
       const rel=relOf(all),done=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(done/rel.length*100):0;
       const sorted=sortItems(vis),collapsed=!!state.collapsed[uid+'/'+key];
+      const ghours=Math.round(rel.reduce((a,i)=>a+itemHours(i),0));
       const body=state.view==='grid'?'<div class="grid">'+sorted.map(it=>cardHTML(it)).join('')+'</div>':sorted.map(it=>itemHTML(it)).join('');
-      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
+      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+(ghours?(' \u00B7 ~'+ghours+'h'):'')+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
     });
     list.innerHTML=anything?html:'<div class="empty">No titles match your filters here.</div>';
     bind();updateStats();
@@ -319,24 +339,35 @@
     document.querySelectorAll('.star').forEach(s=>{s.onclick=e=>{e.stopPropagation();const id=s.dataset.id,n=+s.dataset.n;if((state.ratings[id]||0)===n)delete state.ratings[id];else state.ratings[id]=n;const cur=state.ratings[id]||0;s.parentNode.querySelectorAll('.star').forEach(x=>x.classList.toggle('fill',(+x.dataset.n)<=cur));save();};});
     document.querySelectorAll('.markall').forEach(m=>{m.onclick=e=>{e.stopPropagation();const key=decodeURIComponent(m.dataset.group);const rel=relOf(U[state.uni].subs[key]||[]);const allDone=rel.every(i=>state.done[i.id]);rel.forEach(i=>{if(allDone)delete state.done[i.id];else state.done[i.id]=true;});save();render();};});
     document.querySelectorAll('.group-head[data-toggle]').forEach(h=>{h.onclick=()=>{const key=decodeURIComponent(h.dataset.toggle),k=state.uni+'/'+key;state.collapsed[k]=!state.collapsed[k];save();h.closest('.group').classList.toggle('collapsed',state.collapsed[k]);};});
-    document.querySelectorAll('.seasontoggle').forEach(b=>{b.onclick=e=>{e.stopPropagation();b.closest('.item,.card').classList.toggle('expanded');b.closest('.card')&&b.closest('.card').classList.toggle('showseasons');};});
-    document.querySelectorAll('.sch').forEach(c=>{const t=e=>{e&&e.stopPropagation();const it=byId[c.dataset.sid],n=+c.dataset.sn;const m=seasonState(it);setSeason(it,n,!m[n]);save();render();refreshCounts();celebrate();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
+    document.querySelectorAll('.seasontoggle').forEach(b=>{b.onclick=e=>{e.stopPropagation();const id=b.dataset.exp;EXPANDED[id]=!EXPANDED[id];const row=b.closest('.item,.card');row.classList.toggle('expanded',EXPANDED[id]);if(row.classList.contains('card'))row.classList.toggle('showseasons',EXPANDED[id]);};});
+    document.querySelectorAll('.sch').forEach(c=>{const t=e=>{e&&e.stopPropagation();const it=byId[c.dataset.sid],n=+c.dataset.sn;const full=seasonCount(it,n)>=epsInSeason(it,n);setSeasonCount(it,n,full?0:epsInSeason(it,n));save();render();refreshCounts();celebrate();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
+    document.querySelectorAll('.ep').forEach(el=>{el.onclick=e=>{e.stopPropagation();const it=byId[el.dataset.eid],n=+el.dataset.esn,k=+el.dataset.ek;const cur=seasonCount(it,n);setSeasonCount(it,n,cur===k?k-1:k);save();render();refreshCounts();celebrate();};});
     document.querySelectorAll('[data-open]').forEach(el=>{el.addEventListener('click',()=>openDetail(el.dataset.open));});
     document.querySelectorAll('.links a,.newscard a').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
   }
-  function refreshCounts(){updateStats();updateTabs();}
+  function refreshCounts(){updateStats();updateTabs();buildNextUp();}
   function updateStats(){
-    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(watched/rel.length*100):0;
+    const rel=TRACK.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(watched/rel.length*100):0;
     document.getElementById('watched').textContent=watched;document.getElementById('total').textContent=rel.length;document.getElementById('pct').textContent=pct+'%';document.getElementById('barfill').style.width=pct+'%';
-    document.getElementById('released').textContent=rel.length;document.getElementById('upcoming').textContent=DATA.length-rel.length;document.getElementById('wl').textContent=Object.keys(state.watchlist).length;document.getElementById('avail').textContent=DATA.filter(i=>i._avail).length;
-    document.getElementById('uniStats').innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid);return '<span><b>'+(uniById[uid]?uniById[uid].short:uid)+'</b> '+c.done+'/'+c.total+'</span>';}).join('');
+    document.getElementById('released').textContent=rel.length;document.getElementById('upcoming').textContent=TRACK.filter(i=>i._up).length;document.getElementById('wl').textContent=Object.keys(state.watchlist).length;document.getElementById('avail').textContent=TRACK.filter(i=>i._avail).length;
+    document.getElementById('uniStats').innerHTML=uniOrder.filter(uid=>uid!=='NEWS').map(uid=>{const c=uniCounts(uid);return '<span><b>'+(uniById[uid]?uniById[uid].short:uid)+'</b> '+c.done+'/'+c.total+'</span>';}).join('');
   }
   function updateTabs(){
     const tabs=document.getElementById('uniTabs');
     tabs.innerHTML=uniOrder.map(uid=>{const c=uniCounts(uid),u=uniById[uid]||{short:uid};const badge=(c.total==null)?(''+c.done):(c.done+'/'+c.total);return '<div class="tab'+(uid===state.uni?' on':'')+'" data-uni="'+uid+'">'+(u.short||u.label)+'<span class="badge">'+badge+'</span></div>';}).join('');
     tabs.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{state.uni=t.dataset.uni;save();renderTabsAndList();});
   }
-  function renderTabsAndList(){updateTabs();render();}
+  function buildNextUp(){
+    var el=document.getElementById('nextUp');if(!el)return;
+    var pool=TRACK.filter(function(i){return !i._up && !isFullyWatched(i);}).sort(function(a,b){return ((a.chrono||1e9)-(b.chrono||1e9))||(a._rt-b._rt);});
+    if(!pool.length){el.innerHTML='';return;}
+    var it=pool[0];
+    var poster=it.poster?'<div class="np" style="background-image:url('+it.poster+')"></div>':'<div class="np"></div>';
+    var meta=(it.type==='movie'?'Film':it.type==='special'?'Special':'Series')+(it.runtime?(' \u00B7 '+(it.seasons?Math.round(itemHours(it))+'h':it.runtime+'m')):'')+(it.rating?(' \u00B7 \u2605 '+it.rating):'');
+    el.innerHTML='<div class="nextup" data-open="'+it.id+'">'+poster+'<div><div class="nlabel">Up next \u2014 story order</div><div class="ntitle">'+it.title+'</div><div class="nmeta">'+meta+'</div></div><div class="go">\u2192</div></div>';
+    el.querySelector('.nextup').addEventListener('click',function(){openDetail(it.id);});
+  }
+  function renderTabsAndList(){updateTabs();render();buildNextUp();}
   function buildFilters(){
     const c=document.getElementById('filters');
     const status=[['All','all'],['To watch','towatch'],['Watched','watched']];
@@ -369,12 +400,12 @@
   }
   function toggleStats(){const p=document.getElementById('statsPanel');if(p.classList.contains('hidden')){buildStats();p.classList.remove('hidden');}else p.classList.add('hidden');}
   function buildStats(){
-    const rel=DATA.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)),pct=rel.length?Math.round(watched.length/rel.length*100):0;
+    const rel=TRACK.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)),pct=rel.length?Math.round(watched.length/rel.length*100):0;
     const filmMins=watched.filter(i=>i.type!=='series'&&i.runtime).reduce((a,i)=>a+i.runtime,0);
-    const seriesMins=DATA.filter(i=>i.type==='series'&&i.seasons&&i.runtime).reduce((a,i)=>a+epsWatched(i)*i.runtime,0);
+    const seriesMins=TRACK.filter(i=>i.type==='series'&&i.seasons&&i.runtime).reduce((a,i)=>a+epsWatched(i)*i.runtime,0);
     const hrs=((filmMins+seriesMins)/60).toFixed(1);
     const rk=Object.keys(state.ratings),avg=rk.length?(rk.reduce((a,k)=>a+state.ratings[k],0)/rk.length).toFixed(1):null;
-    const essTot=DATA.filter(i=>i.essential&&!i._up).length,essDone=DATA.filter(i=>i.essential&&!i._up&&state.done[i.id]).length;
+    const essTot=TRACK.filter(i=>i.essential&&!i._up).length,essDone=TRACK.filter(i=>i.essential&&!i._up&&isFullyWatched(i)).length;
     const uni=uniOrder.map(uid=>{const c=uniCounts(uid),p=c.total?Math.round(c.done/c.total*100):0;return '<div class="statrow"><span>'+(uniById[uid]?uniById[uid].label:uid)+'</span><span class="statbar"><i style="width:'+p+'%"></i></span><b>'+c.done+'/'+c.total+'</b></div>';}).join('');
     document.getElementById('statsPanel').innerHTML='<div class="statgrid"><div class="statbox"><b>'+watched.length+'/'+rel.length+'</b><span>watched ('+pct+'%)</span></div><div class="statbox"><b>'+essDone+'/'+essTot+'</b><span>essential watched</span></div><div class="statbox"><b>'+hrs+'h</b><span>hours watched</span></div><div class="statbox"><b>'+(avg||'\u2014')+'</b><span>your avg rating</span></div></div><div class="statlist">'+uni+'</div><div class="statnote">Hours count films plus watched seasons of series (approx, from episode counts).</div>';
   }
@@ -480,27 +511,33 @@
     var list=document.getElementById('list');
     var unis=[['All','all']].concat(uniOrder.filter(function(u){return u!=='NEWS';}).map(function(u){return [(uniById[u]?(uniById[u].short||uniById[u].label):u),u];}));
     var bar='<div class="upbar">'+unis.map(function(o){return '<div class="fchip'+(state.upFilter===o[1]?' on':'')+'" data-up="'+o[1]+'">'+o[0]+'</div>';}).join('')+'<span class="spacer"></span><button class="mini acc" id="wlAllBtn">\uD83D\uDD16 Watchlist all</button></div>';
-    var up=DATA.filter(function(i){return i._up && (state.upFilter==='all'||i.universe===state.upFilter) && (!state.q || i.title.toLowerCase().indexOf(state.q)!==-1);}).sort(function(a,b){return a._rt-b._rt;});
-    var now=Date.now(),html='',lastYear=null;
-    if(!up.length){html='<div class="empty">No upcoming titles here.</div>';}
-    else up.forEach(function(it){
-      var y=new Date(it._rt).getFullYear();
-      if(y!==lastYear){if(lastYear!==null)html+='</div>';html+='<div class="newshead">'+y+'</div><div class="news">';lastYear=y;}
+    var pool=DATA.filter(function(i){return inNews(i) && (state.upFilter==='all'||i.universe===state.upFilter) && (!state.q || i.title.toLowerCase().indexOf(state.q)!==-1);});
+    var dated=pool.filter(function(i){return i._up;}).sort(function(a,b){return a._rt-b._rt;});
+    var undated=pool.filter(function(i){return !i._up;}).sort(function(a,b){return (a.title>b.title?1:-1);});
+    var now=Date.now();
+    function card(it){
       var days=Math.ceil((it._rt-now)/86400000);
-      var soon=(days>=0&&days<=120)?('<span class="newssoon">in '+days+' day'+(days===1?'':'s')+'</span>'):'';
-      var poster=it.poster?'<div class="newsposter" style="background-image:url('+it.poster+')"></div>':'<div class="newsposter ph"></div>';
+      var soon=(it._up&&days>=0&&days<=120)?('<span class="newssoon">in '+days+' day'+(days===1?'':'s')+'</span>'):'';
+      var when=it._up?fmtDate(it):(it.release?fmtDate(it):'Date TBA');
+      var play=it.trailer?'<span class="playbadge">\u25B6</span>':'';
+      var poster=it.poster?'<div class="newsposter" style="background-image:url('+it.poster+')">'+play+'</div>':'<div class="newsposter ph">'+play+'</div>';
       var bm=!!state.watchlist[it.id];
-      html+='<div class="newscard" data-open="'+it.id+'">'+poster+
-        '<div class="newsbody"><div class="newsdate">'+fmtDate(it)+'  '+soon+'</div>'+
+      return '<div class="newscard" data-open="'+it.id+'">'+poster+
+        '<div class="newsbody"><div class="newsdate">'+when+'  '+soon+'</div>'+
         '<div class="newstitle">'+it.title+'</div><div class="tags">'+tagFor(it)+'</div>'+
         (it.overview?'<div class="newsdesc">'+it.overview+'</div>':(it.notes?'<div class="newsdesc">'+it.notes+'</div>':''))+'</div>'+
         '<div class="rowctl"><div class="bm'+(bm?' on':'')+'" role="button" tabindex="0" data-bm="'+it.id+'" title="Watchlist">'+BM+'</div></div></div>';
-    });
+    }
+    var html='',lastYear=null;
+    if(dated.length)html+='<div class="newshead" style="color:var(--emerald)">Confirmed release dates</div>';
+    dated.forEach(function(it){var y=new Date(it._rt).getFullYear();if(y!==lastYear){if(lastYear!==null)html+='</div>';html+='<div class="newshead">'+y+'</div><div class="news">';lastYear=y;}html+=card(it);});
     if(lastYear!==null)html+='</div>';
-    list.innerHTML='<div class="newshead" style="color:var(--muted);margin-bottom:12px">Announcements & unreleased \u2014 soonest first. Tap for details and trailers.</div>'+bar+html;
+    if(undated.length){html+='<div class="newshead" style="color:var(--violet)">Rumored / date TBA</div><div class="news">'+undated.map(card).join('')+'</div>';}
+    if(!dated.length&&!undated.length)html='<div class="empty">Nothing upcoming here.</div>';
+    list.innerHTML='<div class="newshead" style="color:var(--muted);margin-bottom:12px">Upcoming & announced \u2014 soonest first. Tap for details and trailers.</div>'+bar+html;
     document.querySelectorAll('[data-up]').forEach(function(el){el.onclick=function(){state.upFilter=el.dataset.up;save();renderNews();};});
     var wl=document.getElementById('wlAllBtn');
-    if(wl)wl.onclick=function(){var added=0;up.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};
+    if(wl)wl.onclick=function(){var added=0;pool.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};
     bind();updateStats();
   }
   function init(){
@@ -516,6 +553,7 @@
     const up=CFG.updated?(' \u00B7 data '+CFG.updated):'';
     document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Tap a title for details, trailer, and where to watch.';
     if(location.hash&&location.hash.indexOf('#p=')===0){var code=location.hash.slice(3);if(code&&confirm('Load watched progress from this link? Replaces your current watched list.')){applyCode(code);save();}if(history.replaceState)history.replaceState(null,'',location.pathname+location.search);}
+    (function(){var known={};(state.knownIds||[]).forEach(function(id){known[id]=1;});var cur=DATA.map(function(d){return d.id;});window.__NEW={};if(state.knownIds&&state.knownIds.length){cur.forEach(function(id){if(!known[id])window.__NEW[id]=1;});}state.knownIds=cur;save();})();
     buildFilters();buildTools();renderTabsAndList();
     // PWA
     if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}

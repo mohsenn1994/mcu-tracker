@@ -64,15 +64,14 @@
   .statbar{flex:1;height:7px;border-radius:99px;background:var(--box);border:1px solid var(--line);overflow:hidden}.statbar>i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--emerald))}.statrow b{font-family:'Oswald';color:var(--text);font-size:.78rem}.statnote{margin-top:11px;font-size:.72rem;color:var(--faint)}
   .group{margin-bottom:18px}
   .group-head{display:flex;align-items:center;gap:10px;margin:0 2px 11px;cursor:pointer;user-select:none}
-  .group-head.gh2{display:grid;grid-template-columns:16px 1fr auto auto;grid-template-areas:"chev label label label" "bar bar count btn";column-gap:10px;row-gap:9px;align-items:center}
-  .gh2 .chev{grid-area:chev}
-  .gh2 .group-label{grid-area:label;min-width:0}
-  .gh2 .group-mini{grid-area:bar;max-width:none}
-  .gh2 .group-count{grid-area:count}
-  .gh2 .markall{grid-area:btn}
+  .group-head.gh2{display:flex;align-items:center;gap:10px}
+  .gh2 .group-label{flex:none;max-width:46%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .gh2 .group-mini{flex:1 1 auto;min-width:40px;max-width:none}
+  .gh2 .group-count{flex:none}
+  .gh2 .markall{flex:none}
 
   .chev{flex:none;width:14px;color:var(--faint);transition:transform .2s;font-size:.8rem}.group.collapsed .chev{transform:rotate(-90deg)}
-  .group-label{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--gold);font-weight:500;white-space:nowrap}
+  .group-label{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--gold);font-weight:500;white-space:nowrap;flex:none}
   .group-mini{flex:1 1 auto;min-width:60px;height:5px;border-radius:99px;background:var(--box);border:1px solid var(--line);overflow:hidden}.group-mini>i{display:block;height:100%;background:var(--gold);width:0;transition:width .4s}
   .group-count{font-family:'Oswald';font-size:.74rem;color:var(--faint);white-space:nowrap;flex:none;text-align:right;min-width:92px}
   .markall{font-size:.68rem;color:var(--muted);border:1px solid var(--line);background:none;border-radius:99px;padding:3px 9px;cursor:pointer;white-space:nowrap;flex:none;width:82px;text-align:center}.markall:hover{border-color:var(--gold-line);color:var(--gold)}
@@ -269,10 +268,10 @@
   .jmeta{font-size:.72rem;color:var(--muted)}.jnode.here .jtitle{color:var(--violet)}
   /* cinematic header */
   .wrap{position:relative}
-  .herobg{position:absolute;top:0;left:0;right:0;height:340px;overflow:hidden;z-index:0;pointer-events:none;border-radius:0 0 20px 20px}
+  .herobg{position:absolute;top:0;left:0;right:0;height:230px;overflow:hidden;z-index:0;pointer-events:none}
   .herobg .hl{position:absolute;inset:0;background-position:center;background-size:cover;opacity:0;transition:opacity 1.4s ease}
-  .herobg .hl.show{opacity:.32}
-  .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.55),rgba(10,13,24,.82) 62%,var(--bg))}
+  .herobg .hl.show{opacity:.26}
+  .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.45),rgba(10,13,24,.78) 55%,var(--bg) 92%)}
   header,.panel{position:relative;z-index:1}
   body.nocinema .herobg{display:none}
   /* 'now entering' group reveal */
@@ -289,7 +288,7 @@
   .cardposter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.16),transparent 45%);opacity:0;transition:opacity .18s;pointer-events:none}
   .grid .card:hover .cardposter::after{opacity:1}
   @media (hover:none){.grid .card{transform:none !important}}
-  @media (max-width:520px){.group-label{font-size:.74rem}.group-count{min-width:74px}.markall{width:auto}
+  @media (max-width:520px){.group-label{font-size:.74rem;max-width:52%}.group-count{min-width:74px}.markall{width:auto}.herobg{height:180px}
 .item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>

@@ -14,7 +14,7 @@ if(!KEY){console.error('Missing TMDB_API_KEY (short v3 API Key).');process.exit(
 const REGION=(process.env.WATCH_REGION||'EG').toUpperCase();
 const COMPANY=420;                                  // Marvel Studios
 const IMG='https://image.tmdb.org/t/p/w185';
-const BACK='https://image.tmdb.org/t/p/w780';
+const BACK='https://image.tmdb.org/t/p/w1280';
 const RESOLVE_VER=4;
 const seed=require('./seed.js');
 const IGNORE=new Set((seed.config.ignore)||[]);     // tmdb keys "movie:123" to suppress

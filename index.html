@@ -124,8 +124,8 @@
   .cmp-in{width:100%;background:var(--box);border:1px solid var(--line);border-radius:10px;color:var(--text);font-size:.82rem;padding:10px;margin:8px 0;font-family:monospace}
   .cmp-res{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
 
-  .tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:8px 0 20px}
-  .tab{padding:12px 20px;font-size:.86rem;border-radius:13px;transition:transform .15s,background .18s,border-color .18s,color .18s}
+  .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:8px 0 20px}
+  .tab{padding:12px 14px;font-size:.86rem;border-radius:13px;justify-content:center;text-align:center;transition:transform .15s,background .18s,border-color .18s,color .18s}
   .tab:hover{transform:translateY(-2px)}.tab:active{transform:translateY(0) scale(.97)}
   .tab.on{box-shadow:0 6px 18px -8px var(--gold-line)}
   @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
@@ -207,6 +207,7 @@
   @keyframes findpulse{0%{box-shadow:0 0 0 0 rgba(231,183,95,.0);border-color:var(--gold)}20%{box-shadow:0 0 0 4px rgba(231,183,95,.35);border-color:var(--gold)}100%{box-shadow:0 0 0 0 rgba(231,183,95,0)}}
   .item.flash,.card.flash{animation:findpulse 1.6s ease}
   .hub{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:6px}
+  .hubsec{grid-column:1/-1;font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--gold);margin:8px 2px 0}
   .hubbtn{display:flex;align-items:center;gap:10px;background:var(--box);border:1px solid var(--line);border-radius:12px;padding:13px;cursor:pointer;transition:all .16s;text-align:left}
   .hubbtn:hover{border-color:var(--gold-line);transform:translateY(-2px)}
   .hubbtn .hi{font-size:1.3rem;flex:none}.hubbtn .ht{font-weight:600;font-size:.86rem}.hubbtn .hs{font-size:.72rem;color:var(--muted)}
@@ -239,6 +240,7 @@
   body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 50% -8%,var(--glow,transparent),transparent 46%);opacity:.5;transition:background .8s}
   .msec.rec{color:var(--violet)}
   .recitem{display:inline-block;font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:3px 9px;margin:3px 4px 0 0;cursor:pointer}.recitem:hover{border-color:var(--gold-line);color:var(--text)}
+  @media (max-width:560px){.tabs{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:520px){.item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
@@ -254,7 +256,6 @@
     <div class="panel-top"><div class="panel-count"><b id="watched">0</b> of <span id="total">0</span> watched</div><div class="panel-pct" id="pct">0%</div></div>
     <div class="bar"><div class="bar-fill" id="barfill"></div></div>
     <div class="sub-line"><span><b id="released">0</b> released</span><span><b id="upcoming">0</b> upcoming</span><span><b id="wl">0</b> watchlist</span><span><b id="avail">0</b> on EG streaming</span></div>
-    <div class="uni-stats" id="uniStats"></div>
   </div>
   <input class="search" id="search" type="search" placeholder="Search all titles…" autocomplete="off" />
   <div id="nextUp"></div>
@@ -294,7 +295,7 @@
   function ordv(list,name){const i=(list||[]).indexOf(name);return i===-1?900+String(name).length:i;}
   const U={};UNI.forEach(u=>U[u.id]={def:u,items:[],subs:{},subOrder:[]});
   DATA.forEach(it=>{if(newsOnly(it))return;if(!U[it.universe])U[it.universe]={def:{id:it.universe,short:it.universe,label:it.universe},items:[],subs:{},subOrder:[]};U[it.universe].items.push(it);});
-  Object.keys(U).forEach(uid=>{const isMCU=uid==='MCU';U[uid].items.forEach(it=>{const k=isMCU?(it.phase||'—'):(it.saga||'—');(U[uid].subs[k]=U[uid].subs[k]||[]).push(it);});U[uid].subOrder=Object.keys(U[uid].subs).sort((a,b)=>isMCU?ordv(CFG.phaseOrder,a)-ordv(CFG.phaseOrder,b):ordv(CFG.sagaOrder,a)-ordv(CFG.sagaOrder,b));Object.keys(U[uid].subs).forEach(k=>U[uid].subs[k].sort((a,b)=>a._rt-b._rt));});
+  Object.keys(U).forEach(uid=>{const isMCU=uid==='MCU';U[uid].items.forEach(it=>{const k=isMCU?(it.phase||'\u2014'):(it.saga||'\u2014');(U[uid].subs[k]=U[uid].subs[k]||[]).push(it);});U[uid].subOrder=Object.keys(U[uid].subs).sort((a,b)=>isMCU?ordv(CFG.phaseOrder,a)-ordv(CFG.phaseOrder,b):ordv(CFG.sagaOrder,a)-ordv(CFG.sagaOrder,b));Object.keys(U[uid].subs).forEach(k=>U[uid].subs[k].sort((a,b)=>a._rt-b._rt));});
   const uniOrder=UNI.map(u=>u.id).filter(id=>U[id]).concat(Object.keys(U).filter(id=>!uniById[id]));
   uniById['NEWS']={id:'NEWS',short:'Upcoming',label:'Upcoming & Announcements'};
   uniOrder.push('NEWS');
@@ -373,7 +374,7 @@
     if(state.story){
       const vis=storySort(u.items.filter(matches));
       if(!vis.length){list.innerHTML='<div class="empty">No titles match your filters.</div>';bind();updateStats();return;}
-      const label=(uid==='MCU')?'Story order — chronological':'By release order';let n=0;
+      const label=(uid==='MCU')?'Story order \u2014 chronological':'By release order';let n=0;
       const body=state.view==='grid'?'<div class="grid">'+vis.map(it=>cardHTML(it,++n)).join('')+'</div>':vis.map(it=>itemHTML(it,++n)).join('');
       list.innerHTML='<div class="group"><div class="group-head" style="cursor:default"><span class="group-label">'+label+'</span><span class="group-count">'+vis.length+' titles</span></div><div class="group-body">'+body+'</div></div>';
       bind();updateStats();return;
@@ -407,7 +408,7 @@
     const rel=TRACK.filter(i=>!i._up),watched=rel.filter(i=>isFullyWatched(i)).length,pct=rel.length?Math.round(watched/rel.length*100):0;
     document.getElementById('watched').textContent=watched;document.getElementById('total').textContent=rel.length;document.getElementById('pct').textContent=pct+'%';document.getElementById('barfill').style.width=pct+'%';
     document.getElementById('released').textContent=rel.length;document.getElementById('upcoming').textContent=TRACK.filter(i=>i._up).length;document.getElementById('wl').textContent=Object.keys(state.watchlist).length;document.getElementById('avail').textContent=TRACK.filter(i=>i._avail).length;
-    document.getElementById('uniStats').innerHTML=uniOrder.filter(uid=>uid!=='NEWS').map(uid=>{const c=uniCounts(uid);return '<span><b>'+(uniById[uid]?uniById[uid].short:uid)+'</b> '+c.done+'/'+c.total+'</span>';}).join('');
+    var _us=document.getElementById('uniStats');if(_us)_us.innerHTML='';
   }
   function updateTabs(){
     const tabs=document.getElementById('uniTabs');
@@ -416,7 +417,8 @@
   }
   function buildNextUp(){
     var el=document.getElementById('nextUp');if(!el)return;
-    var pool=TRACK.filter(function(i){return !i._up && !isFullyWatched(i);});
+    if(state.uni!=='MCU'){el.innerHTML='';return;}
+    var pool=TRACK.filter(function(i){return (i.universe||'MCU')==='MCU' && !i._up && !isFullyWatched(i);});
     if(state.story){ pool.sort(function(a,b){return ((a.chrono||1e9)-(b.chrono||1e9))||(a._rt-b._rt);}); }
     else { pool.sort(function(a,b){return a._rt-b._rt;}); }
     if(!pool.length){el.innerHTML='';return;}
@@ -470,16 +472,12 @@
     let h='<div class="orderswitch'+(state.story?' on':'')+'" id="storyBtn" role="switch" aria-checked="'+state.story+'" tabindex="0"><span class="knob"></span><span class="olabel">'+(state.story?'Story order':'Release order')+'<span class="osub">'+(state.story?'chronological timeline':'tap for chronological')+'</span></span></div>';
     h+='<div class="seg">'+views.map(v=>'<button class="segb'+(state.view===v[1]?' on':'')+'" data-view="'+v[1]+'">'+v[0]+'</button>').join('')+'</div>';
     h+='<label class="sortlbl'+(state.story?' off':'')+'">Sort <select id="sortSel">'+sorts.map(o=>'<option value="'+o[1]+'"'+(state.sort===o[1]?' selected':'')+'>'+o[0]+'</option>').join('')+'</select></label>';
-    h+='<span class="spacer"></span><button class="mini" id="statsBtn">Stats</button><button class="mini" id="compareBtn">Compare</button><button class="mini" id="moreBtn">\u2726 More</button><button class="mini acc" id="shareBtn">Share</button><button class="mini" id="linkBtn">Copy progress</button>';
+    h+='<span class="spacer"></span><button class="mini acc" id="moreBtn">\u2726 More</button>';
     t.innerHTML=h;
     const _sb=document.getElementById('storyBtn');_sb.onclick=()=>{state.story=!state.story;save();buildTools();render();buildNextUp();};_sb.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();state.story=!state.story;save();buildTools();render();buildNextUp();}};
     t.querySelectorAll('.segb').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;save();buildTools();render();});
     document.getElementById('sortSel').onchange=function(){state.sort=this.value;save();render();};
-    document.getElementById('statsBtn').onclick=toggleStats;
-    document.getElementById('compareBtn').onclick=openCompare;
     document.getElementById('moreBtn').onclick=openHub;
-    document.getElementById('shareBtn').onclick=shareApp;
-    document.getElementById('linkBtn').onclick=copyProgressLink;
   }
   function toggleStats(){const p=document.getElementById('statsPanel');if(p.classList.contains('hidden')){buildStats();p.classList.remove('hidden');}else p.classList.add('hidden');}
   function buildStats(){
@@ -532,7 +530,7 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
   function surprise(){
     const u=U[state.uni];const pool=u.items.filter(i=>matches(i)&&!i._up&&!state.done[i.id]);
-    if(!pool.length){toast('Nothing unwatched matches — try clearing filters.');return;}
+    if(!pool.length){toast('Nothing unwatched matches \u2014 try clearing filters.');return;}
     openDetail(pool[Math.floor(Math.random()*pool.length)].id);
   }
   // ---- progress code + compare ----
@@ -666,19 +664,29 @@
   }
   // ------- hub -------
   function openHub(){
-    var items=[
-      ['\uD83D\uDCFA','Marathon planner','Fit a watch session to your free time','openMarathon'],
-      ['\u23F3','Catch me up','Pace yourself to a release date','openCatchup'],
-      ['\uD83D\uDCCA','Share card','A shareable image of your progress','shareCard'],
-      ['\uD83C\uDFAD','Which hero are you?','From your ratings','whichHero'],
-      ['\uD83C\uDFC6','Achievements','Badges you\u2019ve unlocked','openAchievements'],
-      ['\uD83D\uDD70','Timeline','Scrub the chronological order','openTimeline']
-    ];
-    var grid=items.map(function(o){return '<div class="hubbtn" data-hub="'+o[3]+'"><span class="hi">'+o[0]+'</span><span><div class="ht">'+o[1]+'</div><div class="hs">'+o[2]+'</div></span></div>';}).join('');
+    var sec=function(t){return '<div class="hubsec">'+t+'</div>';};
+    var tile=function(icon,title,sub,fn){return '<div class="hubbtn" data-hub="'+fn+'"><span class="hi">'+icon+'</span><span><div class="ht">'+title+'</div><div class="hs">'+sub+'</div></span></div>';};
+    var grid='';
+    grid+=sec('Insights');
+    grid+=tile('\uD83D\uDCC8','Stats','Progress, hours, per-universe','stats');
+    grid+=tile('\uD83C\uDFC6','Achievements','Badges you\u2019ve unlocked','openAchievements');
+    grid+=tile('\uD83C\uDFAD','Which hero?','Matched from your ratings','whichHero');
+    grid+=sec('Plan');
+    grid+=tile('\uD83D\uDCFA','Marathon planner','Fit a session to your free time','openMarathon');
+    grid+=tile('\u23F3','Catch me up','Pace to a release date','openCatchup');
+    grid+=sec('Explore');
+    grid+=tile('\uD83D\uDD70','Timeline','Scrub the chronological order','openTimeline');
+    grid+=sec('Share');
+    grid+=tile('\uD83D\uDCCA','Share card','An image of your progress','shareCard');
+    grid+=tile('\uD83D\uDC65','Compare','See how a friend compares','openCompare');
+    grid+=tile('\uD83D\uDD17','Copy progress','A link that restores your ticks','copyProgressLink');
+    grid+=tile('\u2197','Share app','Send the tracker to a friend','shareApp');
+    grid+=sec('Display');
     grid+='<div class="hubtoggle'+(state.spoiler?' on':'')+'" id="tgSpoiler"><span><b style="font-size:.86rem">Spoiler-safe mode</b><div class="hs">Blur posters & synopses for unwatched titles</div></span><span class="knob"></span></div>';
     grid+='<div class="hubtoggle'+(state.ambient?' on':'')+'" id="tgAmbient"><span><b style="font-size:.86rem">Ambient glow</b><div class="hs">Tint the page to your next watch</div></span><span class="knob"></span></div>';
     openModalHTML('<div class="mtitle" style="font-size:1.2rem">\u2726 More</div><div class="hub">'+grid+'</div>');
-    document.querySelectorAll('[data-hub]').forEach(function(el){el.onclick=function(){var fn=el.dataset.hub;({openMarathon:openMarathon,openCatchup:openCatchup,shareCard:shareCard,whichHero:whichHero,openAchievements:openAchievements,openTimeline:openTimeline})[fn]();};});
+    var acts={stats:function(){closeModal();toggleStats();},openAchievements:openAchievements,whichHero:whichHero,openMarathon:openMarathon,openCatchup:openCatchup,openTimeline:openTimeline,shareCard:shareCard,openCompare:openCompare,copyProgressLink:function(){copyProgressLink();closeModal();},shareApp:function(){shareApp();closeModal();}};
+    document.querySelectorAll('[data-hub]').forEach(function(el){el.onclick=function(){var fn=acts[el.dataset.hub];if(fn)fn();};});
     document.getElementById('tgSpoiler').onclick=function(){state.spoiler=!state.spoiler;save();applySpoiler();openHub();};
     document.getElementById('tgAmbient').onclick=function(){state.ambient=!state.ambient;save();buildNextUp();openHub();};
   }

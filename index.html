@@ -9,8 +9,9 @@
 <meta property="og:title" content="Marvel Tracker — MCU & Beyond" />
 <meta property="og:description" content="Track every Marvel film and series across the MCU and beyond." />
 <link rel="manifest" href="manifest.json" />
-<link rel="apple-touch-icon" href="icon-192.png" />
-<link rel="icon" type="image/png" href="icon-192.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png?v=3" />
+<link rel="shortcut icon" type="image/png" href="icon-192.png?v=3" />
+<link rel="apple-touch-icon" href="icon-192.png?v=3" />
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -289,11 +290,11 @@
   .jmeta{font-size:.72rem;color:var(--muted)}.jnode.here .jtitle{color:var(--violet)}
   /* cinematic header */
   .wrap{position:relative}
-  .herobg{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100vw;max-width:100vw;height:clamp(300px,38vh,480px);overflow:hidden;z-index:0;pointer-events:none}
+  .herobg{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100vw;max-width:100vw;height:clamp(300px,38vh,460px);overflow:hidden;z-index:-1;pointer-events:none}
   .herobg .hl{position:absolute;inset:0;background-position:center;background-size:cover;opacity:0;transition:opacity 1.4s ease}
   .herobg .hl.show{opacity:.30}
   .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.40),rgba(10,13,24,.72) 52%,var(--bg) 96%)}
-  header,.panel{position:relative;z-index:1}
+  header{position:relative;z-index:0}
   body.nocinema .herobg{display:none}
   /* 'now entering' group reveal */
   .group{--reveal:0}

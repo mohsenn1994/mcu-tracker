@@ -248,6 +248,47 @@
   .msec.rec{color:var(--violet)}
   .recitem{display:inline-block;font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:3px 9px;margin:3px 4px 0 0;cursor:pointer}.recitem:hover{border-color:var(--gold-line);color:var(--text)}
   @media (max-width:560px){.tabs{grid-template-columns:repeat(2,1fr)}}
+  .heatwrap{margin-top:12px}
+  .heatmap{display:flex;gap:3px;overflow-x:auto;padding-bottom:4px}
+  .hmcol{display:flex;flex-direction:column;gap:3px}
+  .hmcell{width:13px;height:13px;border-radius:3px;background:var(--box);border:1px solid var(--line);display:inline-block}
+  .hmcell.l1{background:rgba(231,183,95,.28)}.hmcell.l2{background:rgba(231,183,95,.5)}.hmcell.l3{background:rgba(231,183,95,.75)}.hmcell.l4{background:var(--gold)}
+  .hmcell.fut{opacity:.25}
+  .hmlegend{display:flex;align-items:center;gap:4px;justify-content:flex-end;font-size:.7rem;color:var(--faint);margin-top:8px}
+  .hmlegend .hmcell{width:11px;height:11px}
+  /* journey map */
+  .journey{position:relative;margin-top:10px;padding-left:6px}
+  .jnode{display:flex;align-items:center;gap:12px;position:relative;padding:7px 0 7px 26px;cursor:pointer}
+  .journey::before{content:'';position:absolute;left:12px;top:10px;bottom:10px;width:2px;background:var(--line)}
+  .jdot{position:absolute;left:5px;top:50%;transform:translateY(-50%);width:15px;height:15px;border-radius:50%;background:var(--surface-2);border:2px solid var(--line);z-index:1}
+  .jnode.done .jdot{background:var(--gold);border-color:var(--gold);box-shadow:0 0 0 4px rgba(231,183,95,.16)}
+  .jnode.here .jdot{border-color:var(--violet);box-shadow:0 0 0 4px rgba(155,140,224,.22)}
+  .jposter{flex:none;width:34px;height:51px;border-radius:6px;background:var(--box) center/cover no-repeat;border:1px solid var(--line)}
+  .jnode:not(.done) .jposter{filter:grayscale(.7);opacity:.7}
+  .jbody{min-width:0}.jtitle{font-size:.86rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .jmeta{font-size:.72rem;color:var(--muted)}.jnode.here .jtitle{color:var(--violet)}
+  /* cinematic header */
+  .wrap{position:relative}
+  .herobg{position:absolute;top:0;left:0;right:0;height:340px;overflow:hidden;z-index:0;pointer-events:none;border-radius:0 0 20px 20px}
+  .herobg .hl{position:absolute;inset:0;background-position:center;background-size:cover;opacity:0;transition:opacity 1.4s ease}
+  .herobg .hl.show{opacity:.32}
+  .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.55),rgba(10,13,24,.82) 62%,var(--bg))}
+  header,.panel{position:relative;z-index:1}
+  body.nocinema .herobg{display:none}
+  /* 'now entering' group reveal */
+  .group{--reveal:0}
+  .group .group-enter{overflow:hidden;max-height:0;opacity:0;transform:translateY(6px);transition:max-height .5s ease,opacity .5s ease,transform .5s ease}
+  .group.revealed .group-enter{max-height:60px;opacity:1;transform:none}
+  .group-enter .ge-inner{display:flex;align-items:center;gap:10px;padding:2px 2px 10px;font-family:'Oswald';text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--violet)}
+  .group-enter .ge-line{flex:1;height:1px;background:linear-gradient(90deg,var(--violet-line),transparent)}
+  .group.revealed .group-head{animation:geRise .5s ease}
+  @keyframes geRise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  /* grid poster hover-tilt */
+  .grid .card{transform-style:preserve-3d;will-change:transform;transition:transform .12s ease,border-color .2s,opacity .3s}
+  .grid .card.tilt{transition:transform .05s linear}
+  .cardposter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.16),transparent 45%);opacity:0;transition:opacity .18s;pointer-events:none}
+  .grid .card:hover .cardposter::after{opacity:1}
+  @media (hover:none){.grid .card{transform:none !important}}
   @media (max-width:520px){.group-label{font-size:.74rem}.group-count{min-width:74px}.markall{width:auto}
 .item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
@@ -255,6 +296,7 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="herobg" id="heroBg" aria-hidden="true"><div class="hl" id="hlA"></div><div class="hl" id="hlB"></div></div>
   <header>
     <button class="install-btn hidden" id="installBtn">Install app</button>
     <button class="theme-btn" id="themeBtn" title="Toggle theme">◐</button>
@@ -284,11 +326,19 @@
   const BM=`<svg viewBox="0 0 24 24"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>`;
   const STAR=`<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg>`;
   const STORE='mcu_tracker_v3';
-  let state={done:{},watchlist:{},ratings:{},seasons:{},eps:{},knownIds:[],collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark',spoiler:false,ambient:false,achieved:[]};
+  let state={done:{},watchlist:{},ratings:{},seasons:{},eps:{},knownIds:[],collapsed:{},upFilter:'all',uni:null,sub:'all',type:'all',status:'all',flags:{watchlist:false,essential:false},q:'',view:'list',sort:'release',story:false,theme:'dark',spoiler:false,ambient:false,achieved:[],watchedAt:{},logStarted:0,cinematic:true};
   let toastT,deferredPrompt=null;
   function toast(m){const e=document.getElementById('toast');e.textContent=m;e.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('show'),2200);}
-  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.eps=s.eps||{};state.knownIds=s.knownIds||[];state.upFilter=s.upFilter||'all';state.spoiler=!!s.spoiler;state.ambient=!!s.ambient;state.achieved=s.achieved||[];return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
-  function save(){try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
+  function load(){try{const r=localStorage.getItem(STORE);if(r){const s=JSON.parse(r);Object.assign(state,s);state.flags=Object.assign({watchlist:false,essential:false},s.flags||{});state.seasons=s.seasons||{};state.eps=s.eps||{};state.knownIds=s.knownIds||[];state.upFilter=s.upFilter||'all';state.spoiler=!!s.spoiler;state.ambient=!!s.ambient;state.achieved=s.achieved||[];state.watchedAt=s.watchedAt||{};state.logStarted=s.logStarted||0;state.cinematic=s.cinematic!==false;return;}const old=localStorage.getItem('mcu_tracker_v2')||localStorage.getItem('mcu_tracker_v1');if(old){const s=JSON.parse(old);state.done=s.done||{};state.watchlist=s.watchlist||{};state.ratings=s.ratings||{};}}catch(e){}}
+  function syncLog(){
+    if(!state.watchedAt)state.watchedAt={};
+    var first=!state.logStarted,now=Date.now();
+    TRACK.forEach(function(it){var done=isFullyWatched(it);
+      if(done&&!state.watchedAt[it.id])state.watchedAt[it.id]=first?1:now;
+      else if(!done&&state.watchedAt[it.id])delete state.watchedAt[it.id];});
+    if(first)state.logStarted=now;
+  }
+  function save(){try{syncLog();localStorage.setItem(STORE,JSON.stringify(state));}catch(e){}}
   const DATA=(window.MCU_DATA||[]).slice();
   const CFG=window.MCU_CONFIG||{};
   const UNI=CFG.universes||[{id:'MCU',short:'MCU',label:'MCU'}];
@@ -394,10 +444,27 @@
       const sorted=sortItems(vis),collapsed=!!state.collapsed[uid+'/'+key];
       const ghours=Math.round(rel.reduce((a,i)=>a+itemHours(i),0));
       const body=state.view==='grid'?'<div class="grid">'+sorted.map(it=>cardHTML(it)).join('')+'</div>':sorted.map(it=>itemHTML(it)).join('');
-      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head gh2" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+(ghours?(' \u00B7 ~'+ghours+'h'):'')+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
+      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head gh2" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+(ghours?(' \u00B7 ~'+ghours+'h'):'')+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body"><div class="group-enter"><div class="ge-inner"><span>Now entering</span><span style="color:var(--gold)">'+key+'</span><span class="ge-line"></span></div></div>'+body+'</div></div>';
     });
     list.innerHTML=anything?html:'<div class="empty">No titles match your filters here.</div>';
     bind();updateStats();
+  }
+  function reduceMotion(){return window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;}
+  var _groupObs=null;
+  function wireReveals(){
+    var groups=document.querySelectorAll('.group');
+    if(reduceMotion()||!('IntersectionObserver' in window)){groups.forEach(function(g){g.classList.add('revealed');});return;}
+    if(_groupObs)_groupObs.disconnect();
+    _groupObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');_groupObs.unobserve(e.target);}});},{rootMargin:'0px 0px -12% 0px',threshold:0.08});
+    groups.forEach(function(g){ if(g.getBoundingClientRect().top < (window.innerHeight||800)){g.classList.add('revealed');} else {_groupObs.observe(g);} });
+  }
+  function wireTilt(){
+    if(reduceMotion())return;
+    document.querySelectorAll('.grid .card').forEach(function(card){
+      var poster=card.querySelector('.cardposter');
+      card.onmousemove=function(e){var r=card.getBoundingClientRect();var px=(e.clientX-r.left)/r.width,py=(e.clientY-r.top)/r.height;var rx=(py-0.5)*-7,ry=(px-0.5)*9;card.classList.add('tilt');card.style.transform='perspective(700px) rotateX('+rx.toFixed(2)+'deg) rotateY('+ry.toFixed(2)+'deg) translateY(-3px)';if(poster){poster.style.setProperty('--mx',(px*100).toFixed(1)+'%');poster.style.setProperty('--my',(py*100).toFixed(1)+'%');}};
+      card.onmouseleave=function(){card.classList.remove('tilt');card.style.transform='';};
+    });
   }
   function bind(){
     document.querySelectorAll('.check').forEach(c=>{const t=e=>{e&&e.stopPropagation();const row=c.closest('.item,.card');if(row.classList.contains('upcoming'))return;const id=c.dataset.id;const it=byId[id];if(it&&it.seasons&&it.seasons.length){const full=isFullyWatched(it);it.seasons.forEach(se=>setSeason(it,se.n,!full));}else{if(state.done[id])delete state.done[id];else state.done[id]=true;}row.classList.toggle('done',isFullyWatched(it||{id:id}));c.setAttribute('aria-checked',row.classList.contains('done'));c.classList.add('pop');setTimeout(()=>c.classList.remove('pop'),300);save();refreshCounts();celebrate();if(it&&it.seasons&&it.seasons.length)render();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
@@ -409,6 +476,7 @@
     document.querySelectorAll('.sch').forEach(c=>{const t=e=>{e&&e.stopPropagation();const it=byId[c.dataset.sid],n=+c.dataset.sn;const full=seasonCount(it,n)>=epsInSeason(it,n);setSeasonCount(it,n,full?0:epsInSeason(it,n));save();render();refreshCounts();celebrate();};c.onclick=t;c.onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();t(e);}};});
     document.querySelectorAll('.ep').forEach(el=>{el.onclick=e=>{e.stopPropagation();const it=byId[el.dataset.eid],n=+el.dataset.esn,k=+el.dataset.ek;const cur=seasonCount(it,n);setSeasonCount(it,n,cur===k?k-1:k);save();render();refreshCounts();celebrate();};});
     document.querySelectorAll('[data-open]').forEach(el=>{el.addEventListener('click',()=>openDetail(el.dataset.open));});
+    wireReveals();wireTilt();
     document.querySelectorAll('.links a,.newscard a').forEach(a=>a.addEventListener('click',e=>e.stopPropagation()));
   }
   function refreshCounts(){updateStats();updateTabs();buildNextUp();checkAchievements();}
@@ -648,6 +716,62 @@
     if(wl)wl.onclick=function(){var added=0;pool.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};
     bind();updateStats();
   }
+  function dayStamp(ts){var d=new Date(ts);d.setHours(0,0,0,0);return d.getTime();}
+  function activityByDay(){var m={};Object.keys(state.watchedAt||{}).forEach(function(id){var ts=state.watchedAt[id];if(ts>1){var k=dayStamp(ts);m[k]=(m[k]||0)+1;}});return m;}
+  function currentStreak(){var m=activityByDay(),day=dayStamp(Date.now());if(!m[day])day-=86400000;var n=0;while(m[day]){n++;day-=86400000;}return n;}
+  function countSince(days){var m=activityByDay(),cut=dayStamp(Date.now())-(days-1)*86400000,t=0;Object.keys(m).forEach(function(k){if(+k>=cut)t+=m[k];});return t;}
+  function openActivity(){
+    var m=activityByDay(),weeks=17,today=dayStamp(Date.now());
+    var dow=new Date(today).getDay();var end=today-dow*86400000+6*86400000; // saturday of this week
+    var cells='';var max=1;Object.keys(m).forEach(function(k){if(m[k]>max)max=m[k];});
+    var months='';var monRow=[];
+    for(var w=weeks-1;w>=0;w--){var colStart=end-(w*7+6)*86400000;}
+    // build columns oldest->newest
+    var grid='';
+    for(var col=weeks-1;col>=0;col--){
+      grid+='<div class="hmcol">';
+      for(var r=0;r<7;r++){var day=end-(col*7)*86400000-(6-r)*86400000;var c=m[day]||0;var lvl=c===0?0:(c>=max?4:(c>=Math.ceil(max*0.66)?3:(c>=Math.ceil(max*0.33)?2:1)));var future=day>today;var d=new Date(day);grid+='<span class="hmcell l'+lvl+(future?' fut':'')+'" title="'+d.toDateString()+': '+c+' completed"></span>';}
+      grid+='</div>';
+    }
+    var streak=currentStreak(),wk=countSince(7),mo=countSince(30),total=Object.keys(state.watchedAt||{}).filter(function(id){return state.watchedAt[id]>1;}).length;
+    var note=state.logStarted?('Tracking since '+new Date(state.logStarted).toLocaleDateString()):'';
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83D\uDD25 Activity</div>'+
+      '<div class="cmp-res"><div class="statbox"><b>'+streak+'</b><span>day streak</span></div><div class="statbox"><b>'+wk+'</b><span>this week</span></div><div class="statbox"><b>'+mo+'</b><span>this month</span></div></div>'+
+      '<div class="heatwrap"><div class="heatmap">'+grid+'</div><div class="hmlegend">Less <span class="hmcell l0"></span><span class="hmcell l1"></span><span class="hmcell l2"></span><span class="hmcell l3"></span><span class="hmcell l4"></span> More</div></div>'+
+      '<div class="mmeta" style="margin-top:10px">'+(total?('You\u2019ve logged '+total+' completions since tracking began. '):'')+note+(streak===0?' \u2014 watch something today to start a streak!':'')+'</div>');
+  }
+  function openJourney(){
+    var items=TRACK.filter(function(i){return (i.universe||'MCU')==='MCU'&&i.chrono;}).sort(function(a,b){return a.chrono-b.chrono;});
+    var nextUnseen=items.find(function(i){return !isFullyWatched(i);});
+    var rows=items.map(function(it){var done=isFullyWatched(it);var here=nextUnseen&&it.id===nextUnseen.id;var p=it.poster?'<div class="jposter" style="background-image:url('+it.poster+')"></div>':'<div class="jposter"></div>';return '<div class="jnode'+(done?' done':'')+(here?' here':'')+'" data-open="'+it.id+'"><span class="jdot"></span>'+p+'<div class="jbody"><div class="jtitle">'+it.chrono+'. '+it.title+'</div><div class="jmeta">'+(it.phase||'')+(it.year?(' \u00B7 '+it.year):'')+(done?' \u00B7 watched':(here?' \u00B7 up next':''))+'</div></div></div>';}).join('');
+    var watched=items.filter(function(i){return isFullyWatched(i);}).length;
+    openModalHTML('<div class="mtitle" style="font-size:1.15rem">\uD83E\uDDED Your journey</div><div class="mmeta">'+watched+' of '+items.length+' along the MCU story path. Gold = watched, violet = up next.</div><div class="journey">'+rows+'</div>');
+    document.querySelectorAll('.journey [data-open]').forEach(function(el){el.onclick=function(){openDetail(el.dataset.open);};});
+  }
+  // ---- cinematic header rotation ----
+  var _heroTimer=null,_heroIdx=0,_heroPool=[],_heroSlot=0;
+  function startHero(){
+    if(_heroTimer){clearInterval(_heroTimer);_heroTimer=null;}
+    document.body.classList.toggle('nocinema',!state.cinematic);
+    if(!state.cinematic)return;
+    var watched=TRACK.filter(function(i){return isFullyWatched(i)&&i.backdrop;});
+    var up=DATA.filter(function(i){return i._up&&i.backdrop;});
+    var pool=watched.concat(up);
+    if(!pool.length)pool=DATA.filter(function(i){return i.backdrop;});
+    // shuffle lightly
+    pool=pool.slice().sort(function(){return Math.random()-0.5;}).slice(0,14);
+    _heroPool=pool.map(function(i){return i.backdrop;});
+    if(!_heroPool.length)return;
+    var a=document.getElementById('hlA'),b=document.getElementById('hlB');if(!a||!b)return;
+    _heroSlot=0;_heroIdx=0;
+    a.style.backgroundImage='url('+_heroPool[0]+')';a.classList.add('show');
+    _heroTimer=setInterval(function(){
+      _heroIdx=(_heroIdx+1)%_heroPool.length;
+      var show=(_heroSlot===0)?b:a,hide=(_heroSlot===0)?a:b;
+      show.style.backgroundImage='url('+_heroPool[_heroIdx]+')';show.classList.add('show');hide.classList.remove('show');
+      _heroSlot=1-_heroSlot;
+    },5200);
+  }
   function openModalHTML(html){document.getElementById('modal').innerHTML='<button class="close" id="mClose">\u2715</button><div class="mbody" style="padding-top:18px">'+html+'</div>';document.getElementById('overlay').classList.remove('hidden');document.getElementById('mClose').onclick=closeModal;}
   // ------- ambient theming -------
   function hashHue(str){var h=0;for(var i=0;i<str.length;i++){h=(h*31+str.charCodeAt(i))>>>0;}return h%360;}
@@ -679,22 +803,26 @@
     grid+=tile('\uD83D\uDCC8','Stats','Progress, hours, per-universe','stats');
     grid+=tile('\uD83C\uDFC6','Achievements','Badges you\u2019ve unlocked','openAchievements');
     grid+=tile('\uD83C\uDFAD','Which hero?','Matched from your ratings','whichHero');
+    grid+=tile('\uD83D\uDD25','Activity','Streak & watch heatmap','openActivity');
     grid+=sec('Plan');
     grid+=tile('\uD83D\uDCFA','Marathon planner','Fit a session to your free time','openMarathon');
     grid+=tile('\u23F3','Catch me up','Pace to a release date','openCatchup');
     grid+=sec('Explore');
     grid+=tile('\uD83D\uDD70','Timeline','Scrub the chronological order','openTimeline');
+    grid+=tile('\uD83E\uDDED','Journey map','Your path through the story','openJourney');
     grid+=sec('Share');
     grid+=tile('\uD83D\uDCCA','Share card','An image of your progress','shareCard');
     grid+=tile('\uD83D\uDC65','Compare','See how a friend compares','openCompare');
     grid+=tile('\uD83D\uDD17','Copy progress','A link that restores your ticks','copyProgressLink');
     grid+=tile('\u2197','Share app','Send the tracker to a friend','shareApp');
     grid+=sec('Display');
+    grid+='<div class="hubtoggle'+(state.cinematic?' on':'')+'" id="tgCinema"><span><b style="font-size:.86rem">Cinematic header</b><div class="hs">Rotating backdrops behind the title</div></span><span class="knob"></span></div>';
     grid+='<div class="hubtoggle'+(state.spoiler?' on':'')+'" id="tgSpoiler"><span><b style="font-size:.86rem">Spoiler-safe mode</b><div class="hs">Blur posters & synopses for unwatched titles</div></span><span class="knob"></span></div>';
     grid+='<div class="hubtoggle'+(state.ambient?' on':'')+'" id="tgAmbient"><span><b style="font-size:.86rem">Ambient glow</b><div class="hs">Tint the page to your next watch</div></span><span class="knob"></span></div>';
     openModalHTML('<div class="mtitle" style="font-size:1.2rem">\u2726 More</div><div class="hub">'+grid+'</div>');
-    var acts={stats:function(){closeModal();toggleStats();},openAchievements:openAchievements,whichHero:whichHero,openMarathon:openMarathon,openCatchup:openCatchup,openTimeline:openTimeline,shareCard:shareCard,openCompare:openCompare,copyProgressLink:function(){copyProgressLink();closeModal();},shareApp:function(){shareApp();closeModal();}};
+    var acts={stats:function(){closeModal();toggleStats();},openAchievements:openAchievements,whichHero:whichHero,openActivity:openActivity,openMarathon:openMarathon,openCatchup:openCatchup,openTimeline:openTimeline,openJourney:openJourney,shareCard:shareCard,openCompare:openCompare,copyProgressLink:function(){copyProgressLink();closeModal();},shareApp:function(){shareApp();closeModal();}};
     document.querySelectorAll('[data-hub]').forEach(function(el){el.onclick=function(){var fn=acts[el.dataset.hub];if(fn)fn();};});
+    var _tc=document.getElementById('tgCinema');if(_tc)_tc.onclick=function(){state.cinematic=!state.cinematic;save();startHero();openHub();};
     document.getElementById('tgSpoiler').onclick=function(){state.spoiler=!state.spoiler;save();applySpoiler();openHub();};
     document.getElementById('tgAmbient').onclick=function(){state.ambient=!state.ambient;save();buildNextUp();openHub();};
   }
@@ -827,7 +955,7 @@
     document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Tap a title for details, trailer, and where to watch.';
     if(location.hash&&location.hash.indexOf('#p=')===0){var code=location.hash.slice(3);if(code&&confirm('Load watched progress from this link? Replaces your current watched list.')){applyCode(code);save();}if(history.replaceState)history.replaceState(null,'',location.pathname+location.search);}
     (function(){var known={};(state.knownIds||[]).forEach(function(id){known[id]=1;});var cur=DATA.map(function(d){return d.id;});window.__NEW={};if(state.knownIds&&state.knownIds.length){cur.forEach(function(id){if(!known[id])window.__NEW[id]=1;});}state.knownIds=cur;save();})();
-    applySpoiler();buildFilters();buildTools();renderTabsAndList();checkAchievements();
+    applySpoiler();buildFilters();buildTools();renderTabsAndList();checkAchievements();startHero();
     // PWA
     if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
     window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;document.getElementById('installBtn').classList.remove('hidden');});

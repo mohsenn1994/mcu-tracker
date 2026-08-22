@@ -64,8 +64,15 @@
   .statbar{flex:1;height:7px;border-radius:99px;background:var(--box);border:1px solid var(--line);overflow:hidden}.statbar>i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--emerald))}.statrow b{font-family:'Oswald';color:var(--text);font-size:.78rem}.statnote{margin-top:11px;font-size:.72rem;color:var(--faint)}
   .group{margin-bottom:18px}
   .group-head{display:flex;align-items:center;gap:10px;margin:0 2px 11px;cursor:pointer;user-select:none}
+  .group-head.gh2{display:grid;grid-template-columns:16px 1fr auto auto;grid-template-areas:"chev label label label" "bar bar count btn";column-gap:10px;row-gap:9px;align-items:center}
+  .gh2 .chev{grid-area:chev}
+  .gh2 .group-label{grid-area:label;min-width:0}
+  .gh2 .group-mini{grid-area:bar;max-width:none}
+  .gh2 .group-count{grid-area:count}
+  .gh2 .markall{grid-area:btn}
+
   .chev{flex:none;width:14px;color:var(--faint);transition:transform .2s;font-size:.8rem}.group.collapsed .chev{transform:rotate(-90deg)}
-  .group-label{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--gold);font-weight:500;white-space:nowrap;flex:none;width:96px}
+  .group-label{font-family:'Oswald';text-transform:uppercase;letter-spacing:.14em;font-size:.82rem;color:var(--gold);font-weight:500;white-space:nowrap}
   .group-mini{flex:1 1 auto;min-width:60px;height:5px;border-radius:99px;background:var(--box);border:1px solid var(--line);overflow:hidden}.group-mini>i{display:block;height:100%;background:var(--gold);width:0;transition:width .4s}
   .group-count{font-family:'Oswald';font-size:.74rem;color:var(--faint);white-space:nowrap;flex:none;text-align:right;min-width:92px}
   .markall{font-size:.68rem;color:var(--muted);border:1px solid var(--line);background:none;border-radius:99px;padding:3px 9px;cursor:pointer;white-space:nowrap;flex:none;width:82px;text-align:center}.markall:hover{border-color:var(--gold-line);color:var(--gold)}
@@ -241,7 +248,7 @@
   .msec.rec{color:var(--violet)}
   .recitem{display:inline-block;font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:3px 9px;margin:3px 4px 0 0;cursor:pointer}.recitem:hover{border-color:var(--gold-line);color:var(--text)}
   @media (max-width:560px){.tabs{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:520px){.group-label{width:64px;font-size:.74rem}.group-count{min-width:74px}.markall{width:auto}
+  @media (max-width:520px){.group-label{font-size:.74rem}.group-count{min-width:74px}.markall{width:auto}
 .item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>
@@ -387,7 +394,7 @@
       const sorted=sortItems(vis),collapsed=!!state.collapsed[uid+'/'+key];
       const ghours=Math.round(rel.reduce((a,i)=>a+itemHours(i),0));
       const body=state.view==='grid'?'<div class="grid">'+sorted.map(it=>cardHTML(it)).join('')+'</div>':sorted.map(it=>itemHTML(it)).join('');
-      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+(ghours?(' \u00B7 ~'+ghours+'h'):'')+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
+      html+='<div class="group'+(collapsed?' collapsed':'')+'" data-gkey="'+encodeURIComponent(key)+'"><div class="group-head gh2" data-toggle="'+encodeURIComponent(key)+'"><span class="chev">\u25BC</span><span class="group-label">'+key+'</span><span class="group-mini"><i style="width:'+pct+'%"></i></span><span class="group-count">'+done+'/'+rel.length+(ghours?(' \u00B7 ~'+ghours+'h'):'')+'</span><button class="markall" data-group="'+encodeURIComponent(key)+'">'+(done>=rel.length&&rel.length?'Unmark all':'Mark all')+'</button></div><div class="group-body">'+body+'</div></div>';
     });
     list.innerHTML=anything?html:'<div class="empty">No titles match your filters here.</div>';
     bind();updateStats();

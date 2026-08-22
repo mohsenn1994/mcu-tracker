@@ -10,7 +10,7 @@
 <meta property="og:description" content="Track every Marvel film and series across the MCU and beyond." />
 <link rel="manifest" href="manifest.json" />
 <link rel="apple-touch-icon" href="icon-192.png" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='88'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="icon-192.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -247,7 +247,27 @@
   body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 50% -8%,var(--glow,transparent),transparent 46%);opacity:.5;transition:background .8s}
   .msec.rec{color:var(--violet)}
   .recitem{display:inline-block;font-size:.76rem;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:3px 9px;margin:3px 4px 0 0;cursor:pointer}.recitem:hover{border-color:var(--gold-line);color:var(--text)}
-  @media (max-width:560px){.tabs{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){
+    .tabs{grid-template-columns:repeat(2,1fr)}
+    .herobg{height:clamp(240px,34vh,340px)}
+    /* tighter chips + segments */
+    .filters{gap:5px;margin-bottom:10px}
+    .fchip{font-size:.72rem;padding:5px 10px}
+    .seg{font-size:.72rem}.segbtn,.seg>*{padding:6px 11px !important}
+    /* order switch: single-line, drop the helper subtitle to save space */
+    .orderswitch{gap:7px;padding:5px 12px 5px 5px}
+    .orderswitch .osub{display:none}
+    .orderswitch .knob{width:34px;height:19px}.orderswitch .knob::after{width:13px;height:13px}.orderswitch.on .knob::after{left:17px}
+    /* tools: order switch on its own row, then List/Grid + Sort + More on the next */
+    .tools{gap:8px 10px}
+    .orderswitch{order:1;flex:1 1 100%;justify-content:flex-start}
+    .seg{order:2}
+    .sortlbl{order:3}
+    .tools .spacer{order:4;flex:1 1 auto}
+    #moreBtn{order:5}
+    .mini{font-size:.72rem;padding:6px 12px}
+    .sortlbl select{padding:6px 9px}
+  }
   .heatwrap{margin-top:12px}
   .heatmap{display:flex;gap:3px;overflow-x:auto;padding-bottom:4px}
   .hmcol{display:flex;flex-direction:column;gap:3px}
@@ -269,10 +289,10 @@
   .jmeta{font-size:.72rem;color:var(--muted)}.jnode.here .jtitle{color:var(--violet)}
   /* cinematic header */
   .wrap{position:relative}
-  .herobg{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100vw;max-width:100vw;height:260px;overflow:hidden;z-index:0;pointer-events:none}
+  .herobg{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100vw;max-width:100vw;height:clamp(300px,38vh,480px);overflow:hidden;z-index:0;pointer-events:none}
   .herobg .hl{position:absolute;inset:0;background-position:center;background-size:cover;opacity:0;transition:opacity 1.4s ease}
-  .herobg .hl.show{opacity:.26}
-  .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.45),rgba(10,13,24,.78) 55%,var(--bg) 92%)}
+  .herobg .hl.show{opacity:.30}
+  .herobg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,13,24,.40),rgba(10,13,24,.72) 52%,var(--bg) 96%)}
   header,.panel{position:relative;z-index:1}
   body.nocinema .herobg{display:none}
   /* 'now entering' group reveal */
@@ -289,7 +309,7 @@
   .cardposter::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.16),transparent 45%);opacity:0;transition:opacity .18s;pointer-events:none}
   .grid .card:hover .cardposter::after{opacity:1}
   @media (hover:none){.grid .card{transform:none !important}}
-  @media (max-width:520px){.group-label{font-size:.74rem;max-width:52%}.group-count{min-width:74px}.markall{width:auto}.herobg{height:200px}
+  @media (max-width:520px){.group-label{font-size:.74rem;max-width:52%}.group-count{min-width:74px}.markall{width:auto}
 .item{padding:11px 12px}.rowctl{gap:6px}.theme-btn,.install-btn{position:static;margin:8px 4px 0;display:inline-block;vertical-align:middle}header{padding-top:26px}}
   @media (prefers-reduced-motion:reduce){*{transition:none !important}}
 </style>

@@ -2,7 +2,7 @@
 window.MCU_CONFIG = {
   "title": "Marvel Cinematic Universe & Beyond",
   "subtitle": "Every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes.",
-  "updated": "2026-09",
+  "updated": "2026-10",
   "ignore": [],
   "universes": [
     {
@@ -105,7 +105,7 @@ window.MCU_DATA = [
     "tmdb_id": 1724,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/jPu8yiadqgzwFPGKJmGo637ASVP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg",
     "overview": "Scientist Bruce Banner scours the planet for an antidote to the unbridled force of rage within him: the Hulk. But when the military masterminds who dream of exploiting his powers force him back to civilization, he finds himself coming face to face with a new, deadly foe.",
     "imdb": "https://www.imdb.com/title/tt0800080/",
     "rating": 6.3,
@@ -269,7 +269,7 @@ window.MCU_DATA = [
     "tmdb_id": 24428,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/gHLs7Fy3DzLmLsD4lmfqL55KGcl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/9BBTo63ANSmhC4e6r62OJFuK2GL.jpg",
     "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
     "imdb": "https://www.imdb.com/title/tt0848228/",
     "rating": 8.1,
@@ -353,7 +353,7 @@ window.MCU_DATA = [
     "tmdb_id": 76338,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/5QEOy0QEpad9QsXeMxuGHPXMale.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/5o88bbqcV5STn56jqOeovaaWbAE.jpg",
     "overview": "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
     "imdb": "https://www.imdb.com/title/tt1981115/",
     "rating": 6.5,
@@ -570,7 +570,7 @@ window.MCU_DATA = [
     "tmdb_id": 271110,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/7FWlcZq3r6525LWOcvO9kNWurN1.jpg",
     "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
     "imdb": "https://www.imdb.com/title/tt3498820/",
     "rating": 7.5,
@@ -656,7 +656,7 @@ window.MCU_DATA = [
     "tmdb_id": 283995,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/bW93ycPSSi3Hxx1NvlMX5qm2mQu.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
     "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
     "imdb": "https://www.imdb.com/title/tt3896198/",
     "rating": 7.6,
@@ -719,8 +719,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/315635-spider-man-homecoming/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -755,7 +754,7 @@ window.MCU_DATA = [
     "runtime": 131,
     "genres": [
       "Action",
-      "Science Fiction",
+      "Adventure",
       "Comedy"
     ],
     "cast": [
@@ -962,7 +961,7 @@ window.MCU_DATA = [
     "tmdb_id": 299534,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/2xfV5Zdq4kCsFVReRXJKnJaUFCD.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
     "imdb": "https://www.imdb.com/title/tt4154796/",
     "rating": 8.2,
@@ -1005,7 +1004,7 @@ window.MCU_DATA = [
     "tmdb_id": 429617,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/wqBW5ltBJu0gs26yCc8shQQV82d.jpg",
     "overview": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
     "imdb": "https://www.imdb.com/title/tt6320628/",
     "rating": 7.4,
@@ -1026,8 +1025,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/429617-spider-man-far-from-home/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -1038,7 +1036,7 @@ window.MCU_DATA = [
         "Google Play Movies"
       ]
     },
-    "newlyAvailable": true
+    "newlyAvailable": false
   },
   {
     "id": "wandavision",
@@ -1061,7 +1059,7 @@ window.MCU_DATA = [
     "tmdb_id": 85271,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/cq62fLH3vwOmiaLKMqkDI86tPtH.jpg",
     "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
     "imdb": "https://www.imdb.com/title/tt9140560/",
     "rating": 8.2,
@@ -1183,7 +1181,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/keIxh0wPr2Ymj0Btjh4gW7JJ89e.jpg",
     "overview": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
     "imdb": "https://www.imdb.com/title/tt3480822/",
-    "rating": 7.2,
+    "rating": 7.1,
     "runtime": 134,
     "genres": [
       "Action",
@@ -1239,7 +1237,7 @@ window.MCU_DATA = [
     ],
     "tmdb_id": 91363,
     "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/zaqfFDUrSfIljdD0OBxSjcutX8n.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
     "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
     "imdb": "https://www.imdb.com/title/tt10168312/",
@@ -1350,7 +1348,7 @@ window.MCU_DATA = [
     "tmdb_id": 88329,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ct5pNE5dDHryHLDnxyZPYcqO1sz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/9QNv2Al3GfCND8BwuLmu2GwVht7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/uHESULlKh7VSc0MRcqfyIf9Alk4.jpg",
     "overview": "Former Avenger Clint Barton has a seemingly simple mission: get back to his family for Christmas. Possible? Maybe with the help of Kate Bishop, a 22-year-old archer with dreams of becoming a superhero. The two are forced to work together when a presence from Barton’s past threatens to derail far more than the festive spirit.",
     "imdb": "https://www.imdb.com/title/tt10160804/",
     "rating": 7.8,
@@ -1385,7 +1383,7 @@ window.MCU_DATA = [
     "tmdb_id": 634649,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/uyrOU4BDm2kbVxFsMiDFIHDhc4d.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
     "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
     "imdb": "https://www.imdb.com/title/tt10872600/",
     "rating": 7.9,
@@ -1405,8 +1403,7 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/movie/634649-spider-man-no-way-home/watch?locale=EG",
       "flatrate": [
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -1664,7 +1661,7 @@ window.MCU_DATA = [
     "tmdb_id": 894205,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/mvIvNKRIJPPS7WSFarFhOAGIVnU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/pfAZP7JvTTxqgq7n6A1OYgkAdEW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/l1ORpdYr8uFZ9MNYKoq1p6fIc4M.jpg",
     "overview": "On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.",
     "imdb": "https://www.imdb.com/title/tt15318872/",
     "rating": 7,
@@ -1902,7 +1899,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/q8OCAKDfdgm4oQAITaEG7czomyI.jpg",
     "overview": "Through candid interviews with the creative minds behind the show, and exclusive on-set footage, discover how the talented team that powered \"Loki: Season 2\" raised the stakes for this latest MCU adventure. Witness imaginative costumes, elaborate environments, and far-out variants come to life, meet new allies and foes, and time-slip across the Multiverse.",
     "imdb": "https://www.imdb.com/title/tt28889780/",
-    "rating": 7.7,
+    "rating": 7.8,
     "runtime": 58,
     "genres": [
       "Documentary"
@@ -2184,7 +2181,7 @@ window.MCU_DATA = [
     "tmdb_id": 235614,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/qGM0WutoTPNmac0IL3Bx7hAeyrk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/jPJTesj68EsTXzOSuAmWGjDnb5O.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3uiizNqy9XcCQR4AudBeF3ulGA8.jpg",
     "overview": "A normal girl Xia Guo is faced with a difficult dilemma where the two choices will lead her toward two utterly different lives. Would she choose to live a home-sweet-home life with her boyfriend in her hometown or seize the opportunity to forge a successful career in a metropolitan? Which way would make her life \"a little less normal\"?",
     "imdb": "https://www.imdb.com/title/tt27122945/",
     "rating": 6.7,
@@ -2201,9 +2198,7 @@ window.MCU_DATA = [
     "trailer": null,
     "watch": {
       "link": "https://www.themoviedb.org/tv/235614/watch?locale=EG",
-      "flatrate": [
-        "Rakuten Viki"
-      ],
+      "flatrate": [],
       "rent": [],
       "buy": []
     },
@@ -2437,7 +2432,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
     "overview": "Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.",
     "imdb": "https://www.imdb.com/title/tt10676052/",
-    "rating": 7,
+    "rating": 6.9,
     "runtime": 115,
     "genres": [
       "Science Fiction",
@@ -2626,7 +2621,7 @@ window.MCU_DATA = [
     "tmdb_id": 969681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "imdb": "https://www.imdb.com/title/tt22084616/",
     "rating": 7.9,
@@ -2684,7 +2679,7 @@ window.MCU_DATA = [
     "id": "avengers-doomsday",
     "title": "Avengers: Doomsday",
     "year": 2026,
-    "release": "2026-12-16",
+    "release": "2026-12-15",
     "type": "movie",
     "saga": "Multiverse Saga",
     "phase": "Phase 6",
@@ -3181,7 +3176,7 @@ window.MCU_DATA = [
     "tmdb_type": "tv",
     "release": "2017-11-17",
     "poster": "https://image.tmdb.org/t/p/w185/tM6xqRKXoloH9UchaJEyyRE9O1w.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/jBGjbSDRxOEudW9rmQbWDzJUKq9.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/9czVEnJemvP6gcJlMEjUeuISL1c.jpg",
     "overview": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
     "imdb": "https://www.imdb.com/title/tt5675620/",
     "rating": 8.2,
@@ -3376,8 +3371,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/557-spider-man/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -3424,8 +3418,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/558-spider-man-2/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store"
@@ -3519,8 +3512,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/1930-the-amazing-spider-man/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [
         "Apple TV Store",
@@ -3595,7 +3587,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2018-12-06",
     "poster": "https://image.tmdb.org/t/p/w185/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/1ntePsIqeklfmrQJqZPncCydsqY.jpg",
     "overview": "Struggling to find his place in the world while juggling school and family, Brooklyn teenager Miles Morales is unexpectedly bitten by a radioactive spider and develops unfathomable powers just like the one and only Spider-Man. While wrestling with the implications of his new abilities, Miles discovers a super collider created by the madman Wilson \"Kingpin\" Fisk, causing others from across the Spider-Verse to be inadvertently transported to his dimension.",
     "imdb": "https://www.imdb.com/title/tt4633694/",
     "rating": 8.4,
@@ -3644,7 +3636,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/kVd3a9YeLGkoeR50jGEXM6EqseS.jpg",
     "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse's very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
     "imdb": "https://www.imdb.com/title/tt9362722/",
-    "rating": 8.3,
+    "rating": 8.4,
     "runtime": 140,
     "genres": [
       "Animation",
@@ -3686,7 +3678,7 @@ window.MCU_DATA = [
     "tmdb_id": 911916,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/9KAe39xqyZnv9J4W3DRGdQqX82h.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/7tT2w75p69nll5PvALpWFCYx5dU.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/fUcT8bcJD3SZsy84Z9QRP6kOS7v.jpg",
     "overview": "Hunted by Miguel O'Hara's Spider Society and betrayed by his friends, Miles finds himself in the darkest corners of the Spider-Verse in search of a way home. Knowing that his family has been not only fractured but endangered by his calling, it's a race against the clock for Miles to travel across the wildest reaches of time and space to fight for and reunite everything he holds most dear.",
     "imdb": "https://www.imdb.com/title/tt16360004/",
     "rating": null,
@@ -3719,7 +3711,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2018-09-28",
     "poster": "https://image.tmdb.org/t/p/w185/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/hNsYUryiwxcdeTMkaBcPF3iEg0p.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
     "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
     "imdb": "https://www.imdb.com/title/tt1270797/",
     "rating": 6.8,
@@ -3739,8 +3731,7 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/335983-venom/watch?locale=EG",
       "flatrate": [
         "STARZPLAY",
-        "Shahid VIP",
-        "TOD"
+        "Shahid VIP"
       ],
       "rent": [],
       "buy": [
@@ -3825,7 +3816,9 @@ window.MCU_DATA = [
     "trailer": "https://www.youtube.com/watch?v=wG2TjtueeSU",
     "watch": {
       "link": "https://www.themoviedb.org/movie/526896-morbius/watch?locale=EG",
-      "flatrate": [],
+      "flatrate": [
+        "TOD"
+      ],
       "rent": [
         "Apple TV Store",
         "Google Play Movies"
@@ -3870,7 +3863,6 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/634492-madame-web/watch?locale=EG",
       "flatrate": [
         "Netflix",
-        "STARZPLAY",
         "Shahid VIP"
       ],
       "rent": [
@@ -3882,7 +3874,7 @@ window.MCU_DATA = [
         "Google Play Movies"
       ]
     },
-    "newlyAvailable": true
+    "newlyAvailable": false
   },
   {
     "id": "kraven-the-hunter",
@@ -3917,8 +3909,7 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/movie/539972-kraven-the-hunter/watch?locale=EG",
       "flatrate": [
-        "STARZPLAY",
-        "TOD"
+        "STARZPLAY"
       ],
       "rent": [
         "Google Play Movies"
@@ -3928,7 +3919,7 @@ window.MCU_DATA = [
         "Google Play Movies"
       ]
     },
-    "newlyAvailable": true
+    "newlyAvailable": false
   },
   {
     "id": "venom-3",
@@ -3966,6 +3957,7 @@ window.MCU_DATA = [
         "STARZPLAY"
       ],
       "rent": [
+        "Apple TV Store",
         "Google Play Movies"
       ],
       "buy": [
@@ -3984,26 +3976,39 @@ window.MCU_DATA = [
     "saga": "Fox — X-Men",
     "phase": "",
     "seasons": null,
-    "tmdb_id": 447399,
+    "tmdb_id": 36657,
     "tmdb_type": "movie",
-    "release": "2000-07-02",
-    "poster": "https://image.tmdb.org/t/p/w185/vF02RqXLgtmpJM5CRLSuvN3fVHi.jpg",
-    "backdrop": null,
-    "overview": "While Senator Kelly addresses a senate committee about the supposed mutant menace, we learn about the making of the movie, X-Men (2000)",
-    "imdb": "https://www.imdb.com/title/tt0285761/",
+    "release": "2000-07-13",
+    "poster": "https://image.tmdb.org/t/p/w185/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3QUVzbcNyfGe3ocWkYAT8emK8Co.jpg",
+    "overview": "Two mutants, Rogue and Wolverine, come to a private academy for their kind whose resident superhero team, the X-Men, must oppose a terrorist organization with similar powers.",
+    "imdb": "https://www.imdb.com/title/tt0120903/",
     "rating": 7,
-    "runtime": 22,
+    "runtime": 104,
     "genres": [
-      "Documentary"
+      "Adventure",
+      "Action",
+      "Science Fiction"
     ],
     "cast": [
-      "Bruce Davison",
-      "Terry Anzur",
-      "Bryan Singer",
-      "Hugh Jackman"
+      "Hugh Jackman",
+      "Patrick Stewart",
+      "Ian McKellen",
+      "Famke Janssen"
     ],
-    "trailer": "https://www.youtube.com/watch?v=C3wIJ5L_t_4",
-    "watch": null,
+    "trailer": "https://www.youtube.com/watch?v=s4Wqw8tqgdM",
+    "watch": {
+      "link": "https://www.themoviedb.org/movie/36657-x-men/watch?locale=EG",
+      "flatrate": [],
+      "rent": [
+        "Apple TV Store",
+        "Google Play Movies"
+      ],
+      "buy": [
+        "Apple TV Store",
+        "Google Play Movies"
+      ]
+    },
     "newlyAvailable": false
   },
   {
@@ -4196,7 +4201,7 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 76170,
     "tmdb_type": "movie",
-    "release": "2013-07-21",
+    "release": "2013-07-24",
     "poster": "https://image.tmdb.org/t/p/w185/t2wVAcoRlKvEIVSbiYDb8d0QqqS.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/bEAQfLTykGg232kJogBlxRYaRqU.jpg",
     "overview": "Wolverine faces his ultimate nemesis - and tests of his physical, emotional, and mortal limits - in a life-changing voyage to modern-day Japan.",
@@ -4283,7 +4288,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2016-02-09",
     "poster": "https://image.tmdb.org/t/p/w185/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/en971MEXui9diirXlogOrPKmsEn.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rFj9IKlL75B2pXhZA60jkNWvxeW.jpg",
     "overview": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
     "imdb": "https://www.imdb.com/title/tt1431045/",
     "rating": 7.6,
@@ -4360,7 +4365,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2017-02-28",
     "poster": "https://image.tmdb.org/t/p/w185/fnbjcRDYn6YviCcePDnGdyAkYsB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/qTdCfGyDisY9e8BLycszlyTsPWx.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/4DZxWNSAyksN6N3JkvpJ53Yq6zU.jpg",
     "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
     "imdb": "https://www.imdb.com/title/tt3315342/",
     "rating": 7.8,
@@ -4446,7 +4451,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2019-06-05",
     "poster": "https://image.tmdb.org/t/p/w185/cCTJPelKGLhALq3r51A9uMonxKj.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/cjRUhKyt2Jo3V1KNzc5tpPNfccG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/j9ZV0UOagjQ4seR8Hd5N6JfwdTP.jpg",
     "overview": "The X-Men face their most formidable and powerful foe when one of their own, Jean Grey, starts to spiral out of control. During a rescue mission in outer space, Jean is nearly killed when she's hit by a mysterious cosmic force. Once she returns home, this force not only makes her infinitely more powerful, but far more unstable. The X-Men must now band together to save her soul and battle aliens that want to use Grey's new abilities to rule the galaxy.",
     "imdb": "https://www.imdb.com/title/tt6565702/",
     "rating": 6,
@@ -4488,12 +4493,12 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 340102,
     "tmdb_type": "movie",
-    "release": "2020-04-02",
+    "release": "2020-08-26",
     "poster": "https://image.tmdb.org/t/p/w185/xiDGcXJTvu1lazFRYip6g1eLt9c.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/1MoeNacOltBWojkStjhT3svBTOK.jpg",
     "overview": "Five young mutants, just discovering their abilities while held in a secret facility against their will, fight to escape their past sins and save themselves.",
     "imdb": "https://www.imdb.com/title/tt4682266/",
-    "rating": 6.1,
+    "rating": 6,
     "runtime": 94,
     "genres": [
       "Science Fiction",
@@ -4530,7 +4535,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2005-06-29",
     "poster": "https://image.tmdb.org/t/p/w185/4YMcYEFS8sFuW3soP1HVmgR3cSm.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/2cDXXLirYsoP6rk9B8yrvNHbbFy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/qq9ELjoyllBUMkGisZvcj0fCd43.jpg",
     "overview": "During a space voyage, four scientists are altered by cosmic rays: Reed Richards gains the ability to stretch his body; Sue Storm can become invisible; Johnny Storm controls fire; and Ben Grimm is turned into a super-strong … thing. Together, these \"Fantastic Four\" must now thwart the evil plans of Dr. Doom and save the world from certain destruction.",
     "imdb": "https://www.imdb.com/title/tt0120667/",
     "rating": 5.8,
@@ -4646,8 +4651,8 @@ window.MCU_DATA = [
     "tmdb_id": 10658,
     "tmdb_type": "movie",
     "release": "1986-08-01",
-    "poster": "https://image.tmdb.org/t/p/w185/eU0dWo8PJgsSAZFbcyHiUpuLSyW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/eWNKQuZI5yEVqz3ATgc0ezYWgJH.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/30tnH0hy6S5FjGCfCdnkBd3wqS2.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3KQe8Vzma7ZAYE25mJjgIG4Gj5e.jpg",
     "overview": "A scientific experiment unknowingly brings extraterrestrial life forms to the Earth through a laser beam. First is the cigar-smoking drake, Howard, from the duck's planet. A few kids try to keep him from the greedy scientists and help him back to his planet, but then a much less friendly being arrives through the beam...",
     "imdb": "https://www.imdb.com/title/tt0091225/",
     "rating": 5.5,
@@ -4789,7 +4794,7 @@ window.MCU_DATA = [
     "tmdb_id": 36586,
     "tmdb_type": "movie",
     "release": "2002-03-22",
-    "poster": "https://image.tmdb.org/t/p/w185/yDHwo3eWcMiy5LnnEnlGV9iLu9k.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/wAn6VYamKbnOtfyTZ6arVtkMzDv.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/86b0NGY1i0bt3ckhkcHxiCSMxk1.jpg",
     "overview": "Blade forms an uneasy alliance with the vampire council in order to combat the Reapers, who are feeding on vampires.",
     "imdb": "https://www.imdb.com/title/tt0187738/",
@@ -4831,7 +4836,7 @@ window.MCU_DATA = [
     "release": "2003-02-14",
     "poster": "https://image.tmdb.org/t/p/w185/oCDBwSkntYamuw8VJIxMRCtDBmi.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/e7jIX02GiSwsgkU5lMpeKjwq2Zc.jpg",
-    "overview": "A man blinded in a childhood accident fights crime using his superhumanly-elevated remaining senses.",
+    "overview": "By day, blind attorney Matt Murdock toils for justice in Hell's Kitchen. By night, he's Daredevil, The Man Without Fear - a powerful, masked vigilante stalking the dark streets with an uncanny \"radar sense\" that allows him to \"see\" with superhuman capabilities. But when the love of his life, fiery Elektra Natchios, is targeted by New York City's ruthless Kingpin of crime and his deadly assassin Bullseye, Daredevil may be about to meet his match.",
     "imdb": "https://www.imdb.com/title/tt0287978/",
     "rating": 5.3,
     "runtime": 103,
@@ -4849,6 +4854,7 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/movie/9480-daredevil/watch?locale=EG",
       "flatrate": [
+        "Netflix",
         "OSN+"
       ],
       "rent": [
@@ -4860,7 +4866,7 @@ window.MCU_DATA = [
         "Google Play Movies"
       ]
     },
-    "newlyAvailable": false
+    "newlyAvailable": true
   },
   {
     "id": "hulk-2003",
@@ -4991,7 +4997,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2005-01-13",
     "poster": "https://image.tmdb.org/t/p/w185/gC6s6NKHneSrOKyQZnUMb443RKU.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/2JMOTj6DFjNcg9KToctmfTV55EW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/kRpokiyfzyQHkQ0meMmvqPzQXnj.jpg",
     "overview": "Elektra the warrior survives a near-death experience, becomes an assassin-for-hire, and tries to protect her two latest targets, a single father and his young daughter, from a group of supernatural assassins.",
     "imdb": "https://www.imdb.com/title/tt0357277/",
     "rating": 5,
@@ -5003,9 +5009,9 @@ window.MCU_DATA = [
     ],
     "cast": [
       "Jennifer Garner",
-      "Terence Stamp",
       "Kirsten Zien",
-      "Goran Višnjić"
+      "Goran Višnjić",
+      "Will Yun Lee"
     ],
     "trailer": "https://www.youtube.com/watch?v=etfIjKxKzqw",
     "watch": {
@@ -5238,40 +5244,6 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "spidey-and-the-avengers-halloween-team-up-2026",
-    "title": "Spidey and the Avengers: Halloween Team-Up!",
-    "year": 2026,
-    "release": "2026-09-24",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1750432,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/hPucpn2pmszkcqRVHmrlUYK0PtG.jpg",
-    "backdrop": null,
-    "overview": "Spidey and the Avengers' Halloween plans are turned upside down by the mysterious Hallows' Eve, who plays magical tricks on trick or treaters and plans to ruin Halloween forever.",
-    "imdb": "https://www.imdb.com/title/tt44171293/",
-    "rating": null,
-    "runtime": null,
-    "genres": [
-      "Animation",
-      "Adventure",
-      "Fantasy"
-    ],
-    "cast": [
-      "Alkaio Thiele",
-      "Mason Blomberg",
-      "Armen Taylor",
-      "Hero Hunter"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
     "id": "visionquest-2026",
     "title": "VisionQuest",
     "year": 2026,
@@ -5306,7 +5278,7 @@ window.MCU_DATA = [
       "Ruaridh Mollica",
       "Todd Stashwick"
     ],
-    "trailer": "https://www.youtube.com/watch?v=oSVTAUKyrL8",
+    "trailer": "https://www.youtube.com/watch?v=pM9HZ8Ovjdw",
     "watch": null,
     "newlyAvailable": false
   },

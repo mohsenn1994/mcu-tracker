@@ -253,6 +253,8 @@
   :focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:6px}
   .check:focus-visible,.bm:focus-visible,.star:focus-visible,.sch:focus-visible,.ep:focus-visible,.orderswitch:focus-visible,.tab:focus-visible,.fchip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
   a:focus-visible,button:focus-visible,[role=button]:focus-visible,[role=checkbox]:focus-visible,[role=switch]:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .refreshlink{background:none;border:none;color:var(--gold);cursor:pointer;font:inherit;font-size:.82rem;padding:0;margin-left:4px;text-decoration:underline;text-underline-offset:2px}
+  .refreshlink:hover{color:var(--text)}
   @media (min-width:1100px){
     .wrap{max-width:1040px}
     .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
@@ -808,6 +810,25 @@
       _heroSlot=1-_heroSlot;
     },5200);
   }
+  function _dataSig(arr){try{if(!arr||!arr.length)return '0';var n=arr.length,h=0;for(var i=0;i<arr.length;i++){var it=arr[i];var k=(it.id||'')+'|'+(it.release||'')+'|'+(it.poster?1:0)+'|'+(it.seasons?it.seasons.length:0);for(var j=0;j<k.length;j++){h=(h*31+k.charCodeAt(j))>>>0;}}return n+':'+h;}catch(e){return 'x';}}
+  function _parseDataJs(text){try{var box={};(new Function('window',text))(box);return box.MCU_DATA||null;}catch(e){return null;}}
+  var _refreshing=false;
+  async function refreshData(){
+    if(_refreshing)return;_refreshing=true;
+    toast('Checking for updates\u2026');
+    try{
+      var res=await fetch('data.js?v='+Date.now(),{cache:'no-store'});
+      if(!res.ok)throw new Error('http '+res.status);
+      var text=await res.text();
+      var fresh=_parseDataJs(text);
+      if(fresh && _dataSig(fresh)===_dataSig(window.MCU_DATA)){toast('Already up to date \u2713');_refreshing=false;return;}
+      toast('Updating\u2026');
+      // seed any SW caches with the fresh file so the reload definitely serves it
+      try{if('caches' in window){var keys=await caches.keys();for(var i=0;i<keys.length;i++){var c=await caches.open(keys[i]);var has=await c.match('./data.js')||await c.match('data.js');if(has){await c.put('./data.js',new Response(text,{headers:{'Content-Type':'application/javascript'}}));}}}}catch(e){}
+      try{if(navigator.serviceWorker){var reg=await navigator.serviceWorker.getRegistration();if(reg)reg.update();}}catch(e){}
+      setTimeout(function(){location.reload();},350);
+    }catch(e){toast('Refresh failed \u2014 check your connection.');_refreshing=false;}
+  }
   function openModalHTML(html){document.getElementById('modal').innerHTML='<button class="close" id="mClose">\u2715</button><div class="mbody" style="padding-top:18px">'+html+'</div>';document.getElementById('overlay').classList.remove('hidden');var _c=document.getElementById('mClose');_c.onclick=closeModal;try{_c.focus();}catch(e){}}
   // ------- ambient theming -------
   function hashHue(str){var h=0;for(var i=0;i<str.length;i++){h=(h*31+str.charCodeAt(i))>>>0;}return h%360;}
@@ -851,12 +872,14 @@
     grid+=tile('\uD83D\uDC65','Compare','See how a friend compares','openCompare');
     grid+=tile('\uD83D\uDD17','Copy progress','A link that restores your ticks','copyProgressLink');
     grid+=tile('\u2197','Share app','Send the tracker to a friend','shareApp');
+    grid+=sec('Data');
+    grid+=tile('\u21BB','Refresh data','Pull the latest list from the server','refreshData');
     grid+=sec('Display');
     grid+='<div class="hubtoggle'+(state.cinematic?' on':'')+'" id="tgCinema"><span><b style="font-size:.86rem">Cinematic header</b><div class="hs">Rotating backdrops behind the title</div></span><span class="knob"></span></div>';
     grid+='<div class="hubtoggle'+(state.spoiler?' on':'')+'" id="tgSpoiler"><span><b style="font-size:.86rem">Spoiler-safe mode</b><div class="hs">Blur posters & synopses for unwatched titles</div></span><span class="knob"></span></div>';
     grid+='<div class="hubtoggle'+(state.ambient?' on':'')+'" id="tgAmbient"><span><b style="font-size:.86rem">Ambient glow</b><div class="hs">Tint the page to your next watch</div></span><span class="knob"></span></div>';
     openModalHTML('<div class="mtitle" style="font-size:1.2rem">\u2726 More</div><div class="hub">'+grid+'</div>');
-    var acts={stats:function(){closeModal();toggleStats();},openAchievements:openAchievements,whichHero:whichHero,openActivity:openActivity,openMarathon:openMarathon,openCatchup:openCatchup,openTimeline:openTimeline,openJourney:openJourney,shareCard:shareCard,openCompare:openCompare,copyProgressLink:function(){copyProgressLink();closeModal();},shareApp:function(){shareApp();closeModal();}};
+    var acts={stats:function(){closeModal();toggleStats();},openAchievements:openAchievements,whichHero:whichHero,openActivity:openActivity,openMarathon:openMarathon,openCatchup:openCatchup,openTimeline:openTimeline,openJourney:openJourney,shareCard:shareCard,openCompare:openCompare,copyProgressLink:function(){copyProgressLink();closeModal();},shareApp:function(){shareApp();closeModal();},refreshData:function(){closeModal();refreshData();}};
     document.querySelectorAll('[data-hub]').forEach(function(el){el.onclick=function(){var fn=acts[el.dataset.hub];if(fn)fn();};});
     var _tc=document.getElementById('tgCinema');if(_tc)_tc.onclick=function(){state.cinematic=!state.cinematic;save();startHero();openHub();};
     document.getElementById('tgSpoiler').onclick=function(){state.spoiler=!state.spoiler;save();applySpoiler();openHub();};
@@ -988,7 +1011,8 @@
     document.getElementById('lede').textContent=CFG.subtitle||'';
     const s=document.getElementById('search');s.value=state.q||'';s.oninput=()=>{state.q=s.value.trim().toLowerCase();buildFilters();render();};
     const up=CFG.updated?(' \u00B7 data '+CFG.updated):'';
-    document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Tap a title for details, trailer, and where to watch.';
+    document.getElementById('foot').innerHTML='Progress saves privately in your browser'+up+'. Tap a title for details, trailer, and where to watch. <button id="refreshLink" class="refreshlink" aria-label="Check for data updates">\u21BB Check for updates</button>';
+    var _rl=document.getElementById('refreshLink');if(_rl)_rl.onclick=refreshData;
     if(location.hash&&location.hash.indexOf('#p=')===0){var code=location.hash.slice(3);if(code&&confirm('Load watched progress from this link? Replaces your current watched list.')){applyCode(code);save();}if(history.replaceState)history.replaceState(null,'',location.pathname+location.search);}
     (function(){var known={};(state.knownIds||[]).forEach(function(id){known[id]=1;});var cur=DATA.map(function(d){return d.id;});window.__NEW={};if(state.knownIds&&state.knownIds.length){cur.forEach(function(id){if(!known[id])window.__NEW[id]=1;});}state.knownIds=cur;save();})();
     applySpoiler();buildFilters();buildTools();renderTabsAndList();checkAchievements();startHero();

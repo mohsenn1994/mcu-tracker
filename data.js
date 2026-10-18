@@ -171,7 +171,7 @@ window.MCU_DATA = [
     "id": "thor",
     "title": "Thor",
     "year": 2011,
-    "release": "2011-04-21",
+    "release": "2011-04-27",
     "type": "movie",
     "saga": "Infinity Saga",
     "phase": "Phase 1",
@@ -698,7 +698,7 @@ window.MCU_DATA = [
     "tmdb_id": 315635,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg",
     "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "imdb": "https://www.imdb.com/title/tt2250912/",
     "rating": 7.3,
@@ -722,12 +722,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -736,7 +734,7 @@ window.MCU_DATA = [
     "id": "thor-ragnarok",
     "title": "Thor: Ragnarok",
     "year": 2017,
-    "release": "2017-10-02",
+    "release": "2017-10-24",
     "type": "movie",
     "saga": "Infinity Saga",
     "phase": "Phase 3",
@@ -960,7 +958,7 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 299534,
     "tmdb_type": "movie",
-    "poster": "https://image.tmdb.org/t/p/w185/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
     "imdb": "https://www.imdb.com/title/tt4154796/",
@@ -1028,12 +1026,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -1158,8 +1154,8 @@ window.MCU_DATA = [
     "cast": [
       "Tom Hiddleston",
       "Sophia Di Martino",
-      "Wunmi Mosaku",
-      "Eugene Cordero"
+      "Gugu Mbatha-Raw",
+      "Wunmi Mosaku"
     ],
     "trailer": "https://www.youtube.com/watch?v=nW948Va-l10",
     "watch": null,
@@ -1311,7 +1307,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg",
     "overview": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
     "imdb": "https://www.imdb.com/title/tt9032400/",
-    "rating": 6.8,
+    "rating": 6.7,
     "runtime": 156,
     "genres": [
       "Science Fiction",
@@ -1406,12 +1402,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -1435,7 +1429,7 @@ window.MCU_DATA = [
     ],
     "tmdb_id": 92749,
     "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/x6FsYvt33846IQnDSFxla9j0RX8.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/9K3lbMf8TKvL9xGEbzi7TggWCNQ.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/1uegR4uAxRxiMyX4nQnpzbXhrTw.jpg",
     "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
     "imdb": "https://www.imdb.com/title/tt10234724/",
@@ -1899,7 +1893,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/q8OCAKDfdgm4oQAITaEG7czomyI.jpg",
     "overview": "Through candid interviews with the creative minds behind the show, and exclusive on-set footage, discover how the talented team that powered \"Loki: Season 2\" raised the stakes for this latest MCU adventure. Witness imaginative costumes, elaborate environments, and far-out variants come to life, meet new allies and foes, and time-slip across the Multiverse.",
     "imdb": "https://www.imdb.com/title/tt28889780/",
-    "rating": 7.8,
+    "rating": 7.7,
     "runtime": 58,
     "genres": [
       "Documentary"
@@ -2220,6 +2214,12 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 10,
         "air": "2025-01-27"
+      },
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 1,
+        "air": "2027-01-13"
       }
     ],
     "tmdb_id": 138503,
@@ -2310,7 +2310,7 @@ window.MCU_DATA = [
     "tmdb_id": 202555,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/m291MEBjhuRqb0nh9ojnm9gzScq.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
     "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
     "imdb": "https://www.imdb.com/title/tt18923754/",
     "rating": 8.2,
@@ -2507,7 +2507,7 @@ window.MCU_DATA = [
     "seasons": [
       {
         "n": 1,
-        "name": "Season 1",
+        "name": "Miniseries",
         "eps": 4,
         "air": "2025-09-24"
       }
@@ -2621,10 +2621,10 @@ window.MCU_DATA = [
     "tmdb_id": 969681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "imdb": "https://www.imdb.com/title/tt22084616/",
-    "rating": 7.9,
+    "rating": 8.5,
     "runtime": 145,
     "genres": [
       "Science Fiction",
@@ -2633,9 +2633,9 @@ window.MCU_DATA = [
     ],
     "cast": [
       "Tom Holland",
-      "Zendaya",
-      "Mark Ruffalo",
-      "Jon Bernthal"
+      "Sadie Sink",
+      "Tramell Tillman",
+      "Zendaya"
     ],
     "trailer": "https://www.youtube.com/watch?v=P3uI5sLosKU",
     "watch": null,
@@ -2679,7 +2679,7 @@ window.MCU_DATA = [
     "id": "avengers-doomsday",
     "title": "Avengers: Doomsday",
     "year": 2026,
-    "release": "2026-12-15",
+    "release": "2026-12-16",
     "type": "movie",
     "saga": "Multiverse Saga",
     "phase": "Phase 6",
@@ -2690,7 +2690,7 @@ window.MCU_DATA = [
     "tmdb_id": 1003596,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
     "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "imdb": "https://www.imdb.com/title/tt21357150/",
     "rating": null,
@@ -3216,13 +3216,13 @@ window.MCU_DATA = [
         "n": 2,
         "name": "Season 2",
         "eps": 13,
-        "air": "2018-12-21"
+        "air": "2018-12-20"
       },
       {
         "n": 3,
         "name": "Season 3",
         "eps": 10,
-        "air": "2019-12-13"
+        "air": "2019-12-12"
       }
     ],
     "tmdb_id": 67466,
@@ -3374,12 +3374,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3467,12 +3465,10 @@ window.MCU_DATA = [
         "TOD"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3491,7 +3487,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2012-06-23",
     "poster": "https://image.tmdb.org/t/p/w185/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/a92L1Zm4vGlXOD0f2CEsfqnNDhc.jpg",
     "overview": "A teenage Peter Parker grapples with both high school and amazing super-human crises as his alter-ego Spider-Man.",
     "imdb": "https://www.imdb.com/title/tt0948470/",
     "rating": 6.8,
@@ -3515,12 +3511,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3563,12 +3557,10 @@ window.MCU_DATA = [
         "TOD"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3655,12 +3647,8 @@ window.MCU_DATA = [
       "flatrate": [
         "Netflix"
       ],
-      "rent": [
-        "Google Play Movies"
-      ],
-      "buy": [
-        "Google Play Movies"
-      ]
+      "rent": [],
+      "buy": []
     },
     "newlyAvailable": false
   },
@@ -3668,7 +3656,7 @@ window.MCU_DATA = [
     "id": "beyond-the-spider-verse",
     "title": "Spider-Man: Beyond the Spider-Verse",
     "year": 2027,
-    "release": "2027-06-17",
+    "release": "2027-06-16",
     "type": "movie",
     "universe": "EXT",
     "saga": "Sony — Spider-Verse",
@@ -3774,12 +3762,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/580489-venom-let-there-be-carnage/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3820,12 +3806,10 @@ window.MCU_DATA = [
         "TOD"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3866,12 +3850,10 @@ window.MCU_DATA = [
         "Shahid VIP"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3911,12 +3893,9 @@ window.MCU_DATA = [
       "flatrate": [
         "STARZPLAY"
       ],
-      "rent": [
-        "Google Play Movies"
-      ],
+      "rent": [],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -3957,12 +3936,10 @@ window.MCU_DATA = [
         "STARZPLAY"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4001,12 +3978,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/36657-x-men/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4047,12 +4022,10 @@ window.MCU_DATA = [
         "FlixOlé"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4091,12 +4064,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/36668-x-men-the-last-stand/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4135,12 +4106,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/2080-x-men-origins-wolverine/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4180,12 +4149,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/49538-x-men-first-class/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4265,12 +4232,9 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/movie/127585-x-men-days-of-future-past/watch?locale=EG",
       "flatrate": [],
-      "rent": [
-        "Google Play Movies"
-      ],
+      "rent": [],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4341,12 +4305,9 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/movie/246655-x-men-apocalypse/watch?locale=EG",
       "flatrate": [],
-      "rent": [
-        "Google Play Movies"
-      ],
+      "rent": [],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4406,7 +4367,7 @@ window.MCU_DATA = [
     "tmdb_id": 383498,
     "tmdb_type": "movie",
     "release": "2018-05-15",
-    "poster": "https://image.tmdb.org/t/p/w185/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/gyfPKfFYcVW54MoqhYlwwDDIfJR.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/3P52oz9HPQWxcwHOwxtyrVV1LKi.jpg",
     "overview": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
     "imdb": "https://www.imdb.com/title/tt5463162/",
@@ -4428,12 +4389,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/383498-deadpool-2/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4472,12 +4431,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/320288-dark-phoenix/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4516,8 +4473,7 @@ window.MCU_DATA = [
       "flatrate": [],
       "rent": [],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4539,7 +4495,7 @@ window.MCU_DATA = [
     "overview": "During a space voyage, four scientists are altered by cosmic rays: Reed Richards gains the ability to stretch his body; Sue Storm can become invisible; Johnny Storm controls fire; and Ben Grimm is turned into a super-strong … thing. Together, these \"Fantastic Four\" must now thwart the evil plans of Dr. Doom and save the world from certain destruction.",
     "imdb": "https://www.imdb.com/title/tt0120667/",
     "rating": 5.8,
-    "runtime": 106,
+    "runtime": 125,
     "genres": [
       "Action",
       "Fantasy",
@@ -4585,14 +4541,7 @@ window.MCU_DATA = [
       "Michael Chiklis"
     ],
     "trailer": "https://www.youtube.com/watch?v=7whodtti908",
-    "watch": {
-      "link": "https://www.themoviedb.org/movie/1979-fantastic-four-rise-of-the-silver-surfer/watch?locale=EG",
-      "flatrate": [],
-      "rent": [],
-      "buy": [
-        "Google Play Movies"
-      ]
-    },
+    "watch": null,
     "newlyAvailable": false
   },
   {
@@ -4629,12 +4578,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/166424-fantastic-four/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -4721,7 +4668,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/a7nEljKws5sgtCndAkJtdpGz9pe.jpg",
     "overview": "During World War II, a brave, patriotic American Soldier undergoes experiments to become a new supersoldier, \"Captain America\". Racing to Germany to sabotage the rockets of Nazi baddie \"Red Skull\", Captain America winds up frozen until the 1990s. He reawakens to find that the Red Skull has changed identities and is now planning to kidnap the President of the United States.",
     "imdb": "https://www.imdb.com/title/tt0103923/",
-    "rating": 4.5,
+    "rating": 4.6,
     "runtime": 97,
     "genres": [
       "Action",
@@ -4773,12 +4720,8 @@ window.MCU_DATA = [
       "flatrate": [
         "OSN+"
       ],
-      "rent": [
-        "Google Play Movies"
-      ],
-      "buy": [
-        "Google Play Movies"
-      ]
+      "rent": [],
+      "buy": []
     },
     "newlyAvailable": false
   },
@@ -4858,15 +4801,13 @@ window.MCU_DATA = [
         "OSN+"
       ],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
-    "newlyAvailable": true
+    "newlyAvailable": false
   },
   {
     "id": "hulk-2003",
@@ -4996,11 +4937,11 @@ window.MCU_DATA = [
     "tmdb_id": 9947,
     "tmdb_type": "movie",
     "release": "2005-01-13",
-    "poster": "https://image.tmdb.org/t/p/w185/gC6s6NKHneSrOKyQZnUMb443RKU.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/Z4dAOxjAHTUZO6DJ2WVAsxzwe3.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/kRpokiyfzyQHkQ0meMmvqPzQXnj.jpg",
     "overview": "Elektra the warrior survives a near-death experience, becomes an assassin-for-hire, and tries to protect her two latest targets, a single father and his young daughter, from a group of supernatural assassins.",
     "imdb": "https://www.imdb.com/title/tt0357277/",
-    "rating": 5,
+    "rating": 5.1,
     "runtime": 97,
     "genres": [
       "Action",
@@ -5018,12 +4959,10 @@ window.MCU_DATA = [
       "link": "https://www.themoviedb.org/movie/9947-elektra/watch?locale=EG",
       "flatrate": [],
       "rent": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ],
       "buy": [
-        "Apple TV Store",
-        "Google Play Movies"
+        "Apple TV Store"
       ]
     },
     "newlyAvailable": false
@@ -5244,41 +5183,36 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "visionquest-2026",
-    "title": "VisionQuest",
-    "year": 2026,
-    "release": "2026-10-14",
+    "id": "zodiac",
+    "title": "Zodiac",
+    "year": null,
+    "release": null,
     "type": "series",
     "universe": "MCU",
     "saga": "Newly Discovered",
     "phase": "",
-    "tmdb_id": 213375,
+    "tmdb_id": 337844,
     "tmdb_type": "tv",
     "discovered": true,
     "seasons": [
       {
         "n": 1,
-        "name": "Miniseries",
-        "eps": 8,
-        "air": "2026-10-14"
+        "name": "Season 1",
+        "eps": 1,
+        "air": null
       }
     ],
-    "poster": "https://image.tmdb.org/t/p/w185/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/v50p9hearMiu6BlYfp4O7FACmXl.jpg",
-    "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-    "imdb": "https://www.imdb.com/title/tt23112594/",
+    "poster": "https://image.tmdb.org/t/p/w185/A0Q6ttr7FPG93Jmft45e8pwsPIn.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/3gx3P8y0TShRVuKId6WvUacheOy.jpg",
+    "overview": "A spy thriller set in the Marvel Cinematic Universe (MCU). Plot TBA.",
+    "imdb": "https://www.imdb.com/title/tt48452696/",
     "rating": null,
     "runtime": null,
     "genres": [
-      "Sci-Fi & Fantasy"
+      "Drama"
     ],
-    "cast": [
-      "Paul Bettany",
-      "James Spader",
-      "Ruaridh Mollica",
-      "Todd Stashwick"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=pM9HZ8Ovjdw",
+    "cast": [],
+    "trailer": "https://www.youtube.com/watch?v=dpWMzXkTNTI",
     "watch": null,
     "newlyAvailable": false
   },

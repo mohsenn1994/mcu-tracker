@@ -384,7 +384,7 @@
   function relDate(it){return it.release?new Date((it.release.length===4?it.release+'-12-31':it.release)+'T00:00:00'):new Date(it.year,11,31);}
   DATA.forEach(it=>{it.universe=it.universe||'MCU';it._up=relDate(it)>TODAY;it._rt=relDate(it).getTime();it._avail=!!(it.watch&&it.watch.flatrate&&it.watch.flatrate.length);});
   function newsOnly(it){return !!it.discovered || (it.universe==='MCU' && !it.phase);}
-  function inNews(it){return it._up || (newsOnly(it) && !it.release);}
+  function inNews(it){return it._up || newsOnly(it);}
   const TRACK=DATA.filter(i=>!newsOnly(i));
   function ordv(list,name){const i=(list||[]).indexOf(name);return i===-1?900+String(name).length:i;}
   const U={};UNI.forEach(u=>U[u.id]={def:u,items:[],subs:{},subOrder:[]});
@@ -727,7 +727,8 @@
     var bar='<div class="upbar">'+unis.map(function(o){return '<div class="fchip'+(state.upFilter===o[1]?' on':'')+'" data-up="'+o[1]+'">'+o[0]+'</div>';}).join('')+'<span class="spacer"></span><button class="mini acc" id="wlAllBtn">\uD83D\uDD16 Watchlist all</button></div>';
     var pool=DATA.filter(function(i){return inNews(i) && (state.upFilter==='all'||i.universe===state.upFilter) && (!state.q || i.title.toLowerCase().indexOf(state.q)!==-1);});
     var dated=pool.filter(function(i){return i._up;}).sort(function(a,b){return a._rt-b._rt;});
-    var undated=pool.filter(function(i){return !i._up;}).sort(function(a,b){return (a.title>b.title?1:-1);});
+    var discovered=pool.filter(function(i){return !i._up && i.discovered && i.release;}).sort(function(a,b){return (b._rt||0)-(a._rt||0);});
+    var undated=pool.filter(function(i){return !i._up && !(i.discovered && i.release);}).sort(function(a,b){return (a.title>b.title?1:-1);});
     var now=Date.now();
     function card(it){
       var days=Math.ceil((it._rt-now)/86400000);
@@ -747,8 +748,9 @@
     dated.forEach(function(it){var y=new Date(it._rt).getFullYear();if(y!==lastYear){if(lastYear!==null)html+='</div>';html+='<div class="newshead">'+y+'</div><div class="news">';lastYear=y;}html+=card(it);});
     if(lastYear!==null)html+='</div>';
     if(undated.length){html+='<div class="newshead" style="color:var(--violet)">Rumored / date TBA</div><div class="news">'+undated.map(card).join('')+'</div>';}
-    if(!dated.length&&!undated.length)html='<div class="empty">Nothing upcoming here.</div>';
-    list.innerHTML='<div class="newshead" style="color:var(--muted);margin-bottom:12px">Upcoming & announced \u2014 soonest first. Tap for details and trailers.</div>'+bar+html;
+    if(discovered.length){html+='<div class="newshead" style="color:var(--gold)">Newly discovered \u00B7 '+discovered.length+' <span style="color:var(--faint);font-weight:400;text-transform:none;letter-spacing:0">(auto-found from TMDB \u2014 tap to review; prune via the ignore list)</span></div><div class="news">'+discovered.map(card).join('')+'</div>';}
+    if(!dated.length&&!undated.length&&!discovered.length)html='<div class="empty">Nothing here yet.</div>';
+    list.innerHTML='<div class="newshead" style="color:var(--muted);margin-bottom:12px">Upcoming, announced &amp; newly discovered. Tap any title for details.</div>'+bar+html;
     document.querySelectorAll('[data-up]').forEach(function(el){el.onclick=function(){state.upFilter=el.dataset.up;save();renderNews();};});
     var wl=document.getElementById('wlAllBtn');
     if(wl)wl.onclick=function(){var added=0;pool.forEach(function(it){if(!state.watchlist[it.id]){state.watchlist[it.id]=true;added++;}});save();refreshCounts();renderNews();toast(added?('Added '+added+' to watchlist'):'All already on watchlist');};

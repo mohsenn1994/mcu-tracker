@@ -12,7 +12,15 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 const KEY=process.env.TMDB_API_KEY;
 if(!KEY){console.error('Missing TMDB_API_KEY (short v3 API Key).');process.exit(1);}
 const REGION=(process.env.WATCH_REGION||'EG').toUpperCase();
-const COMPANY=420;                                  // Marvel Studios
+const COMPANY=420;                                  // Marvel Studios (kept for reference)
+// Marvel-OWNED company credits. These are Marvel-specific, so they also catch
+// cross-studio Marvel films (Sony Spider-Man, Fox X-Men/FF) that credit Marvel
+// Entertainment — WITHOUT pulling those studios' entire non-Marvel catalogs.
+const DISCOVER_COMPANIES=[
+  420,    // Marvel Studios
+  19551,  // Marvel Television
+  7505    // Marvel Entertainment / Marvel Enterprises (credited on most Fox/Sony Marvel films)
+]
 const IMG='https://image.tmdb.org/t/p/w185';
 const BACK='https://image.tmdb.org/t/p/w1280';
 const RESOLVE_VER=4;
@@ -83,12 +91,49 @@ async function enrich(t){
     newlyAvailable: !!(flat.length && prev.length && flat.some(n=>prev.indexOf(n)===-1))
   };
 }
+async function marvelKeywordIds(){
+  // Resolve TMDB keyword ids for 'marvel' dynamically so we don't hardcode ids
+  // that may drift. Keeps only keywords whose name mentions Marvel.
+  try{const r=await api('/search/keyword',{query:'marvel'});
+    return (r.results||[]).filter(k=>/marvel/i.test(k.name)).map(k=>k.id).slice(0,12);
+  }catch(e){return [];}
+}
 async function discoverNew(seedKeys,seedNames){
+  // Wide Marvel net: Marvel-owned company credits + Marvel keywords (spans Sony/
+  // Fox Marvel films). All content types; released titles included. Expect noise;
+  // prune via config.ignore. Dedupe by tmdb key and normalized title.
   const found=[],seen=new Set();
-  for(const mt of['movie','tv']){let pages=1;
-    for(let page=1;page<=pages&&page<=5;page++){let res;try{res=await api('/discover/'+mt,{with_companies:COMPANY,sort_by:(mt==='movie'?'primary_release_date.desc':'first_air_date.desc'),page});}catch(e){break;}pages=res.total_pages||1;
-      (res.results||[]).forEach(x=>{const title=x.title||x.name,date=x.release_date||x.first_air_date||'';if(!title)return;const key=mt+':'+x.id;if(seedKeys.has(key)||seen.has(key)||IGNORE.has(key))return;if(seedNames.has(normTitle(title)))return;if(date && new Date(date)<=new Date())return;seen.add(key);found.push({id:x.id,mt,title,year:date?+date.slice(0,4):null,release:date||null});});
-      await sleep(180);}}
+  function take(res){
+    (res.results||[]).forEach(x=>{
+      const title=x.title||x.name,date=x.release_date||x.first_air_date||'',mt=x._mt;
+      if(!title)return;
+      const key=mt+':'+x.id;
+      if(seedKeys.has(key)||seen.has(key)||IGNORE.has(key))return;
+      if(seedNames.has(normTitle(title)))return;
+      seen.add(key);
+      found.push({id:x.id,mt,title,year:date?+date.slice(0,4):null,release:date||null});
+    });
+  }
+  async function run(mt,params){
+    let pages=1;
+    for(let page=1;page<=pages&&page<=5;page++){
+      let res;try{res=await api('/discover/'+mt,Object.assign({sort_by:(mt==='movie'?'primary_release_date.desc':'first_air_date.desc'),page},params));}catch(e){break;}
+      pages=res.total_pages||1;
+      (res.results||[]).forEach(x=>x._mt=mt);
+      take(res);
+      await sleep(140);
+    }
+  }
+  // 1) by Marvel-owned company credit
+  for(const company of DISCOVER_COMPANIES){
+    for(const mt of['movie','tv']) await run(mt,{with_companies:company});
+  }
+  // 2) by Marvel keyword (catches cross-studio Marvel titles not crediting 7505)
+  const kw=await marvelKeywordIds();
+  if(kw.length){
+    const kwParam=kw.join('|'); // OR
+    for(const mt of['movie','tv']) await run(mt,{with_keywords:kwParam});
+  }
   return found;
 }
 

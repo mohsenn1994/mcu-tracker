@@ -738,6 +738,19 @@ module.exports = {
       "notes": "Special Presentation."
     },
     {
+      "id": "visionquest",
+      "title": "VisionQuest",
+      "tmdb_id": 213375,
+      "tmdb_type": "tv",
+      "year": 2026,
+      "release": "2026-10-14",
+      "type": "series",
+      "saga": "Multiverse Saga",
+      "phase": "Phase 6",
+      "chrono": 64.5,
+      "notes": "Concludes the WandaVision / Agatha All Along trilogy; White Vision. (Marvel Television)"
+    },
+    {
       "id": "avengers-doomsday",
       "title": "Avengers: Doomsday",
       "year": 2026,

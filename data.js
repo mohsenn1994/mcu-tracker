@@ -2,7 +2,7 @@
 window.MCU_CONFIG = {
   "title": "Marvel Cinematic Universe & Beyond",
   "subtitle": "Every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes.",
-  "updated": "2026-10",
+  "updated": "2026-11",
   "ignore": [],
   "universes": [
     {
@@ -311,7 +311,7 @@ window.MCU_DATA = [
     "tmdb_id": 68721,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/qhPtAc1TKbMPqNvcdXSOn9Bn7hZ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/iVped1djsF0tvGkvnHbzsE3ZPTF.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/4TSqtluelcWByj8YZdqwzQVjI0O.jpg",
     "overview": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
     "imdb": "https://www.imdb.com/title/tt1300854/",
     "rating": 6.9,
@@ -397,7 +397,7 @@ window.MCU_DATA = [
     "tmdb_id": 100402,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/1RWLMyC9KcFfcaoViMiJGSSZzzr.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jJvrPQAHFKmz4pVano4UtWTsRgA.jpg",
     "overview": "After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy—the Winter Soldier.",
     "imdb": "https://www.imdb.com/title/tt1843866/",
     "rating": 7.7,
@@ -698,7 +698,7 @@ window.MCU_DATA = [
     "tmdb_id": 315635,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/tPpYGm2mVecue7Bk3gNVoSPA5qn.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lAsr1ytUq0ATWdCbcjf59pupPFy.jpg",
     "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "imdb": "https://www.imdb.com/title/tt2250912/",
     "rating": 7.3,
@@ -1055,7 +1055,7 @@ window.MCU_DATA = [
     "tmdb_id": 85271,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/cq62fLH3vwOmiaLKMqkDI86tPtH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
     "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
     "imdb": "https://www.imdb.com/title/tt9140560/",
     "rating": 8.2,
@@ -1102,7 +1102,8 @@ window.MCU_DATA = [
     "runtime": null,
     "genres": [
       "Action & Adventure",
-      "Sci-Fi & Fantasy"
+      "Sci-Fi & Fantasy",
+      "Drama"
     ],
     "cast": [
       "Anthony Mackie",
@@ -1154,8 +1155,8 @@ window.MCU_DATA = [
     "cast": [
       "Tom Hiddleston",
       "Sophia Di Martino",
-      "Gugu Mbatha-Raw",
-      "Wunmi Mosaku"
+      "Wunmi Mosaku",
+      "Eugene Cordero"
     ],
     "trailer": "https://www.youtube.com/watch?v=nW948Va-l10",
     "watch": null,
@@ -1541,7 +1542,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
     "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
     "imdb": "https://www.imdb.com/title/tt10648342/",
-    "rating": 6.4,
+    "rating": 6.3,
     "runtime": 119,
     "genres": [
       "Fantasy",
@@ -1584,8 +1585,8 @@ window.MCU_DATA = [
     ],
     "tmdb_id": 232125,
     "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/3QfQYECgu6DX5UUWCBvv1Fl0BAJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/bAnHzJ6AMhOhnV3C0kTxkpCqpgM.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/lYwFSsP4KsoRhOLhJvBFp3GEGEm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AcqVeohiVgGEFTKwjvL57YHsnGU.jpg",
     "overview": "There's no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up and getting into trouble among the stars.",
     "imdb": "https://www.imdb.com/title/tt13623148/",
     "rating": 7,
@@ -2192,7 +2193,9 @@ window.MCU_DATA = [
     "trailer": null,
     "watch": {
       "link": "https://www.themoviedb.org/tv/235614/watch?locale=EG",
-      "flatrate": [],
+      "flatrate": [
+        "WeTV"
+      ],
       "rent": [],
       "buy": []
     },
@@ -2621,7 +2624,7 @@ window.MCU_DATA = [
     "tmdb_id": 969681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "imdb": "https://www.imdb.com/title/tt22084616/",
     "rating": 8.5,
@@ -2638,7 +2641,14 @@ window.MCU_DATA = [
       "Zendaya"
     ],
     "trailer": "https://www.youtube.com/watch?v=P3uI5sLosKU",
-    "watch": null,
+    "watch": {
+      "link": "https://www.themoviedb.org/movie/969681-spider-man-brand-new-day/watch?locale=EG",
+      "flatrate": [],
+      "rent": [],
+      "buy": [
+        "Apple TV Store"
+      ]
+    },
     "newlyAvailable": false
   },
   {
@@ -2696,10 +2706,10 @@ window.MCU_DATA = [
       }
     ],
     "poster": "https://image.tmdb.org/t/p/w185/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/58v1KFe3rxvHrYM1hLH5ScpwqNR.jpg",
     "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
     "imdb": "https://www.imdb.com/title/tt23112594/",
-    "rating": 8.8,
+    "rating": 8.7,
     "runtime": null,
     "genres": [
       "Sci-Fi & Fantasy",
@@ -2729,8 +2739,8 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 1003596,
     "tmdb_type": "movie",
-    "poster": "https://image.tmdb.org/t/p/w185/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/bqAHPSEyRkM4BpkncGFCKjBXf9p.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
     "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "imdb": "https://www.imdb.com/title/tt21357150/",
     "rating": null,
@@ -2888,7 +2898,7 @@ window.MCU_DATA = [
     "tmdb_id": 61550,
     "tmdb_type": "tv",
     "release": "2015-01-06",
-    "poster": "https://image.tmdb.org/t/p/w185/fe79VYyLp5ZBstpJ4oukpuUT3B.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/7kqIsjjDMZA5GRMH5VCdQYZJqc6.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/MaQ7hbNsiJ30p14UgRdEnXDGMH.jpg",
     "overview": "It's 1946, and peace has dealt Peggy Carter a serious blow as she finds herself marginalized when the men return home from fighting abroad. Working for the covert SSR (Strategic Scientific Reserve), Peggy must balance doing administrative work and going on secret missions for Howard Stark all while trying to navigate life as a single woman in America, in the wake of losing the love of her life - Steve Rogers.",
     "imdb": "https://www.imdb.com/title/tt3475734/",
@@ -3256,13 +3266,13 @@ window.MCU_DATA = [
         "n": 2,
         "name": "Season 2",
         "eps": 13,
-        "air": "2018-12-20"
+        "air": "2018-12-21"
       },
       {
         "n": 3,
         "name": "Season 3",
         "eps": 10,
-        "air": "2019-12-12"
+        "air": "2019-12-13"
       }
     ],
     "tmdb_id": 67466,
@@ -3668,7 +3678,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/kVd3a9YeLGkoeR50jGEXM6EqseS.jpg",
     "overview": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse's very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
     "imdb": "https://www.imdb.com/title/tt9362722/",
-    "rating": 8.4,
+    "rating": 8.3,
     "runtime": 140,
     "genres": [
       "Animation",
@@ -3678,18 +3688,11 @@ window.MCU_DATA = [
     "cast": [
       "Shameik Moore",
       "Hailee Steinfeld",
-      "Brian Tyree Henry",
-      "Luna Lauren Vélez"
+      "Oscar Isaac",
+      "Brian Tyree Henry"
     ],
     "trailer": "https://www.youtube.com/watch?v=yFrxzaBLDQM",
-    "watch": {
-      "link": "https://www.themoviedb.org/movie/569094-spider-man-across-the-spider-verse/watch?locale=EG",
-      "flatrate": [
-        "Netflix"
-      ],
-      "rent": [],
-      "buy": []
-    },
+    "watch": null,
     "newlyAvailable": false
   },
   {
@@ -3933,7 +3936,9 @@ window.MCU_DATA = [
       "flatrate": [
         "STARZPLAY"
       ],
-      "rent": [],
+      "rent": [
+        "Apple TV Store"
+      ],
       "buy": [
         "Apple TV Store"
       ]
@@ -4039,7 +4044,7 @@ window.MCU_DATA = [
     "tmdb_type": "movie",
     "release": "2003-04-27",
     "poster": "https://image.tmdb.org/t/p/w185/bst4alFUXCxISwdRUKSMhhkrX1M.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/7TYITrR804tLITNur3b8VLCK6tw.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/s8ftvFvafWWEhApISamHx32bx6h.jpg",
     "overview": "Professor Charles Xavier and his team of genetically gifted superheroes face a rising tide of anti-mutant sentiment led by Col. William Stryker. Storm, Wolverine and Jean Grey must join Magneto and Mystique to unhinge Stryker's scheme to exterminate all mutants.",
     "imdb": "https://www.imdb.com/title/tt0290334/",
     "rating": 7,
@@ -4222,9 +4227,9 @@ window.MCU_DATA = [
     ],
     "cast": [
       "Hugh Jackman",
-      "Hiroyuki Sanada",
       "Tao Okamoto",
-      "Rila Fukushima"
+      "Rila Fukushima",
+      "Will Yun Lee"
     ],
     "trailer": "https://www.youtube.com/watch?v=DwG56k6VGOE",
     "watch": {
@@ -5239,7 +5244,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/aIiCdNCo889J2QaaOd8TXaGXoO2.jpg",
     "overview": "Spidey and the Avengers' Halloween plans are turned upside down by the mysterious Hallows' Eve, who plays magical tricks on trick or treaters and plans to ruin Halloween forever.",
     "imdb": "https://www.imdb.com/title/tt37850679/",
-    "rating": 6.8,
+    "rating": 6.3,
     "runtime": 26,
     "genres": [
       "Animation",
@@ -5759,7 +5764,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/3UBlm2N094EFPWuBn3v2EGtHr95.jpg",
     "overview": "Settle in with the likes of Taika Waititi, Chris Hemsworth, Natalie Portman, Christian Bale, and Tessa Thompson, and as they divulge the secrets behind the creation of Thor: Love and Thunder. Through in-depth interviews with cast and crew, along with raw, unseen footage from the set and beyond, this documentary special pulls back the curtain on the God of Thunder’s fourth feature film.",
     "imdb": "https://www.imdb.com/title/tt21862424/",
-    "rating": 7,
+    "rating": 6.9,
     "runtime": 55,
     "genres": [
       "Documentary"
@@ -5824,7 +5829,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/u76zP5GRRPSXBXqY98dZI39THPu.jpg",
     "overview": "Groot investigates a spooky noise that’s been haunting the Quadrant, which leads to an intense dance off.",
     "imdb": "https://www.imdb.com/title/tt21316834/",
-    "rating": 7.1,
+    "rating": 7,
     "runtime": 6,
     "genres": [
       "Animation",
@@ -5989,7 +5994,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/2YKuCnkqOPvHV1mrxwU3RzX0QY0.jpg",
     "overview": "Join visionary director Sam Raimi and the cast of the film as they recount their experiences bringing Marvel’s darkest story to life.  From world-building to universe-building, hear first hand accounts from the cast and crew on what it took to design, create and make each universe unique and believable.",
     "imdb": "https://www.imdb.com/title/tt21098288/",
-    "rating": 7.1,
+    "rating": 7,
     "runtime": 59,
     "genres": [
       "Documentary"
@@ -6408,7 +6413,7 @@ window.MCU_DATA = [
     "discovered": true,
     "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/y0QYZPWgeGKOvyrzi6Oz3aJPxJa.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/yoigAFjhEhJM6O6hQT9TiKH6EL7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/bqlB2qn10NgjMFloZrOdQBEqjga.jpg",
     "overview": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
     "imdb": "https://www.imdb.com/title/tt3438640/",
     "rating": 6.8,
@@ -6445,7 +6450,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/kv8KDbi2I4F4MNBbBMCR4LDqP6H.jpg",
     "overview": "Agent Peggy Carter is relegated to a desk job and frustrated at her male boss and comrades' sexist dismissal of her place in the SSR. Ordered to work late one night, Carter gets an alert that the villain Zodiac has been spotted and decides to take care of it herself.",
     "imdb": "https://www.imdb.com/title/tt3067038/",
-    "rating": 7.2,
+    "rating": 7.3,
     "runtime": 15,
     "genres": [
       "Adventure",
@@ -6476,7 +6481,7 @@ window.MCU_DATA = [
     "discovered": true,
     "seasons": null,
     "poster": "https://image.tmdb.org/t/p/w185/hnSxG8clwLuAXEkp9emc8HCUcHD.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/pC36ONAaKMXStlvutYFcAbMemCM.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/mli3yXV5umu0Hsy5Fww6whIJYyg.jpg",
     "overview": "Benny and Claire, a down-on-their-luck couple, find a discarded Chitauri weapon referred to as 'Item 47'.",
     "imdb": "https://www.imdb.com/title/tt2247732/",
     "rating": 6.4,
@@ -6889,7 +6894,7 @@ window.MCU_DATA = [
       {
         "n": 1,
         "name": "Season 1",
-        "eps": 60,
+        "eps": 74,
         "air": "2025-08-11"
       }
     ],
@@ -7435,7 +7440,7 @@ window.MCU_DATA = [
     ],
     "poster": "https://image.tmdb.org/t/p/w185/A0Q6ttr7FPG93Jmft45e8pwsPIn.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/3gx3P8y0TShRVuKId6WvUacheOy.jpg",
-    "overview": "A spy thriller set in the Marvel Cinematic Universe (MCU). Plot TBA.",
+    "overview": "A pair of spies chase targets who have special abilities in the Marvel Cinematic Universe (MCU).",
     "imdb": "https://www.imdb.com/title/tt48452696/",
     "rating": null,
     "runtime": null,
@@ -7667,134 +7672,6 @@ window.MCU_DATA = [
       "Gerald Mohr",
       "Paul Frees",
       "Jack DeLeon"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spider-man-across-the-spider-verse-i-mma-do-my-own-thing-interdimensional-destiny-2023",
-    "title": "Spider-Man: Across the Spider-Verse: \"I'mma Do My Own Thing\" - Interdimensional Destiny",
-    "year": 2023,
-    "release": "2023-09-05",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1739026,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/kSOZmyJmag06nY6vAnr9VSYkz30.jpg",
-    "backdrop": null,
-    "overview": "Spider-Man: Across the Spider-Verse: \"I'mma Do My Own Thing\" - Interdimensional Destiny",
-    "imdb": null,
-    "rating": null,
-    "runtime": 8,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Justin K. Thompson",
-      "Bob Persichetti",
-      "Shameik Moore",
-      "Dean Gordon"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spider-man-across-the-spider-verse-obscure-spiders-and-easter-eggs-2023",
-    "title": "Spider-Man: Across the Spider-Verse: Obscure Spiders and Easter Eggs",
-    "year": 2023,
-    "release": "2023-09-05",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1739018,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/kSOZmyJmag06nY6vAnr9VSYkz30.jpg",
-    "backdrop": null,
-    "overview": "Spider-Man: Across the Spider-Verse: Obscure Spiders and Easter Eggs",
-    "imdb": "https://www.imdb.com/title/tt33055556/",
-    "rating": null,
-    "runtime": 5,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Christopher Miller",
-      "Phil Lord",
-      "Justin K. Thompson",
-      "Joaquim Dos Santos"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spider-man-across-the-spider-verse-across-the-worlds-designing-new-dimensions-2023",
-    "title": "Spider-Man: Across the Spider-Verse: Across the Worlds: Designing New Dimensions",
-    "year": 2023,
-    "release": "2023-09-05",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1739008,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/kSOZmyJmag06nY6vAnr9VSYkz30.jpg",
-    "backdrop": null,
-    "overview": "Spider-Man: Across the Spider-Verse: Across the Worlds: Designing New Dimensions",
-    "imdb": null,
-    "rating": null,
-    "runtime": 8,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Patrick O'Keefe",
-      "Bob Persichetti",
-      "Christopher Miller",
-      "Phil Lord"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "spider-man-across-the-spider-verse-creating-the-ultimate-spider-man-movie-2023",
-    "title": "Spider-Man: Across the Spider-Verse - Creating the Ultimate Spider-Man Movie",
-    "year": 2023,
-    "release": "2023-05-09",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1412329,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/kSOZmyJmag06nY6vAnr9VSYkz30.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/x0HXaDYX3ugUJvbloBS4Qp75ZBS.jpg",
-    "overview": "Writing, pre-production and the challenges of crafting a sequel to a game-changing film, as told by the filmmakers who worked so hard to push Across the Spider-Verse several steps farther without losing the magic of the first entry in the series.",
-    "imdb": "https://www.imdb.com/title/tt33049792/",
-    "rating": null,
-    "runtime": 15,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Michael Andrews",
-      "Kris Anka",
-      "Avi Arad",
-      "Joaquim Dos Santos"
     ],
     "trailer": null,
     "watch": null,
@@ -8112,6 +7989,134 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
+    "id": "steve-rogers-notebook-2014",
+    "title": "Steve Rogers' Notebook",
+    "year": 2014,
+    "release": "2014-09-09",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1806737,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": null,
+    "backdrop": null,
+    "overview": "Behind-the-scenes short on Steve Rogers' notebook in 'Captain America: The Winter Soldier' and how it varies from region to region.",
+    "imdb": "https://www.imdb.com/title/tt4203008/",
+    "rating": null,
+    "runtime": 3,
+    "genres": [
+      "Documentary"
+    ],
+    "cast": [
+      "Nate Moore",
+      "Anthony Mackie",
+      "Dave Hoffman"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "on-set-with-anthony-mackie-cut-the-check-2014",
+    "title": "On Set with Anthony Mackie: Cut the Check!",
+    "year": 2014,
+    "release": "2014-09-09",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1806732,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": null,
+    "backdrop": null,
+    "overview": "A behind-the-scenes short focusing on Falcon's role in 'Captain America: The Winter Soldier', Anthony Mackie's casting and performance, the challenges of creating a strong character with limited screen time, and Mackie's habit of ending a scene with \"cut the check!\"",
+    "imdb": "https://www.imdb.com/title/tt5226206/",
+    "rating": null,
+    "runtime": 2,
+    "genres": [
+      "Documentary"
+    ],
+    "cast": [
+      "Anthony Mackie",
+      "Chris Evans",
+      "Anthony Russo",
+      "Joe Russo"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "on-the-frontline-an-inside-look-at-captain-america-s-battlegrounds-2014",
+    "title": "On the Frontline: An Inside Look at Captain America's Battlegrounds",
+    "year": 2014,
+    "release": "2014-09-09",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1806719,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": null,
+    "backdrop": null,
+    "overview": "Marvel Studios' chief Kevin Feige, the Russo brothers, and key members of the cast and crew offer insight into the production, the development of the sequel, the tone and style the filmmakers aimed for from the start, the intensity of the action and handheld camera work, and the evolution of Cap and his appearances since 'Captain America: The First Avenger' and 'The Avengers'.",
+    "imdb": "https://www.imdb.com/title/tt5226204/",
+    "rating": null,
+    "runtime": 10,
+    "genres": [
+      "Documentary"
+    ],
+    "cast": [
+      "Chris Evans",
+      "Kevin Feige",
+      "Sam Hargrave",
+      "Thomas Robinson Harper"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "stephen-king-s-n-2008",
+    "title": "Stephen King's N.",
+    "year": 2008,
+    "release": "2008-07-28",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1810734,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": "https://image.tmdb.org/t/p/w185/2aX1hGiKS6XyacZcq0Ram4VKDNR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/ypv0YTVaL5yqjGKkeBmNkdTB47e.jpg",
+    "overview": "There is something unearthly and mysterious deep in Ackerman's Field in rural Maine. There is a Stonehenge-like arrangement of seven stones with a horrifying EYE in the center. And whatever dwells there in that strange, windswept setting may have brought about the suicide of one man...and harbor death for the OCD afflicted \"N.\", whose visits to the field have passed beyond compulsion into the realm of obsession.",
+    "imdb": "https://www.imdb.com/title/tt6316676/",
+    "rating": null,
+    "runtime": 30,
+    "genres": [
+      "Animation",
+      "Fantasy"
+    ],
+    "cast": [
+      "Ben Shenkman",
+      "Jeff Perry",
+      "Karen Ziemba",
+      "Holter Graham"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
     "id": "symbiote-spider-man-the-saga-of-the-black-costume-2007",
     "title": "Symbiote Spider-Man: The Saga of the Black Costume",
     "year": 2007,
@@ -8372,6 +8377,40 @@ window.MCU_DATA = [
     "cast": [
       "Chi McBride"
     ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "avengers-secret-wars-shorts-2017",
+    "title": "Avengers: Secret Wars (Shorts)",
+    "year": 2017,
+    "release": "2017-06-02",
+    "type": "series",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 336541,
+    "tmdb_type": "tv",
+    "discovered": true,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 6,
+        "air": "2017-06-02"
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/hHvFRiibqU5NCler8Q0XH302oF7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/htPSfA7hr9SDAeBzjVVkJBOmcYz.jpg",
+    "overview": "Tony Stark is trapped in another dimension. The Avengers muster all of their knowledge and strength to find a way to bring him back, but before they can, they are attacked by a new cabal of villains who scatter our heroes across space and time. With the help of a new team of heroes, the Avengers must reunite in time to not only save earth, but all of reality.",
+    "imdb": "https://www.imdb.com/title/tt29511598/",
+    "rating": null,
+    "runtime": null,
+    "genres": [
+      "Animation"
+    ],
+    "cast": [],
     "trailer": null,
     "watch": null,
     "newlyAvailable": false
@@ -8741,6 +8780,42 @@ window.MCU_DATA = [
     "cast": [
       "Ryan Reynolds"
     ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "jeff-his-super-hero-friends-2026",
+    "title": "Jeff & His Super Hero Friends",
+    "year": 2026,
+    "release": "2026-07-17",
+    "type": "series",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 336977,
+    "tmdb_type": "tv",
+    "discovered": true,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 1",
+        "eps": 6,
+        "air": "2026-07-17"
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/jUXnMzuISJnGvAo8apl5GkTnOmN.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/hEbfpOUOYby6ETtC8ubaB6ktXFy.jpg",
+    "overview": null,
+    "imdb": "https://www.imdb.com/title/tt45381042/",
+    "rating": 10,
+    "runtime": null,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Kids"
+    ],
+    "cast": [],
     "trailer": null,
     "watch": null,
     "newlyAvailable": false

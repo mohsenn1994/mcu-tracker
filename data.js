@@ -3,7 +3,12 @@ window.MCU_CONFIG = {
   "title": "Marvel Cinematic Universe & Beyond",
   "subtitle": "Every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes.",
   "updated": "2026-11",
-  "ignore": [],
+  "ignore": [
+    "movie:1275606",
+    "movie:1010821",
+    "movie:1010820",
+    "movie:1010818"
+  ],
   "universes": [
     {
       "id": "MCU",
@@ -269,7 +274,7 @@ window.MCU_DATA = [
     "tmdb_id": 24428,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/86IbFy98QjRIqg6WanKYb9tXNbJ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/gHLs7Fy3DzLmLsD4lmfqL55KGcl.jpg",
     "overview": "When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!",
     "imdb": "https://www.imdb.com/title/tt0848228/",
     "rating": 8.1,
@@ -958,7 +963,7 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 299534,
     "tmdb_type": "movie",
-    "poster": "https://image.tmdb.org/t/p/w185/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/jtDv3lCnST0fZRvdYFwR5CVwK2x.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
     "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
     "imdb": "https://www.imdb.com/title/tt4154796/",
@@ -1055,7 +1060,7 @@ window.MCU_DATA = [
     "tmdb_id": 85271,
     "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/lOr9NKxh4vMweufMOUDJjJhCRHW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/fSCb3lzRbHknuKD7apdH4RYJLkc.jpg",
     "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
     "imdb": "https://www.imdb.com/title/tt9140560/",
     "rating": 8.2,
@@ -1117,6 +1122,9 @@ window.MCU_DATA = [
   },
   {
     "id": "loki-s1",
+    "tmdb_id": 84958,
+    "tmdb_type": "tv",
+    "season": 1,
     "title": "Loki — Season 1",
     "year": 2021,
     "release": "2021-06-09",
@@ -1132,16 +1140,8 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 6,
         "air": "2021-06-09"
-      },
-      {
-        "n": 2,
-        "name": "Season 2",
-        "eps": 6,
-        "air": "2023-10-05"
       }
     ],
-    "tmdb_id": 84958,
-    "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
     "overview": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
@@ -1204,6 +1204,9 @@ window.MCU_DATA = [
   },
   {
     "id": "what-if-s1",
+    "tmdb_id": 91363,
+    "tmdb_type": "tv",
+    "season": 1,
     "title": "What If…? — Season 1",
     "year": 2021,
     "release": "2021-08-11",
@@ -1218,22 +1221,8 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 9,
         "air": "2021-08-11"
-      },
-      {
-        "n": 2,
-        "name": "Season 2",
-        "eps": 9,
-        "air": "2023-12-22"
-      },
-      {
-        "n": 3,
-        "name": "Season 3",
-        "eps": 8,
-        "air": "2024-12-22"
       }
     ],
-    "tmdb_id": 91363,
-    "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
     "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
@@ -1466,7 +1455,7 @@ window.MCU_DATA = [
     "tmdb_id": 453395,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/lv3TXqhpaIxkclIHbhN2MRMOemQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AdyJH8kDm8xT8IKTlgpEC15ny4u.jpg",
     "overview": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
     "imdb": "https://www.imdb.com/title/tt9419884/",
     "rating": 7.2,
@@ -1561,6 +1550,9 @@ window.MCU_DATA = [
   },
   {
     "id": "i-am-groot-s1",
+    "tmdb_id": 232125,
+    "tmdb_type": "tv",
+    "season": 1,
     "title": "I Am Groot — Season 1",
     "year": 2022,
     "release": "2022-08-10",
@@ -1575,7 +1567,40 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 5,
         "air": "2022-08-10"
-      },
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/lYwFSsP4KsoRhOLhJvBFp3GEGEm.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/AcqVeohiVgGEFTKwjvL57YHsnGU.jpg",
+    "overview": "There's no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up and getting into trouble among the stars.",
+    "imdb": "https://www.imdb.com/title/tt13623148/",
+    "rating": 7,
+    "runtime": null,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "cast": [
+      "Vin Diesel"
+    ],
+    "trailer": "https://www.youtube.com/watch?v=D7eFpRf4tac",
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "i-am-groot-s2",
+    "tmdb_id": 232125,
+    "tmdb_type": "tv",
+    "season": 2,
+    "title": "I Am Groot — Season 2",
+    "year": 2023,
+    "release": "2022-08-10",
+    "type": "series",
+    "saga": "Multiverse Saga",
+    "phase": "Phase 4",
+    "chrono": 37.5,
+    "notes": "Second batch of Baby Groot shorts.",
+    "seasons": [
       {
         "n": 2,
         "name": "Season 2",
@@ -1583,8 +1608,6 @@ window.MCU_DATA = [
         "air": "2023-09-06"
       }
     ],
-    "tmdb_id": 232125,
-    "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/lYwFSsP4KsoRhOLhJvBFp3GEGEm.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/AcqVeohiVgGEFTKwjvL57YHsnGU.jpg",
     "overview": "There's no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up and getting into trouble among the stars.",
@@ -1878,34 +1901,43 @@ window.MCU_DATA = [
   },
   {
     "id": "loki-s2",
+    "tmdb_id": 84958,
+    "tmdb_type": "tv",
+    "season": 2,
     "title": "Loki — Season 2",
     "year": 2023,
-    "release": "2023-11-22",
+    "release": "2021-06-09",
     "type": "series",
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
     "essential": true,
     "chrono": 45,
     "notes": "Resolves the TVA storyline.",
-    "seasons": null,
-    "tmdb_id": 1192825,
-    "tmdb_type": "movie",
-    "poster": "https://image.tmdb.org/t/p/w185/fa4HvgQO1sLQTobjJR10kDOJzWB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/q8OCAKDfdgm4oQAITaEG7czomyI.jpg",
-    "overview": "Through candid interviews with the creative minds behind the show, and exclusive on-set footage, discover how the talented team that powered \"Loki: Season 2\" raised the stakes for this latest MCU adventure. Witness imaginative costumes, elaborate environments, and far-out variants come to life, meet new allies and foes, and time-slip across the Multiverse.",
-    "imdb": "https://www.imdb.com/title/tt28889780/",
-    "rating": 7.7,
-    "runtime": 58,
+    "seasons": [
+      {
+        "n": 2,
+        "name": "Season 2",
+        "eps": 6,
+        "air": "2023-10-05"
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+    "overview": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
+    "imdb": "https://www.imdb.com/title/tt9140554/",
+    "rating": 8.2,
+    "runtime": null,
     "genres": [
-      "Documentary"
+      "Drama",
+      "Sci-Fi & Fantasy"
     ],
     "cast": [
       "Tom Hiddleston",
-      "Owen Wilson",
-      "Eric Martin",
-      "Justin Benson"
+      "Sophia Di Martino",
+      "Wunmi Mosaku",
+      "Eugene Cordero"
     ],
-    "trailer": null,
+    "trailer": "https://www.youtube.com/watch?v=nW948Va-l10",
     "watch": null,
     "newlyAvailable": false
   },
@@ -1953,9 +1985,12 @@ window.MCU_DATA = [
   },
   {
     "id": "what-if-s2",
+    "tmdb_id": 91363,
+    "tmdb_type": "tv",
+    "season": 2,
     "title": "What If…? — Season 2",
     "year": 2023,
-    "release": "2023-10-13",
+    "release": "2021-08-11",
     "type": "series",
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
@@ -1963,19 +1998,17 @@ window.MCU_DATA = [
     "notes": "Animated.",
     "seasons": [
       {
-        "n": 1,
-        "name": "Season 1 (Narrative Story)",
-        "eps": 8,
-        "air": "2023-10-13"
+        "n": 2,
+        "name": "Season 2",
+        "eps": 9,
+        "air": "2023-12-22"
       }
     ],
-    "tmdb_id": 299676,
-    "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/a87nXpE9vz8AE7qOxy0oaulEIpW.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/1sjZ9ZWQVwwzN40Scr83iLBzMsI.jpg",
-    "overview": "'Jurassic What If...?' is a FAN-MADE Project not affiliated with Universal Pictures nor Disney / Marvel Studios. It is a parody entirely under 'Fair Use'.\n\nChaos. Containment. Consequences. This isn't an act of sheer will, it's a moment of Cataclysmic change... But what if different characters or creatures had entirely different outcomes? What if the events of each movie played out differently? Join us, as we answer a question 65 Million Years in the making...What If...?",
-    "imdb": null,
-    "rating": 9.5,
+    "poster": "https://image.tmdb.org/t/p/w185/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
+    "imdb": "https://www.imdb.com/title/tt10168312/",
+    "rating": 8,
     "runtime": null,
     "genres": [
       "Animation",
@@ -1983,10 +2016,9 @@ window.MCU_DATA = [
       "Sci-Fi & Fantasy"
     ],
     "cast": [
-      "Brian Hull",
-      "Swrve"
+      "Jeffrey Wright"
     ],
-    "trailer": "https://www.youtube.com/watch?v=HsiliLjvKC4",
+    "trailer": "https://www.youtube.com/watch?v=x9D0uUKJ5KI",
     "watch": null,
     "newlyAvailable": false
   },
@@ -2032,6 +2064,9 @@ window.MCU_DATA = [
   },
   {
     "id": "xmen-97-s1",
+    "tmdb_id": 138502,
+    "tmdb_type": "tv",
+    "season": 1,
     "title": "X-Men '97 — Season 1",
     "year": 2024,
     "release": "2024-03-20",
@@ -2046,7 +2081,38 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 10,
         "air": "2024-03-20"
-      },
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+    "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+    "imdb": "https://www.imdb.com/title/tt16026746/",
+    "rating": 8.7,
+    "runtime": null,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
+    ],
+    "cast": [],
+    "trailer": "https://www.youtube.com/watch?v=pv3Ss8o9gGQ",
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "xmen-97-s2",
+    "tmdb_id": 138502,
+    "tmdb_type": "tv",
+    "season": 2,
+    "title": "X-Men '97 — Season 2",
+    "year": 2026,
+    "release": "2024-03-20",
+    "type": "series",
+    "saga": "Multiverse Saga",
+    "phase": "Phase 5",
+    "chrono": 49.5,
+    "notes": "Second season of the revived 90s X-Men animated series.",
+    "seasons": [
       {
         "n": 2,
         "name": "Season 2",
@@ -2054,8 +2120,6 @@ window.MCU_DATA = [
         "air": "2026-07-01"
       }
     ],
-    "tmdb_id": 138502,
-    "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
     "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
@@ -2157,9 +2221,12 @@ window.MCU_DATA = [
   },
   {
     "id": "what-if-s3",
+    "tmdb_id": 91363,
+    "tmdb_type": "tv",
+    "season": 3,
     "title": "What If…? — Season 3",
     "year": 2024,
-    "release": "2024-05-06",
+    "release": "2021-08-11",
     "type": "series",
     "saga": "Multiverse Saga",
     "phase": "Phase 5",
@@ -2167,38 +2234,28 @@ window.MCU_DATA = [
     "notes": "Animated.",
     "seasons": [
       {
-        "n": 1,
-        "name": "Season 1",
-        "eps": 20,
-        "air": "2024-05-06"
+        "n": 3,
+        "name": "Season 3",
+        "eps": 8,
+        "air": "2024-12-22"
       }
     ],
-    "tmdb_id": 235614,
-    "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/qGM0WutoTPNmac0IL3Bx7hAeyrk.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/3uiizNqy9XcCQR4AudBeF3ulGA8.jpg",
-    "overview": "A normal girl Xia Guo is faced with a difficult dilemma where the two choices will lead her toward two utterly different lives. Would she choose to live a home-sweet-home life with her boyfriend in her hometown or seize the opportunity to forge a successful career in a metropolitan? Which way would make her life \"a little less normal\"?",
-    "imdb": "https://www.imdb.com/title/tt27122945/",
-    "rating": 6.7,
+    "poster": "https://image.tmdb.org/t/p/w185/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
+    "overview": "Taking inspiration from the comic books of the same name, each episode of this animated anthology series questions, revisits and twists classic Marvel Cinematic moments.",
+    "imdb": "https://www.imdb.com/title/tt10168312/",
+    "rating": 8,
     "runtime": null,
     "genres": [
-      "Drama"
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
     ],
     "cast": [
-      "Zhong Chuxi",
-      "Liu Xueyi",
-      "Lin Shen",
-      "Yao Chi"
+      "Jeffrey Wright"
     ],
-    "trailer": null,
-    "watch": {
-      "link": "https://www.themoviedb.org/tv/235614/watch?locale=EG",
-      "flatrate": [
-        "WeTV"
-      ],
-      "rent": [],
-      "buy": []
-    },
+    "trailer": "https://www.youtube.com/watch?v=x9D0uUKJ5KI",
+    "watch": null,
     "newlyAvailable": false
   },
   {
@@ -2289,6 +2346,9 @@ window.MCU_DATA = [
   },
   {
     "id": "daredevil-born-again-s1",
+    "tmdb_id": 202555,
+    "tmdb_type": "tv",
+    "season": 1,
     "title": "Daredevil: Born Again — Season 1",
     "year": 2025,
     "release": "2025-03-04",
@@ -2302,16 +2362,8 @@ window.MCU_DATA = [
         "name": "Season 1",
         "eps": 9,
         "air": "2025-03-04"
-      },
-      {
-        "n": 2,
-        "name": "Season 2",
-        "eps": 8,
-        "air": "2026-03-24"
       }
     ],
-    "tmdb_id": 202555,
-    "tmdb_type": "tv",
     "poster": "https://image.tmdb.org/t/p/w185/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
     "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
@@ -2579,34 +2631,42 @@ window.MCU_DATA = [
   },
   {
     "id": "daredevil-born-again-s2",
+    "tmdb_id": 202555,
+    "tmdb_type": "tv",
+    "season": 2,
     "title": "Daredevil: Born Again — Season 2",
     "year": 2026,
-    "release": "2026-03-17",
+    "release": "2025-03-04",
     "type": "series",
     "saga": "Multiverse Saga",
     "phase": "Phase 6",
     "chrono": 62,
     "seasons": [
       {
-        "n": 1,
+        "n": 2,
         "name": "Season 2",
-        "eps": 9,
-        "air": "2026-03-17"
+        "eps": 8,
+        "air": "2026-03-24"
       }
     ],
-    "tmdb_id": 318417,
-    "tmdb_type": "tv",
-    "poster": "https://image.tmdb.org/t/p/w185/pXr32DqmkiEJTQbpf9u6JRgPPzB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/yea7VjmPCNuGI0WyfbeTgPVJVUs.jpg",
-    "overview": "The \"Daredevil: Born Again\" cast and crew sit down to discuss Season 2's thrilling twists and turns.",
-    "imdb": "https://www.imdb.com/title/tt40791652/",
-    "rating": 7,
+    "poster": "https://image.tmdb.org/t/p/w185/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+    "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+    "imdb": "https://www.imdb.com/title/tt18923754/",
+    "rating": 8.2,
     "runtime": null,
     "genres": [
-      "Talk"
+      "Drama",
+      "Action & Adventure",
+      "Crime"
     ],
-    "cast": [],
-    "trailer": "https://www.youtube.com/watch?v=FXhXuDqujCw",
+    "cast": [
+      "Charlie Cox",
+      "Vincent D'Onofrio",
+      "Wilson Bethel",
+      "Deborah Ann Woll"
+    ],
+    "trailer": "https://www.youtube.com/watch?v=7xALolZzhSM",
     "watch": null,
     "newlyAvailable": false
   },
@@ -2624,7 +2684,7 @@ window.MCU_DATA = [
     "tmdb_id": 969681,
     "tmdb_type": "movie",
     "poster": "https://image.tmdb.org/t/p/w185/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
     "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
     "imdb": "https://www.imdb.com/title/tt22084616/",
     "rating": 8.5,
@@ -2668,7 +2728,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
     "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
     "imdb": "https://www.imdb.com/title/tt36042156/",
-    "rating": 8.3,
+    "rating": 8.2,
     "runtime": 51,
     "genres": [
       "Action",
@@ -2706,10 +2766,10 @@ window.MCU_DATA = [
       }
     ],
     "poster": "https://image.tmdb.org/t/p/w185/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/58v1KFe3rxvHrYM1hLH5ScpwqNR.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
     "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
     "imdb": "https://www.imdb.com/title/tt23112594/",
-    "rating": 8.7,
+    "rating": 8.6,
     "runtime": null,
     "genres": [
       "Sci-Fi & Fantasy",
@@ -2739,7 +2799,7 @@ window.MCU_DATA = [
     "seasons": null,
     "tmdb_id": 1003596,
     "tmdb_type": "movie",
-    "poster": "https://image.tmdb.org/t/p/w185/bqAHPSEyRkM4BpkncGFCKjBXf9p.jpg",
+    "poster": "https://image.tmdb.org/t/p/w185/9jlZ59UALLLOE279HMT19rP9XQs.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
     "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "imdb": "https://www.imdb.com/title/tt21357150/",
@@ -3491,7 +3551,7 @@ window.MCU_DATA = [
     "release": "2007-05-01",
     "poster": "https://image.tmdb.org/t/p/w185/qFmwhVUoUSXjkKRmca5yGDEXBIj.jpg",
     "backdrop": "https://image.tmdb.org/t/p/w1280/FfAU0PUs8AJkMU2VbkVNFtRXR4.jpg",
-    "overview": "The seemingly invincible Spider-Man goes up against an all-new crop of villains—including the shape-shifting Sandman. While Spider-Man’s superpowers are altered by an alien organism, his alter ego, Peter Parker, deals with nemesis Eddie Brock and also gets caught up in a love triangle.",
+    "overview": "Peter Parker finally has the girl of his dreams, Mary Jane Watson, and New York City is in the throes of Spider-mania! But when a strange alien symbiote turns Spider-Man's suit black, his darkest demons come to light changing Spider-Man inside as well as out. Spider-Man is in for the fight of his life against a lethal mix of villains - the deadly Sandman, Venom, and the New Goblin - as well as the enemy within himself.",
     "imdb": "https://www.imdb.com/title/tt0413300/",
     "rating": 6.5,
     "runtime": 139,
@@ -3873,7 +3933,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/pwGmXVKUgKN13psUjlhC9zBcq1o.jpg",
     "overview": "Forced to confront revelations about her past, paramedic Cassandra Webb forges a relationship with three young women destined for powerful futures...if they can all survive a deadly present.",
     "imdb": "https://www.imdb.com/title/tt11057302/",
-    "rating": 5.3,
+    "rating": 5.2,
     "runtime": 117,
     "genres": [
       "Action",
@@ -4713,7 +4773,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/a7nEljKws5sgtCndAkJtdpGz9pe.jpg",
     "overview": "During World War II, a brave, patriotic American Soldier undergoes experiments to become a new supersoldier, \"Captain America\". Racing to Germany to sabotage the rockets of Nazi baddie \"Red Skull\", Captain America winds up frozen until the 1990s. He reawakens to find that the Red Skull has changed identities and is now planning to kidnap the President of the United States.",
     "imdb": "https://www.imdb.com/title/tt0103923/",
-    "rating": 4.6,
+    "rating": 4.5,
     "runtime": 97,
     "genres": [
       "Action",
@@ -4986,7 +5046,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/kRpokiyfzyQHkQ0meMmvqPzQXnj.jpg",
     "overview": "Elektra the warrior survives a near-death experience, becomes an assassin-for-hire, and tries to protect her two latest targets, a single father and his young daughter, from a group of supernatural assassins.",
     "imdb": "https://www.imdb.com/title/tt0357277/",
-    "rating": 5.1,
+    "rating": 5,
     "runtime": 97,
     "genres": [
       "Action",
@@ -5244,7 +5304,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/aIiCdNCo889J2QaaOd8TXaGXoO2.jpg",
     "overview": "Spidey and the Avengers' Halloween plans are turned upside down by the mysterious Hallows' Eve, who plays magical tricks on trick or treaters and plans to ruin Halloween forever.",
     "imdb": "https://www.imdb.com/title/tt37850679/",
-    "rating": 6.3,
+    "rating": 6.6,
     "runtime": 26,
     "genres": [
       "Animation",
@@ -5394,38 +5454,6 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "marvel-studios-assembled-the-making-of-x-men-97-2024",
-    "title": "Marvel Studios Assembled: The Making of X-Men '97",
-    "year": 2024,
-    "release": "2024-05-21",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1275606,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/6YIhiAzNB9PPgIPA04tD1xaSBMw.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/cWCJQO0x7qt4ua14ioGLCDLnpAq.jpg",
-    "overview": "Spend time with the original cast, along with new voices, as this behind-the-scenes special recalls the birth of \"X-Men: The Animated Series,\" and its revival thirty years later as \"X-Men '97.\"",
-    "imdb": "https://www.imdb.com/title/tt32142103/",
-    "rating": 6.1,
-    "runtime": 56,
-    "genres": [
-      "Documentary"
-    ],
-    "cast": [
-      "Brad Winderbaum",
-      "Dana Vasquez-Eberhardt",
-      "Jake Castorena",
-      "Jeremy Polgar"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
     "id": "marvel-studios-assembled-the-making-of-the-marvels-2024",
     "title": "Marvel Studios Assembled: The Making of The Marvels",
     "year": 2024,
@@ -5484,6 +5512,38 @@ window.MCU_DATA = [
       "Richie Palmer",
       "Stephen Broussard",
       "Sydney Freeland"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "marvel-studios-assembled-the-making-of-loki-season-2-2023",
+    "title": "Marvel Studios Assembled: The Making of Loki Season 2",
+    "year": 2023,
+    "release": "2023-11-22",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1192825,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": "https://image.tmdb.org/t/p/w185/fa4HvgQO1sLQTobjJR10kDOJzWB.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/q8OCAKDfdgm4oQAITaEG7czomyI.jpg",
+    "overview": "Through candid interviews with the creative minds behind the show, and exclusive on-set footage, discover how the talented team that powered \"Loki: Season 2\" raised the stakes for this latest MCU adventure. Witness imaginative costumes, elaborate environments, and far-out variants come to life, meet new allies and foes, and time-slip across the Multiverse.",
+    "imdb": "https://www.imdb.com/title/tt28889780/",
+    "rating": 7.7,
+    "runtime": 58,
+    "genres": [
+      "Documentary"
+    ],
+    "cast": [
+      "Tom Hiddleston",
+      "Owen Wilson",
+      "Eric Martin",
+      "Justin Benson"
     ],
     "trailer": null,
     "watch": null,
@@ -5780,73 +5840,6 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
-    "id": "groot-takes-a-bath-2022",
-    "title": "Groot Takes a Bath",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010821,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/egBOw7NBMuM283SOltESKq0gJjJ.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/hlAPsSBPnwGVeBuhCd8llKYBsNT.jpg",
-    "overview": "Everybody needs some alone time to relax and wash up, but things go quite differently when you’re a Flora Colossi toddler.",
-    "imdb": "https://www.imdb.com/title/tt21316848/",
-    "rating": 7.1,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Fred Tatasciore",
-      "Kaitlyn Robrock"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "groot-s-pursuit-2022",
-    "title": "Groot's Pursuit",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010820,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/z5AQHYTTx7DzG9CRd01ny9DtqNE.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/u76zP5GRRPSXBXqY98dZI39THPu.jpg",
-    "overview": "Groot investigates a spooky noise that’s been haunting the Quadrant, which leads to an intense dance off.",
-    "imdb": "https://www.imdb.com/title/tt21316834/",
-    "rating": 7,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "James Gunn",
-      "Trevor Devall",
-      "Terri Douglas"
-    ],
-    "trailer": "https://www.youtube.com/watch?v=sVqg6I11r7M",
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
     "id": "the-little-guy-2022",
     "title": "The Little Guy",
     "year": 2022,
@@ -5875,38 +5868,6 @@ window.MCU_DATA = [
       "Bob Bergen",
       "Terri Douglas",
       "Scott Menville"
-    ],
-    "trailer": null,
-    "watch": null,
-    "newlyAvailable": false
-  },
-  {
-    "id": "groot-s-first-steps-2022",
-    "title": "Groot's First Steps",
-    "year": 2022,
-    "release": "2022-08-10",
-    "type": "movie",
-    "universe": "MCU",
-    "saga": "Newly Discovered",
-    "phase": "",
-    "tmdb_id": 1010818,
-    "tmdb_type": "movie",
-    "discovered": true,
-    "seasons": null,
-    "poster": "https://image.tmdb.org/t/p/w185/1ifiV9ZJD4tC3tRYcnLIzH0meaB.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/9bColKVEAaWfmOLiLZoUhdYfevy.jpg",
-    "overview": "Following the events of “Guardians of the Galaxy Vol. 1,” Baby Groot is finally ready to try taking his first steps out of his pot—only to learn you have to walk before you can run.",
-    "imdb": "https://www.imdb.com/title/tt13820496/",
-    "rating": 7,
-    "runtime": 6,
-    "genres": [
-      "Animation",
-      "Family",
-      "Comedy"
-    ],
-    "cast": [
-      "Vin Diesel",
-      "Fred Tatasciore"
     ],
     "trailer": null,
     "watch": null,
@@ -6218,7 +6179,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/qG5A6fWoP5inQa16VadLDiB1mlb.jpg",
     "overview": "On the eve of his departure to Europe, Peter Parker tells Ned Leeds that he has several things to do before they leave.",
     "imdb": "https://www.imdb.com/title/tt11107678/",
-    "rating": 7,
+    "rating": 6.9,
     "runtime": 4,
     "genres": [
       "Science Fiction",
@@ -6450,7 +6411,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/kv8KDbi2I4F4MNBbBMCR4LDqP6H.jpg",
     "overview": "Agent Peggy Carter is relegated to a desk job and frustrated at her male boss and comrades' sexist dismissal of her place in the SSR. Ordered to work late one night, Carter gets an alert that the villain Zodiac has been spotted and decides to take care of it herself.",
     "imdb": "https://www.imdb.com/title/tt3067038/",
-    "rating": 7.3,
+    "rating": 7.2,
     "runtime": 15,
     "genres": [
       "Adventure",
@@ -6821,7 +6782,7 @@ window.MCU_DATA = [
       {
         "n": 1,
         "name": "Miniseries",
-        "eps": 5,
+        "eps": 11,
         "air": "2026-08-27"
       }
     ],
@@ -6839,6 +6800,40 @@ window.MCU_DATA = [
       "Iman Vellani"
     ],
     "trailer": "https://www.youtube.com/watch?v=xe3qx0kXArA",
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
+    "id": "daredevil-born-again-official-podcast-2026",
+    "title": "Daredevil: Born Again Official Podcast",
+    "year": 2026,
+    "release": "2026-03-17",
+    "type": "series",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 318417,
+    "tmdb_type": "tv",
+    "discovered": true,
+    "seasons": [
+      {
+        "n": 1,
+        "name": "Season 2",
+        "eps": 9,
+        "air": "2026-03-17"
+      }
+    ],
+    "poster": "https://image.tmdb.org/t/p/w185/pXr32DqmkiEJTQbpf9u6JRgPPzB.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/yea7VjmPCNuGI0WyfbeTgPVJVUs.jpg",
+    "overview": "The \"Daredevil: Born Again\" cast and crew sit down to discuss Season 2's thrilling twists and turns.",
+    "imdb": "https://www.imdb.com/title/tt40791652/",
+    "rating": 7,
+    "runtime": null,
+    "genres": [
+      "Talk"
+    ],
+    "cast": [],
+    "trailer": "https://www.youtube.com/watch?v=FXhXuDqujCw",
     "watch": null,
     "newlyAvailable": false
   },
@@ -6919,12 +6914,13 @@ window.MCU_DATA = [
     "watch": {
       "link": "https://www.themoviedb.org/tv/274388-iron-man-and-his-awesome-friends/watch?locale=EG",
       "flatrate": [
+        "STARZPLAY",
         "TOD"
       ],
       "rent": [],
       "buy": []
     },
-    "newlyAvailable": false
+    "newlyAvailable": true
   },
   {
     "id": "meet-iron-man-and-his-awesome-friends-2025",
@@ -7171,7 +7167,7 @@ window.MCU_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/w1280/v4SPk4N5JXxy6EMyJazdCRKf1AE.jpg",
     "overview": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
     "imdb": "https://www.imdb.com/title/tt5296048/",
-    "rating": 6.2,
+    "rating": 6,
     "runtime": null,
     "genres": [
       "Sci-Fi & Fantasy",
@@ -8667,6 +8663,40 @@ window.MCU_DATA = [
     "newlyAvailable": false
   },
   {
+    "id": "procura-se-vigilante-2026",
+    "title": "Procura-se Vigilante",
+    "year": 2026,
+    "release": "2026-10-28",
+    "type": "movie",
+    "universe": "MCU",
+    "saga": "Newly Discovered",
+    "phase": "",
+    "tmdb_id": 1815132,
+    "tmdb_type": "movie",
+    "discovered": true,
+    "seasons": null,
+    "poster": "https://image.tmdb.org/t/p/w185/sUOhT7gTfUTP3jxVYZ4g9LmdazL.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/iZLjr2d9beSwpYFG0pXIVBbcify.jpg",
+    "overview": null,
+    "imdb": null,
+    "rating": null,
+    "runtime": null,
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Crime"
+    ],
+    "cast": [
+      "José Rocha",
+      "Gabi Mendes",
+      "Isabela Couto",
+      "Mori Meirelles"
+    ],
+    "trailer": null,
+    "watch": null,
+    "newlyAvailable": false
+  },
+  {
     "id": "spider-man-all-roads-lead-to-no-way-home-2022",
     "title": "Spider-Man: All Roads Lead to No Way Home",
     "year": 2022,
@@ -8875,7 +8905,7 @@ window.MCU_DATA = [
       }
     ],
     "poster": "https://image.tmdb.org/t/p/w185/dXT3vjlNOSp2UtV5BXKKMGidr1G.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/w1280/cqiXMQxprfbbQBSSamYQephAVmv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/w1280/8LNHHaPh4QTrM8YkGbFWsFDLw8v.jpg",
     "overview": null,
     "imdb": "https://www.imdb.com/title/tt7082912/",
     "rating": null,

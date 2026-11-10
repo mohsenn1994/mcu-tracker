@@ -5,7 +5,7 @@ module.exports = {
     "title": "Marvel Cinematic Universe & Beyond",
     "subtitle": "Every Marvel film and series — the MCU, legacy Marvel TV, and the non-MCU film universes.",
     "updated": "2026-08",
-    "ignore": [],
+    "ignore": ["movie:1275606", "movie:1010821", "movie:1010820", "movie:1010818"],
     "universes": [
       {
         "id": "MCU",
@@ -324,6 +324,9 @@ module.exports = {
     },
     {
       "id": "loki-s1",
+      "tmdb_id": 84958,
+      "tmdb_type": "tv",
+      "season": 1,
       "title": "Loki — Season 1",
       "year": 2021,
       "release": "2021-06-09",
@@ -346,6 +349,9 @@ module.exports = {
     },
     {
       "id": "what-if-s1",
+      "tmdb_id": 91363,
+      "tmdb_type": "tv",
+      "season": 1,
       "title": "What If…? — Season 1",
       "year": 2021,
       "release": "2021-08-11",
@@ -441,6 +447,9 @@ module.exports = {
     },
     {
       "id": "i-am-groot-s1",
+      "tmdb_id": 232125,
+      "tmdb_type": "tv",
+      "season": 1,
       "title": "I Am Groot — Season 1",
       "year": 2022,
       "release": "2022-08-10",
@@ -449,6 +458,20 @@ module.exports = {
       "phase": "Phase 4",
       "chrono": 37,
       "notes": "Animated shorts."
+    },
+    {
+      "id": "i-am-groot-s2",
+      "tmdb_id": 232125,
+      "tmdb_type": "tv",
+      "season": 2,
+      "title": "I Am Groot — Season 2",
+      "year": 2023,
+      "release": "2023-09-06",
+      "type": "series",
+      "saga": "Multiverse Saga",
+      "phase": "Phase 4",
+      "chrono": 37.5,
+      "notes": "Second batch of Baby Groot shorts."
     },
     {
       "id": "she-hulk",
@@ -524,6 +547,9 @@ module.exports = {
     },
     {
       "id": "loki-s2",
+      "tmdb_id": 84958,
+      "tmdb_type": "tv",
+      "season": 2,
       "title": "Loki — Season 2",
       "year": 2023,
       "release": "2023-10-05",
@@ -546,6 +572,9 @@ module.exports = {
     },
     {
       "id": "what-if-s2",
+      "tmdb_id": 91363,
+      "tmdb_type": "tv",
+      "season": 2,
       "title": "What If…? — Season 2",
       "year": 2023,
       "release": "2023-12-22",
@@ -567,6 +596,9 @@ module.exports = {
     },
     {
       "id": "xmen-97-s1",
+      "tmdb_id": 138502,
+      "tmdb_type": "tv",
+      "season": 1,
       "title": "X-Men '97 — Season 1",
       "year": 2024,
       "release": "2024-03-20",
@@ -575,6 +607,20 @@ module.exports = {
       "phase": "Phase 5",
       "chrono": 49,
       "notes": "Marvel Animation."
+    },
+    {
+      "id": "xmen-97-s2",
+      "tmdb_id": 138502,
+      "tmdb_type": "tv",
+      "season": 2,
+      "title": "X-Men '97 — Season 2",
+      "year": 2026,
+      "release": "2026-07-01",
+      "type": "series",
+      "saga": "Multiverse Saga",
+      "phase": "Phase 5",
+      "chrono": 49.5,
+      "notes": "Second season of the revived 90s X-Men animated series."
     },
     {
       "id": "deadpool-and-wolverine",
@@ -600,6 +646,9 @@ module.exports = {
     },
     {
       "id": "what-if-s3",
+      "tmdb_id": 91363,
+      "tmdb_type": "tv",
+      "season": 3,
       "title": "What If…? — Season 3",
       "year": 2024,
       "release": "2024-12-22",
@@ -632,6 +681,9 @@ module.exports = {
     },
     {
       "id": "daredevil-born-again-s1",
+      "tmdb_id": 202555,
+      "tmdb_type": "tv",
+      "season": 1,
       "title": "Daredevil: Born Again — Season 1",
       "year": 2025,
       "release": "2025-03-04",
@@ -708,6 +760,9 @@ module.exports = {
     },
     {
       "id": "daredevil-born-again-s2",
+      "tmdb_id": 202555,
+      "tmdb_type": "tv",
+      "season": 2,
       "title": "Daredevil: Born Again — Season 2",
       "year": 2026,
       "release": "2026-03-01",

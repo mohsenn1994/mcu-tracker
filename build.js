@@ -72,6 +72,8 @@ async function enrich(t){
   if(r.mt==='tv' && Array.isArray(d.seasons)){
     seasons=d.seasons.filter(function(se){return se.season_number>0 && (se.episode_count||0)>0;})
       .map(function(se){return {n:se.season_number,name:se.name||('Season '+se.season_number),eps:se.episode_count||0,air:se.air_date||null};});
+    // If this seed entry represents a single season, keep only that season.
+    if(t.season){seasons=seasons.filter(function(se){return se.n===t.season;});}
     if(!seasons.length)seasons=null;
   }
   return {...t,_matched:true,
